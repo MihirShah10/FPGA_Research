@@ -1,0 +1,10 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/AESL_autobram_D.v,1508115274,systemVerilog,,,,AESL_autobram_D,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/AESL_autobram_E.v,1508115274,systemVerilog,,,,AESL_autobram_E,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/AESL_axi_slave_CRTL_BUS.v,1508115274,systemVerilog,,,,AESL_axi_slave_CRTL_BUS,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/Matrix_Addition.autotb.v,1508115274,systemVerilog,,,,apatb_Matrix_Addition_top,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/Matrix_Addition.v,1508115082,systemVerilog,,,,Matrix_Addition,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,
+C:/FPGA_Research_Local/Nucleus/Nucleus/solution1/sim/verilog/Matrix_Addition_CRTL_BUS_s_axi.v,1508115083,systemVerilog,,,,Matrix_Addition_CRTL_BUS_s_axi,C:/Xilinx/Vivado/2016.3/bin/../data/xsim/ip/xsim_ip.ini,ieee_proposed=./ieee_proposed,,,,,,

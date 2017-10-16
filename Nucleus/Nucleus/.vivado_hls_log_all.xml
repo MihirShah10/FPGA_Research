@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Matrix_Addition/D_Din_A' to 0." projectName="Nucleus" solutionName="solution1" date="2017-10-15T19:51:21.985-0500" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'Matrix_Addition/D_WEN_A' to 0." projectName="Nucleus" solutionName="solution1" date="2017-10-15T19:51:21.963-0500" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,7 @@
+sv xil_defaultlib "AESL_autobram_D.v"
+sv xil_defaultlib "AESL_autobram_E.v"
+sv xil_defaultlib "AESL_axi_slave_CRTL_BUS.v"
+sv xil_defaultlib "Matrix_Addition.autotb.v"
+sv xil_defaultlib "Matrix_Addition.v"
+sv xil_defaultlib "Matrix_Addition_CRTL_BUS_s_axi.v"
+

@@ -1,0 +1,746 @@
+
+
+================================================================
+== Vivado HLS Report for 'Matrix_Addition'
+================================================================
+* Date:           Sun Oct 15 19:51:21 2017
+
+* Version:        2016.3 (Build 1682563 on Mon Oct 10 19:41:59 MDT 2016)
+* Project:        Nucleus
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      5.68|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   40|   40|   41|   41|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1     |    8|    8|         4|          -|          -|     2|    no    |
+        | + Loop 1.1  |    2|    2|         1|          -|          -|     2|    no    |
+        |- Loop 2     |   12|   12|         6|          -|          -|     2|    no    |
+        | + Loop 2.1  |    4|    4|         2|          -|          -|     2|    no    |
+        |- Loop 3     |    8|    8|         4|          -|          -|     2|    no    |
+        | + Loop 3.1  |    2|    2|         1|          -|          -|     2|    no    |
+        |- Loop 4     |    8|    8|         4|          -|          -|     2|    no    |
+        | + Loop 4.1  |    2|    2|         1|          -|          -|     2|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 10
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond7)
+	4  / (exitcond7)
+3 --> 
+	3  / (!exitcond6)
+	2  / (exitcond6)
+4 --> 
+	5  / (!exitcond5)
+	7  / (exitcond5)
+5 --> 
+	6  / (!exitcond4)
+	4  / (exitcond4)
+6 --> 
+	5  / true
+7 --> 
+	8  / (!exitcond3)
+	9  / (exitcond3)
+8 --> 
+	8  / (!exitcond2)
+	7  / (exitcond2)
+9 --> 
+	10  / (!exitcond1)
+10 --> 
+	10  / (!exitcond)
+	9  / (exitcond)
+* FSM state operations: 
+
+ <State 1>: 1.57ns
+ST_1: E1 (3)  [1/1] 0.00ns
+:0  %E1 = alloca i32
+
+ST_1: E1_0_1 (4)  [1/1] 0.00ns
+:1  %E1_0_1 = alloca i32
+
+ST_1: E1_1 (5)  [1/1] 0.00ns
+:2  %E1_1 = alloca i32
+
+ST_1: E1_1_1 (6)  [1/1] 0.00ns
+:3  %E1_1_1 = alloca i32
+
+ST_1: StgValue_15 (7)  [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap([4 x i32]* %D) nounwind, !map !65
+
+ST_1: StgValue_16 (8)  [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap([4 x i32]* %E) nounwind, !map !71
+
+ST_1: StgValue_17 (9)  [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecTopModule([16 x i8]* @Matrix_Addition_str) nounwind
+
+ST_1: StgValue_18 (10)  [1/1] 0.00ns  loc: Nucleus/core.cpp:5
+:7  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str1804, i32 0, i32 0, [1 x i8]* @p_str1805, i32 0, i32 0, [9 x i8]* @p_str1806, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805) nounwind
+
+ST_1: StgValue_19 (11)  [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecInterface([4 x i32]* %D, [5 x i8]* @p_str1807, i32 0, i32 0, [1 x i8]* @p_str1805, i32 0, i32 0, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805) nounwind
+
+ST_1: StgValue_20 (12)  [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecInterface([4 x i32]* %E, [5 x i8]* @p_str1807, i32 0, i32 0, [1 x i8]* @p_str1805, i32 0, i32 0, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1805, [1 x i8]* @p_str1805) nounwind
+
+ST_1: StgValue_21 (13)  [1/1] 1.57ns  loc: Nucleus/core.cpp:15
+:10  br label %.loopexit
+
+
+ <State 2>: 1.57ns
+ST_2: i1 (15)  [1/1] 0.00ns
+.loopexit:0  %i1 = phi i2 [ 0, %0 ], [ %i, %.loopexit.loopexit ]
+
+ST_2: E1_load (16)  [1/1] 0.00ns
+.loopexit:1  %E1_load = load i32* %E1
+
+ST_2: E1_0_1_load (17)  [1/1] 0.00ns
+.loopexit:2  %E1_0_1_load = load i32* %E1_0_1
+
+ST_2: E1_1_load (18)  [1/1] 0.00ns
+.loopexit:3  %E1_1_load = load i32* %E1_1
+
+ST_2: E1_1_1_load (19)  [1/1] 0.00ns
+.loopexit:4  %E1_1_1_load = load i32* %E1_1_1
+
+ST_2: exitcond7 (20)  [1/1] 1.36ns  loc: Nucleus/core.cpp:15
+.loopexit:5  %exitcond7 = icmp eq i2 %i1, -2
+
+ST_2: empty (21)  [1/1] 0.00ns
+.loopexit:6  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_2: i (22)  [1/1] 0.80ns  loc: Nucleus/core.cpp:15
+.loopexit:7  %i = add i2 %i1, 1
+
+ST_2: StgValue_30 (23)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+.loopexit:8  br i1 %exitcond7, label %.preheader10.preheader, label %.preheader11.preheader
+
+ST_2: tmp_1 (25)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+.preheader11.preheader:0  %tmp_1 = trunc i2 %i1 to i1
+
+ST_2: StgValue_32 (26)  [1/1] 1.57ns  loc: Nucleus/core.cpp:17
+.preheader11.preheader:1  br label %.preheader11
+
+ST_2: D1_1_1_4 (55)  [1/1] 0.00ns
+.preheader10.preheader:0  %D1_1_1_4 = alloca i32
+
+ST_2: D1_1_1_9 (56)  [1/1] 0.00ns
+.preheader10.preheader:1  %D1_1_1_9 = alloca i32
+
+ST_2: D1_1_1_10 (57)  [1/1] 0.00ns
+.preheader10.preheader:2  %D1_1_1_10 = alloca i32
+
+ST_2: D1_1_1_11 (58)  [1/1] 0.00ns
+.preheader10.preheader:3  %D1_1_1_11 = alloca i32
+
+ST_2: StgValue_37 (59)  [1/1] 1.57ns  loc: Nucleus/core.cpp:24
+.preheader10.preheader:4  br label %.preheader10
+
+
+ <State 3>: 1.37ns
+ST_3: j2 (28)  [1/1] 0.00ns
+.preheader11:0  %j2 = phi i2 [ %j, %_ifconv ], [ 0, %.preheader11.preheader ]
+
+ST_3: exitcond6 (29)  [1/1] 1.36ns  loc: Nucleus/core.cpp:17
+.preheader11:1  %exitcond6 = icmp eq i2 %j2, -2
+
+ST_3: empty_6 (30)  [1/1] 0.00ns
+.preheader11:2  %empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_3: j (31)  [1/1] 0.80ns  loc: Nucleus/core.cpp:17
+.preheader11:3  %j = add i2 %j2, 1
+
+ST_3: StgValue_42 (32)  [1/1] 0.00ns  loc: Nucleus/core.cpp:17
+.preheader11:4  br i1 %exitcond6, label %.loopexit.loopexit, label %_ifconv
+
+ST_3: E1_load_1 (34)  [1/1] 0.00ns
+_ifconv:0  %E1_load_1 = load i32* %E1
+
+ST_3: E1_0_1_load_1 (35)  [1/1] 0.00ns
+_ifconv:1  %E1_0_1_load_1 = load i32* %E1_0_1
+
+ST_3: E1_1_load_1 (36)  [1/1] 0.00ns
+_ifconv:2  %E1_1_load_1 = load i32* %E1_1
+
+ST_3: E1_1_1_load_1 (37)  [1/1] 0.00ns
+_ifconv:3  %E1_1_1_load_1 = load i32* %E1_1_1
+
+ST_3: tmp_3 (38)  [1/1] 0.00ns  loc: Nucleus/core.cpp:17
+_ifconv:4  %tmp_3 = trunc i2 %j2 to i1
+
+ST_3: E1_1_1_7 (39)  [1/1] 0.00ns  loc: Nucleus/core.cpp:19 (grouped into LUT with out node E1_1_1_2)
+_ifconv:5  %E1_1_1_7 = select i1 %tmp_3, i32 0, i32 %E1_1_1_load_1
+
+ST_3: E1_1_0_7 (40)  [1/1] 0.00ns  loc: Nucleus/core.cpp:19 (grouped into LUT with out node E1_1_0_2)
+_ifconv:6  %E1_1_0_7 = select i1 %tmp_3, i32 %E1_1_load_1, i32 0
+
+ST_3: E1_0_1_7 (41)  [1/1] 0.00ns  loc: Nucleus/core.cpp:19 (grouped into LUT with out node E1_0_1_2)
+_ifconv:7  %E1_0_1_7 = select i1 %tmp_3, i32 0, i32 %E1_0_1_load_1
+
+ST_3: E1_0_0_7 (42)  [1/1] 0.00ns  loc: Nucleus/core.cpp:19 (grouped into LUT with out node E1_0_0_2)
+_ifconv:8  %E1_0_0_7 = select i1 %tmp_3, i32 %E1_load_1, i32 0
+
+ST_3: E1_1_1_2 (43)  [1/1] 1.37ns  loc: Nucleus/core.cpp:15 (out node of the LUT)
+_ifconv:9  %E1_1_1_2 = select i1 %tmp_1, i32 %E1_1_1_7, i32 %E1_1_1_load_1
+
+ST_3: E1_1_0_2 (44)  [1/1] 1.37ns  loc: Nucleus/core.cpp:15 (out node of the LUT)
+_ifconv:10  %E1_1_0_2 = select i1 %tmp_1, i32 %E1_1_0_7, i32 %E1_1_load_1
+
+ST_3: E1_0_1_2 (45)  [1/1] 1.37ns  loc: Nucleus/core.cpp:15 (out node of the LUT)
+_ifconv:11  %E1_0_1_2 = select i1 %tmp_1, i32 %E1_0_1_load_1, i32 %E1_0_1_7
+
+ST_3: E1_0_0_2 (46)  [1/1] 1.37ns  loc: Nucleus/core.cpp:15 (out node of the LUT)
+_ifconv:12  %E1_0_0_2 = select i1 %tmp_1, i32 %E1_load_1, i32 %E1_0_0_7
+
+ST_3: StgValue_56 (47)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+_ifconv:13  store i32 %E1_1_1_2, i32* %E1_1_1
+
+ST_3: StgValue_57 (48)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+_ifconv:14  store i32 %E1_1_0_2, i32* %E1_1
+
+ST_3: StgValue_58 (49)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+_ifconv:15  store i32 %E1_0_1_2, i32* %E1_0_1
+
+ST_3: StgValue_59 (50)  [1/1] 0.00ns  loc: Nucleus/core.cpp:15
+_ifconv:16  store i32 %E1_0_0_2, i32* %E1
+
+ST_3: StgValue_60 (51)  [1/1] 0.00ns  loc: Nucleus/core.cpp:17
+_ifconv:17  br label %.preheader11
+
+ST_3: StgValue_61 (53)  [1/1] 0.00ns
+.loopexit.loopexit:0  br label %.loopexit
+
+
+ <State 4>: 1.57ns
+ST_4: i3 (61)  [1/1] 0.00ns
+.preheader10:0  %i3 = phi i2 [ 0, %.preheader10.preheader ], [ %i_1, %.preheader10.loopexit ]
+
+ST_4: k (62)  [1/1] 0.00ns
+.preheader10:1  %k = phi i3 [ 0, %.preheader10.preheader ], [ %k_4, %.preheader10.loopexit ]
+
+ST_4: exitcond5 (63)  [1/1] 1.36ns  loc: Nucleus/core.cpp:24
+.preheader10:2  %exitcond5 = icmp eq i2 %i3, -2
+
+ST_4: empty_7 (64)  [1/1] 0.00ns
+.preheader10:3  %empty_7 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_4: i_1 (65)  [1/1] 0.80ns  loc: Nucleus/core.cpp:24
+.preheader10:4  %i_1 = add i2 %i3, 1
+
+ST_4: StgValue_67 (66)  [1/1] 0.00ns  loc: Nucleus/core.cpp:24
+.preheader10:5  br i1 %exitcond5, label %.preheader9.preheader, label %1
+
+ST_4: k_4 (68)  [1/1] 0.80ns  loc: Nucleus/core.cpp:29
+:0  %k_4 = add i3 2, %k
+
+ST_4: tmp_2 (69)  [1/1] 0.00ns  loc: Nucleus/core.cpp:24
+:1  %tmp_2 = trunc i2 %i3 to i1
+
+ST_4: StgValue_70 (70)  [1/1] 1.57ns  loc: Nucleus/core.cpp:26
+:2  br label %2
+
+ST_4: E1_1_1_4 (104)  [1/1] 0.00ns
+.preheader9.preheader:0  %E1_1_1_4 = alloca i32
+
+ST_4: E1_1_1_9 (105)  [1/1] 0.00ns
+.preheader9.preheader:1  %E1_1_1_9 = alloca i32
+
+ST_4: E1_1_1_10 (106)  [1/1] 0.00ns
+.preheader9.preheader:2  %E1_1_1_10 = alloca i32
+
+ST_4: E1_1_1_11 (107)  [1/1] 0.00ns
+.preheader9.preheader:3  %E1_1_1_11 = alloca i32
+
+ST_4: StgValue_75 (108)  [1/1] 1.57ns
+.preheader9.preheader:4  store i32 %E1_1_1_load, i32* %E1_1_1_11
+
+ST_4: StgValue_76 (109)  [1/1] 1.57ns
+.preheader9.preheader:5  store i32 %E1_1_load, i32* %E1_1_1_10
+
+ST_4: StgValue_77 (110)  [1/1] 1.57ns
+.preheader9.preheader:6  store i32 %E1_0_1_load, i32* %E1_1_1_9
+
+ST_4: StgValue_78 (111)  [1/1] 1.57ns
+.preheader9.preheader:7  store i32 %E1_load, i32* %E1_1_1_4
+
+ST_4: StgValue_79 (112)  [1/1] 1.57ns  loc: Nucleus/core.cpp:34
+.preheader9.preheader:8  br label %.preheader9
+
+
+ <State 5>: 2.39ns
+ST_5: j4 (72)  [1/1] 0.00ns
+:0  %j4 = phi i2 [ 0, %1 ], [ %j_1, %_ifconv1 ]
+
+ST_5: k_1 (73)  [1/1] 0.00ns  loc: Nucleus/core.cpp:29
+:1  %k_1 = phi i3 [ %k, %1 ], [ %tmp, %_ifconv1 ]
+
+ST_5: exitcond4 (74)  [1/1] 1.36ns  loc: Nucleus/core.cpp:26
+:2  %exitcond4 = icmp eq i2 %j4, -2
+
+ST_5: empty_8 (75)  [1/1] 0.00ns
+:3  %empty_8 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_5: j_1 (76)  [1/1] 0.80ns  loc: Nucleus/core.cpp:26
+:4  %j_1 = add i2 %j4, 1
+
+ST_5: StgValue_85 (77)  [1/1] 0.00ns  loc: Nucleus/core.cpp:26
+:5  br i1 %exitcond4, label %.preheader10.loopexit, label %_ifconv1
+
+ST_5: k_1_cast1 (83)  [1/1] 0.00ns  loc: Nucleus/core.cpp:26
+_ifconv1:4  %k_1_cast1 = zext i3 %k_1 to i32
+
+ST_5: D_addr (84)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28
+_ifconv1:5  %D_addr = getelementptr [4 x i32]* %D, i32 0, i32 %k_1_cast1
+
+ST_5: D1_1_0 (85)  [2/2] 2.39ns  loc: Nucleus/core.cpp:28
+_ifconv1:6  %D1_1_0 = load i32* %D_addr, align 4
+
+ST_5: tmp_5 (86)  [1/1] 0.00ns  loc: Nucleus/core.cpp:26
+_ifconv1:7  %tmp_5 = trunc i2 %j4 to i1
+
+ST_5: tmp (95)  [1/1] 0.80ns  loc: Nucleus/core.cpp:29
+_ifconv1:16  %tmp = add i3 1, %k_1
+
+ST_5: StgValue_91 (102)  [1/1] 0.00ns
+.preheader10.loopexit:0  br label %.preheader10
+
+
+ <State 6>: 3.76ns
+ST_6: D1_1_1_4_load (79)  [1/1] 0.00ns
+_ifconv1:0  %D1_1_1_4_load = load i32* %D1_1_1_4
+
+ST_6: D1_1_1_9_load (80)  [1/1] 0.00ns
+_ifconv1:1  %D1_1_1_9_load = load i32* %D1_1_1_9
+
+ST_6: D1_1_1_10_load (81)  [1/1] 0.00ns
+_ifconv1:2  %D1_1_1_10_load = load i32* %D1_1_1_10
+
+ST_6: D1_1_1_11_load (82)  [1/1] 0.00ns
+_ifconv1:3  %D1_1_1_11_load = load i32* %D1_1_1_11
+
+ST_6: D1_1_0 (85)  [1/2] 2.39ns  loc: Nucleus/core.cpp:28
+_ifconv1:6  %D1_1_0 = load i32* %D_addr, align 4
+
+ST_6: D1_1_1_1 (87)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28 (grouped into LUT with out node D1_1_1_5)
+_ifconv1:8  %D1_1_1_1 = select i1 %tmp_5, i32 %D1_1_0, i32 %D1_1_1_11_load
+
+ST_6: D1_1_1_2 (88)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28 (grouped into LUT with out node D1_1_1_6)
+_ifconv1:9  %D1_1_1_2 = select i1 %tmp_5, i32 %D1_1_1_10_load, i32 %D1_1_0
+
+ST_6: D1_1_1 (89)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28 (grouped into LUT with out node D1_1_1_7)
+_ifconv1:10  %D1_1_1 = select i1 %tmp_5, i32 %D1_1_0, i32 %D1_1_1_9_load
+
+ST_6: D1_1_1_3 (90)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28 (grouped into LUT with out node D1_1_1_8)
+_ifconv1:11  %D1_1_1_3 = select i1 %tmp_5, i32 %D1_1_1_4_load, i32 %D1_1_0
+
+ST_6: D1_1_1_5 (91)  [1/1] 1.37ns  loc: Nucleus/core.cpp:24 (out node of the LUT)
+_ifconv1:12  %D1_1_1_5 = select i1 %tmp_2, i32 %D1_1_1_1, i32 %D1_1_1_11_load
+
+ST_6: D1_1_1_6 (92)  [1/1] 1.37ns  loc: Nucleus/core.cpp:24 (out node of the LUT)
+_ifconv1:13  %D1_1_1_6 = select i1 %tmp_2, i32 %D1_1_1_2, i32 %D1_1_1_10_load
+
+ST_6: D1_1_1_7 (93)  [1/1] 1.37ns  loc: Nucleus/core.cpp:24 (out node of the LUT)
+_ifconv1:14  %D1_1_1_7 = select i1 %tmp_2, i32 %D1_1_1_9_load, i32 %D1_1_1
+
+ST_6: D1_1_1_8 (94)  [1/1] 1.37ns  loc: Nucleus/core.cpp:24 (out node of the LUT)
+_ifconv1:15  %D1_1_1_8 = select i1 %tmp_2, i32 %D1_1_1_4_load, i32 %D1_1_1_3
+
+ST_6: StgValue_105 (96)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28
+_ifconv1:17  store i32 %D1_1_1_5, i32* %D1_1_1_11
+
+ST_6: StgValue_106 (97)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28
+_ifconv1:18  store i32 %D1_1_1_6, i32* %D1_1_1_10
+
+ST_6: StgValue_107 (98)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28
+_ifconv1:19  store i32 %D1_1_1_7, i32* %D1_1_1_9
+
+ST_6: StgValue_108 (99)  [1/1] 0.00ns  loc: Nucleus/core.cpp:28
+_ifconv1:20  store i32 %D1_1_1_8, i32* %D1_1_1_4
+
+ST_6: StgValue_109 (100)  [1/1] 0.00ns  loc: Nucleus/core.cpp:26
+_ifconv1:21  br label %2
+
+
+ <State 7>: 1.57ns
+ST_7: i5 (114)  [1/1] 0.00ns
+.preheader9:0  %i5 = phi i2 [ 0, %.preheader9.preheader ], [ %i_2, %.preheader9.loopexit ]
+
+ST_7: exitcond3 (115)  [1/1] 1.36ns  loc: Nucleus/core.cpp:34
+.preheader9:1  %exitcond3 = icmp eq i2 %i5, -2
+
+ST_7: empty_9 (116)  [1/1] 0.00ns
+.preheader9:2  %empty_9 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_7: i_2 (117)  [1/1] 0.80ns  loc: Nucleus/core.cpp:34
+.preheader9:3  %i_2 = add i2 %i5, 1
+
+ST_7: StgValue_114 (118)  [1/1] 0.00ns  loc: Nucleus/core.cpp:34
+.preheader9:4  br i1 %exitcond3, label %.preheader.preheader, label %.preheader8.preheader
+
+ST_7: tmp_4 (120)  [1/1] 0.00ns  loc: Nucleus/core.cpp:34
+.preheader8.preheader:0  %tmp_4 = trunc i2 %i5 to i1
+
+ST_7: StgValue_116 (121)  [1/1] 1.57ns  loc: Nucleus/core.cpp:36
+.preheader8.preheader:1  br label %.preheader8
+
+ST_7: StgValue_117 (162)  [1/1] 1.57ns  loc: Nucleus/core.cpp:45
+.preheader.preheader:0  br label %.preheader
+
+
+ <State 8>: 5.68ns
+ST_8: j6 (123)  [1/1] 0.00ns
+.preheader8:0  %j6 = phi i2 [ %j_2, %_ifconv2 ], [ 0, %.preheader8.preheader ]
+
+ST_8: exitcond2 (124)  [1/1] 1.36ns  loc: Nucleus/core.cpp:36
+.preheader8:1  %exitcond2 = icmp eq i2 %j6, -2
+
+ST_8: empty_10 (125)  [1/1] 0.00ns
+.preheader8:2  %empty_10 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_8: j_2 (126)  [1/1] 0.80ns  loc: Nucleus/core.cpp:36
+.preheader8:3  %j_2 = add i2 %j6, 1
+
+ST_8: StgValue_122 (127)  [1/1] 0.00ns  loc: Nucleus/core.cpp:36
+.preheader8:4  br i1 %exitcond2, label %.preheader9.loopexit, label %_ifconv2
+
+ST_8: E1_1_1_4_load (129)  [1/1] 0.00ns
+_ifconv2:0  %E1_1_1_4_load = load i32* %E1_1_1_4
+
+ST_8: E1_1_1_9_load (130)  [1/1] 0.00ns
+_ifconv2:1  %E1_1_1_9_load = load i32* %E1_1_1_9
+
+ST_8: E1_1_1_10_load (131)  [1/1] 0.00ns
+_ifconv2:2  %E1_1_1_10_load = load i32* %E1_1_1_10
+
+ST_8: E1_1_1_11_load (132)  [1/1] 0.00ns
+_ifconv2:3  %E1_1_1_11_load = load i32* %E1_1_1_11
+
+ST_8: D1_1_1_4_load_1 (133)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38
+_ifconv2:4  %D1_1_1_4_load_1 = load i32* %D1_1_1_4
+
+ST_8: D1_1_1_9_load_1 (134)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38
+_ifconv2:5  %D1_1_1_9_load_1 = load i32* %D1_1_1_9
+
+ST_8: D1_1_1_10_load_1 (135)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38
+_ifconv2:6  %D1_1_1_10_load_1 = load i32* %D1_1_1_10
+
+ST_8: D1_1_1_11_load_1 (136)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38
+_ifconv2:7  %D1_1_1_11_load_1 = load i32* %D1_1_1_11
+
+ST_8: tmp_8 (137)  [1/1] 0.00ns  loc: Nucleus/core.cpp:36
+_ifconv2:8  %tmp_8 = trunc i2 %j6 to i1
+
+ST_8: tmp_9 (138)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node tmp_15)
+_ifconv2:9  %tmp_9 = trunc i32 %D1_1_1_11_load_1 to i31
+
+ST_8: tmp_10 (139)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node tmp_15)
+_ifconv2:10  %tmp_10 = trunc i32 %D1_1_1_10_load_1 to i31
+
+ST_8: tmp_11 (140)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node tmp_15)
+_ifconv2:11  %tmp_11 = select i1 %tmp_8, i31 %tmp_9, i31 %tmp_10
+
+ST_8: tmp_12 (141)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node tmp_14)
+_ifconv2:12  %tmp_12 = trunc i32 %D1_1_1_9_load_1 to i31
+
+ST_8: tmp_13 (142)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node tmp_14)
+_ifconv2:13  %tmp_13 = trunc i32 %D1_1_1_4_load_1 to i31
+
+ST_8: tmp_14 (143)  [1/1] 1.37ns  loc: Nucleus/core.cpp:38 (out node of the LUT)
+_ifconv2:14  %tmp_14 = select i1 %tmp_8, i31 %tmp_12, i31 %tmp_13
+
+ST_8: tmp_15 (144)  [1/1] 1.37ns  loc: Nucleus/core.cpp:38 (out node of the LUT)
+_ifconv2:15  %tmp_15 = select i1 %tmp_4, i31 %tmp_11, i31 %tmp_14
+
+ST_8: E1_1_0 (145)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38
+_ifconv2:16  %E1_1_0 = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %tmp_15, i1 false)
+
+ST_8: E1_1_1_1 (146)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node E1_1_1_5)
+_ifconv2:17  %E1_1_1_1 = select i1 %tmp_8, i32 %E1_1_0, i32 %E1_1_1_11_load
+
+ST_8: E1_1_1_2_11 (147)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node E1_1_1_6)
+_ifconv2:18  %E1_1_1_2_11 = select i1 %tmp_8, i32 %E1_1_1_10_load, i32 %E1_1_0
+
+ST_8: E1_1_1_12 (148)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node E1_1_1_7_13)
+_ifconv2:19  %E1_1_1_12 = select i1 %tmp_8, i32 %E1_1_0, i32 %E1_1_1_9_load
+
+ST_8: E1_1_1_3 (149)  [1/1] 0.00ns  loc: Nucleus/core.cpp:38 (grouped into LUT with out node E1_1_1_8)
+_ifconv2:20  %E1_1_1_3 = select i1 %tmp_8, i32 %E1_1_1_4_load, i32 %E1_1_0
+
+ST_8: E1_1_1_5 (150)  [1/1] 1.37ns  loc: Nucleus/core.cpp:34 (out node of the LUT)
+_ifconv2:21  %E1_1_1_5 = select i1 %tmp_4, i32 %E1_1_1_1, i32 %E1_1_1_11_load
+
+ST_8: E1_1_1_6 (151)  [1/1] 1.37ns  loc: Nucleus/core.cpp:34 (out node of the LUT)
+_ifconv2:22  %E1_1_1_6 = select i1 %tmp_4, i32 %E1_1_1_2_11, i32 %E1_1_1_10_load
+
+ST_8: E1_1_1_7_13 (152)  [1/1] 1.37ns  loc: Nucleus/core.cpp:34 (out node of the LUT)
+_ifconv2:23  %E1_1_1_7_13 = select i1 %tmp_4, i32 %E1_1_1_9_load, i32 %E1_1_1_12
+
+ST_8: E1_1_1_8 (153)  [1/1] 1.37ns  loc: Nucleus/core.cpp:34 (out node of the LUT)
+_ifconv2:24  %E1_1_1_8 = select i1 %tmp_4, i32 %E1_1_1_4_load, i32 %E1_1_1_3
+
+ST_8: StgValue_148 (154)  [1/1] 1.57ns  loc: Nucleus/core.cpp:38
+_ifconv2:25  store i32 %E1_1_1_5, i32* %E1_1_1_11
+
+ST_8: StgValue_149 (155)  [1/1] 1.57ns  loc: Nucleus/core.cpp:38
+_ifconv2:26  store i32 %E1_1_1_6, i32* %E1_1_1_10
+
+ST_8: StgValue_150 (156)  [1/1] 1.57ns  loc: Nucleus/core.cpp:38
+_ifconv2:27  store i32 %E1_1_1_7_13, i32* %E1_1_1_9
+
+ST_8: StgValue_151 (157)  [1/1] 1.57ns  loc: Nucleus/core.cpp:38
+_ifconv2:28  store i32 %E1_1_1_8, i32* %E1_1_1_4
+
+ST_8: StgValue_152 (158)  [1/1] 0.00ns  loc: Nucleus/core.cpp:36
+_ifconv2:29  br label %.preheader8
+
+ST_8: StgValue_153 (160)  [1/1] 0.00ns
+.preheader9.loopexit:0  br label %.preheader9
+
+
+ <State 9>: 1.57ns
+ST_9: indvars_iv (164)  [1/1] 0.00ns  loc: Nucleus/core.cpp:45
+.preheader:0  %indvars_iv = phi i3 [ %indvars_iv_next, %5 ], [ 2, %.preheader.preheader ]
+
+ST_9: k_2 (165)  [1/1] 0.00ns
+.preheader:1  %k_2 = phi i3 [ %k_5, %5 ], [ 0, %.preheader.preheader ]
+
+ST_9: i7 (166)  [1/1] 0.00ns
+.preheader:2  %i7 = phi i2 [ %i_3, %5 ], [ 0, %.preheader.preheader ]
+
+ST_9: exitcond1 (167)  [1/1] 1.36ns  loc: Nucleus/core.cpp:45
+.preheader:3  %exitcond1 = icmp eq i2 %i7, -2
+
+ST_9: empty_14 (168)  [1/1] 0.00ns
+.preheader:4  %empty_14 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_9: i_3 (169)  [1/1] 0.80ns  loc: Nucleus/core.cpp:45
+.preheader:5  %i_3 = add i2 %i7, 1
+
+ST_9: StgValue_160 (170)  [1/1] 0.00ns  loc: Nucleus/core.cpp:45
+.preheader:6  br i1 %exitcond1, label %6, label %3
+
+ST_9: k_5 (172)  [1/1] 0.80ns  loc: Nucleus/core.cpp:50
+:0  %k_5 = add i3 2, %k_2
+
+ST_9: tmp_6 (173)  [1/1] 0.00ns  loc: Nucleus/core.cpp:45
+:1  %tmp_6 = trunc i2 %i7 to i1
+
+ST_9: StgValue_163 (174)  [1/1] 1.57ns  loc: Nucleus/core.cpp:47
+:2  br label %4
+
+ST_9: StgValue_164 (200)  [1/1] 0.00ns  loc: Nucleus/core.cpp:53
+:0  ret void
+
+
+ <State 10>: 5.13ns
+ST_10: k_3 (176)  [1/1] 0.00ns  loc: Nucleus/core.cpp:50
+:0  %k_3 = phi i3 [ %k_2, %3 ], [ %tmp_7, %_ifconv3 ]
+
+ST_10: j8 (177)  [1/1] 0.00ns
+:1  %j8 = phi i2 [ 0, %3 ], [ %j_3, %_ifconv3 ]
+
+ST_10: k_3_cast4 (178)  [1/1] 0.00ns  loc: Nucleus/core.cpp:47
+:2  %k_3_cast4 = zext i3 %k_3 to i32
+
+ST_10: exitcond (179)  [1/1] 1.62ns  loc: Nucleus/core.cpp:47
+:3  %exitcond = icmp eq i3 %k_3, %indvars_iv
+
+ST_10: empty_15 (180)  [1/1] 0.00ns
+:4  %empty_15 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 2, i64 2, i64 2) nounwind
+
+ST_10: j_3 (181)  [1/1] 0.80ns  loc: Nucleus/core.cpp:47
+:5  %j_3 = add i2 %j8, 1
+
+ST_10: StgValue_171 (182)  [1/1] 0.00ns  loc: Nucleus/core.cpp:47
+:6  br i1 %exitcond, label %5, label %_ifconv3
+
+ST_10: E1_1_1_4_load_1 (184)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49
+_ifconv3:0  %E1_1_1_4_load_1 = load i32* %E1_1_1_4
+
+ST_10: E1_1_1_9_load_1 (185)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49
+_ifconv3:1  %E1_1_1_9_load_1 = load i32* %E1_1_1_9
+
+ST_10: E1_1_1_10_load_1 (186)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49
+_ifconv3:2  %E1_1_1_10_load_1 = load i32* %E1_1_1_10
+
+ST_10: E1_1_1_11_load_1 (187)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49
+_ifconv3:3  %E1_1_1_11_load_1 = load i32* %E1_1_1_11
+
+ST_10: tmp_16 (188)  [1/1] 0.00ns  loc: Nucleus/core.cpp:47
+_ifconv3:4  %tmp_16 = trunc i2 %j8 to i1
+
+ST_10: E1_load13_phi (189)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49 (grouped into LUT with out node E1_load_phi)
+_ifconv3:5  %E1_load13_phi = select i1 %tmp_16, i32 %E1_1_1_11_load_1, i32 %E1_1_1_10_load_1
+
+ST_10: E1_load12_phi (190)  [1/1] 1.37ns  loc: Nucleus/core.cpp:49 (out node of the LUT)
+_ifconv3:6  %E1_load12_phi = select i1 %tmp_16, i32 %E1_1_1_9_load_1, i32 %E1_1_1_4_load_1
+
+ST_10: E1_load_phi (191)  [1/1] 1.37ns  loc: Nucleus/core.cpp:49 (out node of the LUT)
+_ifconv3:7  %E1_load_phi = select i1 %tmp_6, i32 %E1_load13_phi, i32 %E1_load12_phi
+
+ST_10: E_addr (192)  [1/1] 0.00ns  loc: Nucleus/core.cpp:49
+_ifconv3:8  %E_addr = getelementptr [4 x i32]* %E, i32 0, i32 %k_3_cast4
+
+ST_10: StgValue_181 (193)  [1/1] 2.39ns  loc: Nucleus/core.cpp:49
+_ifconv3:9  store i32 %E1_load_phi, i32* %E_addr, align 4
+
+ST_10: tmp_7 (194)  [1/1] 0.80ns  loc: Nucleus/core.cpp:50
+_ifconv3:10  %tmp_7 = add i3 1, %k_3
+
+ST_10: StgValue_183 (195)  [1/1] 0.00ns  loc: Nucleus/core.cpp:47
+_ifconv3:11  br label %4
+
+ST_10: indvars_iv_next (197)  [1/1] 0.80ns  loc: Nucleus/core.cpp:45
+:0  %indvars_iv_next = add i3 %indvars_iv, 2
+
+ST_10: StgValue_185 (198)  [1/1] 0.00ns  loc: Nucleus/core.cpp:45
+:1  br label %.preheader
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', Nucleus/core.cpp:15) [15]  (1.57 ns)
+
+ <State 2>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:17) [28]  (1.57 ns)
+
+ <State 3>: 1.37ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:17) [28]  (0 ns)
+	'select' operation ('E1_1_0_7', Nucleus/core.cpp:19) [40]  (0 ns)
+	'select' operation ('E1_1_0_2', Nucleus/core.cpp:15) [44]  (1.37 ns)
+	'store' operation (Nucleus/core.cpp:15) of variable 'E1_1_0_2', Nucleus/core.cpp:15 on local variable 'E1_1' [48]  (0 ns)
+
+ <State 4>: 1.57ns
+The critical path consists of the following:
+	'phi' operation ('k') with incoming values : ('k', Nucleus/core.cpp:29) [62]  (0 ns)
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:26) [72]  (1.57 ns)
+
+ <State 5>: 2.39ns
+The critical path consists of the following:
+	'phi' operation ('k_1', Nucleus/core.cpp:29) with incoming values : ('k', Nucleus/core.cpp:29) ('tmp', Nucleus/core.cpp:29) [73]  (0 ns)
+	'getelementptr' operation ('D_addr', Nucleus/core.cpp:28) [84]  (0 ns)
+	'load' operation ('D1[1][0]', Nucleus/core.cpp:28) on array 'D' [85]  (2.39 ns)
+
+ <State 6>: 3.76ns
+The critical path consists of the following:
+	'load' operation ('D1[1][0]', Nucleus/core.cpp:28) on array 'D' [85]  (2.39 ns)
+	'select' operation ('D1[1][1]', Nucleus/core.cpp:28) [87]  (0 ns)
+	'select' operation ('D1[1][1]', Nucleus/core.cpp:24) [91]  (1.37 ns)
+
+ <State 7>: 1.57ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:36) [123]  (1.57 ns)
+
+ <State 8>: 5.68ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:36) [123]  (0 ns)
+	'select' operation ('tmp_14', Nucleus/core.cpp:38) [143]  (1.37 ns)
+	'select' operation ('tmp_15', Nucleus/core.cpp:38) [144]  (1.37 ns)
+	'select' operation ('E1[1][1]', Nucleus/core.cpp:38) [148]  (0 ns)
+	'select' operation ('E1[1][1]', Nucleus/core.cpp:34) [152]  (1.37 ns)
+	'store' operation (Nucleus/core.cpp:38) of variable 'E1[1][1]', Nucleus/core.cpp:34 on local variable 'E1[1][1]' [156]  (1.57 ns)
+
+ <State 9>: 1.57ns
+The critical path consists of the following:
+	'phi' operation ('k') with incoming values : ('k', Nucleus/core.cpp:50) [165]  (0 ns)
+	multiplexor before 'phi' operation ('k_3', Nucleus/core.cpp:50) with incoming values : ('k', Nucleus/core.cpp:50) ('tmp_7', Nucleus/core.cpp:50) [176]  (1.57 ns)
+
+ <State 10>: 5.13ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', Nucleus/core.cpp:47) [177]  (0 ns)
+	'select' operation ('E1_load12_phi', Nucleus/core.cpp:49) [190]  (1.37 ns)
+	'select' operation ('E1_load_phi', Nucleus/core.cpp:49) [191]  (1.37 ns)
+	'store' operation (Nucleus/core.cpp:49) of variable 'E1_load_phi', Nucleus/core.cpp:49 on array 'E' [193]  (2.39 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
