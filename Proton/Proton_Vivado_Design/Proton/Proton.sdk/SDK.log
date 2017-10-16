@@ -1,0 +1,216 @@
+16:51:01 INFO  : Registering command handlers for SDK TCF services
+16:51:02 INFO  : Launching XSCT server: xsct.bat -interactive C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\temp_xsdb_launch_script.tcl
+16:51:08 INFO  : XSCT server has started successfully.
+16:51:08 INFO  : Successfully done setting XSCT server connection channel  
+16:51:11 INFO  : Successfully done setting SDK workspace  
+16:51:11 INFO  : Processing command line option -hwspec C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper.hdf.
+17:22:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:22:19 INFO  : FPGA configured successfully with bitstream "C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:22:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:22:32 INFO  : 'fpga -state' command is executed.
+17:22:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:22:33 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:22:33 INFO  : 'jtag frequency' command is executed.
+17:22:33 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:22:34 INFO  : Context for 'APU' is selected.
+17:22:35 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:22:36 INFO  : Context for 'APU' is selected.
+17:22:37 INFO  : 'stop' command is executed.
+17:22:59 INFO  : 'ps7_init' command is executed.
+17:22:59 INFO  : 'ps7_post_config' command is executed.
+17:22:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:23:00 INFO  : Memory regions updated for context APU
+17:23:00 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:24:21 INFO  : Disconnected from the channel tcfchan#1.
+17:24:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:24:26 INFO  : 'fpga -state' command is executed.
+17:24:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:26 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:24:26 INFO  : 'jtag frequency' command is executed.
+17:24:26 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:24:26 INFO  : Context for 'APU' is selected.
+17:24:29 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:24:29 INFO  : Context for 'APU' is selected.
+17:24:29 INFO  : 'stop' command is executed.
+17:25:13 INFO  : 'ps7_init' command is executed.
+17:25:13 INFO  : 'ps7_post_config' command is executed.
+17:25:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:25:14 INFO  : Memory regions updated for context APU
+17:25:14 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:25:24 INFO  : Disconnected from the channel tcfchan#2.
+17:25:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:25:27 INFO  : 'fpga -state' command is executed.
+17:25:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:25:27 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:25:27 INFO  : 'jtag frequency' command is executed.
+17:25:27 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:25:28 INFO  : Context for 'APU' is selected.
+17:25:30 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:25:30 INFO  : Context for 'APU' is selected.
+17:25:31 INFO  : 'stop' command is executed.
+17:25:47 INFO  : 'ps7_init' command is executed.
+17:25:47 INFO  : 'ps7_post_config' command is executed.
+17:25:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:25:48 INFO  : Memory regions updated for context APU
+17:25:48 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:29:03 INFO  : Disconnected from the channel tcfchan#3.
+17:29:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:29:08 INFO  : 'fpga -state' command is executed.
+17:29:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:29:09 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:29:09 INFO  : 'jtag frequency' command is executed.
+17:29:09 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:29:10 INFO  : Context for 'APU' is selected.
+17:29:13 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:29:13 INFO  : Context for 'APU' is selected.
+17:29:14 INFO  : 'stop' command is executed.
+17:30:08 INFO  : 'ps7_init' command is executed.
+17:30:09 INFO  : 'ps7_post_config' command is executed.
+17:30:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:30:11 INFO  : Memory regions updated for context APU
+17:30:11 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:30:50 INFO  : Disconnected from the channel tcfchan#4.
+17:30:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:30:55 INFO  : 'fpga -state' command is executed.
+17:30:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:30:56 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:30:56 INFO  : 'jtag frequency' command is executed.
+17:30:56 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:30:56 INFO  : Context for 'APU' is selected.
+17:30:58 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:30:59 INFO  : Context for 'APU' is selected.
+17:30:59 INFO  : 'stop' command is executed.
+17:31:45 INFO  : 'ps7_init' command is executed.
+17:31:45 INFO  : 'ps7_post_config' command is executed.
+17:31:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:31:47 INFO  : Memory regions updated for context APU
+17:31:47 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:31:59 INFO  : Disconnected from the channel tcfchan#5.
+17:32:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:32:03 INFO  : 'fpga -state' command is executed.
+17:32:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:32:04 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:32:04 INFO  : 'jtag frequency' command is executed.
+17:32:04 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:32:04 INFO  : Context for 'APU' is selected.
+17:32:06 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:32:07 INFO  : Context for 'APU' is selected.
+17:32:07 INFO  : 'stop' command is executed.
+17:32:41 INFO  : 'ps7_init' command is executed.
+17:32:42 INFO  : 'ps7_post_config' command is executed.
+17:32:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+----------------End of Script----------------
+
+17:32:43 INFO  : Memory regions updated for context APU
+17:32:43 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_matrix_multiply_test.elf_on_local.tcl'
+17:34:35 INFO  : Disconnected from the channel tcfchan#6.
+17:34:56 INFO  : Launching XSCT server: xsct.bat -interactive C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\temp_xsdb_launch_script.tcl
+17:34:58 INFO  : XSCT server has started successfully.
+17:34:58 INFO  : Successfully done setting XSCT server connection channel  
+17:35:00 INFO  : Successfully done setting SDK workspace  
+17:35:02 INFO  : Registering command handlers for SDK TCF services
+17:35:03 INFO  : Processing command line option -hwspec C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper.hdf.
+17:35:03 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+17:37:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:37:16 INFO  : FPGA configured successfully with bitstream "C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+17:37:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248782397" && level==0} -index 1' command is executed.
+17:37:36 INFO  : 'fpga -state' command is executed.
+17:37:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:37:37 INFO  : Jtag cable 'Digilent Zed 210248782397' is selected.
+17:37:37 INFO  : 'jtag frequency' command is executed.
+17:37:37 INFO  : Sourcing of 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+17:37:37 INFO  : Context for 'APU' is selected.
+17:37:37 INFO  : Hardware design information is loaded from 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+17:37:38 INFO  : Context for 'APU' is selected.
+17:37:39 INFO  : 'stop' command is executed.
+17:38:29 INFO  : 'ps7_init' command is executed.
+17:38:30 INFO  : 'ps7_post_config' command is executed.
+17:38:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:38:32 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+17:38:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:38:35 INFO  : The application 'C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/Test_App/Debug/Test_App.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:38:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+loadhw C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/design_1_wrapper_hw_platform_0/system.hdf
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+dow C:/Proton/Proton_Vivado_Design/Proton/Proton.sdk/Test_App/Debug/Test_App.elf
+----------------End of Script----------------
+
+17:38:36 INFO  : Memory regions updated for context APU
+17:38:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:38:36 INFO  : 'con' command is executed.
+17:38:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248782397"} -index 0
+con
+----------------End of Script----------------
+
+17:38:36 INFO  : Launch script is exported to file 'C:\Proton\Proton_Vivado_Design\Proton\Proton.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test_app.elf_on_local.tcl'
+18:21:50 INFO  : Disconnected from the channel tcfchan#1.

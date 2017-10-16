@@ -1,0 +1,190 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 354.637 ; gain = 144.461
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_crossbar' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_si_transactor' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (2#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized1' (2#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_decoder' (3#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (4#1) [C:/Xilinx/Vivado/2016.3/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl' (5#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo' (6#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_arbiter_resp' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1025]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_arbiter_resp' (7#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:1025]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (8#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_si_transactor' (9#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_si_transactor__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (9#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_si_transactor__parameterized0' (9#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_splitter' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_splitter' (10#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_wdata_router' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_reg_srl_fifo' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized0' (10#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized1' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized1' (10#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized2' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized2' (10#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_reg_srl_fifo' (11#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_wdata_router' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4734]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized3' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized3' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized4' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized4' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized5' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized5' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized6' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized6' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized7' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized7' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized8' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized8' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized9' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized9' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized10' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized10' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized0' (12#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_wdata_mux' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_wdata_mux' (13#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (14#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice' (15#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized0' (15#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized1' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized1' (15#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized2' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axic_register_slice__parameterized2' (15#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (16#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_10_axi_register_slice' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/7efe/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized1' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized11' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized11' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized12' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized12' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized13' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized13' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized14' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized14' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized15' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized15' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized16' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized16' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized17' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized17' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized18' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized18' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized1' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized0' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized0' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized2' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized19' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized19' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized20' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized20' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized21' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized21' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized22' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized22' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized23' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized23' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized24' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized24' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized25' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized25' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized26' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized26' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized2' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized1' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized1' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized3' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized27' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized27' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized28' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized28' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized29' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized29' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized30' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized30' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized31' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized31' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized32' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized32' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized33' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized33' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized34' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_ndeep_srl__parameterized34' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_9_axic_srl_fifo__parameterized3' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/10b8/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized2' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_wdata_mux__parameterized2' (17#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_decerr_slave' (18#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter' [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_addr_arbiter' (19#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_crossbar' (20#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_11_axi_crossbar' (21#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ipshared/d552/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbar_0' (22#1) [c:/Proton/Proton_Vivado_Design/Proton/Proton.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 485.430 ; gain = 275.254
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 485.430 ; gain = 275.254
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 738.809 ; gain = 0.230
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 738.809 ; gain = 528.633
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 790.207 ; gain = 580.031
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    32|
+|2     |LUT1    |    33|
+|3     |LUT2    |    24|
+|4     |LUT3    |   196|
+|5     |LUT4    |    89|
+|6     |LUT5    |   122|
+|7     |LUT6    |   305|
+|8     |SRLC32E |     3|
+|9     |FDRE    |   916|
+|10    |FDSE    |     6|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:03 . Memory (MB): peak = 792.281 ; gain = 582.105
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 792.281 ; gain = 522.340
