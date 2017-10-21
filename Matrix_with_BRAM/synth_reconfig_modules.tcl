@@ -1,0 +1,10 @@
+read_verilog Sources/reconfig_modules/matrix_addition/matrix_addition.v
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top matrix -part xc7z020clg484-1
+write_checkpoint Synth/reconfig_modules/matrix_addition/matrix_addition.dcp
+close_design
+close_project
+read_verilog Sources/reconfig_modules/matrix_multiplication/matrix_multiplication.v
+synth_design -mode out_of_context -flatten_hierarchy rebuilt -top matrix -part xc7z020clg484-1
+write_checkpoint Synth/reconfig_modules/matrix_multiplication/matrix_multiplication.dcp
+close_design
+close_project
