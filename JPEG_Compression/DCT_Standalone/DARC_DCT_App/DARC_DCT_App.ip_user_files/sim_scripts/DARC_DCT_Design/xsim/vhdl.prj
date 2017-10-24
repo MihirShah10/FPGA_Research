@@ -1,0 +1,4 @@
+vhdl xil_defaultlib "../../../bd/DARC_DCT_Design/ip/DARC_DCT_Design_rst_ps7_0_100M_0/sim/DARC_DCT_Design_rst_ps7_0_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/DARC_DCT_Design/hdl/DARC_DCT_Design.vhd" 
+
+nosort

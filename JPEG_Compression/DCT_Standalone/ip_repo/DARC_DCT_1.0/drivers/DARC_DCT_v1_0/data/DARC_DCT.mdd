@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER DARC_DCT
+	OPTION supported_peripherals = (DARC_DCT);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = DARC_DCT;
+END DRIVER

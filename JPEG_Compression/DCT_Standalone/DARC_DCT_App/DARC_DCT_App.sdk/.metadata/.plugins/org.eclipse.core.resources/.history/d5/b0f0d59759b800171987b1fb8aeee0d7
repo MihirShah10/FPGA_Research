@@ -1,0 +1,33 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include <stdio.h>
+
+int *fir_test = (int*)XPAR_DARC_DCT_0_S00_AXI_BASEADDR;
+
+int main()
+{
+	*(fir_test + 0) = 0x01;
+	*(fir_test + 1) = 0x02;
+	*(fir_test + 2) = 0x03;
+	*(fir_test + 3) = 0x04;
+	*(fir_test + 4) = 0x05;
+	*(fir_test + 5) = 0x01;
+	*(fir_test + 6) = 0x02;
+	*(fir_test + 7) = 0x03;
+	*(fir_test + 8) = 0x04;
+	*(fir_test + 9) = 0x05;
+
+	for(int i = 1000; i >0; i--)
+	{
+		;
+	}
+
+	int output = *(fir_test + 10);
+
+	printf("Result SOP: %d", output);
+
+	return 0;
+}

@@ -1,0 +1,123 @@
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 4ded64565f4647c6b75854913202ab7a --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dct_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dct_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a00 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:142]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a01 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:143]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a02 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:144]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a03 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:145]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a04 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:146]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a05 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:147]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a06 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:148]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a07 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:149]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a08 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:150]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a09 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:151]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a10 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:152]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a11 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:153]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a12 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:154]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a13 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:155]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a14 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:156]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a15 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:157]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a16 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:158]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a17 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:159]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a18 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:160]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a19 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:161]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a20 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:162]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a21 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:163]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a22 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:164]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a23 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:165]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a24 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:166]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a25 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:167]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a26 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:168]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a27 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:169]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a28 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:170]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a29 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:171]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a30 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:172]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a31 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:173]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a32 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:174]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a33 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:175]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a34 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:176]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a35 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:177]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a36 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:178]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a37 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:179]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a38 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:180]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a39 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:181]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a40 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:182]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a41 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:183]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a42 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:184]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a43 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:185]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a44 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:186]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a45 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:187]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a46 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:188]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a47 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:189]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a48 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:190]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a49 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:191]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a50 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:192]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a51 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:193]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a52 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:194]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a53 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:195]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a54 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:196]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a55 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:197]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a56 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:198]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a57 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:199]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a58 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:200]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a59 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:201]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a60 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:202]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a61 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:203]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a62 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:204]
+WARNING: [VRFC 10-278] actual bit length 8 differs from formal bit length 12 for port line_buffer_in_a63 [C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v:205]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/dct0".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/dct0".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.dct_add20s_18
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.dct_add20s_18_18
+Compiling module xil_defaultlib.dct_add24s_22
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.dct_add24s_22_21
+Compiling module xil_defaultlib.dct_add60s_59
+Compiling module xil_defaultlib.dct_add69_69s
+Compiling module xil_defaultlib.dct_mul12s
+Compiling module xil_defaultlib.dct_mul12s_0
+Compiling module xil_defaultlib.dct_mul12u
+Compiling module xil_defaultlib.dct_mul8u
+Compiling module xil_defaultlib.dct_mul8u_1
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b11,R...
+Compiling module xil_defaultlib.RAM64X1D_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM64X1D_HD75
+Compiling module xil_defaultlib.RAM64X1D_HD76
+Compiling module xil_defaultlib.RAM64X1D_HD77
+Compiling module xil_defaultlib.RAM64X1D_HD78
+Compiling module xil_defaultlib.RAM64X1D_HD79
+Compiling module xil_defaultlib.RAM64X1D_HD80
+Compiling module xil_defaultlib.RAM64X1D_HD81
+Compiling module xil_defaultlib.RAM64X1D_HD82
+Compiling module xil_defaultlib.RAM64X1D_HD83
+Compiling module xil_defaultlib.RAM64X1D_HD84
+Compiling module xil_defaultlib.RAM64X1D_HD85
+Compiling module xil_defaultlib.dct_MEM_dct_output_subD
+Compiling module xil_defaultlib.dct_MEM_dct_output
+Compiling module xil_defaultlib.dct_dat
+Compiling module xil_defaultlib.dct_fsm
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.dct_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dct_tb_time_synth

@@ -1,0 +1,28 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-311] analyzing module dct_fsm
+INFO: [VRFC 10-311] analyzing module dct_dat
+INFO: [VRFC 10-311] analyzing module dct_sub24s_24
+INFO: [VRFC 10-311] analyzing module dct_sub20s_20
+INFO: [VRFC 10-311] analyzing module dct_add24s_22_21
+INFO: [VRFC 10-311] analyzing module dct_add20s_18_18
+INFO: [VRFC 10-311] analyzing module dct_add69_69s
+INFO: [VRFC 10-311] analyzing module dct_incr3u
+INFO: [VRFC 10-311] analyzing module dct_mul12s
+INFO: [VRFC 10-311] analyzing module dct_mul12u
+INFO: [VRFC 10-311] analyzing module dct_mul8u
+INFO: [VRFC 10-311] analyzing module dct_sub60s_59
+INFO: [VRFC 10-311] analyzing module dct_sub36s_35
+INFO: [VRFC 10-311] analyzing module dct_sub32s
+INFO: [VRFC 10-311] analyzing module dct_sub24s
+INFO: [VRFC 10-311] analyzing module dct_sub20s
+INFO: [VRFC 10-311] analyzing module dct_add60s_59
+INFO: [VRFC 10-311] analyzing module dct_add24s_22
+INFO: [VRFC 10-311] analyzing module dct_add20s_18
+INFO: [VRFC 10-311] analyzing module dct_add12u_10
+INFO: [VRFC 10-311] analyzing module dct_MEM_dct_output
+INFO: [VRFC 10-311] analyzing module dct_MEM_dct_output_subD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis/DCT/DCT.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

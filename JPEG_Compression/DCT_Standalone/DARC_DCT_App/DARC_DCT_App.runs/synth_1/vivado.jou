@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 23 20:03:20 2017
+# Process ID: 25916
+# Current directory: C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/synth_1
+# Command line: vivado.exe -log DARC_DCT_Design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DARC_DCT_Design_wrapper.tcl
+# Log file: C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/synth_1/DARC_DCT_Design_wrapper.vds
+# Journal file: C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DARC_DCT_Design_wrapper.tcl -notrace

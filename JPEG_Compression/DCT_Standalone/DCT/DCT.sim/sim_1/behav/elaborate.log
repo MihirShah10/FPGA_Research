@@ -1,0 +1,87 @@
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 4ded64565f4647c6b75854913202ab7a --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dct_tb_behav xil_defaultlib.dct_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 12. Module dct doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 381. Module dct_fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 926. Module dct_dat doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3299. Module dct_sub24s_24 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3308. Module dct_sub20s_20 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3317. Module dct_add24s_22_21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3326. Module dct_add20s_18_18 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3335. Module dct_add69_69s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3344. Module dct_incr3u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3344. Module dct_incr3u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3352. Module dct_mul12s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3352. Module dct_mul12s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3363. Module dct_mul12u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3374. Module dct_mul8u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3374. Module dct_mul8u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3385. Module dct_sub60s_59 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3394. Module dct_sub36s_35 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3403. Module dct_sub32s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3412. Module dct_sub24s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3421. Module dct_sub20s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3430. Module dct_add60s_59 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3439. Module dct_add24s_22 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3448. Module dct_add20s_18 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3457. Module dct_add12u_10 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3466. Module dct_MEM_dct_output doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3481. Module dct_MEM_dct_output_subD doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 12. Module dct doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 381. Module dct_fsm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 926. Module dct_dat doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3299. Module dct_sub24s_24 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3308. Module dct_sub20s_20 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3317. Module dct_add24s_22_21 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3326. Module dct_add20s_18_18 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3335. Module dct_add69_69s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3344. Module dct_incr3u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3344. Module dct_incr3u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3352. Module dct_mul12s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3352. Module dct_mul12s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3363. Module dct_mul12u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3374. Module dct_mul8u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3374. Module dct_mul8u doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3385. Module dct_sub60s_59 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3394. Module dct_sub36s_35 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3403. Module dct_sub32s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3412. Module dct_sub24s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3421. Module dct_sub20s doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3430. Module dct_add60s_59 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3439. Module dct_add24s_22 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3448. Module dct_add20s_18 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3457. Module dct_add12u_10 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3466. Module dct_MEM_dct_output doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v" Line 3481. Module dct_MEM_dct_output_subD doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.dct_fsm
+Compiling module xil_defaultlib.dct_sub24s_24
+Compiling module xil_defaultlib.dct_sub20s_20
+Compiling module xil_defaultlib.dct_add24s_22_21
+Compiling module xil_defaultlib.dct_add20s_18_18
+Compiling module xil_defaultlib.dct_add69_69s
+Compiling module xil_defaultlib.dct_incr3u
+Compiling module xil_defaultlib.dct_mul12s
+Compiling module xil_defaultlib.dct_mul12u
+Compiling module xil_defaultlib.dct_mul8u
+Compiling module xil_defaultlib.dct_sub60s_59
+Compiling module xil_defaultlib.dct_sub36s_35
+Compiling module xil_defaultlib.dct_sub32s
+Compiling module xil_defaultlib.dct_sub24s
+Compiling module xil_defaultlib.dct_sub20s
+Compiling module xil_defaultlib.dct_add60s_59
+Compiling module xil_defaultlib.dct_add24s_22
+Compiling module xil_defaultlib.dct_add20s_18
+Compiling module xil_defaultlib.dct_add12u_10
+Compiling module xil_defaultlib.dct_MEM_dct_output_subD
+Compiling module xil_defaultlib.dct_MEM_dct_output
+Compiling module xil_defaultlib.dct_dat
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.dct_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dct_tb_behav

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 23 20:33:21 2017
+# Process ID: 21300
+# Current directory: C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing
+# Command line: wbtcv.exe -mode batch -source C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing/webtalk.log
+# Journal file: C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing\webtalk.jou
+#-----------------------------------------------------------
+source C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace

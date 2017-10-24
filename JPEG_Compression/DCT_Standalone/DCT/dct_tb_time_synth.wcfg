@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="dct_tb_time_synth.wdb" id="1">
+         <top_modules>
+            <top_module name="dct_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1022000000001fs"></ZoomEndTime>
+      <Cursor1Time time="173996325000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="50"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="132" />
+   <wvobject fp_name="/dct_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a00" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a00[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a00[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a01" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a01[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a01[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a02" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a02[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a02[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a03" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a03[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a03[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a04" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a04[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a04[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a05" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a05[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a05[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a06" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a06[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a06[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a07" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a07[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a07[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a08" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a08[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a08[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a09" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a09[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a09[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a10" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a10[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a10[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a11" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a11[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a11[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a12" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a12[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a12[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a13" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a13[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a13[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a14" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a14[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a14[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a15" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a15[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a15[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a16" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a16[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a16[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a17" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a17[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a17[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a18" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a18[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a18[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a19" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a19[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a19[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a20" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a20[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a20[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a21" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a21[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a21[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a22" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a22[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a22[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a23" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a23[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a23[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a24" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a24[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a24[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a25" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a25[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a25[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a26" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a26[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a26[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a27" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a27[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a27[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a28" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a28[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a28[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a29" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a29[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a29[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a30" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a30[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a30[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a31" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a31[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a31[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a32" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a32[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a32[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a33" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a33[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a33[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a34" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a34[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a34[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a35" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a35[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a35[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a36" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a36[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a36[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a37" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a37[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a37[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a38" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a38[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a38[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a39" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a39[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a39[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a40" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a40[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a40[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a41" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a41[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a41[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a42" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a42[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a42[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a43" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a43[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a43[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a44" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a44[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a44[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a45" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a45[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a45[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a46" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a46[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a46[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a47" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a47[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a47[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a48" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a48[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a48[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a49" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a49[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a49[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a50" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a50[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a50[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a51" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a51[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a51[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a52" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a52[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a52[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a53" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a53[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a53[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a54" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a54[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a54[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a55" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a55[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a55[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a56" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a56[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a56[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a57" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a57[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a57[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a58" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a58[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a58[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a59" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a59[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a59[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a60" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a60[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a60[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a61" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a61[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a61[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a62" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a62[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a62[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/line_buffer_in_a63" type="array">
+      <obj_property name="ElementShortName">line_buffer_in_a63[7:0]</obj_property>
+      <obj_property name="ObjectShortName">line_buffer_in_a63[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a00" type="array">
+      <obj_property name="ElementShortName">dct_out_a00[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a00[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a01" type="array">
+      <obj_property name="ElementShortName">dct_out_a01[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a01[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a02" type="array">
+      <obj_property name="ElementShortName">dct_out_a02[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a02[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a03" type="array">
+      <obj_property name="ElementShortName">dct_out_a03[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a03[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a04" type="array">
+      <obj_property name="ElementShortName">dct_out_a04[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a04[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a05" type="array">
+      <obj_property name="ElementShortName">dct_out_a05[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a05[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a06" type="array">
+      <obj_property name="ElementShortName">dct_out_a06[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a06[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a07" type="array">
+      <obj_property name="ElementShortName">dct_out_a07[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a07[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a08" type="array">
+      <obj_property name="ElementShortName">dct_out_a08[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a08[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a09" type="array">
+      <obj_property name="ElementShortName">dct_out_a09[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a09[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a10" type="array">
+      <obj_property name="ElementShortName">dct_out_a10[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a10[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a11" type="array">
+      <obj_property name="ElementShortName">dct_out_a11[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a11[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a12" type="array">
+      <obj_property name="ElementShortName">dct_out_a12[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a12[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a13" type="array">
+      <obj_property name="ElementShortName">dct_out_a13[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a13[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a14" type="array">
+      <obj_property name="ElementShortName">dct_out_a14[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a14[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a15" type="array">
+      <obj_property name="ElementShortName">dct_out_a15[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a15[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a16" type="array">
+      <obj_property name="ElementShortName">dct_out_a16[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a16[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a17" type="array">
+      <obj_property name="ElementShortName">dct_out_a17[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a17[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a18" type="array">
+      <obj_property name="ElementShortName">dct_out_a18[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a18[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a19" type="array">
+      <obj_property name="ElementShortName">dct_out_a19[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a19[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a20" type="array">
+      <obj_property name="ElementShortName">dct_out_a20[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a20[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a21" type="array">
+      <obj_property name="ElementShortName">dct_out_a21[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a21[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a22" type="array">
+      <obj_property name="ElementShortName">dct_out_a22[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a22[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a23" type="array">
+      <obj_property name="ElementShortName">dct_out_a23[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a23[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a24" type="array">
+      <obj_property name="ElementShortName">dct_out_a24[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a24[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a25" type="array">
+      <obj_property name="ElementShortName">dct_out_a25[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a25[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a26" type="array">
+      <obj_property name="ElementShortName">dct_out_a26[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a26[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a27" type="array">
+      <obj_property name="ElementShortName">dct_out_a27[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a27[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a28" type="array">
+      <obj_property name="ElementShortName">dct_out_a28[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a28[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a29" type="array">
+      <obj_property name="ElementShortName">dct_out_a29[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a29[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a30" type="array">
+      <obj_property name="ElementShortName">dct_out_a30[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a30[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a31" type="array">
+      <obj_property name="ElementShortName">dct_out_a31[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a31[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a32" type="array">
+      <obj_property name="ElementShortName">dct_out_a32[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a32[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a33" type="array">
+      <obj_property name="ElementShortName">dct_out_a33[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a33[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a34" type="array">
+      <obj_property name="ElementShortName">dct_out_a34[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a34[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a35" type="array">
+      <obj_property name="ElementShortName">dct_out_a35[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a35[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a36" type="array">
+      <obj_property name="ElementShortName">dct_out_a36[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a36[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a37" type="array">
+      <obj_property name="ElementShortName">dct_out_a37[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a37[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a38" type="array">
+      <obj_property name="ElementShortName">dct_out_a38[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a38[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a39" type="array">
+      <obj_property name="ElementShortName">dct_out_a39[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a39[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a40" type="array">
+      <obj_property name="ElementShortName">dct_out_a40[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a40[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a41" type="array">
+      <obj_property name="ElementShortName">dct_out_a41[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a41[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a42" type="array">
+      <obj_property name="ElementShortName">dct_out_a42[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a42[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a43" type="array">
+      <obj_property name="ElementShortName">dct_out_a43[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a43[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a44" type="array">
+      <obj_property name="ElementShortName">dct_out_a44[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a44[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a45" type="array">
+      <obj_property name="ElementShortName">dct_out_a45[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a45[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a46" type="array">
+      <obj_property name="ElementShortName">dct_out_a46[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a46[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a47" type="array">
+      <obj_property name="ElementShortName">dct_out_a47[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a47[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a48" type="array">
+      <obj_property name="ElementShortName">dct_out_a48[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a48[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a49" type="array">
+      <obj_property name="ElementShortName">dct_out_a49[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a49[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a50" type="array">
+      <obj_property name="ElementShortName">dct_out_a50[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a50[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a51" type="array">
+      <obj_property name="ElementShortName">dct_out_a51[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a51[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a52" type="array">
+      <obj_property name="ElementShortName">dct_out_a52[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a52[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a53" type="array">
+      <obj_property name="ElementShortName">dct_out_a53[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a53[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a54" type="array">
+      <obj_property name="ElementShortName">dct_out_a54[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a54[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a55" type="array">
+      <obj_property name="ElementShortName">dct_out_a55[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a55[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a56" type="array">
+      <obj_property name="ElementShortName">dct_out_a56[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a56[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a57" type="array">
+      <obj_property name="ElementShortName">dct_out_a57[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a57[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a58" type="array">
+      <obj_property name="ElementShortName">dct_out_a58[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a58[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a59" type="array">
+      <obj_property name="ElementShortName">dct_out_a59[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a59[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a60" type="array">
+      <obj_property name="ElementShortName">dct_out_a60[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a60[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a61" type="array">
+      <obj_property name="ElementShortName">dct_out_a61[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a61[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a62" type="array">
+      <obj_property name="ElementShortName">dct_out_a62[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a62[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a63" type="array">
+      <obj_property name="ElementShortName">dct_out_a63[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a63[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/dct_out_a64" type="array">
+      <obj_property name="ElementShortName">dct_out_a64[11:0]</obj_property>
+      <obj_property name="ObjectShortName">dct_out_a64[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/dct_tb/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+</wave_config>

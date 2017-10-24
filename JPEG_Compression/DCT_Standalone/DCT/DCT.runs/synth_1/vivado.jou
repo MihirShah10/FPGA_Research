@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 23 18:47:51 2017
+# Process ID: 5952
+# Current directory: C:/JPEG_Thesis/DCT/DCT.runs/synth_1
+# Command line: vivado.exe -log dct.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dct.tcl
+# Log file: C:/JPEG_Thesis/DCT/DCT.runs/synth_1/dct.vds
+# Journal file: C:/JPEG_Thesis/DCT/DCT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dct.tcl -notrace

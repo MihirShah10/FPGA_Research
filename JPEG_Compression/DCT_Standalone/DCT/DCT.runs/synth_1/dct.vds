@@ -1,0 +1,870 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Oct 23 18:47:51 2017
+# Process ID: 5952
+# Current directory: C:/JPEG_Thesis/DCT/DCT.runs/synth_1
+# Command line: vivado.exe -log dct.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dct.tcl
+# Log file: C:/JPEG_Thesis/DCT/DCT.runs/synth_1/dct.vds
+# Journal file: C:/JPEG_Thesis/DCT/DCT.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dct.tcl -notrace
+Command: synth_design -top dct -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24024 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 321.395 ; gain = 111.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dct' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:12]
+INFO: [Synth 8-638] synthesizing module 'dct_fsm' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:385]
+	Parameter ST1_01 bound to: 7'b0000000 
+	Parameter ST1_02 bound to: 7'b0000001 
+	Parameter ST1_03 bound to: 7'b0000010 
+	Parameter ST1_04 bound to: 7'b0000011 
+	Parameter ST1_05 bound to: 7'b0000100 
+	Parameter ST1_06 bound to: 7'b0000101 
+	Parameter ST1_07 bound to: 7'b0000110 
+	Parameter ST1_08 bound to: 7'b0000111 
+	Parameter ST1_09 bound to: 7'b0001000 
+	Parameter ST1_10 bound to: 7'b0001001 
+	Parameter ST1_11 bound to: 7'b0001010 
+	Parameter ST1_12 bound to: 7'b0001011 
+	Parameter ST1_13 bound to: 7'b0001100 
+	Parameter ST1_14 bound to: 7'b0001101 
+	Parameter ST1_15 bound to: 7'b0001110 
+	Parameter ST1_16 bound to: 7'b0001111 
+	Parameter ST1_17 bound to: 7'b0010000 
+	Parameter ST1_18 bound to: 7'b0010001 
+	Parameter ST1_19 bound to: 7'b0010010 
+	Parameter ST1_20 bound to: 7'b0010011 
+	Parameter ST1_21 bound to: 7'b0010100 
+	Parameter ST1_22 bound to: 7'b0010101 
+	Parameter ST1_23 bound to: 7'b0010110 
+	Parameter ST1_24 bound to: 7'b0010111 
+	Parameter ST1_25 bound to: 7'b0011000 
+	Parameter ST1_26 bound to: 7'b0011001 
+	Parameter ST1_27 bound to: 7'b0011010 
+	Parameter ST1_28 bound to: 7'b0011011 
+	Parameter ST1_29 bound to: 7'b0011100 
+	Parameter ST1_30 bound to: 7'b0011101 
+	Parameter ST1_31 bound to: 7'b0011110 
+	Parameter ST1_32 bound to: 7'b0011111 
+	Parameter ST1_33 bound to: 7'b0100000 
+	Parameter ST1_34 bound to: 7'b0100001 
+	Parameter ST1_35 bound to: 7'b0100010 
+	Parameter ST1_36 bound to: 7'b0100011 
+	Parameter ST1_37 bound to: 7'b0100100 
+	Parameter ST1_38 bound to: 7'b0100101 
+	Parameter ST1_39 bound to: 7'b0100110 
+	Parameter ST1_40 bound to: 7'b0100111 
+	Parameter ST1_41 bound to: 7'b0101000 
+	Parameter ST1_42 bound to: 7'b0101001 
+	Parameter ST1_43 bound to: 7'b0101010 
+	Parameter ST1_44 bound to: 7'b0101011 
+	Parameter ST1_45 bound to: 7'b0101100 
+	Parameter ST1_46 bound to: 7'b0101101 
+	Parameter ST1_47 bound to: 7'b0101110 
+	Parameter ST1_48 bound to: 7'b0101111 
+	Parameter ST1_49 bound to: 7'b0110000 
+	Parameter ST1_50 bound to: 7'b0110001 
+	Parameter ST1_51 bound to: 7'b0110010 
+	Parameter ST1_52 bound to: 7'b0110011 
+	Parameter ST1_53 bound to: 7'b0110100 
+	Parameter ST1_54 bound to: 7'b0110101 
+	Parameter ST1_55 bound to: 7'b0110110 
+	Parameter ST1_56 bound to: 7'b0110111 
+	Parameter ST1_57 bound to: 7'b0111000 
+	Parameter ST1_58 bound to: 7'b0111001 
+	Parameter ST1_59 bound to: 7'b0111010 
+	Parameter ST1_60 bound to: 7'b0111011 
+	Parameter ST1_61 bound to: 7'b0111100 
+	Parameter ST1_62 bound to: 7'b0111101 
+	Parameter ST1_63 bound to: 7'b0111110 
+	Parameter ST1_64 bound to: 7'b0111111 
+	Parameter ST1_65 bound to: 7'b1000000 
+	Parameter ST1_66 bound to: 7'b1000001 
+	Parameter ST1_67 bound to: 7'b1000010 
+	Parameter ST1_68 bound to: 7'b1000011 
+	Parameter ST1_69 bound to: 7'b1000100 
+	Parameter ST1_70 bound to: 7'b1000101 
+	Parameter ST1_71 bound to: 7'b1000110 
+	Parameter ST1_72 bound to: 7'b1000111 
+	Parameter ST1_73 bound to: 7'b1001000 
+	Parameter ST1_74 bound to: 7'b1001001 
+	Parameter ST1_75 bound to: 7'b1001010 
+	Parameter ST1_76 bound to: 7'b1001011 
+	Parameter ST1_77 bound to: 7'b1001100 
+	Parameter ST1_78 bound to: 7'b1001101 
+	Parameter ST1_79 bound to: 7'b1001110 
+	Parameter ST1_80 bound to: 7'b1001111 
+	Parameter ST1_81 bound to: 7'b1010000 
+	Parameter ST1_82 bound to: 7'b1010001 
+	Parameter ST1_83 bound to: 7'b1010010 
+	Parameter ST1_84 bound to: 7'b1010011 
+	Parameter ST1_85 bound to: 7'b1010100 
+	Parameter ST1_86 bound to: 7'b1010101 
+	Parameter ST1_87 bound to: 7'b1010110 
+	Parameter ST1_88 bound to: 7'b1010111 
+	Parameter ST1_89 bound to: 7'b1011000 
+	Parameter ST1_90 bound to: 7'b1011001 
+	Parameter ST1_91 bound to: 7'b1011010 
+	Parameter ST1_92 bound to: 7'b1011011 
+	Parameter ST1_93 bound to: 7'b1011100 
+	Parameter ST1_94 bound to: 7'b1011101 
+	Parameter ST1_95 bound to: 7'b1011110 
+	Parameter ST1_96 bound to: 7'b1011111 
+	Parameter ST1_97 bound to: 7'b1100000 
+	Parameter ST1_98 bound to: 7'b1100001 
+	Parameter ST1_99 bound to: 7'b1100010 
+	Parameter ST1_100 bound to: 7'b1100011 
+	Parameter ST1_101 bound to: 7'b1100100 
+INFO: [Synth 8-256] done synthesizing module 'dct_fsm' (1#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:385]
+INFO: [Synth 8-638] synthesizing module 'dct_dat' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:930]
+INFO: [Synth 8-638] synthesizing module 'dct_sub24s_24' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3307]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub24s_24' (2#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3307]
+INFO: [Synth 8-638] synthesizing module 'dct_sub20s_20' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3316]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub20s_20' (3#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3316]
+INFO: [Synth 8-638] synthesizing module 'dct_add24s_22_21' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3325]
+INFO: [Synth 8-256] done synthesizing module 'dct_add24s_22_21' (4#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3325]
+INFO: [Synth 8-638] synthesizing module 'dct_add20s_18_18' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3334]
+INFO: [Synth 8-256] done synthesizing module 'dct_add20s_18_18' (5#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3334]
+INFO: [Synth 8-638] synthesizing module 'dct_add69_69s' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3343]
+INFO: [Synth 8-256] done synthesizing module 'dct_add69_69s' (6#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3343]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1720]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1741]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1762]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1784]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1805]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1826]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1847]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1868]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1889]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1910]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:1931]
+INFO: [Synth 8-638] synthesizing module 'dct_incr3u' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3352]
+INFO: [Synth 8-256] done synthesizing module 'dct_incr3u' (7#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3352]
+INFO: [Synth 8-638] synthesizing module 'dct_mul12s' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3360]
+INFO: [Synth 8-256] done synthesizing module 'dct_mul12s' (8#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3360]
+INFO: [Synth 8-638] synthesizing module 'dct_mul12u' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3371]
+INFO: [Synth 8-256] done synthesizing module 'dct_mul12u' (9#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3371]
+INFO: [Synth 8-638] synthesizing module 'dct_mul8u' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3382]
+INFO: [Synth 8-256] done synthesizing module 'dct_mul8u' (10#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3382]
+INFO: [Synth 8-638] synthesizing module 'dct_sub60s_59' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3393]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub60s_59' (11#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3393]
+INFO: [Synth 8-638] synthesizing module 'dct_sub36s_35' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3402]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub36s_35' (12#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3402]
+INFO: [Synth 8-638] synthesizing module 'dct_sub32s' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3411]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub32s' (13#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3411]
+INFO: [Synth 8-638] synthesizing module 'dct_sub24s' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3420]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub24s' (14#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3420]
+INFO: [Synth 8-638] synthesizing module 'dct_sub20s' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3429]
+INFO: [Synth 8-256] done synthesizing module 'dct_sub20s' (15#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3429]
+INFO: [Synth 8-638] synthesizing module 'dct_add60s_59' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3438]
+INFO: [Synth 8-256] done synthesizing module 'dct_add60s_59' (16#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3438]
+INFO: [Synth 8-638] synthesizing module 'dct_add24s_22' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3447]
+INFO: [Synth 8-256] done synthesizing module 'dct_add24s_22' (17#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3447]
+INFO: [Synth 8-638] synthesizing module 'dct_add20s_18' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3456]
+INFO: [Synth 8-256] done synthesizing module 'dct_add20s_18' (18#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3456]
+INFO: [Synth 8-638] synthesizing module 'dct_add12u_10' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3465]
+INFO: [Synth 8-256] done synthesizing module 'dct_add12u_10' (19#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3465]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:2049]
+INFO: [Synth 8-638] synthesizing module 'dct_MEM_dct_output' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3474]
+INFO: [Synth 8-638] synthesizing module 'dct_MEM_dct_output_subD' [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3489]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3497]
+INFO: [Synth 8-256] done synthesizing module 'dct_MEM_dct_output_subD' (20#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3489]
+INFO: [Synth 8-256] done synthesizing module 'dct_MEM_dct_output' (21#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:3474]
+INFO: [Synth 8-256] done synthesizing module 'dct_dat' (22#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:930]
+INFO: [Synth 8-256] done synthesizing module 'dct' (23#1) [C:/JPEG_Thesis/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v:12]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a00[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a00[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a00[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a00[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a01[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a01[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a01[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a01[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a02[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a02[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a02[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a02[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a03[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a03[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a03[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a03[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a04[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a04[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a04[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a04[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a05[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a05[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a05[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a05[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a06[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a06[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a06[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a06[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a07[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a07[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a07[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a07[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a08[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a08[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a08[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a08[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a09[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a09[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a09[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a09[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a10[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a10[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a10[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a10[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a11[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a11[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a11[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a11[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a12[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a12[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a12[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a12[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a13[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a13[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a13[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a13[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a14[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a14[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a14[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a14[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a15[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a15[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a15[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a15[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a16[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a16[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a16[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a16[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a17[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a17[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a17[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a17[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a18[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a18[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a18[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a18[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a19[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a19[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a19[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a19[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a20[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a20[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a20[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a20[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a21[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a21[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a21[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a21[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a22[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a22[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a22[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a22[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a23[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a23[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a23[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a23[8]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a24[11]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a24[10]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a24[9]
+WARNING: [Synth 8-3331] design dct_dat has unconnected port line_buffer_in_a24[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 367.199 ; gain = 157.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 367.199 ; gain = 157.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 367.199 ; gain = 157.012
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'B01_streg_reg' in module 'dct_fsm'
+INFO: [Synth 8-5546] ROM "ST1_01d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_02d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_03d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_04d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_05d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_06d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_07d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_08d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_09d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_10d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_11d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_12d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_13d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_14d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_15d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_16d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_17d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_18d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_19d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_20d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_21d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_22d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_23d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_24d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_25d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_26d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_27d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_28d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_29d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_30d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_31d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_32d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_33d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_34d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_35d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_36d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_37d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_38d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_39d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_40d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_41d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_42d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_43d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_44d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_45d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_46d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_47d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_48d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_49d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_50d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_51d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_52d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_53d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_54d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_55d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_56d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_57d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_58d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_59d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_60d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_61d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_62d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_63d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_64d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_65d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_66d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_67d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_69d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_70d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_71d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_72d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_73d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_74d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_75d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_76d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_77d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_78d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_79d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_80d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_81d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_82d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_83d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_84d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_85d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_86d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_87d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_88d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_89d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_90d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_91d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_92d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_93d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_94d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_95d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_96d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_97d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_98d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_99d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_100d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_101d" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  ST1_01 |                          0000000 |                          0000000
+                  ST1_02 |                          0000001 |                          0000001
+                  ST1_03 |                          0000010 |                          0000010
+                  ST1_04 |                          0000011 |                          0000011
+                  ST1_05 |                          0000100 |                          0000100
+                  ST1_06 |                          0000101 |                          0000101
+                  ST1_07 |                          0000110 |                          0000110
+                  ST1_08 |                          0000111 |                          0000111
+                  ST1_09 |                          0001000 |                          0001000
+                  ST1_10 |                          0001001 |                          0001001
+                  ST1_11 |                          0001010 |                          0001010
+                  ST1_12 |                          0001011 |                          0001011
+                  ST1_13 |                          0001100 |                          0001100
+                  ST1_14 |                          0001101 |                          0001101
+                  ST1_15 |                          0001110 |                          0001110
+                  ST1_16 |                          0001111 |                          0001111
+                  ST1_17 |                          0010000 |                          0010000
+                  ST1_18 |                          0010001 |                          0010001
+                  ST1_19 |                          0010010 |                          0010010
+                  ST1_20 |                          0010011 |                          0010011
+                  ST1_21 |                          0010100 |                          0010100
+                  ST1_22 |                          0010101 |                          0010101
+                  ST1_23 |                          0010110 |                          0010110
+                  ST1_24 |                          0010111 |                          0010111
+                  ST1_25 |                          0011000 |                          0011000
+                  ST1_26 |                          0011001 |                          0011001
+                  ST1_27 |                          0011010 |                          0011010
+                  ST1_28 |                          0011011 |                          0011011
+                  ST1_29 |                          0011100 |                          0011100
+                  ST1_30 |                          0011101 |                          0011101
+                  ST1_31 |                          0011110 |                          0011110
+                  ST1_32 |                          0011111 |                          0011111
+                  ST1_33 |                          0100000 |                          0100000
+                  ST1_34 |                          0100001 |                          0100001
+                  ST1_35 |                          0100010 |                          0100010
+                  ST1_36 |                          0100011 |                          0100011
+                  ST1_37 |                          0100100 |                          0100100
+                  ST1_38 |                          0100101 |                          0100101
+                  ST1_39 |                          0100110 |                          0100110
+                  ST1_40 |                          0100111 |                          0100111
+                  ST1_41 |                          0101000 |                          0101000
+                  ST1_42 |                          0101001 |                          0101001
+                  ST1_43 |                          0101010 |                          0101010
+                  ST1_44 |                          0101011 |                          0101011
+                  ST1_45 |                          0101100 |                          0101100
+                  ST1_46 |                          0101101 |                          0101101
+                  ST1_47 |                          0101110 |                          0101110
+                  ST1_48 |                          0101111 |                          0101111
+                  ST1_49 |                          0110000 |                          0110000
+                  ST1_50 |                          0110001 |                          0110001
+                  ST1_51 |                          0110010 |                          0110010
+                  ST1_52 |                          0110011 |                          0110011
+                  ST1_53 |                          0110100 |                          0110100
+                  ST1_54 |                          0110101 |                          0110101
+                  ST1_55 |                          0110110 |                          0110110
+                  ST1_56 |                          0110111 |                          0110111
+                  ST1_57 |                          0111000 |                          0111000
+                  ST1_58 |                          0111001 |                          0111001
+                  ST1_59 |                          0111010 |                          0111010
+                  ST1_60 |                          0111011 |                          0111011
+                  ST1_61 |                          0111100 |                          0111100
+                  ST1_62 |                          0111101 |                          0111101
+                  ST1_63 |                          0111110 |                          0111110
+                  ST1_64 |                          0111111 |                          0111111
+                  ST1_65 |                          1000000 |                          1000000
+                  ST1_66 |                          1000001 |                          1000001
+                  ST1_67 |                          1000010 |                          1000010
+                  ST1_68 |                          1000011 |                          1000011
+                  ST1_69 |                          1000100 |                          1000100
+                  ST1_70 |                          1000101 |                          1000101
+                  ST1_71 |                          1000110 |                          1000110
+                  ST1_72 |                          1000111 |                          1000111
+                  ST1_73 |                          1001000 |                          1001000
+                  ST1_74 |                          1001001 |                          1001001
+                  ST1_75 |                          1001010 |                          1001010
+                  ST1_76 |                          1001011 |                          1001011
+                  ST1_77 |                          1001100 |                          1001100
+                  ST1_78 |                          1001101 |                          1001101
+                  ST1_79 |                          1001110 |                          1001110
+                  ST1_80 |                          1001111 |                          1001111
+                  ST1_81 |                          1010000 |                          1010000
+                  ST1_82 |                          1010001 |                          1010001
+                  ST1_83 |                          1010010 |                          1010010
+                  ST1_84 |                          1010011 |                          1010011
+                  ST1_85 |                          1010100 |                          1010100
+                  ST1_86 |                          1010101 |                          1010101
+                  ST1_87 |                          1010110 |                          1010110
+                  ST1_88 |                          1010111 |                          1010111
+                  ST1_89 |                          1011000 |                          1011000
+                  ST1_90 |                          1011001 |                          1011001
+                  ST1_91 |                          1011010 |                          1011010
+                  ST1_92 |                          1011011 |                          1011011
+                  ST1_93 |                          1011100 |                          1011100
+                  ST1_94 |                          1011101 |                          1011101
+                  ST1_95 |                          1011110 |                          1011110
+                  ST1_96 |                          1011111 |                          1011111
+                  ST1_97 |                          1100000 |                          1100000
+                  ST1_98 |                          1100001 |                          1100001
+                  ST1_99 |                          1100010 |                          1100010
+                 ST1_100 |                          1100011 |                          1100011
+                 ST1_101 |                          1100100 |                          1100100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'B01_streg_reg' using encoding 'sequential' in module 'dct_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 500.617 ; gain = 290.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     69 Bit       Adders := 1     
+	   3 Input     59 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   3 Input     35 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               59 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 66    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	 105 Input      7 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 100   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module dct_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	 105 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 100   
+Module dct_sub24s_24 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+Module dct_sub20s_20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 1     
+Module dct_add24s_22_21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+Module dct_add20s_18_18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+Module dct_add69_69s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     69 Bit       Adders := 1     
+Module dct_incr3u 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module dct_sub60s_59 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     59 Bit       Adders := 1     
+Module dct_sub36s_35 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
+Module dct_sub32s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+Module dct_sub24s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     25 Bit       Adders := 1     
+Module dct_sub20s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 1     
+Module dct_add60s_59 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     59 Bit       Adders := 1     
+Module dct_add24s_22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+Module dct_add20s_18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+Module dct_add12u_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module dct_dat 
+Detailed RTL Component Info : 
++---Registers : 
+	               59 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 66    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (INST_dat/\RG_76_reg[0] )
+INFO: [Synth 8-3886] merging instance 'INST_dat/FF_valid_w_reg' (FDSE) to 'INST_dat/dct_out_a64_r_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (INST_dat/\dct_out_a64_r_reg[0] )
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[1]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[2]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[3]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[4]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[4]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[5]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[5]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[6]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[6]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[7]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[7]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[8]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[9]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/dct_out_a64_r_reg[10]' (FDRE) to 'INST_dat/dct_out_a64_r_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (INST_dat/\dct_out_a64_r_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (dct_out_a64_r_reg[11]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[2]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[1]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[0]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_76_reg[1]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_76_reg[0]) is unused and will be removed from module dct_dat.
+WARNING: [Synth 8-3332] Sequential element (dct_out_a64_r_reg[0]) is unused and will be removed from module dct_dat.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 579.520 ; gain = 369.332
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                             | Inference      | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+|dct_dat     | dct_output/INST_MEM_dct_output_subD_1/dct_output_r_reg | User Attribute | 64 x 12              | RAM64X1D x 12   | 
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 579.520 ; gain = 369.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   133|
+|3     |LUT1     |    48|
+|4     |LUT2     |   331|
+|5     |LUT3     |   126|
+|6     |LUT4     |   203|
+|7     |LUT5     |   285|
+|8     |LUT6     |   466|
+|9     |RAM64X1D |    12|
+|10    |FDRE     |  1547|
+|11    |IBUF     |   514|
+|12    |OBUF     |   781|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  4447|
+|2     |  INST_dat                       |dct_dat                 |  2449|
+|3     |    INST_add20s_18_1             |dct_add20s_18           |    15|
+|4     |    INST_add20s_18_18_1          |dct_add20s_18_18        |    29|
+|5     |    INST_add24s_22_1             |dct_add24s_22           |    78|
+|6     |    INST_add24s_22_21_1          |dct_add24s_22_21        |    66|
+|7     |    INST_add60s_59_1             |dct_add60s_59           |   117|
+|8     |    INST_add69_69s_1             |dct_add69_69s           |    39|
+|9     |    INST_mul12s_1                |dct_mul12s              |    97|
+|10    |    INST_mul12s_2                |dct_mul12s_0            |    29|
+|11    |    INST_mul12u_1                |dct_mul12u              |     3|
+|12    |    INST_mul8u_1                 |dct_mul8u               |     3|
+|13    |    INST_mul8u_2                 |dct_mul8u_1             |     3|
+|14    |    dct_output                   |dct_MEM_dct_output      |   124|
+|15    |      INST_MEM_dct_output_subD_1 |dct_MEM_dct_output_subD |   124|
+|16    |  INST_fsm                       |dct_fsm                 |   702|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 519 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 582.633 ; gain = 337.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 582.633 ; gain = 372.445
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 659 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 628.691 ; gain = 391.961
+INFO: [Common 17-1381] The checkpoint 'C:/JPEG_Thesis/DCT/DCT.runs/synth_1/dct.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 628.691 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.189 . Memory (MB): peak = 628.691 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 23 18:48:25 2017...

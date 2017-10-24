@@ -1,0 +1,6 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v,1508808748,verilog,,,,RAM64X1D_HD75;RAM64X1D_HD76;RAM64X1D_HD77;RAM64X1D_HD78;RAM64X1D_HD79;RAM64X1D_HD80;RAM64X1D_HD81;RAM64X1D_HD82;RAM64X1D_HD83;RAM64X1D_HD84;RAM64X1D_HD85;RAM64X1D_UNIQ_BASE_;dct;dct_MEM_dct_output;dct_MEM_dct_output_subD;dct_add20s_18;dct_add20s_18_18;dct_add24s_22;dct_add24s_22_21;dct_add60s_59;dct_add69_69s;dct_dat;dct_fsm;dct_mul12s;dct_mul12s_0;dct_mul12u;dct_mul8u;dct_mul8u_1;glbl,,,,,,,,
+C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v,1508808704,verilog,,,,dct_tb,,,,,,,,

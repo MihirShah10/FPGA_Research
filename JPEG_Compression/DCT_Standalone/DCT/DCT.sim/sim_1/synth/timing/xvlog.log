@@ -1,0 +1,32 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM64X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD75
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD76
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD77
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD78
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD79
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD80
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD81
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD82
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD83
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD84
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD85
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-311] analyzing module dct_MEM_dct_output
+INFO: [VRFC 10-311] analyzing module dct_MEM_dct_output_subD
+INFO: [VRFC 10-311] analyzing module dct_add20s_18
+INFO: [VRFC 10-311] analyzing module dct_add20s_18_18
+INFO: [VRFC 10-311] analyzing module dct_add24s_22
+INFO: [VRFC 10-311] analyzing module dct_add24s_22_21
+INFO: [VRFC 10-311] analyzing module dct_add60s_59
+INFO: [VRFC 10-311] analyzing module dct_add69_69s
+INFO: [VRFC 10-311] analyzing module dct_dat
+INFO: [VRFC 10-311] analyzing module dct_fsm
+INFO: [VRFC 10-311] analyzing module dct_mul12s
+INFO: [VRFC 10-311] analyzing module dct_mul12s_0
+INFO: [VRFC 10-311] analyzing module dct_mul12u
+INFO: [VRFC 10-311] analyzing module dct_mul8u
+INFO: [VRFC 10-311] analyzing module dct_mul8u_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb
