@@ -1,0 +1,277 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Oct 25 13:21:05 2017
+# Process ID: 868
+# Current directory: C:/JPEG_Thesis/DARC_DCT_App
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8832 C:\JPEG_Thesis\DARC_DCT_App\DARC_DCT_App.xpr
+# Log file: C:/JPEG_Thesis/DARC_DCT_App/vivado.log
+# Journal file: C:/JPEG_Thesis/DARC_DCT_App\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk -hwspec C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk/DARC_DCT_Design_wrapper.hdf
+open_bd_design {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.srcs/sources_1/bd/DARC_DCT_Design/DARC_DCT_Design.bd}
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+open_run impl_1
+open_bd_design {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.srcs/sources_1/bd/DARC_DCT_Design/DARC_DCT_Design.bd}
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+set_msg_config -suppress -id {Timing 38-282} -string {{CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.} } 
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+refresh_design
+opt_design
+place_design -effort_level high
+place_design -help
+route_design -help
+place_design -effor_level high
+opt_design -help
+opt_design -remap
+place_design -help
+place_design -timing_summary
+set_msg_config -suppress -id {Common 17-170} -string {{ERROR: [Common 17-170] Unknown option '-effort_level', please type 'place_design -help' for usage info.} } 
+set_msg_config -suppress -id {Common 17-170} -string {{ERROR: [Common 17-170] Unknown option '-effor_level', please type 'place_design -help' for usage info.} } 
+route_design -help
+route_design -timing_summary
+synth_design -help
+synth_design -retiming
+close_design
+close_design
+place_design
+place_design
+open_bd_design {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.srcs/sources_1/bd/DARC_DCT_Design/DARC_DCT_Design.bd}
+place_design
+opt_design
+open_run impl_1
+place_design -effort_level
+place_design -help
+place_design -post_place_opt
+place_design -post_place_opt -timing_summary
+route_design -help
+route_design -directive NoTimingRelaxation -timing_summary
+close_design
+set_msg_config -suppress -id {Common 17-53} -string {{ERROR: [Common 17-53] User Exception: No open design. Please open an elaborated, synthesized or implemented design before executing this command.} } 
+open_run impl_1
+close_design
+close_bd_design [get_bd_designs DARC_DCT_Design]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+set_msg_config -suppress -id {Route 35-39} -string {{CRITICAL WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.} } 
+place_design -help
+opt_design -help
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+place_design -help
+place_design -post_place_opt
+open_run synth_1 -name synth_1
+place_design -help
+place_design -timing_summary
+report_timing
+place_design -directive Explore -timing_summary
+place_design -post_place_opt
+report_timing
+place_design -post_place_opt
+report_timing
+route_design -help
+route_design -directive NoTimingRelaxation -timing_summary
+report_timing
+place_design -post_place_opt
+route_design
+report_timing
+proc runPPO { {numIters 1} {enablePhysOpt 1} } {
+ for {set i 0} {$i < $numIters} {incr i} {
+ place_design -post_place_opt
+ if {$enablePhysOpt != 0} {
+ phys_opt_design
+ }
+ route_design
+ if {[get_property SLACK [get_timing_paths ]] >= 0} {break}; #stop if timing is met
+ }
+}
+place_design
+phys_opt_design
+route_design
+runPPO 4 1 ; # run 4 post-route iterations and enable phys_opt_design
+report_timing
+report_timing_summary
+write_bitstream
+set_msg_config -suppress -id {Common 17-163} -string {{ERROR: [Common 17-163] Missing value for option 'file', please type 'write_bitstream -help' for usage info.} } 
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_bd_design {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.srcs/sources_1/bd/DARC_DCT_Design/DARC_DCT_Design.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_timer_0/S_AXI]
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+file copy -force C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.sysdef C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk/DARC_DCT_Design_wrapper.hdf
+
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk -hwspec C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk/DARC_DCT_Design_wrapper.hdf
+launch_sdk -workspace C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk -hwspec C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.sdk/DARC_DCT_Design_wrapper.hdf
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/DARC_DCT_App/DARC_DCT_App.runs/impl_1/DARC_DCT_Design_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]

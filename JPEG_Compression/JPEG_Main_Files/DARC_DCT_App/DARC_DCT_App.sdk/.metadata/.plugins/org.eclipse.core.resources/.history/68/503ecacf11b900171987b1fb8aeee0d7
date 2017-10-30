@@ -1,0 +1,110 @@
+/*
+ * Empty C++ Application
+ */
+
+#include "xparameters.h"
+#include <stdio.h>
+#include "lena_dataset.h"
+
+int *dct_test = (int*)XPAR_DARC_DCT_0_S00_AXI_BASEADDR;
+
+int trigger_dct(int value)
+{
+	*(dct_test + 130) = 0x0; // Activate Reset
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	*(dct_test + 130) = 0x1; // Reactive Reset and start sending input signals
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	// Inputs to DCT Module
+	for(int idx = 0; idx <64; idx ++)
+	{
+		*(dct_test + idx) = value*idx;
+	}
+
+	while(!(*(dct_test + 129)==1));// Check Valid Signal is active or not
+
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+
+	int output[64];
+	// Sample the Outputs
+	for(int idx =0; idx<64;idx++)
+	{
+		output[idx]= *(dct_test + 64 + idx);
+		printf("Result SOP[%d]: 0x%x\n", idx,output[idx]);
+	}
+
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	*(dct_test + 130) = 0x0; // Activate Reset
+
+	return 0;
+}
+
+int main()
+{
+	int img_dct[64];
+
+	*(dct_test + 130) = 0x0; // Activate Reset
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	*(dct_test + 130) = 0x1; // Reactive Reset and start sending input signals
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	//Reading the image
+	for(int j=0;j<8;j++)
+	{
+		for(int i=0;i<8;i++)
+		{
+			img_dct[j+(i*8)]=img[j+(i*512)];
+		}
+	}
+	// Inputs to DCT Module
+	for(int idx = 0; idx <64; idx ++)
+	{
+		*(dct_test + idx) = img_dct[idx];
+	}
+
+	while(!(*(dct_test + 129)==1));// Check Valid Signal is active or not
+
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+
+	int output[64];
+	// Sample the Outputs
+	for(int idx =0; idx<64;idx++)
+	{
+		output[idx]= *(dct_test + 64 + idx);
+		printf("Result SOP[%d]: 0x%x\n", idx,output[idx]);
+	}
+
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+	*(dct_test + 130) = 0x0; // Activate Reset
+
+	for(int i = 10000; i >0; i--)
+	{
+		;
+	}
+
+	//trigger_dct(2);
+
+	return 0;
+}
