@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 03 17:42:04 2017
+# Process ID: 25468
+# Current directory: C:/JPEG_Thesis/RLE/RLE_Test_PS_PL/RLE_Test_PS_PL.runs/impl_1
+# Command line: vivado.exe -log rle_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rle_design_wrapper.tcl -notrace
+# Log file: C:/JPEG_Thesis/RLE/RLE_Test_PS_PL/RLE_Test_PS_PL.runs/impl_1/rle_design_wrapper.vdi
+# Journal file: C:/JPEG_Thesis/RLE/RLE_Test_PS_PL/RLE_Test_PS_PL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rle_design_wrapper.tcl -notrace

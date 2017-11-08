@@ -1,0 +1,4 @@
+vhdl xil_defaultlib "../../../bd/rle_design/ip/rle_design_rst_ps7_0_100M_0/sim/rle_design_rst_ps7_0_100M_0.vhd" 
+vhdl xil_defaultlib "../../../bd/rle_design/hdl/rle_design.vhd" 
+
+nosort
