@@ -3,8 +3,8 @@
   <File Type="VDS-TIMING-PB" Name="matrix_design_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="matrix_design_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-RDS" Name="matrix_design_wrapper.vds"/>
-  <File Type="PA-TCL" Name="matrix_design_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="matrix_design_wrapper_drc_synth.rpt"/>
+  <File Type="PA-TCL" Name="matrix_design_wrapper.tcl"/>
   <File Type="RDS-UTIL" Name="matrix_design_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="matrix_design_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="matrix_design_wrapper.dcp"/>
@@ -37,9 +37,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

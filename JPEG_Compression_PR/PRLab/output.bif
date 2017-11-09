@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\zynq_fsbl\Debug\zynq_fsbl.elf
+	C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\Bitstreams\Config_blank.bit
+	C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\DCT_Quantz_Test_App\Debug\DCT_Quantz_Test_App.elf
+}

@@ -1,0 +1,2192 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 11896
+
+Current time: 	11/9/17 3:08:31 AM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	Mihir Shah
+User home directory: C:/Users/Mihir Shah
+User working directory: C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	216 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 466 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 57 MB (+57548kb) [00:00:03]
+// [Engine Memory]: 399 MB (+267115kb) [00:00:03]
+// Opening Vivado Project: C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 466 MB (+49458kb) [00:00:07]
+// TclEventType: IP_LOCK_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 474 MB. GUI used memory: 25 MB. Current time: 11/9/17 3:08:33 AM CST
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 521 MB (+32896kb) [00:00:09]
+// [Engine Memory]: 578 MB (+32149kb) [00:00:10]
+// Tcl Message: open_project C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Sources/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 875.766 ; gain = 182.879 
+// Project name: JPEG; location: C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 62 MB (+1765kb) [00:00:33]
+// Elapsed time: 66 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 20 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+// Elapsed time: 25 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 51 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+// 'o' command handler elapsed time: 3 seconds
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// Tcl Message: write_hwdef -force  -file C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 65 MB (+54kb) [00:03:51]
+// Elapsed time: 56 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// [GUI Memory]: 69 MB (+1038kb) [00:10:58]
+// Elapsed time: 384 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+// 'm' command handler elapsed time: 3 seconds
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// Tcl Message: write_hwdef -force  -file C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// [GUI Memory]: 73 MB (+508kb) [00:12:27]
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 34 MB. Current time: 11/9/17 3:26:44 AM CST
+// [GUI Memory]: 77 MB (+404kb) [00:47:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 34 MB. Current time: 11/9/17 3:56:46 AM CST
+// Elapsed time: 3335 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 26); // v:K (u:D, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 27, false); // v:K (u:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// bt:g (cd:JFrame):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\Bitstreams\Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: current_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bt:g (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+// [GUI Memory]: 87 MB (+5931kb) [01:07:04]
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 153 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// TclEventType: HW_SYSMON_ADD
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 36 MB. Current time: 11/9/17 4:26:48 AM CST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 731 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 203 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 402, 21); // dn:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 516 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Elapsed time: 655 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 36 MB. Current time: 11/9/17 4:56:51 AM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 35 MB. Current time: 11/9/17 11:08:26 AM CST
+// Elapsed time: 22530 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 205 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Elapsed time: 221 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 280 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 130 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 35 MB. Current time: 11/9/17 11:38:29 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 34 MB. Current time: 11/9/17 12:08:30 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 3482 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 938 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// Elapsed time: 14 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 34 MB. Current time: 11/9/17 12:38:31 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 95 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 204 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 349 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 360 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 121 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 237 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// Elapsed time: 25 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// g:g (cd:JFrame): New Project: addNotify
+// 'g' command handler elapsed time: 4 seconds
+dismissDialog("New Project"); // g:g (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// Elapsed time: 242 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 1:08:32 PM CST
+// Elapsed time: 182 seconds
+closeMainWindow("JPEG - [C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.xpr] - Vivado 2016.3"); // cd:JFrame
+// y:aO (cd:JFrame): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, y:aO)
+dismissDialog("Exit Vivado"); // y:aO (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// X:q (cd:JFrame): Export Hardware: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, X:q)
+selectButton("PAResourceItoN.NewExportHardwareDialog_EXPORTED_FILE_FOR_THIS_MODULE_WAS_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Export Hardware"); // X:q (cd:JFrame)
+// bt:g (cd:JFrame):  Export Hardware : addNotify
+// Tcl Message: write_hwdef -force  -file C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+dismissDialog("Export Hardware"); // bt:g (cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_CHECKPOINT, "Open Recent Checkpoint"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, "Open Recent File"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // Z:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_LAUNCH_HARDWARE, "Launch SDK"); // ac:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // U:JideMenu (CommandMenuBar:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_LAUNCH_HARDWARE
+// aa:q (cd:JFrame): Launch SDK: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aa:q)
+dismissDialog("Launch SDK"); // aa:q (cd:JFrame)
+// Tcl Message: launch_sdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf 
+// Tcl Message: INFO: [Vivado 12-393] Launching SDK... INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk -hwspec C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 168 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 10 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 228 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+selectButton("OptionPane.button", "OK"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, F:JDialog)
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 1:38:33 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 2519 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 181 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 125 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 2:08:33 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 428 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 241 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Elapsed time: 155 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 341 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: program_hw_devices: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1036.738 ; gain = 0.000 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 8 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 232 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(RDIResource.PropertiesView_SELECT_OBJECT, "Properties_select"); // y:JideButton (g:CommandBar, cd:JFrame)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 517 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// Elapsed time: 19 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+// Elapsed time: 22 seconds
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 26 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 2:38:35 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// Elapsed time: 689 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 75 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 559 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [GUI Memory]: 91 MB (+93kb) [11:52:35]
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397 
+// TclEventType: HW_SERVER_UPDATE
+// l:a (cd:JFrame): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 3:08:37 PM CST
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 7000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 3:38:38 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 36 MB. Current time: 11/9/17 4:08:39 PM CST
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking too long to process. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking too long to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 4:38:40 PM CST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 6922 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, l:a)
+dismissDialog("Close Hardware Target"); // l:a (cd:JFrame)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h:k (JPanel:JComponent, cd:JFrame)
+selectMenuItem((HResource) null, "xc7z020_1"); // ac:JMenuItem (ai:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// be:aj (cd:JFrame): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a:JButton (JPanel:JComponent, be:aj)
+// bt:g (cd:JFrame):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // be:aj (cd:JFrame)
+// Tcl Message: set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: program_hw_devices [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'B' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 37 MB. Current time: 11/9/17 5:08:41 PM CST

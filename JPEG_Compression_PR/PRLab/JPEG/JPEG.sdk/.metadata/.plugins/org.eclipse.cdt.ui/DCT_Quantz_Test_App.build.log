@@ -1,0 +1,23 @@
+23:11:31 **** Build of configuration Debug for project DCT_Quantz_Test_App ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../standalone_bsp_0/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: DCT_Quantz_Test_App.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/ps7_cortexa9_0/lib -o "DCT_Quantz_Test_App.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: DCT_Quantz_Test_App.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size DCT_Quantz_Test_App.elf  |tee "DCT_Quantz_Test_App.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19064	   1148	  22576	  42788	   a724	DCT_Quantz_Test_App.elf
+'Finished building: DCT_Quantz_Test_App.elf.size'
+' '
+
+23:11:40 Build Finished (took 8s.868ms)
+

@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov  8 19:12:37 2017
+# Process ID: 20489
+# Current directory: /home/mihir/jpeg/jpeg_PR/PRLab
+# Command line: vivado
+# Log file: /home/mihir/jpeg/jpeg_PR/PRLab/vivado.log
+# Journal file: /home/mihir/jpeg/jpeg_PR/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+pwd
+open_checkpoint Synth/Static/jpeg_design_wrapper.dcp
+read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD.RECONFIGURABLE 1 [get_cells jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+close_project
+pwd
+open_checkpoint Synth/Static/jpeg_design_wrapper.dcp
+read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD.RECONFIGURABLE 1 [jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0]
+set_property HD.RECONFIGURABLE 1 [get_cells jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_dct/top_route_design.dcp
+write_checkpoint -force -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_dct_route_design.dcp
+update_design -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_quantization/top_route_design.dcp
+write_checkpoint -force -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_quantization_route_design.dcp
+close_project
+open_checkpoint Checkpoint/static_route_design.dcp
+update_design -buffer_ports -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0
+place_design
+route_design
+write_checkpoint -force Implement/Config_blank/top_route_design.dcp
+close_project
+pr_verify -initial Implement/Config_dct/top_route_design.dcp -additional {Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+close_project
+open_checkpoint Implement/Config_dct/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_dct.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit" Bitstreams/dct.bin
+close_project
+open_checkpoint Implement/Config_quantization//top_route_design.dcp
+write_bitstream -file Bitstreams/Config_quantization.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit" Bitstreams/quantization.bin
+close_project
+open_checkpoint Implement/Config_blank/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_blank.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_blank_pblock_jpeg0_partial.bit" Bitstreams/blank.bin
+close_project
