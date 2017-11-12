@@ -1,0 +1,20 @@
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_processing_system7_0_0/sim/jpeg_design_processing_system7_0_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9b73/src/jpeg_E.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9b73/hdl/JPEG_PR_v1_0_S00_AXI.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9b73/hdl/JPEG_PR_v1_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_JPEG_PR_0_0/sim/jpeg_design_JPEG_PR_0_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9692/src/rle_E.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9692/hdl/DARC_RLE_v1_0_S00_AXI.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/9692/hdl/DARC_RLE_v1_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_DARC_RLE_0_0/sim/jpeg_design_DARC_RLE_0_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_xbar_0/sim/jpeg_design_xbar_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/01ba/src/huffman_E.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/01ba/hdl/DARC_HUFFMAN_v1_0_S00_AXI.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ipshared/01ba/hdl/DARC_HUFFMAN_v1_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_DARC_HUFFMAN_0_0/sim/jpeg_design_DARC_HUFFMAN_0_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/ip/jpeg_design_auto_pc_0/sim/jpeg_design_auto_pc_0.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+verilog xil_defaultlib "../../../bd/jpeg_design/hdl/jpeg_design.v" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/2527/hdl" --include "../../../../JPEG.srcs/sources_1/bd/jpeg_design/ipshared/7e3a/hdl"
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

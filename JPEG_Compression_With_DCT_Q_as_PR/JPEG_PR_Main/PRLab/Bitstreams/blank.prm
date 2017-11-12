@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Nov 10 02:23:36 2017    Bitstreams/Config_blank_pblock_jpeg0_partial.bit

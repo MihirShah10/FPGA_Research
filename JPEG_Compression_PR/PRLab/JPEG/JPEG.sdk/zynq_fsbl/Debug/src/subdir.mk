@@ -14,7 +14,7 @@ C_SRCS += \
 ../src/nand.c \
 ../src/nor.c \
 ../src/pcap.c \
-C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper_hw_platform_0/ps7_init.c \
+C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper_hw_platform_0/ps7_init.c \
 ../src/qspi.c \
 ../src/rsa.c \
 ../src/sd.c 
@@ -57,21 +57,21 @@ C_DEPS += \
 src/%.o: ../src/%.S
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM v7 gcc compiler'
-	arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM v7 gcc compiler'
-	arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-src/ps7_init.o: C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper_hw_platform_0/ps7_init.c
+src/ps7_init.o: C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper_hw_platform_0/ps7_init.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM v7 gcc compiler'
-	arm-none-eabi-gcc -Wall -O0 -g3 -I"C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0" -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
+	arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"$@" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../zynq_fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

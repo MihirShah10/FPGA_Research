@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 10 01:31:52 2017
+# Process ID: 16217
+# Current directory: /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.runs/synth_1
+# Command line: vivado -log jpeg_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jpeg_design_wrapper.tcl
+# Log file: /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.runs/synth_1/jpeg_design_wrapper.vds
+# Journal file: /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source jpeg_design_wrapper.tcl -notrace

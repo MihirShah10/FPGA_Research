@@ -16,7 +16,7 @@ src/nor.o src/nor.o: ../src/nor.c ../src/fsbl.h \
  ../../zynq_fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../zynq_fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h \
  ../src/fsbl_debug.h \
- C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0/ps7_init.h \
+ C:\github\FPGA_Research\JPEG_Compression_PR\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0/ps7_init.h \
  ../src/nor.h ../../zynq_fsbl_bsp/ps7_cortexa9_0/include/xstatus.h
 
 ../src/fsbl.h:
@@ -57,7 +57,7 @@ src/nor.o src/nor.o: ../src/nor.c ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0/ps7_init.h:
+C:\github\FPGA_Research\JPEG_Compression_PR\PRLab\JPEG\JPEG.sdk\jpeg_design_wrapper_hw_platform_0/ps7_init.h:
 
 ../src/nor.h:
 

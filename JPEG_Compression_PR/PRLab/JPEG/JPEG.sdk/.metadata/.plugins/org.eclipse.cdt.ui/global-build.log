@@ -1,9 +1,4 @@
-16:56:38 **** Incremental Build of configuration Debug for project DCT_Quantization_PR_Test_App ****
-make pre-build main-build 
-a9-linaro-pre-build-step
-' '
-make: Nothing to be done for `main-build'.
-16:56:43 **** Incremental Build of configuration Debug for project DCT_Quantization_PR_Test_App ****
+17:31:25 **** Incremental Build of configuration Debug for project DCT_Q_Test ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '

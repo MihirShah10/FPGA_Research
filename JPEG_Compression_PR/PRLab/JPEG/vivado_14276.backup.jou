@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 10 13:53:56 2017
+# Process ID: 14276
+# Current directory: C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13136 C:\github\FPGA_Research\JPEG_Compression_PR\PRLab\JPEG\JPEG.xpr
+# Log file: C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/vivado.log
+# Journal file: C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/JPEG.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:\JPEG_Thesis\JPEG_PR\PRLab\PRLab\Bitstreams\Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/JPEG.sdk -hwspec C:/github/FPGA_Research/JPEG_Compression_PR/PRLab/JPEG/JPEG.sdk/jpeg_design_wrapper.hdf
+disconnect_hw_server localhost:3121
+connect_hw_server
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis/JPEG_PR/PRLab/PRLab/Bitstreams/Config_blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
