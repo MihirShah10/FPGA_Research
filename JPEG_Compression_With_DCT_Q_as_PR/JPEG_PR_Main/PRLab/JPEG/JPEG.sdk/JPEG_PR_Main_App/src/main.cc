@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -6,7 +5,7 @@
 #include <bitset>
 #include <time.h>
 
-#include "lena_dataset.h"
+#include "Goldhill.h"
 #include "xparameters.h"
 #include "xil_printf.h"
 #include "xil_cache.h"
@@ -48,6 +47,12 @@ unsigned short int huffman_last_bit[64*64];
 // Huffman_Binary variables
 char buffer[64*64][512];
 
+// PR variables
+u32 PartialAddress;
+int Status;
+u32 IntrStsReg = 0;
+u32 StatusReg;
+u32 PartialCfg = 0;
 
 int *jpeg_addr = (int*) XPAR_JPEG_PR_0_S00_AXI_BASEADDR;
 int *RLE = (int*)XPAR_DARC_RLE_0_S00_AXI_BASEADDR;
@@ -191,102 +196,42 @@ int get_quantization()
 	{
 		for(int col_idx=0;col_idx<64;col_idx++)
 		{
-			if(col_idx==0 && row_idx ==0)
+			// Reset to Active Low
+			for(int i =100; i<0;i--){;} // Wait for 2 us
+			*(jpeg_addr + 0)= 0x0;
+			for(int i =1000; i<0;i--){;} // Wait for 2 us
+
+			// Send the Inputs
+			for(int j=0; j<8; j++)
 			{
-							// Reset to Active Low
-							for(int i =100; i<0;i--){;} // Wait for 2 us
-							*(jpeg_addr + 0)= 0x0;
-							for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-								// Send the Inputs
-								printf("DCT_DATA_INPUT[0]: ");
-								for(int j=0; j<8; j++)
-								{
-									for(int i=0;i<8;i++)
-									{
-										for(int count=0; count<10; count++)
-										{
-											*(jpeg_addr + 1 + (8*j+i))=  dct_data[col_idx + (row_idx*64)][i*8+j];
-										}
-										printf("0x%x,",dct_data[col_idx + (row_idx*64)][i*8+j]);
-									}
-								}
-								printf("\n");
-
-							for(int i =1000; i<0;i--){;} // Wait for 2 us
-							*(jpeg_addr + 0)= 0x1; // Reset High to Start the Processing
-							for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-							for(int count =0; count<5;count++)
-							{
-								while(!(*(jpeg_addr + 129)==1)); // Wait for valid signal to be high
-							}
-
-							for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-							// Sample the Outputs
-							printf("Q_DATA[0]: ");
-							for(int idx =0; idx<64;idx++)
-							{
-								for(int in_count =0; in_count<10;in_count++)
-								{
-									quantz_data[col_idx + (row_idx*64)][idx]= *(jpeg_addr + 65 + idx);
-								}
-								printf("0x%x,",quantz_data[col_idx + (row_idx*64)][idx]);
-							}
-							printf("\n");
-								// Saving the DC value
-							dc_value[col_idx + (row_idx*64)] = quantz_data[col_idx + (row_idx*64)][0];
-
-							*(jpeg_addr + 0)= 0x0;
-							for(int i = 100; i >0; i--){;}       // original 10k however, 100 gives 2us delay
+				for(int i=0;i<8;i++)
+				{
+					*(jpeg_addr + 1 + (8*j+i))=  dct_data[col_idx + (row_idx*64)][i*8+j];
+				}
 			}
-			else
+
+			for(int i =1000; i<0;i--){;} // Wait for 2 us
+			*(jpeg_addr + 0)= 0x1; // Reset High to Start the Processing
+			for(int i =1000; i<0;i--){;} // Wait for 2 us
+
+			while(!(*(jpeg_addr + 129)==1)); // Wait for valid signal to be high
+
+			for(int i =1000; i<0;i--){;} // Wait for 2 us
+
+			// Sample the Outputs
+			for(int idx =0; idx<64;idx++)
 			{
-				// Reset to Active Low
-				for(int i =100; i<0;i--){;} // Wait for 2 us
-				*(jpeg_addr + 0)= 0x0;
-				for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-					// Send the Inputs
-					for(int j=0; j<8; j++)
-					{
-						for(int i=0;i<8;i++)
-						{
-							for(int in_count =0; in_count<10;in_count++)
-							{
-								*(jpeg_addr + 1 + (8*j+i))=  dct_data[col_idx + (row_idx*64)][i*8+j];
-							}
-						}
-					}
-
-				for(int i =1000; i<0;i--){;} // Wait for 2 us
-				*(jpeg_addr + 0)= 0x1; // Reset High to Start the Processing
-				for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-				for(int count =0; count<5;count++)
-				{
-					while(!(*(jpeg_addr + 129)==1)); // Wait for valid signal to be high
-				}
-
-				for(int i =1000; i<0;i--){;} // Wait for 2 us
-
-				// Sample the Outputs
-				for(int idx =0; idx<64;idx++)
-				{
-					for(int in_count =0; in_count<10;in_count++)
-					{
-						quantz_data[col_idx + (row_idx*64)][idx]= *(jpeg_addr + 65 + idx);
-					}
-				}
-					// Saving the DC value
-				dc_value[col_idx + (row_idx*64)] = quantz_data[col_idx + (row_idx*64)][0];
-
-				*(jpeg_addr + 0)= 0x0;
-				for(int i = 100; i >0; i--){;}       // original 10k however, 100 gives 2us delay
+				quantz_data[col_idx + (row_idx*64)][idx]= *(jpeg_addr + 65 + idx);
 			}
+
+			// Saving the DC value
+			dc_value[col_idx + (row_idx*64)] = quantz_data[col_idx + (row_idx*64)][0];
+
+			*(jpeg_addr + 0)= 0x0;
+			for(int i = 100; i >0; i--){;}       // original 10k however, 100 gives 2us delay
 		}
 	}
+
 	return 0;
 }
 
@@ -556,41 +501,9 @@ int sd_write()
 	return 0;
 }
 
-int main()
+
+int dct_reconfig()
 {
-
-	AxiTimerHelper axiTimer;
-	axiTimer.startTimer();
-
-	// Transferring Image Data from Header file
-	for(int row_idx =0; row_idx <64;row_idx++)
-	{
-		for(int col_idx =0;col_idx<64; col_idx++)
-		{
-			for(int j=0;j<8;j++)
-			{
-				for(int i=0;i<8;i++)
-				{
-					sample_block[col_idx + (row_idx*64)][j+(i*8)]=img[(j+col_idx*8)+((i+8*row_idx)*512)];
-				}
-			}
-		}
-	}
-
-	u32 PartialAddress;
-	int Status;
-	u32 IntrStsReg = 0;
-	u32 StatusReg;
-	u32 PartialCfg = 0;
-
-	// Flush and disable Data Cache
-	Xil_DCacheDisable();
-
-    // Initialize SD controller and transfer partials to DDR
-	SD_Init();
-	SD_TransferPartial("dct.bin", PARTIAL_DCT_ADDR, (PARTIAL_DCT_BITFILE_LEN << 2));
-	SD_TransferPartial("quantz.bin", PARTIAL_QUANTIZATION_ADDR, (PARTIAL_QUANTIZATION_BITFILE_LEN << 2));
-
 	// Invalidate and enable Data Cache
 	Xil_DCacheEnable();
 
@@ -643,42 +556,140 @@ int main()
 		return XST_FAILURE;
 	}
 
-					// Partially Reconfiguring with DCT
-					Reset = 1;
-					PartialAddress = PARTIAL_DCT_ADDR;
-					Status = XDcfg_TransferBitfile(DcfgInstPtr, PartialCfg, PartialAddress, PARTIAL_DCT_BITFILE_LEN);
-						if (Status != XST_SUCCESS) {
-							xil_printf("Error : FPGA configuration failed!\n\r");
-							exit(EXIT_FAILURE);
-						}
-					for(int i=1000; i<0;i--){;} // Wait for 2 us
-					get_dct();
+	// Partially Reconfiguring with DCT
+	Reset = 1;
+	PartialAddress = PARTIAL_DCT_ADDR;
+	Status = XDcfg_TransferBitfile(DcfgInstPtr, PartialCfg, PartialAddress, PARTIAL_DCT_BITFILE_LEN);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Error : FPGA configuration failed!\n\r");
+			exit(EXIT_FAILURE);
+		}
 
-					// Partially Reconfiguring with Quantization
-					Reset = 1;
-					PartialAddress = PARTIAL_QUANTIZATION_ADDR;
-					Status = XDcfg_TransferBitfile(DcfgInstPtr, PartialCfg, PartialAddress, PARTIAL_QUANTIZATION_BITFILE_LEN);
-						if (Status != XST_SUCCESS) {
-							xil_printf("Error : FPGA configuration failed!\n\r");
-							exit(EXIT_FAILURE);
-						}
-					for(int i=1000; i<0;i--){;} // Wait for 2 us
-					get_quantization();
+	return 0;
+}
 
-					// Run-Length Encoding
-					for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
-					get_rle();
+int quantz_reconfig()
+{
+	// Invalidate and enable Data Cache
+	Xil_DCacheEnable();
 
-					// Huffman Encoding
-					for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
-					get_huffman();
+	// Initialize Device Configuration Interface
+	DcfgInstPtr = &DcfgInstance;
+	XDcfg_0 = XDcfg_LookupConfig(XPAR_XDCFG_0_DEVICE_ID) ;
+	Status =  XDcfg_CfgInitialize(DcfgInstPtr, XDcfg_0, XDcfg_0->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
 
-					axiTimer.stopTimer();
-					double JPEG_SW_elapsed = axiTimer.getElapsedTimerInSeconds();
-					printf("JPEG Compression Completed in : %f seconds\n", JPEG_SW_elapsed);
+	// Check first time configuration or partial reconfiguration
+	IntrStsReg = XDcfg_IntrGetStatus(DcfgInstPtr);
+	if (IntrStsReg & XDCFG_IXR_DMA_DONE_MASK) {
+		PartialCfg = 1;
+	}
 
-					for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
-					sd_write();
+	// Enable the pcap clock.
+	StatusReg = Xil_In32(SLCR_PCAP_CLK_CTRL);
+	if (!(StatusReg & SLCR_PCAP_CLK_CTRL_EN_MASK)) {
+		Xil_Out32(SLCR_UNLOCK, SLCR_UNLOCK_VAL);
+		Xil_Out32(SLCR_PCAP_CLK_CTRL,
+				(StatusReg | SLCR_PCAP_CLK_CTRL_EN_MASK));
+		Xil_Out32(SLCR_UNLOCK, SLCR_LOCK_VAL);
+	}
+
+	// Disable the level-shifters from PS to PL.
+	if (!PartialCfg) {
+		Xil_Out32(SLCR_UNLOCK, SLCR_UNLOCK_VAL);
+		Xil_Out32(SLCR_LVL_SHFTR_EN, 0xA);
+		Xil_Out32(SLCR_LOCK, SLCR_LOCK_VAL);
+	}
+
+	// Select PCAP interface for partial reconfiguration
+	if (PartialCfg) {
+		XDcfg_EnablePCAP(DcfgInstPtr);
+		XDcfg_SetControlRegister(DcfgInstPtr, XDCFG_CTRL_PCAP_PR_MASK);
+	}
+
+	// Clear the interrupt status bits
+	XDcfg_IntrClear(DcfgInstPtr, (XDCFG_IXR_PCFG_DONE_MASK |
+					XDCFG_IXR_D_P_DONE_MASK |
+					XDCFG_IXR_DMA_DONE_MASK));
+
+	// Check if DMA command queue is full
+	StatusReg = XDcfg_ReadReg(DcfgInstPtr->Config.BaseAddr,
+				XDCFG_STATUS_OFFSET);
+	if ((StatusReg & XDCFG_STATUS_DMA_CMD_Q_F_MASK) ==
+			XDCFG_STATUS_DMA_CMD_Q_F_MASK) {
+		return XST_FAILURE;
+	}
+
+	// Partially Reconfiguring with Quantization
+	Reset = 1;
+	PartialAddress = PARTIAL_QUANTIZATION_ADDR;
+	Status = XDcfg_TransferBitfile(DcfgInstPtr, PartialCfg, PartialAddress, PARTIAL_QUANTIZATION_BITFILE_LEN);
+		if (Status != XST_SUCCESS) {
+			xil_printf("Error : FPGA configuration failed!\n\r");
+			exit(EXIT_FAILURE);
+		}
+
+	return 0;
+}
+
+
+
+int main()
+{
+	AxiTimerHelper axiTimer;
+	axiTimer.startTimer();
+
+	// Transferring Image Data from Header file to Memory
+	for(int row_idx =0; row_idx <64;row_idx++)
+	{
+		for(int col_idx =0;col_idx<64; col_idx++)
+		{
+			for(int j=0;j<8;j++)
+			{
+				for(int i=0;i<8;i++)
+				{
+					sample_block[col_idx + (row_idx*64)][j+(i*8)]=img[(j+col_idx*8)+((i+8*row_idx)*512)];
+				}
+			}
+		}
+	}
+
+	// Flush and disable Data Cache
+	Xil_DCacheDisable();
+
+    // Initialize SD controller and transfer partials to DDR
+	SD_Init();
+	SD_TransferPartial("dct.bin", PARTIAL_DCT_ADDR, (PARTIAL_DCT_BITFILE_LEN << 2));
+	SD_TransferPartial("quantz.bin", PARTIAL_QUANTIZATION_ADDR, (PARTIAL_QUANTIZATION_BITFILE_LEN << 2));
+
+
+	//DCT
+	dct_reconfig();
+	for(int i=1000; i<0;i--){;} // Wait for 2 us
+	get_dct();
+
+	//Quantization
+	quantz_reconfig();
+	for(int i=1000; i<0;i--){;} // Wait for 2 us
+	get_quantization();
+
+	//Run-Length Encoding
+	for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
+	get_rle();
+
+	//Huffman Encoding
+	for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
+	get_huffman();
+
+	axiTimer.stopTimer();
+	double JPEG_SW_elapsed = axiTimer.getElapsedTimerInSeconds();
+	printf("JPEG Compression Completed in : %f seconds\n", JPEG_SW_elapsed);
+
+	//Writting to SD Card
+	for(int i = 1000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
+	sd_write();
 
     return 0;
 }
