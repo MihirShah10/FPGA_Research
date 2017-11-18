@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Controller_Unit/Controller_Unit.sim/sim_1/synth/timing/bram_test_fpga_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module top_module_bram_fpga
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Controller_Unit/Controller_Unit.srcs/sim_1/new/bram_test_fpga.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bram_test_fpga
