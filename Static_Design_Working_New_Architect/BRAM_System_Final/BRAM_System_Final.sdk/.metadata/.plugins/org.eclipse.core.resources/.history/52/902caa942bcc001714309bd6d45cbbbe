@@ -1,0 +1,43 @@
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_cache.h"
+#include "ff.h"
+#include "xdevcfg.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include "xbasic_types.h"
+#include "xil_exception.h"
+#include "xsdps.h"
+#include "math.h"
+#include "string.h"
+
+using namespace std;
+
+
+int *bram_arm_control = (int*) XPAR_DARC_BRAM2_0_S00_AXI_BASEADDR;
+
+int main()
+{
+
+	*(bram_arm_control + 0) = 0x1; // Activate Reset
+
+	// Inputs to DCT Module
+
+	*(bram_arm_control + 1) = 0x0;
+
+	*(bram_arm_control + 2) = 0x5; // Reactive Reset and start sending input signals
+
+	for(int i = 10000; i >0; i--){;} // 10k original, 1000 gives 13 us delay
+
+
+
+	data_ddr3[64*(col_idx + row_idx*64) + idx] = *(bram_arm_control + 3);
+
+	return 0;
+}

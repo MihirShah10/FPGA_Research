@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Nov 18 20:54:29 2017
+# Process ID: 9008
+# Current directory: C:/JPEG_Thesis_2/BRAM_System_Final
+# Command line: wbtcv.exe -mode batch -source c:/jpeg_thesis_2/ip_repo/edit_ARM_FPGA_Control_Bus_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/JPEG_Thesis_2/BRAM_System_Final/webtalk.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_System_Final\webtalk.jou
+#-----------------------------------------------------------
+source c:/jpeg_thesis_2/ip_repo/edit_ARM_FPGA_Control_Bus_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
