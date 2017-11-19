@@ -1,0 +1,28 @@
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+
+#include "xparameters.h"
+#include "xil_printf.h"
+#include "xil_cache.h"
+#include "ff.h"
+#include "xdevcfg.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include "xbasic_types.h"
+#include "xil_exception.h"
+#include "xsdps.h"
+#include "math.h"
+#include "string.h"
+
+using namespace std;
+
+
+int *bram_god = (int*) XPAR_DARC_BRAM2_0_S00_AXI_BASEADDR;
+
+int main()
+{
+	return 0;
+}

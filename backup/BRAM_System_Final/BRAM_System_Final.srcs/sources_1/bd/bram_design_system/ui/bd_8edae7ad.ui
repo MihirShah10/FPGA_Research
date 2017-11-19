@@ -1,0 +1,47 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -150 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -130 -defaultsOSRD
+preplace inst bram_0 -pg 1 -lvl 7 -y 370 -defaultsOSRD
+preplace inst ARM_FPGA_Control_Bus_0 -pg 1 -lvl 2 -y 280 -defaultsOSRD
+preplace inst DARC_BRAM2_0 -pg 1 -lvl 4 -y 210 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -y 0 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 4 -y 450 -defaultsOSRD
+preplace inst DARC_Mux_0 -pg 1 -lvl 6 -y 380 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -20 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -70 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 7 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ -150 NJ
+preplace netloc ARM_FPGA_Control_Bus_0_sel_mux_channel 1 2 4 N 260 930 300 NJ 300 1720J
+preplace netloc DARC_BRAM2_0_arm_control_bram_we 1 4 2 NJ 190 1750
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 200J -110 NJ -110 NJ -110 1440J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 220 80 N 80 960 80 1440
+preplace netloc controller_0_data_mat_in 1 1 4 210 400 NJ 400 960J 350 1410
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 N 10 590
+preplace netloc controller_0_fpga_done_write 1 1 4 240 380 NJ 380 940J 340 1420
+preplace netloc controller_0_bram_control_fpga_we 1 4 2 NJ 400 NJ
+preplace netloc DARC_Mux_0_arm_bram_data_out 1 3 4 970 290 NJ 290 1720J 250 2110
+preplace netloc ps7_0_axi_periph_M01_AXI 1 1 5 240 110 NJ 110 NJ 110 1420J 150 1740
+preplace netloc controller_0_fpga_done_read 1 1 4 230 390 NJ 390 930J 320 1440
+preplace netloc DARC_Mux_0_bram_data_in 1 6 1 2130
+preplace netloc DARC_Mux_0_bram_we 1 6 1 2120
+preplace netloc ARM_FPGA_Control_Bus_0_fpga_start_write 1 2 2 N 300 910
+preplace netloc processing_system7_0_FIXED_IO 1 1 7 200J -140 NJ -140 NJ -140 NJ -140 NJ -140 NJ -140 2350J
+preplace netloc DARC_BRAM2_0_arm_control_bram_data_in 1 4 2 NJ 230 1710
+preplace netloc DARC_Mux_0_bram_addr 1 6 1 2140
+preplace netloc controller_0_bram_control_fpga_data_in 1 4 2 NJ 440 NJ
+preplace netloc ARM_FPGA_Control_Bus_0_fpga_start_read 1 2 2 N 280 920
+preplace netloc DARC_BRAM2_0_arm_control_bram_addr 1 4 2 NJ 210 1730
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 -180 90 200 90 580 90 950 90 1430 170 1740 510 2150
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 3 970 130 1410J 140 1750
+preplace netloc controller_0_bram_control_fpga_addr 1 4 2 NJ 420 NJ
+preplace netloc DARC_Mux_0_fpga_bram_data_out 1 3 4 970 330 NJ 330 1700 530 2110
+preplace netloc bram_0_dout 1 5 3 1750J 520 NJ 520 2350
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 2 N 0 1410J
+levelinfo -pg 1 -200 10 450 750 1190 1570 1930 2250 2370 -top -340 -bot 840
+",
+}
+{
+   da_axi4_cnt: "3",
+   da_ps7_cnt: "1",
+}

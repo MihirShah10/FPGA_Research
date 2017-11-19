@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Oct 18 23:51:21 2017
+# Process ID: 29864
+# Current directory: /home/mihir/PRLab
+# Command line: vivado
+# Log file: /home/mihir/PRLab/vivado.log
+# Journal file: /home/mihir/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint Implement/Config_addition/top_route_design.dcp
+Command: open_checkpoint Implement/Config_addition/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5831.426 ; gain = 0.004 ; free physical = 309 ; free virtual = 2050
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.37 . Memory (MB): peak = 6183.070 ; gain = 1.000 ; free physical = 67 ; free virtual = 1763
+Restored from archive | CPU: 0.350000 secs | Memory: 1.358711 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.37 . Memory (MB): peak = 6183.070 ; gain = 1.000 ; free physical = 67 ; free virtual = 1763
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:23 . Memory (MB): peak = 6312.473 ; gain = 485.305 ; free physical = 64 ; free virtual = 1617
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/Config_addition.bit
+Command: write_bitstream -file Bitstreams/Config_addition.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license: PartialReconfiguration
+INFO: [Common 17-1223] The version limit for your license is '2017.10' and will expire in 13 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: PartialReconfiguration
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_filter0" Reconfigurable Module "matrix_design_i/matrix_0/inst/matrix_v1_0_S00_AXI_inst/matrix0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_addition.bit...
+Process Partition "pblock_filter0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/Config_addition_pblock_filter0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 6995.449 ; gain = 371.836 ; free physical = 68 ; free virtual = 980
+Bitstreams/Config_addition.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_addition_pblock_filter0_partial.bit" Bitstreams/addition.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_addition_pblock_filter0_partial.bit} Bitstreams/addition.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_addition_pblock_filter0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_addition_pblock_filter0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/addition.bin
+Writing log file Bitstreams/addition.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Oct 18 23:54:07 2017    Bitstreams/Config_addition_pblock_filter0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
+open_checkpoint Implement/Config_multiplication/top_route_design.dcp
+Command: open_checkpoint Implement/Config_multiplication/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 6995.449 ; gain = 0.000 ; free physical = 131 ; free virtual = 898
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 62 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:02 . Memory (MB): peak = 6995.449 ; gain = 0.000 ; free physical = 92 ; free virtual = 890
+Restored from archive | CPU: 0.720000 secs | Memory: 1.756485 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.48 ; elapsed = 00:00:02 . Memory (MB): peak = 6995.449 ; gain = 0.000 ; free physical = 92 ; free virtual = 891
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 6995.449 ; gain = 0.000 ; free physical = 70 ; free virtual = 871
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/Config_multiplication.bit
+Command: write_bitstream -file Bitstreams/Config_multiplication.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_filter0" Reconfigurable Module "matrix_design_i/matrix_0/inst/matrix_v1_0_S00_AXI_inst/matrix0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_multiplication.bit...
+Process Partition "pblock_filter0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/Config_multiplication_pblock_filter0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 7030.934 ; gain = 35.484 ; free physical = 77 ; free virtual = 850
+Bitstreams/Config_multiplication.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_multiplication_pblock_filter0_partial.bit" Bitstreams/multiplication.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_multiplication_pblock_filter0_partial.bit} Bitstreams/multiplication.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_multiplication_pblock_filter0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_multiplication_pblock_filter0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/multiplication.bin
+Writing log file Bitstreams/multiplication.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Oct 18 23:57:25 2017    Bitstreams/Config_multiplication_pblock_filter0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
+open_checkpoint Implement/Config_blank/top_route_design.dcp
+Command: open_checkpoint Implement/Config_blank/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7030.934 ; gain = 0.000 ; free physical = 72 ; free virtual = 859
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/PRLab/.Xil/Vivado-29864-legolas1.utdallas.edu/dcp/matrix_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.41 . Memory (MB): peak = 7030.934 ; gain = 0.000 ; free physical = 80 ; free virtual = 857
+Restored from archive | CPU: 0.400000 secs | Memory: 1.436836 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.41 . Memory (MB): peak = 7030.934 ; gain = 0.000 ; free physical = 80 ; free virtual = 857
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7030.934 ; gain = 0.000 ; free physical = 62 ; free virtual = 856
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/blanking.bit
+Command: write_bitstream -file Bitstreams/blanking.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_filter0" Reconfigurable Module "matrix_design_i/matrix_0/inst/matrix_v1_0_S00_AXI_inst/matrix0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/blanking.bit...
+Process Partition "pblock_filter0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/blanking_pblock_filter0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:34 ; elapsed = 00:00:31 . Memory (MB): peak = 7030.934 ; gain = 0.000 ; free physical = 74 ; free virtual = 863
+Bitstreams/blanking.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/blanking_pblock_filter0_partial.bit" Bitstreams/blank.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/blanking_pblock_filter0_partial.bit} Bitstreams/blank.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/blanking_pblock_filter0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/blanking_pblock_filter0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/blank.bin
+Writing log file Bitstreams/blank.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Oct 18 23:59:28 2017    Bitstreams/blanking_pblock_filter0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
