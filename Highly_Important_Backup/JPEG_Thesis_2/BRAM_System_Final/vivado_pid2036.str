@@ -1,0 +1,81 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 2036
+
+Current time: 	11/26/17 1:03:25 AM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	Mihir Shah
+User home directory: C:/Users/Mihir Shah
+User working directory: C:/JPEG_Thesis_2/BRAM_System_Final
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	204 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 413 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56278kb) [00:00:16]
+// [Engine Memory]: 389 MB (+256821kb) [00:00:16]
+// Opening Vivado Project: C:\JPEG_Thesis_2\BRAM_System_Final\BRAM_System_Final.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr 
+// [Engine Memory]: 413 MB (+4347kb) [00:00:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 421 MB. GUI used memory: 25 MB. Current time: 11/26/17 1:03:28 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// [Engine Memory]: 436 MB (+1986kb) [00:00:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 460 MB. GUI used memory: 25 MB. Current time: 11/26/17 1:03:43 AM CST
+// TclEventType: IP_LOCK_CHANGE
+// [Engine Memory]: 475 MB (+18804kb) [00:00:38]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 519 MB (+21087kb) [00:00:44]
+// [Engine Memory]: 560 MB (+15328kb) [00:00:45]
+// Tcl Message: open_project C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 580 MB. GUI used memory: 36 MB. Current time: 11/26/17 1:04:00 AM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 847.770 ; gain = 180.195 
+// [Engine Memory]: 593 MB (+4880kb) [00:00:54]
+// Project name: BRAM_System_Final; location: C:/JPEG_Thesis_2/BRAM_System_Final; part: xc7z020clg484-1
+// TclEventType: DG_UPDATE_GRAPH
+closeMainWindow("BRAM_System_Final - [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr] - Vivado 2016.3"); // cd:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit vivado.<br>If you choose to abort background task and exit immediately, you will lose all unsaved<br>changes to project. (Background Task)'
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

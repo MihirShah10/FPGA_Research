@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/Quantization/Quantization.sim/sim_1/synth/timing/quantization_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/Quantization/Quantization.srcs/sim_1/new/quantization_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantization_tb

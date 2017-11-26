@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 01:03:07 2017
+# Process ID: 1648
+# Current directory: C:/JPEG_Thesis_2/BRAM_System_Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4760 C:\JPEG_Thesis_2\BRAM_System_Final\BRAM_System_Final.xpr
+# Log file: C:/JPEG_Thesis_2/BRAM_System_Final/vivado.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_System_Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr
+close_project
+pwd
+cd PRLab
+ls
+cd PRLab
+cd PRLab
+cd /PRLab
+pwd
+cd ..
+cd C:/JPEG_Thesis_2/PRLab
+cd Sources
+cd ..
+cd Synth/Static/
+open_checkpoint C:/JPEG_Thesis_2/PRLab/Synth/Static/bram_design_system_wrapper.dcp
+report_utilization -name utilization_1
+close_project

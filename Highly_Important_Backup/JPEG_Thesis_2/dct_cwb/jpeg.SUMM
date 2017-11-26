@@ -1,0 +1,81 @@
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdltran version : 5.61.02 (Linux 64-bit) Fri Apr 21 13:55:30 JST 2017
+         (BIF version : 3.40i)
+         (LICflex version : 1.52 cylmd)
+         make at Fri Apr 21 14:09:45 JST 2017
+ Option  -EE -c1000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -tcio -EE -lb /eda/cwb/cyber_561/LINUX/packages/zynq-1.BLIB -lfl /eda/cwb/cyber_561/LINUX/packages/zynq-1.FLIB jpeg.IFF -tcio 
+
+scpars  -EE -info_base_name scpars ./dct.cpp
+
+############## CyberII started (automatic scheduling mode) ##############
+[Clock period]    100,000 (1/10ps) [define]
+[Datapath delay]   80,000 (1/10ps)
+[Clock uncertainty] 20,000 (1/10ps)
+
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  -  :  1  (74bit:1)
+  <  :  7  (32bit:7)
+  ++ :  7  (32bit:7)
+  %  :  1  (32bit:1)
+  /  :  1  (32bit:1)
+  *  :  7  (17bit:1, 21bit:1, 32bit:1, 55bit:1, 56bit:3)
+  == :  8  (1bit:1, 2bit:2, 7bit:2, 32bit:3)
+  +  : 67  (3bit:36, 4bit:28, 22bit:1, 25bit:1, 37bit:1)
+  ~  :  2  (2bit:1, 7bit:1)
+  |  :  2  (1bit:2)
+  Data transfer : 316
+
+ === array / memory ===
+  read  :  5
+  write :  6
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  -  : 15  (17bit:1, 19bit:2, 20bit:2, 24bit:4, 32bit:2, 35bit:2, 59bit:2)
+  *  :128  (8bit:8, 9bit:56, 10bit:1, 11bit:63)
+  == :129  (3bit:3, 7bit:126)
+  +  :137  (10bit:1, 17bit:65, 18bit:63, 21bit:2, 22bit:2, 59bit:2, 69bit:2)
+  ~  : 63  (7bit:63)
+  |  : 64  (1bit:64)
+  |> :  1  (1bit:1)
+  ~|>:  2  (1bit:2)
+  INCR:  2  (3bit:2)
+  Data transfer : 2606
+
+ === array / memory ===
+  read  : 64
+  write :  4
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 101 / 101 / 101.00
+
+  Module Name         : jpeg
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : zynq
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    Slice LUTs        :      1,569
+    Registers         :      1,553
+    Block Memory Bits :        768
+    DSPs              :          3
+
+  Latency Index       :        801
+  Total States        :        101
+
+  Clock Period        :       10ns
+  Critical Path Delay :  12.5777ns
+
+  Net                 :      2,131
+  Pin Pair            :      8,030
+
+  Port                :      1,539
+    In                :        770
+    Out               :        769
+
+##### CyberII Normal finish (automatic scheduling mode) [jpeg] #####
+

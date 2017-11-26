@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Nov 09 02:06:32 2017
+# Process ID: 21904
+# Current directory: C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5528 C:\github\FPGA_Research\Final_Matrix_Design\PRLab\Matrix\Matrix.xpr
+# Log file: C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/vivado.log
+# Journal file: C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix\vivado.jou
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.xpr
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Bitstreams/blanking.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+write_hwdef -force  -file C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+write_hwdef -force  -file C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf
+launch_sdk -workspace C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk -hwspec C:/github/FPGA_Research/Final_Matrix_Design/PRLab/Matrix/Matrix.sdk/matrix_design_wrapper.hdf

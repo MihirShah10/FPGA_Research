@@ -1,0 +1,24 @@
+LSInfo_version: 1.06
+
+iff_filename: "jpeg_E.IFF"
+rtl_filename: "jpeg_E.v"
+
+timestamp_0: 20171108174110_17287_80711
+timestamp_5: 20171108174550_17570_93550
+timestamp_9: 20171108174552_17570_95464
+timestamp_C: 20171108174552_17570_67898
+timestamp_E: 20171108174552_17570_94298
+timestamp_V: 20171108174553_17583_77811
+
+lang: verilog
+
+gated_clock_register: EXIST
+
+stall_register: NONE
+
+module_name: jpeg
+
+syn_tool: VIVADO
+start_fpga_info:
+	fpga_family: zynq
+end_fpga_info:

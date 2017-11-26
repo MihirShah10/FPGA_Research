@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_0
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_21
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61_2
+INFO: [VRFC 10-311] analyzing module jpeg_add71_71s
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s_3
+INFO: [VRFC 10-311] analyzing module jpeg_mul12u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u_4
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb

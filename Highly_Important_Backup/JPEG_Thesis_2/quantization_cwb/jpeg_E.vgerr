@@ -1,0 +1,11 @@
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+veriloggen version : 6.79.2 (Linux 64-bit) Thu Mar 30 16:53:33 JST 2017
+         (BIF version : 3.40f)
+         (LICflex version : 1.52 cylmd)
+         (GEN COMMON version : 3.43)
+options : veriloggen -EE jpeg_E.IFF
+bdlpars options :  -EE -info_base_name scpars ./quantization.cpp
+bdltran options :  -EE -c1000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -tcio -EE -lb /eda/cwb/cyber_561/LINUX/packages/zynq-1.BLIB -lfl /eda/cwb/cyber_561/LINUX/packages/zynq-1.FLIB jpeg.IFF -tcio 
+N_GH0000: Verilog file generated: (jpeg_E.v)
+N_GH0011: LSInfo file generated: (jpeg_E.v.LSInfo)
+veriloggen finished successfully.

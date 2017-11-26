@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 11:10:18 2017
+# Process ID: 8676
+# Current directory: C:/JPEG_Thesis_2/PRLab/Synth/Static
+# Command line: wbtcv.exe -mode batch -source C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/JPEG_Thesis_2/PRLab/Synth/Static/webtalk.log
+# Journal file: C:/JPEG_Thesis_2/PRLab/Synth/Static\webtalk.jou
+#-----------------------------------------------------------
+source C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/webtalk/labtool_webtalk.tcl -notrace

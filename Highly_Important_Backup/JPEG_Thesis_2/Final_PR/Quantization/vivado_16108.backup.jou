@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 20 23:38:24 2017
+# Process ID: 16108
+# Current directory: C:/JPEG_Thesis/Quantization/Quantization
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16196 C:\JPEG_Thesis\Quantization\Quantization\Quantization.xpr
+# Log file: C:/JPEG_Thesis/Quantization/Quantization/vivado.log
+# Journal file: C:/JPEG_Thesis/Quantization/Quantization\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis/Quantization/Quantization/Quantization.xpr

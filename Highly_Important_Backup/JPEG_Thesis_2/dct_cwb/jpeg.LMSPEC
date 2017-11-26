@@ -1,0 +1,155 @@
+#@VERSION{3.00}
+#@CNT{jpeg}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@PROCESS{
+	NAME	jpeg
+#	KIND
+#	LIMIT
+#	BITWIDTH
+#	DELAY
+	AREA_REG	1553
+	AREA_COMB	1569
+	FPGA_MEM_BIT	768
+	MACRO_BLOCK	MUL:3
+	NET	2131
+	PIN_PAIR	8030
+#	SPECULATION
+#	COMMENT
+	DEFMOD {
+		clock                    clk              /* c, clk, @clock_period = 10ns, clock_edge = \pos, org_type = bool */;
+		reset                    rst              /* r, rst, reset_active = low, reset_mode = sync, org_type = bool */;
+		in    unsigned ter(11..0) jpeg_in_a00      /* glo, jpeg_in[0], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a01      /* glo, jpeg_in[1], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a02      /* glo, jpeg_in[2], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a03      /* glo, jpeg_in[3], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a04      /* glo, jpeg_in[4], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a05      /* glo, jpeg_in[5], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a06      /* glo, jpeg_in[6], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a07      /* glo, jpeg_in[7], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a08      /* glo, jpeg_in[8], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a09      /* glo, jpeg_in[9], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a10      /* glo, jpeg_in[10], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a11      /* glo, jpeg_in[11], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a12      /* glo, jpeg_in[12], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a13      /* glo, jpeg_in[13], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a14      /* glo, jpeg_in[14], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a15      /* glo, jpeg_in[15], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a16      /* glo, jpeg_in[16], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a17      /* glo, jpeg_in[17], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a18      /* glo, jpeg_in[18], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a19      /* glo, jpeg_in[19], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a20      /* glo, jpeg_in[20], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a21      /* glo, jpeg_in[21], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a22      /* glo, jpeg_in[22], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a23      /* glo, jpeg_in[23], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a24      /* glo, jpeg_in[24], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a25      /* glo, jpeg_in[25], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a26      /* glo, jpeg_in[26], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a27      /* glo, jpeg_in[27], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a28      /* glo, jpeg_in[28], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a29      /* glo, jpeg_in[29], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a30      /* glo, jpeg_in[30], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a31      /* glo, jpeg_in[31], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a32      /* glo, jpeg_in[32], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a33      /* glo, jpeg_in[33], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a34      /* glo, jpeg_in[34], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a35      /* glo, jpeg_in[35], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a36      /* glo, jpeg_in[36], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a37      /* glo, jpeg_in[37], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a38      /* glo, jpeg_in[38], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a39      /* glo, jpeg_in[39], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a40      /* glo, jpeg_in[40], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a41      /* glo, jpeg_in[41], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a42      /* glo, jpeg_in[42], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a43      /* glo, jpeg_in[43], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a44      /* glo, jpeg_in[44], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a45      /* glo, jpeg_in[45], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a46      /* glo, jpeg_in[46], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a47      /* glo, jpeg_in[47], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a48      /* glo, jpeg_in[48], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a49      /* glo, jpeg_in[49], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a50      /* glo, jpeg_in[50], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a51      /* glo, jpeg_in[51], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a52      /* glo, jpeg_in[52], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a53      /* glo, jpeg_in[53], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a54      /* glo, jpeg_in[54], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a55      /* glo, jpeg_in[55], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a56      /* glo, jpeg_in[56], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a57      /* glo, jpeg_in[57], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a58      /* glo, jpeg_in[58], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a59      /* glo, jpeg_in[59], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a60      /* glo, jpeg_in[60], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a61      /* glo, jpeg_in[61], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a62      /* glo, jpeg_in[62], org_type = sc_uint:12, sig_id = 3 */;
+		in    unsigned ter(11..0) jpeg_in_a63      /* glo, jpeg_in[63], org_type = sc_uint:12, sig_id = 3 */;
+		out   signed   ter(11..0) jpeg_out_a00     /* glo, jpeg_out[0], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a01     /* glo, jpeg_out[1], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a02     /* glo, jpeg_out[2], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a03     /* glo, jpeg_out[3], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a04     /* glo, jpeg_out[4], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a05     /* glo, jpeg_out[5], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a06     /* glo, jpeg_out[6], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a07     /* glo, jpeg_out[7], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a08     /* glo, jpeg_out[8], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a09     /* glo, jpeg_out[9], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a10     /* glo, jpeg_out[10], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a11     /* glo, jpeg_out[11], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a12     /* glo, jpeg_out[12], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a13     /* glo, jpeg_out[13], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a14     /* glo, jpeg_out[14], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a15     /* glo, jpeg_out[15], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a16     /* glo, jpeg_out[16], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a17     /* glo, jpeg_out[17], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a18     /* glo, jpeg_out[18], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a19     /* glo, jpeg_out[19], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a20     /* glo, jpeg_out[20], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a21     /* glo, jpeg_out[21], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a22     /* glo, jpeg_out[22], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a23     /* glo, jpeg_out[23], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a24     /* glo, jpeg_out[24], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a25     /* glo, jpeg_out[25], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a26     /* glo, jpeg_out[26], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a27     /* glo, jpeg_out[27], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a28     /* glo, jpeg_out[28], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a29     /* glo, jpeg_out[29], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a30     /* glo, jpeg_out[30], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a31     /* glo, jpeg_out[31], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a32     /* glo, jpeg_out[32], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a33     /* glo, jpeg_out[33], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a34     /* glo, jpeg_out[34], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a35     /* glo, jpeg_out[35], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a36     /* glo, jpeg_out[36], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a37     /* glo, jpeg_out[37], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a38     /* glo, jpeg_out[38], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a39     /* glo, jpeg_out[39], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a40     /* glo, jpeg_out[40], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a41     /* glo, jpeg_out[41], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a42     /* glo, jpeg_out[42], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a43     /* glo, jpeg_out[43], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a44     /* glo, jpeg_out[44], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a45     /* glo, jpeg_out[45], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a46     /* glo, jpeg_out[46], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a47     /* glo, jpeg_out[47], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a48     /* glo, jpeg_out[48], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a49     /* glo, jpeg_out[49], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a50     /* glo, jpeg_out[50], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a51     /* glo, jpeg_out[51], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a52     /* glo, jpeg_out[52], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a53     /* glo, jpeg_out[53], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a54     /* glo, jpeg_out[54], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a55     /* glo, jpeg_out[55], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a56     /* glo, jpeg_out[56], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a57     /* glo, jpeg_out[57], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a58     /* glo, jpeg_out[58], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a59     /* glo, jpeg_out[59], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a60     /* glo, jpeg_out[60], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a61     /* glo, jpeg_out[61], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a62     /* glo, jpeg_out[62], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   signed   ter(11..0) jpeg_out_a63     /* glo, jpeg_out[63], org_type = sc_int:12, sig_id = 4, org_sig_phyty_reg = YES */;
+		out   unsigned ter(0..0) valid            /* glo, valid, org_type = bool, sig_id = 5, org_sig_phyty_reg = YES */;
+	}
+}
+#@HASH{8a8f0ca798a3b72b87d5685afa67c4c8}
+#@END{jpeg}

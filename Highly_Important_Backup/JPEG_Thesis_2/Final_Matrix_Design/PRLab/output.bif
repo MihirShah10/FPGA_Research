@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Final_Matrix_Design\PRLab\Matrix\Matrix.sdk\zynq_fsbl\Debug\zynq_fsbl.elf
+	C:\Final_Matrix_Design\PRLab\Bitstreams\blanking.bit
+	C:\Final_Matrix_Design\PRLab\Matrix\Matrix.sdk\MatrixTest\Debug\MatrixTest.elf
+}

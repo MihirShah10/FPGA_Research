@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 01:04:34 2017
+# Process ID: 9244
+# Current directory: C:/JPEG_Thesis_2/BRAM_System_Final
+# Command line: wbtcv.exe -mode batch -source C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/JPEG_Thesis_2/BRAM_System_Final/webtalk.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_System_Final\webtalk.jou
+#-----------------------------------------------------------
+source C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.hw/webtalk/labtool_webtalk.tcl -notrace

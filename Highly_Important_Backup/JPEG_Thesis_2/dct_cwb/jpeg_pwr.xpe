@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<POWERDATA author="NEC CyberWorkBench" dataVersion="SoftwareVersion:0.61xd" date="2017/11/08 17:43:41" design="jpeg">
+
+  <ENVIRONMENT>
+	<DEVICE grade="Commercial" package="CLG225" part="XC7Z010" process="Typical" speed="-1"/>
+  <VOLTAGESOURCES>
+	<SOURCE icc="0.953" iccq="280.182" name="Vccint" power="281.135" voltage="1.000"/> 
+	<SOURCE icc="0.000" iccq="38.000" name="Vccaux" power="95.000" voltage="2.500"/>
+	<SOURCE icc="0.000" iccq="1.500" name="Vcco25" power="3.750" voltage="2.500"/>
+  </VOLTAGESOURCES>
+  <THERMAL>
+	<AMBIENT value="50.0"/> 
+	<AIRFLOW value="250"/>
+	<HEATSINK value="Medium Profile"/>
+	<BOARDSELECTION value="Medium (10&quot;x10&quot;)"/>
+	<BOARDLAYERS value="8 to 11"/>
+	<TJA value="2.8"/>
+	<JUNCTIONTEMP value="51.1"/>
+  </THERMAL>
+  </ENVIRONMENT>
+  <BLOCKDETAILS>
+	<BYTYPE>
+
+	<BLOCKTYPE name="CLOCK">
+	   <CLOCK belFanout="154" bufType="BUFG" freq="100.0000" hrows="2" leafs="8" name="clk" power="0.00" sliceFanout="24"/>
+	   <CLOCK belFanout="1" bufType="IOB" freq="100.0000" hrows="0" leafs="0" name="clk/IBUFG" power="0.00" sliceFanout="1"/>
+	</BLOCKTYPE>
+	<BLOCKTYPE name="LOGIC">
+	   <LOGIC SLICEL_CARRY4="10" clock="0.00" clockFreq="100.0000" enableRate="0.000000" extNets="50" fanout="3.0000" logicCap="40071" luts="1569" name="jpeg" numNets="151" power="0.000000" signalCap="27334" toggleRate="20.0000" writeRate="0.000000"/>
+	   <LOGIC clock="jpeg_REG" clockFreq="100.0000" enableRate="1.00" extNets="1553" fanout="3.0000" ffs="1553" logicCap="17841" name="jpeg_REG" numNets="1553" power="0.000" signalCap="45138" toggleRate="20.0000" writeRate="0.00"/>
+	</BLOCKTYPE>
+
+	<BLOCKTYPE name="IO">
+	  <MODULE count="1" name="rst">
+		<GROUPSUMMARY>
+		  <IO clock="" clockFreq="100.0000" dataRate="SDR" ioDelay="No"  ibufLowPower="Yes" inputs="1" ioStandard="LVCMOS25" name="rst" numHP="1" oDelay="No" serdes="No" signalRate="0.00" toggleRate="20.0000" vccAux="0.00" vccInt="0.00" vcco="0.00" vccoCurrent="0.00"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	  <MODULE count="12" name="jpeg_in[64]&lt;11:11>">
+		<GROUPSUMMARY>
+		  <IO clock="" clockFreq="100.0000" dataRate="SDR" ioDelay="No" ibufLowPower="Yes" inputs="768"  ioStandard="LVCMOS25" name="jpeg_in[64]&lt;11:0>" numHP="768" oDelay="No" serdes="No" signalRate="0.00" toggleRate="20.0000" vccAux="0.00" vccAuxIo="0.00" vccInt="0.00" vcco="0.00" vccCurrent="0.00"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	  <MODULE count="12" name="jpeg_out[64]&lt;11:11>">
+		<GROUPSUMMARY>
+		  <IO clock="" clockFreq="100.0000" dataRate="SDR" ioDelay="No" ioStandard="LVCMOS25" name="jpeg_out[64]&lt;11:0>"  outputEnableRate="1.00" outputLoad="5" outputs="768" serdes="No" signalRate="0.00" toggleRate="20.0000" vccAux="0.00" vccInt="0.00" vcco="0.00" vccoCurrent="0.00"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	  <MODULE count="1" name="valid">
+		<GROUPSUMMARY>
+		  <IO clock="" clockFreq="100.0000" dataRate="SDR" ioDelay="No" ioStandard="LVCMOS25" name="valid"  outputEnableRate="1.00" outputLoad="5" outputs="1" serdes="No" signalRate="0.00" toggleRate="20.0000" vccAux="0.00" vccInt="0.00" vcco="0.00" vccoCurrent="0.00"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	</BLOCKTYPE>
+	<BLOCKTYPE name="BRAM">
+	</BLOCKTYPE>
+
+	<BLOCKTYPE name="DSP">
+	  <MODULE count="2" name="mul12s">
+		<GROUPSUMMARY>
+		  <DSP48E1 clock="" clockFreq="100.0000" mregUsed="No" multUsed="Yes" name="mul12s" power="0.00" preAdderUsed="No" toggleRate="20.0000"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	  <MODULE count="1" name="mul12u">
+		<GROUPSUMMARY>
+		  <DSP48E1 clock="" clockFreq="100.0000" mregUsed="No" multUsed="Yes" name="mul12u" power="0.00" preAdderUsed="No" toggleRate="20.0000"/>
+		</GROUPSUMMARY>
+	  </MODULE>
+	</BLOCKTYPE>
+	</BYTYPE>
+  </BLOCKDETAILS>
+
+</POWERDATA>

@@ -1,0 +1,2528 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 22 21:29:37 2017
+# Process ID: 22190
+# Current directory: /home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab
+# Command line: vivado
+# Log file: /home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/vivado.log
+# Journal file: /home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+pwd
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+auto.tcl
+Bitstreams
+Checkpoint
+first_rm_load.tcl
+generate_bitstreams.tcl
+Implement
+JPEG
+ps7_create.tcl
+Sources
+Synth
+synth_reconfig_modules.tcl
+vivado.jou
+vivado.log
+vivado_pid22190.str
+open_checkpoint Synth/Static/jpeg_pr_ddr_design_wrapper.dcp
+Command: open_checkpoint Synth/Static/jpeg_pr_ddr_design_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5834.570 ; gain = 0.000 ; free physical = 489 ; free virtual = 2901
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg' instantiated as 'jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0' [c:/JPEG_Thesis_2/Final_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_pr_ddr_design/ipshared/2f2f/hdl/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI.v:3782]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 6305.492 ; gain = 470.922 ; free physical = 70 ; free virtual = 2467
+checkpoint_jpeg_pr_ddr_design_wrapper
+read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_huffman/huffman_synth.dcp
+Command: read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_huffman/huffman_synth.dcp
+INFO: [Netlist 29-17] Analyzing 129 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+read_checkpoint: Time (s): cpu = 00:01:10 ; elapsed = 00:01:47 . Memory (MB): peak = 6663.398 ; gain = 17.539 ; free physical = 71 ; free virtual = 2118
+checkpoint_jpeg_pr_ddr_design_wrapper
+set_property HD.RECONFIGURABLE 1 [get_cells jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/top_link_add.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 6714.234 ; gain = 24.008 ; free physical = 85 ; free virtual = 2095
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Sources/xdc/fplan.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Sources/xdc/fplan.xdc]
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Sources/xdc/fplan.xdc
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+INFO: [DRC 23-27] Running DRC with 2 threads
+delete_drc_ruledeck ruledeck_1
+set_property SNAPPING_MODE ON [get_pblocks pblock_jpeg0]
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y0:SLICE_X113Y99 DSP48_X3Y0:DSP48_X4Y39 RAMB18_X4Y0:RAMB18_X5Y39 RAMB36_X4Y0:RAMB36_X5Y19} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X4Y22:RAMB18_X5Y39 RAMB36_X4Y11:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X28Y0:SLICE_X113Y99 DSP48_X2Y0:DSP48_X4Y39 RAMB18_X2Y0:RAMB18_X5Y39 RAMB36_X2Y0:RAMB36_X5Y19} -remove {SLICE_X90Y0:SLICE_X113Y99 DSP48_X3Y0:DSP48_X4Y39 RAMB18_X4Y0:RAMB18_X5Y39 RAMB36_X4Y0:RAMB36_X5Y19} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_2 -ruledecks {ruledeck_1}
+INFO: [DRC 23-27] Running DRC with 2 threads
+delete_drc_ruledeck ruledeck_1
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license: PartialReconfiguration
+INFO: [Common 17-1223] The version limit for your license is '2017.10' and will expire in -22 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: PartialReconfiguration
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 6734.867 ; gain = 0.000 ; free physical = 70 ; free virtual = 2019
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: f28eba41
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: dca92fde
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 66 ; free virtual = 2012
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 53 cells.
+Phase 2 Constant propagation | Checksum: 17715d7ad
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 134 ; free virtual = 2085
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 441 unconnected nets.
+INFO: [Opt 31-11] Eliminated 191 unconnected cells.
+Phase 3 Sweep | Checksum: 148451448
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 259 ; free virtual = 2084
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2948 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 6b2b5ed2
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 132 ; free virtual = 1960
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 130 ; free virtual = 1957
+Ending Logic Optimization Task | Checksum: c5cbf75b
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:01:34 . Memory (MB): peak = 6789.867 ; gain = 0.000 ; free physical = 243 ; free virtual = 2079
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: c5cbf75b
+
+Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:01 . Memory (MB): peak = 6789.871 ; gain = 0.004 ; free physical = 160 ; free virtual = 2058
+INFO: [Common 17-83] Releasing license: Implementation
+18 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:33 ; elapsed = 00:03:36 . Memory (MB): peak = 6789.871 ; gain = 55.004 ; free physical = 130 ; free virtual = 2069
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 6815.887 ; gain = 0.000 ; free physical = 131 ; free virtual = 2076
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 6815.887 ; gain = 0.000 ; free physical = 131 ; free virtual = 2076
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 7fa61489
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:18 . Memory (MB): peak = 7153.266 ; gain = 337.379 ; free physical = 65 ; free virtual = 1666
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: d3d31bac
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:28 . Memory (MB): peak = 7153.266 ; gain = 337.379 ; free physical = 72 ; free virtual = 1657
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: d3d31bac
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:28 . Memory (MB): peak = 7153.266 ; gain = 337.379 ; free physical = 69 ; free virtual = 1658
+Phase 1 Placer Initialization | Checksum: d3d31bac
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:30 . Memory (MB): peak = 7153.266 ; gain = 337.379 ; free physical = 73 ; free virtual = 1653
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 114c7879a
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:02:32 . Memory (MB): peak = 7161.266 ; gain = 345.379 ; free physical = 78 ; free virtual = 1631
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 114c7879a
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:02:33 . Memory (MB): peak = 7161.266 ; gain = 345.379 ; free physical = 68 ; free virtual = 1631
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 14f278c46
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:02:34 . Memory (MB): peak = 7161.266 ; gain = 345.379 ; free physical = 81 ; free virtual = 1634
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 8f90c7af
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:02:35 . Memory (MB): peak = 7161.266 ; gain = 345.379 ; free physical = 79 ; free virtual = 1634
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 8f90c7af
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:02:35 . Memory (MB): peak = 7161.266 ; gain = 345.379 ; free physical = 79 ; free virtual = 1634
+
+Phase 3.5 Small Shape Detail Placement
+
+Phase 3.5.1 Place Remaining
+Phase 3.5.1 Place Remaining | Checksum: d085a893
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:03:32 . Memory (MB): peak = 7172.266 ; gain = 356.379 ; free physical = 63 ; free virtual = 1594
+Phase 3.5 Small Shape Detail Placement | Checksum: d085a893
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:03:33 . Memory (MB): peak = 7173.266 ; gain = 357.379 ; free physical = 76 ; free virtual = 1595
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: d085a893
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:03:36 . Memory (MB): peak = 7173.266 ; gain = 357.379 ; free physical = 70 ; free virtual = 1595
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: d085a893
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:03:37 . Memory (MB): peak = 7173.266 ; gain = 357.379 ; free physical = 67 ; free virtual = 1595
+Phase 3 Detail Placement | Checksum: d085a893
+
+Time (s): cpu = 00:02:23 ; elapsed = 00:03:37 . Memory (MB): peak = 7173.266 ; gain = 357.379 ; free physical = 67 ; free virtual = 1595
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: d085a893
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:03:38 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 75 ; free virtual = 1594
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: d085a893
+
+Time (s): cpu = 00:02:24 ; elapsed = 00:03:39 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 69 ; free virtual = 1594
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: d085a893
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:03:40 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 75 ; free virtual = 1592
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: e2676206
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:03:40 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 75 ; free virtual = 1592
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e2676206
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:03:40 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 75 ; free virtual = 1592
+Ending Placer Task | Checksum: ac81cc14
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:03:41 . Memory (MB): peak = 7173.270 ; gain = 357.383 ; free physical = 66 ; free virtual = 1594
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:45 ; elapsed = 00:04:31 . Memory (MB): peak = 7206.914 ; gain = 407.039 ; free physical = 68 ; free virtual = 1530
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 32b99817 ConstDB: 0 ShapeSum: 79c833fd RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1f4788291
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:02 . Memory (MB): peak = 7289.684 ; gain = 80.773 ; free physical = 68 ; free virtual = 1378
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1f4788291
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:01:06 . Memory (MB): peak = 7302.684 ; gain = 93.773 ; free physical = 81 ; free virtual = 1366
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1f4788291
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:01:06 . Memory (MB): peak = 7302.684 ; gain = 93.773 ; free physical = 73 ; free virtual = 1366
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1e71ce7d8
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:01:09 . Memory (MB): peak = 7329.738 ; gain = 120.828 ; free physical = 78 ; free virtual = 1343
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 2215c7ae1
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:01:24 . Memory (MB): peak = 7343.770 ; gain = 134.859 ; free physical = 65 ; free virtual = 1330
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2632
+ Number of Nodes with overlaps = 273
+ Number of Nodes with overlaps = 82
+Phase 4.1 Global Iteration 0 | Checksum: 18235ffe8
+
+Time (s): cpu = 00:15:39 ; elapsed = 00:16:33 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 242 ; free virtual = 1431
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 961
+ Number of Nodes with overlaps = 253
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.2 Global Iteration 1 | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:57 ; elapsed = 00:28:42 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 153 ; free virtual = 1385
+Phase 4 Rip-up And Reroute | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:42 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 153 ; free virtual = 1385
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:42 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 145 ; free virtual = 1385
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:42 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 145 ; free virtual = 1385
+Phase 6 Post Hold Fix | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:42 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 145 ; free virtual = 1385
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 12.0902 %
+  Global Horizontal Routing Utilization  = 15.6272 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 2x2 Area, Max Cong = 89.6396%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y102 -> INT_R_X41Y103
+   INT_L_X18Y50 -> INT_R_X19Y51
+South Dir 2x2 Area, Max Cong = 95.7207%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y46 -> INT_R_X19Y47
+   INT_L_X18Y44 -> INT_R_X19Y45
+   INT_L_X18Y42 -> INT_R_X19Y43
+   INT_L_X18Y40 -> INT_R_X19Y41
+   INT_L_X20Y40 -> INT_R_X21Y41
+East Dir 8x8 Area, Max Cong = 91.7099%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y38 -> INT_R_X23Y45
+   INT_L_X16Y30 -> INT_R_X23Y37
+West Dir 4x4 Area, Max Cong = 89.7321%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y42 -> INT_R_X27Y45
+   INT_L_X24Y38 -> INT_R_X27Y41
+Phase 7 Route finalize | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:43 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 133 ; free virtual = 1386
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: ce466fc4
+
+Time (s): cpu = 00:25:58 ; elapsed = 00:28:43 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 132 ; free virtual = 1385
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 10f4855cf
+
+Time (s): cpu = 00:26:01 ; elapsed = 00:28:47 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 92 ; free virtual = 1385
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:26:35 ; elapsed = 00:29:41 . Memory (MB): peak = 7363.770 ; gain = 154.859 ; free physical = 79 ; free virtual = 1384
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:27:28 ; elapsed = 00:30:59 . Memory (MB): peak = 7363.773 ; gain = 154.863 ; free physical = 78 ; free virtual = 1383
+write_checkpoint -force Implement/Config_huffman/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7388.594 ; gain = 0.000 ; free physical = 74 ; free virtual = 1371
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_huffman/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 7388.602 ; gain = 8.008 ; free physical = 100 ; free virtual = 1372
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_huffman/top_route_design.dcp
+write_checkpoint -force -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_huffman_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 83 ; free virtual = 1418
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_huffman_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 89 ; free virtual = 1416
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_huffman_route_design.dcp
+update_design -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+INFO: [Designutils 20-2277] Running 'update_design -black_box' on cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0. The cell has HD.RECONFIGURABLE property set to true and it will be turned into a black-box cell after this command.
+update_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 118 ; free virtual = 1353
+lock_design -level routing
+Locking Netlist...
+Locking Placement...
+Locking Routing...
+lock_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 80 ; free virtual = 1333
+write_checkpoint -force Checkpoint/static_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 68 ; free virtual = 1337
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 85 ; free virtual = 1337
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp
+read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+Command: read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+read_checkpoint: Time (s): cpu = 00:02:28 ; elapsed = 00:03:34 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 172 ; free virtual = 1363
+checkpoint_jpeg_pr_ddr_design_wrapper
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 67 ; free virtual = 1361
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 189633324
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 2bc8dfd3b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 76 ; free virtual = 1359
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 3072 cells.
+Phase 2 Constant propagation | Checksum: 2645b5d70
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:52 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 107 ; free virtual = 1388
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 3850 unconnected nets.
+INFO: [Opt 31-11] Eliminated 4773 unconnected cells.
+Phase 3 Sweep | Checksum: 296041e65
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:24 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 183 ; free virtual = 1349
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2060 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 1ec350149
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:38 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 230 ; free virtual = 1370
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 230 ; free virtual = 1370
+Ending Logic Optimization Task | Checksum: 2d78c8222
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:02:07 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 142 ; free virtual = 1275
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 3 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 2d78c8222
+
+Time (s): cpu = 00:00:00.88 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 170 ; free virtual = 1367
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:48 ; elapsed = 00:02:29 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 109 ; free virtual = 1359
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.11 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 140 ; free virtual = 1354
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 136 ; free virtual = 1354
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 116a62f39
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:14 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 217 ; free virtual = 1376
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1c31401fc
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:17 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 168 ; free virtual = 1355
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1c31401fc
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:17 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 168 ; free virtual = 1355
+Phase 1 Placer Initialization | Checksum: 1c31401fc
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:01:18 . Memory (MB): peak = 7388.602 ; gain = 0.000 ; free physical = 170 ; free virtual = 1370
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 129509a71
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:56 . Memory (MB): peak = 7409.777 ; gain = 21.176 ; free physical = 197 ; free virtual = 1304
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 129509a71
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:57 . Memory (MB): peak = 7409.777 ; gain = 21.176 ; free physical = 181 ; free virtual = 1304
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19b79b3cd
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:58 . Memory (MB): peak = 7409.777 ; gain = 21.176 ; free physical = 164 ; free virtual = 1304
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1af4a1f52
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:59 . Memory (MB): peak = 7409.777 ; gain = 21.176 ; free physical = 163 ; free virtual = 1304
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ae46908a
+
+Time (s): cpu = 00:01:25 ; elapsed = 00:01:59 . Memory (MB): peak = 7409.777 ; gain = 21.176 ; free physical = 163 ; free virtual = 1304
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:03:07 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 128 ; free virtual = 1300
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:03:11 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 124 ; free virtual = 1300
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:03:12 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 117 ; free virtual = 1300
+Phase 3 Detail Placement | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:18 ; elapsed = 00:03:13 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 117 ; free virtual = 1300
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:03:15 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 116 ; free virtual = 1300
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 19e0136b1
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:03:16 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 111 ; free virtual = 1300
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 23abe528e
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:03:17 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 107 ; free virtual = 1300
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 21024866d
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:03:18 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 107 ; free virtual = 1300
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 21024866d
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:03:19 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 107 ; free virtual = 1300
+Ending Placer Task | Checksum: 1fee4b0cc
+
+Time (s): cpu = 00:02:22 ; elapsed = 00:03:19 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 101 ; free virtual = 1300
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:14 ; elapsed = 00:04:30 . Memory (MB): peak = 7426.566 ; gain = 37.965 ; free physical = 65 ; free virtual = 1300
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: ec5a55b8 ConstDB: 0 ShapeSum: 75cd3f37 RouteDB: 9cbd1bdd
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1bcb7727f
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 7440.570 ; gain = 0.000 ; free physical = 71 ; free virtual = 1230
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 122af2ff7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 7440.570 ; gain = 0.000 ; free physical = 74 ; free virtual = 1138
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 122af2ff7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 7440.570 ; gain = 0.000 ; free physical = 73 ; free virtual = 1132
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1955aef1d
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 7440.570 ; gain = 0.000 ; free physical = 165 ; free virtual = 1303
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 115b2b720
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:27 . Memory (MB): peak = 7440.570 ; gain = 0.000 ; free physical = 123 ; free virtual = 1273
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 712
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+Phase 4 Rip-up And Reroute | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+Phase 6 Post Hold Fix | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 4.75821 %
+  Global Horizontal Routing Utilization  = 4.97929 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 2x2 Area, Max Cong = 89.6396%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y102 -> INT_R_X41Y103
+   INT_L_X18Y50 -> INT_R_X19Y51
+   INT_L_X20Y50 -> INT_R_X21Y51
+South Dir 4x4 Area, Max Cong = 89.3474%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X52Y90 -> INT_R_X55Y93
+   INT_L_X20Y38 -> INT_R_X23Y41
+East Dir 8x8 Area, Max Cong = 91.2503%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y38 -> INT_R_X23Y45
+   INT_L_X16Y30 -> INT_R_X23Y37
+West Dir 8x8 Area, Max Cong = 88.6719%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y38 -> INT_R_X31Y45
+Phase 7 Route finalize | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:02:06 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1d57d7ce8
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:02:07 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 63 ; free virtual = 1257
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23948fc93
+
+Time (s): cpu = 00:01:50 ; elapsed = 00:02:12 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 77 ; free virtual = 1259
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:03:10 . Memory (MB): peak = 7445.566 ; gain = 4.996 ; free physical = 74 ; free virtual = 1256
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:22 ; elapsed = 00:04:18 . Memory (MB): peak = 7445.566 ; gain = 18.996 ; free physical = 75 ; free virtual = 1256
+write_checkpoint -force Implement/Config_rle/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7462.391 ; gain = 0.000 ; free physical = 70 ; free virtual = 1240
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_rle/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 7462.395 ; gain = 0.004 ; free physical = 118 ; free virtual = 1240
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_rle/top_route_design.dcp
+write_checkpoint -force -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_rle_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 74 ; free virtual = 1239
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_rle_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 95 ; free virtual = 1239
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_rle_route_design.dcp
+update_design -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+INFO: [Designutils 20-2277] Running 'update_design -black_box' on cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0. The cell has HD.RECONFIGURABLE property set to true and it will be turned into a black-box cell after this command.
+update_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:59 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 75 ; free virtual = 1240
+lock_design -level routing
+Locking Netlist...
+Locking Placement...
+Locking Routing...
+lock_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1236
+write_checkpoint -force Checkpoint/static_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 118 ; free virtual = 1284
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 78 ; free virtual = 1185
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp
+read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+Command: read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+INFO: [Netlist 29-17] Analyzing 200 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+read_checkpoint: Time (s): cpu = 00:02:30 ; elapsed = 00:03:12 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 182 ; free virtual = 1287
+checkpoint_jpeg_pr_ddr_design_wrapper
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1135
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 305af8986
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 218890dee
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 125 ; free virtual = 1263
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 218890dee
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 114 ; free virtual = 1263
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 553 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 2ef98f41b
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:01:01 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 83 ; free virtual = 1258
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 3596 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 22befa06f
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:01:20 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1256
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1256
+Ending Logic Optimization Task | Checksum: 2775a079f
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:59 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 85 ; free virtual = 1260
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 2775a079f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1298
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:34 ; elapsed = 00:02:18 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1298
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1300
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 69 ; free virtual = 1299
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: ebe99e5d
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 88 ; free virtual = 1296
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1d9c11bc4
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:01:10 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1166
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1d9c11bc4
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:01:11 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1156
+Phase 1 Placer Initialization | Checksum: 1d9c11bc4
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:12 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1130
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1203e87fd
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:35 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 94 ; free virtual = 1228
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1203e87fd
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:36 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 90 ; free virtual = 1228
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d97587d4
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:38 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 86 ; free virtual = 1228
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 133c0690d
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 86 ; free virtual = 1228
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 132cf19e5
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:01:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 86 ; free virtual = 1228
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:02:35 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 66 ; free virtual = 1226
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:02:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1226
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:54 ; elapsed = 00:02:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 76 ; free virtual = 1229
+Phase 3 Detail Placement | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:55 ; elapsed = 00:02:41 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 75 ; free virtual = 1229
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:56 ; elapsed = 00:02:43 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 75 ; free virtual = 1229
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1140b48be
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:43 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 62 ; free virtual = 1229
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1a30743c8
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:02:44 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1230
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1a6aeb95f
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:02:46 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1230
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a6aeb95f
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:02:47 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1229
+Ending Placer Task | Checksum: 14b568955
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:02:47 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1229
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:51 ; elapsed = 00:04:04 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1230
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 150ebc6f ConstDB: 0 ShapeSum: a74bd1dc RouteDB: 8efbfb0a
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1fe0c19a8
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 63 ; free virtual = 1233
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1b0f5650d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1233
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1b0f5650d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1233
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 2e11ae78d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 68 ; free virtual = 1233
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 166a0c63f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 66 ; free virtual = 1233
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 722
+ Number of Nodes with overlaps = 101
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 176 ; free virtual = 1276
+Phase 4 Rip-up And Reroute | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 176 ; free virtual = 1276
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 176 ; free virtual = 1276
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 176 ; free virtual = 1276
+Phase 6 Post Hold Fix | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 176 ; free virtual = 1276
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.10821 %
+  Global Horizontal Routing Utilization  = 2.16785 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 2x2 Area, Max Cong = 89.6396%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y102 -> INT_R_X41Y103
+   INT_L_X18Y50 -> INT_R_X19Y51
+South Dir 4x4 Area, Max Cong = 87.3403%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X20Y38 -> INT_R_X23Y41
+East Dir 8x8 Area, Max Cong = 92.46%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y38 -> INT_R_X23Y45
+   INT_L_X16Y30 -> INT_R_X23Y37
+West Dir 8x8 Area, Max Cong = 88.8672%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y46 -> INT_R_X31Y53
+   INT_L_X24Y38 -> INT_R_X31Y45
+Phase 7 Route finalize | Checksum: 229b44245
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:08:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 174 ; free virtual = 1276
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 229b44245
+
+Time (s): cpu = 00:05:49 ; elapsed = 00:08:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 174 ; free virtual = 1276
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1e7248c3d
+
+Time (s): cpu = 00:05:53 ; elapsed = 00:08:22 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 156 ; free virtual = 1276
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:06:29 ; elapsed = 00:09:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 106 ; free virtual = 1274
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:23 ; elapsed = 00:10:20 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 86 ; free virtual = 1274
+write_checkpoint -force Implement/Config_dct/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1264
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_dct/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 100 ; free virtual = 1264
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_dct/top_route_design.dcp
+write_checkpoint -force -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_dct_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 68 ; free virtual = 1274
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_dct_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 86 ; free virtual = 1274
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_dct_route_design.dcp
+update_design -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+INFO: [Designutils 20-2277] Running 'update_design -black_box' on cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0. The cell has HD.RECONFIGURABLE property set to true and it will be turned into a black-box cell after this command.
+update_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:47 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 139 ; free virtual = 1265
+lock_design -level routing
+Locking Netlist...
+Locking Placement...
+Locking Routing...
+lock_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 102 ; free virtual = 1264
+write_checkpoint -force Checkpoint/static_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 74 ; free virtual = 1263
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 90 ; free virtual = 1263
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/static_route_design.dcp
+read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+Command: read_checkpoint -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+read_checkpoint: Time (s): cpu = 00:02:35 ; elapsed = 00:03:23 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 161 ; free virtual = 1262
+checkpoint_jpeg_pr_ddr_design_wrapper
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 89 ; free virtual = 1263
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 22486a095
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1905db4c5
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 189 ; free virtual = 1266
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 1905db4c5
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 177 ; free virtual = 1268
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 222fbc739
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:01:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 99 ; free virtual = 1226
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 3340 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 2306c29fc
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:01:22 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 91 ; free virtual = 1226
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 91 ; free virtual = 1226
+Ending Logic Optimization Task | Checksum: 19f53e1b9
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:02:01 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 81 ; free virtual = 1226
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 19f53e1b9
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1226
+INFO: [Common 17-83] Releasing license: Implementation
+15 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:29 ; elapsed = 00:02:19 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 69 ; free virtual = 1226
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 106 ; free virtual = 1261
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 102 ; free virtual = 1261
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10023f7c2
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:01:00 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 115 ; free virtual = 1275
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 1fa92d9d6
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:04 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1198
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 1fa92d9d6
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:04 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1191
+Phase 1 Placer Initialization | Checksum: 1fa92d9d6
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:05 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1175
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1c081ce2a
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:01:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 195 ; free virtual = 1285
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1c081ce2a
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 165 ; free virtual = 1284
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 295f35868
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 157 ; free virtual = 1283
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 29be8b03e
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 156 ; free virtual = 1283
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 29cf41e86
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 155 ; free virtual = 1282
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:02:19 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 172 ; free virtual = 1256
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:02:23 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 157 ; free virtual = 1254
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:42 ; elapsed = 00:02:24 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 152 ; free virtual = 1254
+Phase 3 Detail Placement | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:02:25 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 152 ; free virtual = 1254
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:02:27 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 151 ; free virtual = 1253
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1868e663d
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:28 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 132 ; free virtual = 1253
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1f2664ff0
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:02:29 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 123 ; free virtual = 1253
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 13aecc3bf
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:02:30 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 119 ; free virtual = 1252
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 13aecc3bf
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:02:31 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 119 ; free virtual = 1251
+Ending Placer Task | Checksum: 1156fda2a
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:02:32 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 103 ; free virtual = 1251
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:39 ; elapsed = 00:03:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 66 ; free virtual = 1251
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 8da2d269 ConstDB: 0 ShapeSum: 1bf51e0e RouteDB: 6bd7e9b3
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 2446e4a0a
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 71 ; free virtual = 1205
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 18ec69d44
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1205
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 18ec69d44
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1205
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1925a7c7f
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 78 ; free virtual = 1205
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: efaf013b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:23 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 69 ; free virtual = 1205
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 793
+ Number of Nodes with overlaps = 37
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:03:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 162 ; free virtual = 1220
+Phase 4 Rip-up And Reroute | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:03:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 162 ; free virtual = 1220
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:03:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 159 ; free virtual = 1220
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:03:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 159 ; free virtual = 1220
+Phase 6 Post Hold Fix | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:03:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 159 ; free virtual = 1220
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.71135 %
+  Global Horizontal Routing Utilization  = 2.55257 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 2x2 Area, Max Cong = 89.6396%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y102 -> INT_R_X41Y103
+   INT_L_X18Y50 -> INT_R_X19Y51
+South Dir 2x2 Area, Max Cong = 95.7207%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y46 -> INT_R_X19Y47
+   INT_L_X18Y44 -> INT_R_X19Y45
+   INT_L_X18Y42 -> INT_R_X19Y43
+   INT_L_X18Y40 -> INT_R_X19Y41
+   INT_L_X18Y38 -> INT_R_X19Y39
+East Dir 8x8 Area, Max Cong = 92.0292%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y38 -> INT_R_X23Y45
+   INT_L_X24Y38 -> INT_R_X31Y45
+   INT_L_X16Y30 -> INT_R_X23Y37
+   INT_L_X24Y30 -> INT_R_X31Y37
+West Dir 4x4 Area, Max Cong = 87.2768%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X24Y38 -> INT_R_X27Y41
+   INT_L_X28Y38 -> INT_R_X31Y41
+   INT_L_X28Y34 -> INT_R_X31Y37
+Phase 7 Route finalize | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:03:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 144 ; free virtual = 1220
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: b2c7e76d
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:03:40 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 144 ; free virtual = 1220
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1353883f4
+
+Time (s): cpu = 00:02:49 ; elapsed = 00:03:48 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 121 ; free virtual = 1220
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:28 ; elapsed = 00:04:45 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 71 ; free virtual = 1220
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:04:21 ; elapsed = 00:06:04 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1221
+write_checkpoint -force Implement/Config_quantization/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 74 ; free virtual = 1294
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_quantization/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 93 ; free virtual = 1233
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_quantization/top_route_design.dcp
+write_checkpoint -force -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_quantization_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 75 ; free virtual = 1172
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_quantization_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 275 ; free virtual = 1297
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Checkpoint/jpeg0_quantization_route_design.dcp
+close_project
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:42 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1277
+open_checkpoint Checkpoint/static_route_design.dcp
+Command: open_checkpoint Checkpoint/static_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 71 ; free virtual = 1226
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'jpeg_pr_ddr_design_wrapper' is not ideal for floorplanning, since the cellview 'REV2_JPEG_IP_DESIGN_v1_0_S00_AXI' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 69 ; free virtual = 1215
+Restored from archive | CPU: 1.660000 secs | Memory: 15.948990 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 69 ; free virtual = 1215
+INFO: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_bb' instantiated as 'jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0' [c:/JPEG_Thesis_2/Final_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_pr_ddr_design/ipshared/2f2f/hdl/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI.v:3782]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:01:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1214
+checkpoint_static_route_design
+update_design -buffer_ports -cell jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0
+update_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:31 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 81 ; free virtual = 1300
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.21 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1304
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.09 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 82 ; free virtual = 1293
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1c570c782
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:01:19 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 76 ; free virtual = 1288
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 169c5b4a8
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:22 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1288
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 169c5b4a8
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:22 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 65 ; free virtual = 1288
+Phase 1 Placer Initialization | Checksum: 169c5b4a8
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:23 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 68 ; free virtual = 1288
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 18b17d846
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:01:30 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 82 ; free virtual = 1288
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18b17d846
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:01:31 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 80 ; free virtual = 1288
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b5bfc480
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:32 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 80 ; free virtual = 1288
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 201b76d84
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:01:33 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 80 ; free virtual = 1288
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 2029fdc3c
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:33 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 80 ; free virtual = 1288
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 104205547
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:01:43 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1288
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 104205547
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:01:45 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1288
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 104205547
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:01:45 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1288
+Phase 3 Detail Placement | Checksum: 104205547
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:46 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1288
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 104205547
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:47 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 73 ; free virtual = 1288
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 104205547
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:01:47 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1288
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d2510905
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:49 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 84 ; free virtual = 1289
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 23c264eb3
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:50 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 84 ; free virtual = 1289
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 23c264eb3
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:51 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 84 ; free virtual = 1289
+Ending Placer Task | Checksum: 2178997a1
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:51 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1289
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:33 ; elapsed = 00:02:39 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 62 ; free virtual = 1289
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 5c57fa74 ConstDB: 0 ShapeSum: ed00e96f RouteDB: ce30b3be
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 137775ab5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:01:08 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1262
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 14012b76f
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:01:13 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 79 ; free virtual = 1260
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 14012b76f
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:01:13 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 79 ; free virtual = 1260
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 112534139
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:01:16 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 76 ; free virtual = 1259
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: b6312b7f
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:01:19 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 75 ; free virtual = 1258
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1257
+Phase 4 Rip-up And Reroute | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1257
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1258
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1258
+Phase 6 Post Hold Fix | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1258
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.520193 %
+  Global Horizontal Routing Utilization  = 0.777383 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 2x2 Area, Max Cong = 89.6396%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X40Y102 -> INT_R_X41Y103
+   INT_L_X18Y50 -> INT_R_X19Y51
+South Dir 2x2 Area, Max Cong = 95.7207%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X18Y46 -> INT_R_X19Y47
+   INT_L_X18Y44 -> INT_R_X19Y45
+   INT_L_X18Y42 -> INT_R_X19Y43
+   INT_L_X18Y40 -> INT_R_X19Y41
+   INT_L_X18Y38 -> INT_R_X19Y39
+East Dir 8x8 Area, Max Cong = 88.2533%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y38 -> INT_R_X23Y45
+   INT_L_X16Y30 -> INT_R_X23Y37
+West Dir 2x2 Area, Max Cong = 87.5%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X20Y48 -> INT_R_X21Y49
+   INT_L_X20Y44 -> INT_R_X21Y45
+   INT_L_X20Y40 -> INT_R_X21Y41
+   INT_L_X20Y38 -> INT_R_X21Y39
+Phase 7 Route finalize | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:01:27 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1258
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1f8f3090e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:01:27 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1258
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 20f147989
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:01:33 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1260
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:30 ; elapsed = 00:02:33 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 67 ; free virtual = 1261
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:45 ; elapsed = 00:02:52 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 74 ; free virtual = 1261
+write_checkpoint -force Implement/Config_blank/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 79 ; free virtual = 1257
+INFO: [Common 17-1381] The checkpoint '/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_blank/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 110 ; free virtual = 1257
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/Implement/Config_blank/top_route_design.dcp
+close_project
+pr_verify -initial Implement/Config_huffman/top_route_design.dcp -additional {Implement/Config_rle/top_route_design.dcp Implement/Config_dct/top_route_design.dcp Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+Command: pr_verify -initial Implement/Config_huffman/top_route_design.dcp -additional {Implement/Config_rle/top_route_design.dcp Implement/Config_dct/top_route_design.dcp Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 195 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1283
+Restored from archive | CPU: 2.790000 secs | Memory: 26.261269 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 70 ; free virtual = 1283
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Vivado 12-3501] pr_verify Implement/Config_huffman/top_route_design.dcp Implement/Config_rle/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1281
+Restored from archive | CPU: 3.580000 secs | Memory: 39.913689 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1281
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_huffman/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+
+DCP2: Implement/Config_rle/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_huffman/top_route_design.dcp and Implement/Config_rle/top_route_design.dcp are compatible
+INFO: [Vivado 12-3501] pr_verify Implement/Config_huffman/top_route_design.dcp Implement/Config_dct/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1273
+Restored from archive | CPU: 3.250000 secs | Memory: 41.298836 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 72 ; free virtual = 1273
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_huffman/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+
+DCP2: Implement/Config_dct/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_huffman/top_route_design.dcp and Implement/Config_dct/top_route_design.dcp are compatible
+INFO: [Vivado 12-3501] pr_verify Implement/Config_huffman/top_route_design.dcp Implement/Config_quantization/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1275
+Restored from archive | CPU: 3.050000 secs | Memory: 45.517082 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 77 ; free virtual = 1275
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_huffman/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+
+DCP2: Implement/Config_quantization/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_huffman/top_route_design.dcp and Implement/Config_quantization/top_route_design.dcp are compatible
+INFO: [Vivado 12-3501] pr_verify Implement/Config_huffman/top_route_design.dcp Implement/Config_blank/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp_2/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1265
+Restored from archive | CPU: 3.400000 secs | Memory: 55.356850 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 7462.395 ; gain = 0.000 ; free physical = 64 ; free virtual = 1265
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_huffman/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+
+DCP2: Implement/Config_blank/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 8734
+  Number of static tiles compared           = 11012
+  Number of static sites compared           = 2246
+  Number of static cells compared           = 12298
+  Number of static routed nodes compared    = 224731
+  Number of static routed pips compared     = 211623
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_huffman/top_route_design.dcp and Implement/Config_blank/top_route_design.dcp are compatible
+pr_verify: Time (s): cpu = 00:01:45 ; elapsed = 00:04:03 . Memory (MB): peak = 7519.375 ; gain = 56.980 ; free physical = 64 ; free virtual = 1211
+close_project
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 7519.375 ; gain = 0.000 ; free physical = 69 ; free virtual = 1214
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+couldn't fork child process: not enough memory
+ambiguous command name "ls": lsearch lset lsort
+pwd
+/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab
+source generate_bitstreams.tcl
+# open_checkpoint Implement/Config_dct/top_route_design.dcp 
+Command: open_checkpoint Implement/Config_dct/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7519.375 ; gain = 0.000 ; free physical = 64 ; free virtual = 1211
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 266 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7519.379 ; gain = 0.000 ; free physical = 73 ; free virtual = 1211
+Restored from archive | CPU: 2.970000 secs | Memory: 27.737778 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 7519.379 ; gain = 0.000 ; free physical = 71 ; free virtual = 1211
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:01:19 . Memory (MB): peak = 7519.379 ; gain = 0.004 ; free physical = 63 ; free virtual = 1205
+# write_bitstream -file Bitstreams/Config_dct.bit 
+Command: write_bitstream -file Bitstreams/Config_dct.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y36:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y47:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y48:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y49:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y38:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y52:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y53:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y37:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y44:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y46:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y47:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y48:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y49:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y40:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y47:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y48:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y49:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y50:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y51:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y51:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y52:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y37:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y41:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y42:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y39:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y44:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y47:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y49:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y36:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y38:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y39:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y40:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y47:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y48:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y49:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y50:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y52:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y51:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y52:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X62Y39:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X62Y41:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X62Y42:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X66Y45:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X36Y37:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X42Y89:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y35:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y36:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y38:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y39:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y40:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y47:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y48:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y50:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y52:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X58Y51:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X58Y52:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X62Y39:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X62Y40:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X62Y41:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X62Y42:A5LUT. For this programming the O5 output pin should have a signal.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 60 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_dct.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 27328704 bits.
+Writing bitstream Bitstreams/Config_dct_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:17 ; elapsed = 00:03:41 . Memory (MB): peak = 7598.648 ; gain = 79.270 ; free physical = 68 ; free virtual = 1154
+# write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit" Bitstreams/dct.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit} Bitstreams/dct.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_dct_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_dct_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 4 MB
+Writing file Bitstreams/dct.bin
+Writing log file Bitstreams/dct.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00342017    Nov 23 00:48:22 2017    Bitstreams/Config_dct_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# close_project 
+# open_checkpoint Implement/Config_quantization/top_route_design.dcp 
+Command: open_checkpoint Implement/Config_quantization/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7598.648 ; gain = 0.000 ; free physical = 68 ; free virtual = 1147
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7598.652 ; gain = 0.000 ; free physical = 68 ; free virtual = 1154
+Restored from archive | CPU: 2.780000 secs | Memory: 25.392212 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7598.652 ; gain = 0.000 ; free physical = 67 ; free virtual = 1154
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 7598.652 ; gain = 0.004 ; free physical = 71 ; free virtual = 1150
+# write_bitstream -file Bitstreams/Config_quantization.bit 
+Command: write_bitstream -file Bitstreams/Config_quantization.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y40:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X36Y34:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X36Y37:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X36Y40:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y36:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y39:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y45:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y40:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y41:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y44:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y45:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y48:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y33:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y34:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y37:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y39:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y40:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y42:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y35:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y41:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y40:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y37:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y38:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y41:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y31:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y35:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y40:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y48:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X46Y33:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y34:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y37:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y42:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y35:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y36:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y37:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X32Y38:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X36Y42:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X38Y31:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X42Y31:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X50Y31:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y34:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y42:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y44:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X58Y34:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X58Y39:A5LUT. For this programming the O5 output pin should have a signal.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 45 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_quantization.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 27328704 bits.
+Writing bitstream Bitstreams/Config_quantization_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:10 ; elapsed = 00:02:12 . Memory (MB): peak = 7603.656 ; gain = 5.004 ; free physical = 67 ; free virtual = 1156
+# write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit" Bitstreams/quantization.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit} Bitstreams/quantization.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_quantization_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_quantization_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 4 MB
+Writing file Bitstreams/quantization.bin
+Writing log file Bitstreams/quantization.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00342017    Nov 23 00:51:05 2017    Bitstreams/Config_quantization_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# close_project 
+# open_checkpoint Implement/Config_blank/top_route_design.dcp 
+Command: open_checkpoint Implement/Config_blank/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 62 ; free virtual = 1157
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 73 ; free virtual = 1161
+Restored from archive | CPU: 2.860000 secs | Memory: 28.189484 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 71 ; free virtual = 1161
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 65 ; free virtual = 1170
+# write_bitstream -file Bitstreams/blank.bit 
+Command: write_bitstream -file Bitstreams/blank.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y50:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X32Y51:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y54:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y55:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y57:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y58:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y59:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y62:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X34Y63:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y55:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y56:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y57:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y59:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y66:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y67:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y68:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y70:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y71:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y74:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X38Y84:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y56:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y60:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y62:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y69:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y71:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X42Y77:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y57:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y58:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y61:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y63:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y64:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y66:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y69:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y70:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y71:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X46Y72:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X50Y56:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X50Y58:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X50Y63:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X50Y66:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y51:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y46:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y50:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y60:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y48:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y50:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y51:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y57:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y58:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X62Y59:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X66Y59:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X82Y53:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X82Y55:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X82Y57:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X82Y58:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X82Y73:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X92Y55:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X92Y73:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X92Y75:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X98Y77:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X30Y61:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X30Y64:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X32Y50:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X32Y51:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X32Y52:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X32Y81:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y52:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y54:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y55:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y56:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y57:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y58:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y59:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y62:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X34Y63:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y50:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y84:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y55:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y56:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y57:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y59:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y61:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y66:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y67:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y68:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y70:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y71:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y74:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X38Y84:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y56:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y58:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y60:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y62:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y69:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y71:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X42Y77:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X46Y45:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X46Y57:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X46Y58:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X46Y61:B5LUT. For this programming the O5 output pin should have a signal.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 272 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/blank.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 27328704 bits.
+Writing bitstream Bitstreams/blank_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+7 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:12 ; elapsed = 00:02:13 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 66 ; free virtual = 1167
+# write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/blank_pblock_jpeg0_partial.bit" Bitstreams/blank.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/blank_pblock_jpeg0_partial.bit} Bitstreams/blank.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/blank_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/blank_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 4 MB
+Writing file Bitstreams/blank.bin
+Writing log file Bitstreams/blank.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00342017    Nov 23 00:53:47 2017    Bitstreams/blank_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# close_project 
+# open_checkpoint Implement/Config_rle/top_route_design.dcp 
+Command: open_checkpoint Implement/Config_rle/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 70 ; free virtual = 1167
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 65 ; free virtual = 1166
+Restored from archive | CPU: 3.290000 secs | Memory: 33.111778 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 62 ; free virtual = 1166
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 63 ; free virtual = 1162
+# write_bitstream -file Bitstreams/Config_rle.bit 
+Command: write_bitstream -file Bitstreams/Config_rle.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y35:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X54Y75:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y34:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y35:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X58Y39:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X86Y92:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X90Y94:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-61) SLICEM_5lutO5_C5 - Dangling output pin O5 on site SLICE_X94Y93:C5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y84:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X36Y89:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y35:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y42:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y75:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X58Y34:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X38Y82:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X42Y91:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y75:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X62Y93:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X90Y93:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X92Y93:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X94Y90:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (RTSTAT-10) No routable loads - 3584 net(s) have no routable loads. The problem bus(es) and/or net(s) are jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[32], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[33], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[34], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[35], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[36], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[37], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[38], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[39], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[40], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[41], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[42], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[43], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[44], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[45], jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/jpeg_out_a16[46] (the first 15 of 3584 listed).
+INFO: [DRC 23-20] Rule violation (REQP-181) writefirst - Synchronous clocking is detected for BRAM (jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/quantized_block/INST_MEMB64W64_sub_1/MEMB64W64_r_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC 23-20] Rule violation (REQP-181) writefirst - Synchronous clocking is detected for BRAM (jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/rl/INST_MEMB64W128_sub_1/MEMB64W128_r_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC 23-20] Rule violation (REQP-181) writefirst - Synchronous clocking is detected for BRAM (jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0/INST_dat/zz/INST_MEMB64W64_sub_1/MEMB64W64_r_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 22 Warnings, 3 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_rle.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 27328704 bits.
+Writing bitstream Bitstreams/Config_rle_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+9 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:24 ; elapsed = 00:02:23 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 78 ; free virtual = 1160
+# write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_rle_pblock_jpeg0_partial.bit" Bitstreams/rle.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_rle_pblock_jpeg0_partial.bit} Bitstreams/rle.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_rle_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_rle_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 4 MB
+Writing file Bitstreams/rle.bin
+Writing log file Bitstreams/rle.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00342017    Nov 23 00:56:38 2017    Bitstreams/Config_rle_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# close_project
+# open_checkpoint Implement/Config_huffman/top_route_design.dcp 
+Command: open_checkpoint Implement/Config_huffman/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 67 ; free virtual = 1160
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 195 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/JPEG_Thesis_2/Final_PR_Main_Rev2/PRLab/.Xil/Vivado-22190-legolas1.utdallas.edu/dcp/jpeg_pr_ddr_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 66 ; free virtual = 1162
+Restored from archive | CPU: 2.670000 secs | Memory: 26.219017 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 66 ; free virtual = 1162
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 71 ; free virtual = 1163
+# write_bitstream -file Bitstreams/Config_huffman.bit 
+Command: write_bitstream -file Bitstreams/Config_huffman.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X54Y46:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X32Y80:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X54Y15:A5LUT. For this programming the O5 output pin should have a signal.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 3 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_pr_ddr_design_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_huffman.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 27328704 bits.
+Writing bitstream Bitstreams/Config_huffman_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:02:09 ; elapsed = 00:02:08 . Memory (MB): peak = 7603.656 ; gain = 0.000 ; free physical = 78 ; free virtual = 1168
+# write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_huffman_pblock_jpeg0_partial.bit" Bitstreams/huffman.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_huffman_pblock_jpeg0_partial.bit} Bitstreams/huffman.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_huffman_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_huffman_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 4 MB
+Writing file Bitstreams/huffman.bin
+Writing log file Bitstreams/huffman.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               4M
+Start Address      0x00000000
+End Address        0x003FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x00342017    Nov 23 00:59:12 2017    Bitstreams/Config_huffman_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+# close_project

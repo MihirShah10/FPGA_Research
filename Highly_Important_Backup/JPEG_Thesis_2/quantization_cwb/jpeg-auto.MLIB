@@ -1,0 +1,7 @@
+
+#@VERSION { 3.00 }
+#@LIB { jpeg }
+#@UNIT 1/10ps
+#@FPGA_FAMILY{zynq}
+#@SYN_TOOL{VIVADO}
+#@END { jpeg }

@@ -1,0 +1,447 @@
+
+Cyber Synthesis Report
+
+===========
+; Summary ;
+===========
+
+  Module Name         : jpeg
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : zynq
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    Slice LUTs        :        706
+    Registers         :        771
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          2
+  Total States        :          2
+
+  Clock Period        :       10ns
+  Critical Path Delay :    4.259ns
+
+  Net                 :      1,615
+  Pin Pair            :      2,708
+
+  Port                :      1,539
+    In                :        770
+    Out               :        769
+
+========================
+; Resource Utilization ;
+========================
+
+  Total :
+    Slice LUTs        :        706
+    Registers         :        771
+    Block Memory Bits :          0
+    DSPs              :          0
+
+===================
+; Functional Unit ;
+===================
+
+    FU Name               Slice    Reg  Delay  Pipeline  Block   Count
+                           LUTs          (ns)    Stage   Memory
+                                                         Bits
+    ------------------------------------------------------------------
+    add12s_10                12      0   1.80         -       0     63
+    add8s                     8      0   1.68         -       0      1
+
+  Unused Functional Units :
+    ---------------------------------------------------
+    None
+
+============
+; Register ;
+============
+
+     Used      Declared                 Used
+      Bit           Bit      Count       Bit  * Count
+    -------------------------------------------------
+        1             1          1                  1
+    -------------------------------------------------
+        2             2          1                  2
+    -------------------------------------------------
+       12            12         64                768
+    -------------------------------------------------
+    Total                                         771
+
+===============
+; Multiplexer ;
+===============
+
+   1 bit:  2way: 1 
+  12 bit:  2way:64 
+   Total : 1,538 (# of Fanins)
+
+===========
+; Decoder ;
+===========
+
+    None
+
+==========
+; Memory ;
+==========
+
+    None
+
+===========
+; Latency ;
+===========
+
+    Total:
+        Type          : S
+        Latency       : 1 + L1
+        Latency Index : 2
+        State No.     : 1, 2
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : L1
+        Line          : -
+    L1:
+        Type          : S
+        Latency       : 1 * N1    [N1 >= 1]
+        Latency Index : 1
+        State No.     : 2
+        Folding Loop  : -
+        Folding Stages: - , Total Folding States: - , Hazard: -
+        User Operator : -
+        Sub Loops     : -
+        Line          : ./quantization.cpp:33
+
+=======
+; FSM ;
+=======
+
+  Total States      :          2
+  #FSM              :          1
+  States/FSM        :          1
+  FSM Decoder Delay :    0.617ns
+
+=========
+; Delay ;
+=========
+
+  Clock Period        :       10ns
+  Critical Path Delay :    4.259ns
+
+              Subtotal
+      Class       (ns)    Ratio
+      -------------------------
+      IN           0.00      0%
+      FU           1.68     39%
+      MUX          0.00      0%
+      DEC          0.00      0%
+      MISC         2.58     60%
+      MEM          0.00      0%
+      -------------------------
+      Total        4.26
+
+    Path: #1
+                                                                Arrival
+                                                          Delay    Time Logic
+      Name                 / Port [Signal              ]   (ns)   (ns)  Stage
+      -----------------------------------------------------------------------
+      jpeg_in_a63          / o1   [                    ]      -    0.00     0
+      _ROR_17890           / o1   [                    ]   1.81    1.81     2
+      _AND_17888           / o1   [                    ]   0.77    2.58     3
+      add8s@1              / o1   [add8s1ot            ]   1.68    4.26     6
+      _NMUX_3503           / o1   [jpeg_out_a63_r      ]   0.00    4.26     6
+      jpeg_out_a63_r       / din  [                    ]      -    4.26     6
+
+  False Path                    :  Unchecked
+  Multi Cycle Path              :  Unchecked
+  False Loop/Combinational Loop :          0
+  Latch (bit)                   :          0
+
+========
+; Wire ;
+========
+
+  Total Net Count      :    1,615
+  Total Pin Pair Count :    2,708
+  Const Fanout         :       66
+
+  Net Count :
+         Bit       Net    Bit*Net
+     ----------------------------
+           1       135        135
+           2         2          4
+           8         1          8
+          10        63        630
+          12       192      2,304
+     ----------------------------
+       Total                3,081
+
+  Pin Pair Count :
+      Fanout    Bit    Count   Subtotal
+    -----------------------------------
+          66      1        1         66
+          64      1        1         64
+           5      1        1          5
+           3      1       63        189
+           2     12       64      1,536
+           2      2        1          4
+           2      1       67        134
+           1     12       64        768
+           1     11       64        704
+           1      9       63        567
+           1      7        1          7
+           1      2        1          2
+           1      1      130        130
+    -----------------------------------
+       Total                      4,176
+
+  Fanout for Consts:
+      Value    Fanout
+          0        65
+          1         1
+    ------------------
+      Total        66
+
+  Clock Fanout:
+      Name                         Count
+      ----------------------------------
+      clk(0..0)                       66
+
+  Reset Fanout:
+      Name                         Count
+      ----------------------------------
+      rst(0..0)                        1
+
+  Register Fanin/Fanout Cone Size:
+
+    Fanin: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      jpeg_out_a00_r(11..0)                              4
+      jpeg_out_a01_r(11..0)                              4
+      jpeg_out_a02_r(11..0)                              4
+      jpeg_out_a03_r(11..0)                              4
+      jpeg_out_a04_r(11..0)                              4
+      jpeg_out_a05_r(11..0)                              4
+      jpeg_out_a06_r(11..0)                              4
+      jpeg_out_a07_r(11..0)                              4
+      jpeg_out_a08_r(11..0)                              4
+      jpeg_out_a09_r(11..0)                              4
+
+    Fanout: (Top 10 Registers)
+      Register Name                              Cone Size
+      ----------------------------------------------------
+      _STREG_459(0:2)                                   66
+      jpeg_out_a00_r(11..0)                              2
+      jpeg_out_a01_r(11..0)                              2
+      jpeg_out_a02_r(11..0)                              2
+      jpeg_out_a03_r(11..0)                              2
+      jpeg_out_a04_r(11..0)                              2
+      jpeg_out_a05_r(11..0)                              2
+      jpeg_out_a06_r(11..0)                              2
+      jpeg_out_a07_r(11..0)                              2
+      jpeg_out_a08_r(11..0)                              2
+
+  Routability:
+
+    Top 25 Nets
+    sorted by "Total" (Total Pin Pair)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      clk(0..0)                                      66       66 ( 1bit)
+      M_321(0..0)                                    64       64 ( 1bit)
+      jpeg_out_a00_r(11..0)                          24        2 (12bit)
+      jpeg_out_a01_r(11..0)                          24        2 (12bit)
+      jpeg_out_a02_r(11..0)                          24        2 (12bit)
+      jpeg_out_a03_r(11..0)                          24        2 (12bit)
+      jpeg_out_a04_r(11..0)                          24        2 (12bit)
+      jpeg_out_a05_r(11..0)                          24        2 (12bit)
+      jpeg_out_a06_r(11..0)                          24        2 (12bit)
+      jpeg_out_a07_r(11..0)                          24        2 (12bit)
+      jpeg_out_a08_r(11..0)                          24        2 (12bit)
+      jpeg_out_a09_r(11..0)                          24        2 (12bit)
+      jpeg_out_a10_r(11..0)                          24        2 (12bit)
+      jpeg_out_a11_r(11..0)                          24        2 (12bit)
+      jpeg_out_a12_r(11..0)                          24        2 (12bit)
+      jpeg_out_a13_r(11..0)                          24        2 (12bit)
+      jpeg_out_a14_r(11..0)                          24        2 (12bit)
+      jpeg_out_a15_r(11..0)                          24        2 (12bit)
+      jpeg_out_a16_r(11..0)                          24        2 (12bit)
+      jpeg_out_a17_r(11..0)                          24        2 (12bit)
+      jpeg_out_a18_r(11..0)                          24        2 (12bit)
+      jpeg_out_a19_r(11..0)                          24        2 (12bit)
+      jpeg_out_a20_r(11..0)                          24        2 (12bit)
+      jpeg_out_a21_r(11..0)                          24        2 (12bit)
+      jpeg_out_a22_r(11..0)                          24        2 (12bit)
+
+    Top 25 Nets
+    sorted by "Max" (Maximum Fanout)
+      Net Name                                    Total      Max
+      -----------------------------------------------------------------
+      clk(0..0)                                      66       66 ( 1bit)
+      M_321(0..0)                                    64       64 ( 1bit)
+      add8s1ot(7..0)                                 12        5 ( 1bit)
+      add12s_101ot(9..0)                             12        3 ( 1bit)
+      add12s_102ot(9..0)                             12        3 ( 1bit)
+      add12s_103ot(9..0)                             12        3 ( 1bit)
+      add12s_104ot(9..0)                             12        3 ( 1bit)
+      add12s_105ot(9..0)                             12        3 ( 1bit)
+      add12s_106ot(9..0)                             12        3 ( 1bit)
+      add12s_107ot(9..0)                             12        3 ( 1bit)
+      add12s_108ot(9..0)                             12        3 ( 1bit)
+      add12s_109ot(9..0)                             12        3 ( 1bit)
+      add12s_1010ot(9..0)                            12        3 ( 1bit)
+      add12s_1011ot(9..0)                            12        3 ( 1bit)
+      add12s_1012ot(9..0)                            12        3 ( 1bit)
+      add12s_1013ot(9..0)                            12        3 ( 1bit)
+      add12s_1014ot(9..0)                            12        3 ( 1bit)
+      add12s_1015ot(9..0)                            12        3 ( 1bit)
+      add12s_1016ot(9..0)                            12        3 ( 1bit)
+      add12s_1017ot(9..0)                            12        3 ( 1bit)
+      add12s_1018ot(9..0)                            12        3 ( 1bit)
+      add12s_1019ot(9..0)                            12        3 ( 1bit)
+      add12s_1020ot(9..0)                            12        3 ( 1bit)
+      add12s_1021ot(9..0)                            12        3 ( 1bit)
+      add12s_1022ot(9..0)                            12        3 ( 1bit)
+
+================
+; Primary Port ;
+================
+
+    Name               Type   Bitw
+    ------------------------------
+      jpeg_in_a00       in     12
+      jpeg_in_a01       in     12
+      jpeg_in_a02       in     12
+      jpeg_in_a03       in     12
+      jpeg_in_a04       in     12
+      jpeg_in_a05       in     12
+      jpeg_in_a06       in     12
+      jpeg_in_a07       in     12
+      jpeg_in_a08       in     12
+      jpeg_in_a09       in     12
+      jpeg_in_a10       in     12
+      jpeg_in_a11       in     12
+      jpeg_in_a12       in     12
+      jpeg_in_a13       in     12
+      jpeg_in_a14       in     12
+      jpeg_in_a15       in     12
+      jpeg_in_a16       in     12
+      jpeg_in_a17       in     12
+      jpeg_in_a18       in     12
+      jpeg_in_a19       in     12
+      jpeg_in_a20       in     12
+      jpeg_in_a21       in     12
+      jpeg_in_a22       in     12
+      jpeg_in_a23       in     12
+      jpeg_in_a24       in     12
+      jpeg_in_a25       in     12
+      jpeg_in_a26       in     12
+      jpeg_in_a27       in     12
+      jpeg_in_a28       in     12
+      jpeg_in_a29       in     12
+      jpeg_in_a30       in     12
+      jpeg_in_a31       in     12
+      jpeg_in_a32       in     12
+      jpeg_in_a33       in     12
+      jpeg_in_a34       in     12
+      jpeg_in_a35       in     12
+      jpeg_in_a36       in     12
+      jpeg_in_a37       in     12
+      jpeg_in_a38       in     12
+      jpeg_in_a39       in     12
+      jpeg_in_a40       in     12
+      jpeg_in_a41       in     12
+      jpeg_in_a42       in     12
+      jpeg_in_a43       in     12
+      jpeg_in_a44       in     12
+      jpeg_in_a45       in     12
+      jpeg_in_a46       in     12
+      jpeg_in_a47       in     12
+      jpeg_in_a48       in     12
+      jpeg_in_a49       in     12
+      jpeg_in_a50       in     12
+      jpeg_in_a51       in     12
+      jpeg_in_a52       in     12
+      jpeg_in_a53       in     12
+      jpeg_in_a54       in     12
+      jpeg_in_a55       in     12
+      jpeg_in_a56       in     12
+      jpeg_in_a57       in     12
+      jpeg_in_a58       in     12
+      jpeg_in_a59       in     12
+      jpeg_in_a60       in     12
+      jpeg_in_a61       in     12
+      jpeg_in_a62       in     12
+      jpeg_in_a63       in     12
+      jpeg_out_a00      out    12
+      jpeg_out_a01      out    12
+      jpeg_out_a02      out    12
+      jpeg_out_a03      out    12
+      jpeg_out_a04      out    12
+      jpeg_out_a05      out    12
+      jpeg_out_a06      out    12
+      jpeg_out_a07      out    12
+      jpeg_out_a08      out    12
+      jpeg_out_a09      out    12
+      jpeg_out_a10      out    12
+      jpeg_out_a11      out    12
+      jpeg_out_a12      out    12
+      jpeg_out_a13      out    12
+      jpeg_out_a14      out    12
+      jpeg_out_a15      out    12
+      jpeg_out_a16      out    12
+      jpeg_out_a17      out    12
+      jpeg_out_a18      out    12
+      jpeg_out_a19      out    12
+      jpeg_out_a20      out    12
+      jpeg_out_a21      out    12
+      jpeg_out_a22      out    12
+      jpeg_out_a23      out    12
+      jpeg_out_a24      out    12
+      jpeg_out_a25      out    12
+      jpeg_out_a26      out    12
+      jpeg_out_a27      out    12
+      jpeg_out_a28      out    12
+      jpeg_out_a29      out    12
+      jpeg_out_a30      out    12
+      jpeg_out_a31      out    12
+      jpeg_out_a32      out    12
+      jpeg_out_a33      out    12
+      jpeg_out_a34      out    12
+      jpeg_out_a35      out    12
+      jpeg_out_a36      out    12
+      jpeg_out_a37      out    12
+      jpeg_out_a38      out    12
+      jpeg_out_a39      out    12
+      jpeg_out_a40      out    12
+      jpeg_out_a41      out    12
+      jpeg_out_a42      out    12
+      jpeg_out_a43      out    12
+      jpeg_out_a44      out    12
+      jpeg_out_a45      out    12
+      jpeg_out_a46      out    12
+      jpeg_out_a47      out    12
+      jpeg_out_a48      out    12
+      jpeg_out_a49      out    12
+      jpeg_out_a50      out    12
+      jpeg_out_a51      out    12
+      jpeg_out_a52      out    12
+      jpeg_out_a53      out    12
+      jpeg_out_a54      out    12
+      jpeg_out_a55      out    12
+      jpeg_out_a56      out    12
+      jpeg_out_a57      out    12
+      jpeg_out_a58      out    12
+      jpeg_out_a59      out    12
+      jpeg_out_a60      out    12
+      jpeg_out_a61      out    12
+      jpeg_out_a62      out    12
+      jpeg_out_a63      out    12
+      valid             out     1
+

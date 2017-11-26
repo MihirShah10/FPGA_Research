@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 04:36:14 2017
+# Process ID: 10276
+# Current directory: C:/JPEG_Thesis_2/Final_PR/Quantization
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15412 C:\JPEG_Thesis_2\Final_PR\Quantization\Quantization.xpr
+# Log file: C:/JPEG_Thesis_2/Final_PR/Quantization/vivado.log
+# Journal file: C:/JPEG_Thesis_2/Final_PR/Quantization\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/Final_PR/Quantization/Quantization.xpr
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+launch_simulation -mode post-synthesis -type timing
+source quantization_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source quantization_tb.tcl
+close_sim

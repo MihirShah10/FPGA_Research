@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Thu Oct 19 02:36:06 2017">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="86329970941744058a2d48ed570d5e5d" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="GateLvl" type="DesignMode"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AutoConnectTarget" value="1" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="2" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="1" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="CmdMsgDialog_OK" value="8" type="GuiResourceData"/>
+<property name="CommandsInput_TYPE_TCL_COMMAND_HERE" value="8" type="GuiResourceData"/>
+<property name="MainMenuMgr_EDIT" value="2" type="GuiResourceData"/>
+<property name="MainMenuMgr_FLOORPLANNING" value="5" type="GuiResourceData"/>
+<property name="MainMenuMgr_FLOW" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_IO_PLANNING" value="5" type="GuiResourceData"/>
+<property name="MainMenuMgr_REPORT" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_TIMING" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_TOOLS" value="4" type="GuiResourceData"/>
+<property name="MainMenuMgr_WINDOW" value="4" type="GuiResourceData"/>
+<property name="MainWinMenuMgr_LAYOUT" value="2" type="GuiResourceData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_OPEN_HARDWARE_MANAGER" value="1" type="GuiResourceData"/>
+<property name="ProgramDebugTab_OPEN_TARGET" value="1" type="GuiResourceData"/>
+<property name="ProgramDebugTab_PROGRAM_DEVICE" value="2" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="2" type="GuiResourceData"/>
+<property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="3" type="GuiResourceData"/>
+<property name="RDICommands_CUSTOM_COMMANDS" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="98" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="57" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
