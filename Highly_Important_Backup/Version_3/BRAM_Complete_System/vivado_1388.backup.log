@@ -1,0 +1,1717 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 11:21:35 2017
+# Process ID: 1388
+# Current directory: C:/JPEG_Thesis_2/BRAM_Complete_System
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11232 C:\JPEG_Thesis_2\BRAM_Complete_System\BRAM_System_Final.xpr
+# Log file: C:/JPEG_Thesis_2/BRAM_Complete_System/vivado.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_Complete_System\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.xpr
+INFO: [Project 1-313] Project file moved from 'C:/JPEG_Thesis_2/BRAM_System_Final' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 895.090 ; gain = 211.887
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:DARC_BRAM2:1.0 - DARC_BRAM2_0
+Adding cell -- xilinx.com:user:DARC_Mux:1.0 - DARC_Mux_0
+Adding cell -- xilinx.com:user:bram:1.0 - bram_0
+Adding cell -- xilinx.com:user:controller:1.0 - controller_0
+Adding cell -- xilinx.com:user:ARM_FPGA_Control_Bus:1.0 - ARM_FPGA_Control_Bus_0
+Adding cell -- xilinx.com:user:JPEG_PR:1.0 - JPEG_PR_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <bram_design_system> from BD file <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 945.879 ; gain = 42.094
+delete_bd_objs [get_bd_nets JPEG_PR_0_jpeg_out_a19] [get_bd_nets JPEG_PR_0_jpeg_out_a35] [get_bd_nets JPEG_PR_0_jpeg_out_a51] [get_bd_nets controller_0_data_out_compute_22] [get_bd_nets JPEG_PR_0_jpeg_out_a55] [get_bd_nets JPEG_PR_0_jpeg_out_a60] [get_bd_nets controller_0_data_out_compute_31] [get_bd_nets controller_0_data_out_compute_47] [get_bd_nets JPEG_PR_0_jpeg_out_a20] [get_bd_nets JPEG_PR_0_jpeg_out_a36] [get_bd_nets JPEG_PR_0_jpeg_out_a52] [get_bd_nets controller_0_data_out_compute_19] [get_bd_nets JPEG_PR_0_jpeg_out_a56] [get_bd_nets JPEG_PR_0_jpeg_out_a61] [get_bd_nets controller_0_data_out_compute_28] [get_bd_nets controller_0_data_out_compute_44] [get_bd_nets JPEG_PR_0_jpeg_out_a21] [get_bd_nets JPEG_PR_0_jpeg_out_a37] [get_bd_nets JPEG_PR_0_jpeg_out_a53] [get_bd_nets controller_0_data_out_compute_12] [get_bd_nets JPEG_PR_0_jpeg_out_a01] [get_bd_nets JPEG_PR_0_jpeg_out_a12] [get_bd_nets controller_0_data_out_compute_37] [get_bd_nets controller_0_data_out_compute_57] [get_bd_nets controller_0_data_out_compute_62] [get_bd_nets JPEG_PR_0_jpeg_out_a22] [get_bd_nets JPEG_PR_0_jpeg_out_a38] [get_bd_nets JPEG_PR_0_jpeg_out_a54] [get_bd_nets controller_0_data_out_compute_63] [get_bd_nets JPEG_PR_0_jpeg_out_a00] [get_bd_nets JPEG_PR_0_jpeg_out_a11] [get_bd_nets controller_0_data_out_compute_34] [get_bd_nets controller_0_data_out_compute_50] [get_bd_nets JPEG_PR_0_jpeg_out_a23] [get_bd_nets JPEG_PR_0_jpeg_out_a39] [get_bd_nets controller_0_data_out_compute_03] [get_bd_nets controller_0_data_out_compute_01] [get_bd_nets controller_0_data_out_compute_05] [get_bd_nets controller_0_data_out_compute_07] [get_bd_nets controller_0_data_out_compute_09] [get_bd_nets controller_0_data_out_compute_18] [get_bd_nets JPEG_PR_0_jpeg_out_a03] [get_bd_nets JPEG_PR_0_jpeg_out_a14] [get_bd_nets controller_0_data_out_compute_27] [get_bd_nets controller_0_data_out_compute_43] [get_bd_nets JPEG_PR_0_jpeg_out_a24] [get_bd_nets JPEG_PR_0_jpeg_out_a40] [get_bd_nets controller_0_data_out_compute_15] [get_bd_nets JPEG_PR_0_jpeg_out_a02] [get_bd_nets JPEG_PR_0_jpeg_out_a13] [get_bd_nets JPEG_PR_0_jpeg_out_a63] [get_bd_nets controller_0_data_out_compute_40] [get_bd_nets controller_0_data_out_compute_54] [get_bd_nets controller_0_data_out_compute_59] [get_bd_nets JPEG_PR_0_jpeg_out_a25] [get_bd_nets JPEG_PR_0_jpeg_out_a41] [get_bd_nets controller_0_data_out_compute_24] [get_bd_nets JPEG_PR_0_jpeg_out_a05] [get_bd_nets controller_0_data_out_compute_33] [get_bd_nets controller_0_data_out_compute_49] [get_bd_nets JPEG_PR_0_jpeg_out_a26] [get_bd_nets JPEG_PR_0_jpeg_out_a42] [get_bd_nets JPEG_PR_0_jpeg_out_valid] [get_bd_nets controller_0_data_out_compute_21] [get_bd_nets JPEG_PR_0_jpeg_out_a04] [get_bd_nets controller_0_data_out_compute_30] [get_bd_nets controller_0_data_out_compute_46] [get_bd_nets JPEG_PR_0_jpeg_out_a27] [get_bd_nets JPEG_PR_0_jpeg_out_a43] [get_bd_nets controller_0_data_out_compute_14] [get_bd_nets JPEG_PR_0_jpeg_out_a07] [get_bd_nets controller_0_data_out_compute_39] [get_bd_nets controller_0_data_out_compute_55] [get_bd_nets controller_0_data_out_compute_60] [get_bd_nets JPEG_PR_0_jpeg_out_a28] [get_bd_nets JPEG_PR_0_jpeg_out_a44] [get_bd_intf_nets ps7_0_axi_periph_M02_AXI] [get_bd_nets controller_0_data_out_compute_11] [get_bd_nets JPEG_PR_0_jpeg_out_a06] [get_bd_nets controller_0_data_out_compute_36] [get_bd_nets controller_0_data_out_compute_58] [get_bd_nets JPEG_PR_0_jpeg_out_a29] [get_bd_nets JPEG_PR_0_jpeg_out_a45] [get_bd_nets controller_0_data_out_compute_20] [get_bd_nets JPEG_PR_0_jpeg_out_a09] [get_bd_nets controller_0_data_out_compute_29] [get_bd_nets controller_0_data_out_compute_45] [get_bd_nets JPEG_PR_0_jpeg_out_a30] [get_bd_nets JPEG_PR_0_jpeg_out_a46] [get_bd_nets controller_0_data_out_compute_17] [get_bd_nets JPEG_PR_0_jpeg_out_a08] [get_bd_nets controller_0_data_out_compute_26] [get_bd_nets controller_0_data_out_compute_42] [get_bd_nets controller_0_data_out_compute_53] [get_bd_nets JPEG_PR_0_jpeg_out_a15] [get_bd_nets JPEG_PR_0_jpeg_out_a31] [get_bd_nets JPEG_PR_0_jpeg_out_a47] [get_bd_nets controller_0_data_out_compute_00] [get_bd_nets controller_0_data_out_compute_02] [get_bd_nets controller_0_data_out_compute_04] [get_bd_nets controller_0_data_out_compute_06] [get_bd_nets controller_0_data_out_compute_08] [get_bd_nets controller_0_data_out_compute_10] [get_bd_nets JPEG_PR_0_jpeg_out_a59] [get_bd_nets controller_0_data_out_compute_35] [get_bd_nets controller_0_data_out_compute_51] [get_bd_nets JPEG_PR_0_jpeg_out_a16] [get_bd_nets JPEG_PR_0_jpeg_out_a32] [get_bd_nets JPEG_PR_0_jpeg_out_a48] [get_bd_nets controller_0_data_out_compute_23] [get_bd_nets JPEG_PR_0_jpeg_out_a10] [get_bd_nets controller_0_data_out_compute_32] [get_bd_nets controller_0_data_out_compute_48] [get_bd_nets JPEG_PR_0_jpeg_out_a17] [get_bd_nets JPEG_PR_0_jpeg_out_a33] [get_bd_nets JPEG_PR_0_jpeg_out_a49] [get_bd_nets controller_0_data_out_compute_16] [get_bd_nets JPEG_PR_0_jpeg_out_a57] [get_bd_nets JPEG_PR_0_jpeg_out_a62] [get_bd_nets controller_0_data_out_compute_25] [get_bd_nets controller_0_data_out_compute_41] [get_bd_nets controller_0_data_out_compute_52] [get_bd_nets JPEG_PR_0_jpeg_out_a18] [get_bd_nets JPEG_PR_0_jpeg_out_a34] [get_bd_nets JPEG_PR_0_jpeg_out_a50] [get_bd_nets ARM_FPGA_Control_Bus_0_compute_wakeup] [get_bd_nets controller_0_data_out_compute_13] [get_bd_nets JPEG_PR_0_jpeg_out_a58] [get_bd_nets controller_0_data_out_compute_38] [get_bd_nets controller_0_data_out_compute_56] [get_bd_nets controller_0_data_out_compute_61] [get_bd_cells JPEG_PR_0]
+set_property  ip_repo_paths  {c:/JPEG_Thesis_2/BRAM_FPGA_Controller c:/JPEG_Thesis_2/DCT_JPEG2 c:/JPEG_Thesis_2/DARC_Mux c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0 c:/JPEG_Thesis_2/DARC_BRAM_2 c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0 c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0 C:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0 REV2_JPEG_IP_DESIGN_0
+endgroup
+set_property location {5.5 1548 1144} [get_bd_cells REV2_JPEG_IP_DESIGN_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins REV2_JPEG_IP_DESIGN_0/S00_AXI]
+</REV2_JPEG_IP_DESIGN_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+ipx::edit_ip_in_project -upgrade true -name REV2_JPEG_IP_DESIGN_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/REV2_JPEG_IP_DESIGN_v1_0_project c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1003.332 ; gain = 20.328
+ipx::edit_ip_in_project -upgrade true -name REV2_JPEG_IP_DESIGN_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.tmp/REV2_JPEG_IP_DESIGN_v1_0_project c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0/component.xml
+ERROR: [Ipptcl 7-561] A project named 'REV2_JPEG_IP_DESIGN_v1_0_project' is already opened.
+ERROR: [Common 17-39] 'ipx::edit_ip_in_project' failed due to earlier errors.
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+ipx::merge_project_changes: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1046.313 ; gain = 0.000
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 12:50:08 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 12:50:08 2017...
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+report_ip_status -name ip_status
+set_property  ip_repo_paths  {c:/JPEG_Thesis_2/BRAM_FPGA_Controller c:/JPEG_Thesis_2/DCT_JPEG2 c:/JPEG_Thesis_2/DARC_Mux c:/JPEG_Thesis_2/DARC_BRAM_2 c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0 c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0 c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+ipx::edit_ip_in_project -upgrade true -name REV2_JPEG_IP_DESIGN_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/REV2_JPEG_IP_DESIGN_v1_0_project c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 12:56:36 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 12:56:36 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'
+upgrade_ip -vlnv xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0 [get_ips  bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (REV2_JPEG_IP_DESIGN_v1.0 1.0) from revision 2 to revision 3
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 's00_axi_aclk' (xilinx.com:signal:clock:1.0)
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 's00_axi_aresetn' (xilinx.com:signal:reset:1.0)
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a00'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a01'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a02'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a03'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a04'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a05'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a06'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a07'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a08'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a09'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a10'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a100'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a101'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a102'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a103'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a104'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a105'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a106'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a107'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a108'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a109'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a11'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a110'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a111'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a112'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a113'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a114'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a115'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a116'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a117'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a118'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a119'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a12'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a120'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a121'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a122'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a123'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a124'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a125'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a126'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a127'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a13'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a14'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a15'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a16'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a17'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a18'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a19'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a20'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a21'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a22'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a23'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a24'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a25'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a26'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a27'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a28'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a29'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a30'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a31'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a32'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a33'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a34'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a35'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a36'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a37'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a38'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a39'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a40'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a41'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a42'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a43'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a44'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a45'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a46'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a47'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a48'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a49'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a50'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a51'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a52'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a53'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a54'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a55'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a56'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a57'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a58'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a59'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a60'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a61'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a62'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a63'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a64'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a65'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a66'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a67'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a68'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a69'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a70'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_in_a71'
+INFO: [Common 17-14] Message 'IP_Flow 19-4698' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'IP bram_design_system_REV2_JPEG_IP_DESIGN_0_0'.
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_REV2_JPEG_IP_DESIGN_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_REV2_JPEG_IP_DESIGN_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd]
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/controller_0/data_in_compute_00
+/controller_0/data_in_compute_01
+/controller_0/data_in_compute_02
+/controller_0/data_in_compute_03
+/controller_0/data_in_compute_04
+/controller_0/data_in_compute_05
+/controller_0/data_in_compute_06
+/controller_0/data_in_compute_07
+/controller_0/data_in_compute_08
+/controller_0/data_in_compute_09
+/controller_0/data_in_compute_10
+/controller_0/data_in_compute_11
+/controller_0/data_in_compute_12
+/controller_0/data_in_compute_13
+/controller_0/data_in_compute_14
+/controller_0/data_in_compute_15
+/controller_0/data_in_compute_16
+/controller_0/data_in_compute_17
+/controller_0/data_in_compute_18
+/controller_0/data_in_compute_19
+/controller_0/data_in_compute_20
+/controller_0/data_in_compute_21
+/controller_0/data_in_compute_22
+/controller_0/data_in_compute_23
+/controller_0/data_in_compute_24
+/controller_0/data_in_compute_25
+/controller_0/data_in_compute_26
+/controller_0/data_in_compute_27
+/controller_0/data_in_compute_28
+/controller_0/data_in_compute_29
+/controller_0/data_in_compute_30
+/controller_0/data_in_compute_31
+/controller_0/data_in_compute_32
+/controller_0/data_in_compute_33
+/controller_0/data_in_compute_34
+/controller_0/data_in_compute_35
+/controller_0/data_in_compute_36
+/controller_0/data_in_compute_37
+/controller_0/data_in_compute_38
+/controller_0/data_in_compute_39
+/controller_0/data_in_compute_40
+/controller_0/data_in_compute_41
+/controller_0/data_in_compute_42
+/controller_0/data_in_compute_43
+/controller_0/data_in_compute_44
+/controller_0/data_in_compute_45
+/controller_0/data_in_compute_46
+/controller_0/data_in_compute_47
+/controller_0/data_in_compute_48
+/controller_0/data_in_compute_49
+/controller_0/data_in_compute_50
+/controller_0/data_in_compute_51
+/controller_0/data_in_compute_52
+/controller_0/data_in_compute_53
+/controller_0/data_in_compute_54
+/controller_0/data_in_compute_55
+/controller_0/data_in_compute_56
+/controller_0/data_in_compute_57
+/controller_0/data_in_compute_58
+/controller_0/data_in_compute_59
+/controller_0/data_in_compute_60
+/controller_0/data_in_compute_61
+/controller_0/data_in_compute_62
+/controller_0/data_in_compute_63
+/ARM_FPGA_Control_Bus_0/compute_valid
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a00
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a01
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a02
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a03
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a04
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a05
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a06
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a07
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a08
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a09
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a10
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a11
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a12
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a13
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a14
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a15
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a16
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a17
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a18
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a19
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a20
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a21
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a22
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a23
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a24
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a25
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a26
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a27
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a28
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a29
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a30
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a31
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a32
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a33
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a34
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a35
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a36
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a37
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a38
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a39
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a40
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a41
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a42
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a43
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a44
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a45
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a46
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a47
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a48
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a49
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a50
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a51
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a52
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a53
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a54
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a55
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a56
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a57
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a58
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a59
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a60
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a61
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a62
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a63
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a64
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a65
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a66
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a67
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a68
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a69
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a70
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a71
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a72
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a73
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a74
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a75
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a76
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a77
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a78
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a79
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a80
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a81
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a82
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a83
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a84
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a85
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a86
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a87
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a88
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a89
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a90
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a91
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a92
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a93
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a94
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a95
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a96
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a97
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a98
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a99
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a100
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a101
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a102
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a103
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a104
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a105
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a106
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a107
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a108
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a109
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a110
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a111
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a112
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a113
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a114
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a115
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a116
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a117
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a118
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a119
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a120
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a121
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a122
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a123
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a124
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a125
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a126
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a127
+/REV2_JPEG_IP_DESIGN_0/jpeg_len_in
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_compute
+
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block REV2_JPEG_IP_DESIGN_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+generate_target: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1207.934 ; gain = 114.699
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_msg_config -suppress -id {BD 41-759} -string {{CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/controller_0/data_in_compute_00
+/controller_0/data_in_compute_01
+/controller_0/data_in_compute_02
+/controller_0/data_in_compute_03
+/controller_0/data_in_compute_04
+/controller_0/data_in_compute_05
+/controller_0/data_in_compute_06
+/controller_0/data_in_compute_07
+/controller_0/data_in_compute_08
+/controller_0/data_in_compute_09
+/controller_0/data_in_compute_10
+/controller_0/data_in_compute_11
+/controller_0/data_in_compute_12
+/controller_0/data_in_compute_13
+/controller_0/data_in_compute_14
+/controller_0/data_in_compute_15
+/controller_0/data_in_compute_16
+/controller_0/data_in_compute_17
+/controller_0/data_in_compute_18
+/controller_0/data_in_compute_19
+/controller_0/data_in_compute_20
+/controller_0/data_in_compute_21
+/controller_0/data_in_compute_22
+/controller_0/data_in_compute_23
+/controller_0/data_in_compute_24
+/controller_0/data_in_compute_25
+/controller_0/data_in_compute_26
+/controller_0/data_in_compute_27
+/controller_0/data_in_compute_28
+/controller_0/data_in_compute_29
+/controller_0/data_in_compute_30
+/controller_0/data_in_compute_31
+/controller_0/data_in_compute_32
+/controller_0/data_in_compute_33
+/controller_0/data_in_compute_34
+/controller_0/data_in_compute_35
+/controller_0/data_in_compute_36
+/controller_0/data_in_compute_37
+/controller_0/data_in_compute_38
+/controller_0/data_in_compute_39
+/controller_0/data_in_compute_40
+/controller_0/data_in_compute_41
+/controller_0/data_in_compute_42
+/controller_0/data_in_compute_43
+/controller_0/data_in_compute_44
+/controller_0/data_in_compute_45
+/controller_0/data_in_compute_46
+/controller_0/data_in_compute_47
+/controller_0/data_in_compute_48
+/controller_0/data_in_compute_49
+/controller_0/data_in_compute_50
+/controller_0/data_in_compute_51
+/controller_0/data_in_compute_52
+/controller_0/data_in_compute_53
+/controller_0/data_in_compute_54
+/controller_0/data_in_compute_55
+/controller_0/data_in_compute_56
+/controller_0/data_in_compute_57
+/controller_0/data_in_compute_58
+/controller_0/data_in_compute_59
+/controller_0/data_in_compute_60
+/controller_0/data_in_compute_61
+/controller_0/data_in_compute_62
+/controller_0/data_in_compute_63
+/ARM_FPGA_Control_Bus_0/compute_valid
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a00
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a01
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a02
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a03
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a04
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a05
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a06
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a07
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a08
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a09
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a10
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a11
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a12
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a13
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a14
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a15
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a16
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a17
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a18
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a19
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a20
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a21
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a22
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a23
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a24
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a25
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a26
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a27
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a28
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a29
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a30
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a31
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a32
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a33
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a34
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a35
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a36
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a37
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a38
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a39
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a40
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a41
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a42
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a43
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a44
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a45
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a46
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a47
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a48
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a49
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a50
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a51
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a52
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a53
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a54
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a55
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a56
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a57
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a58
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a59
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a60
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a61
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a62
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a63
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a64
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a65
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a66
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a67
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a68
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a69
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a70
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a71
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a72
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a73
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a74
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a75
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a76
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a77
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a78
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a79
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a80
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a81
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a82
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a83
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a84
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a85
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a86
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a87
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a88
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a89
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a90
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a91
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a92
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a93
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a94
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a95
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a96
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a97
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a98
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a99
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a100
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a101
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a102
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a103
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a104
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a105
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a106
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a107
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a108
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a109
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a110
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a111
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a112
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a113
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a114
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a115
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a116
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a117
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a118
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a119
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a120
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a121
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a122
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a123
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a124
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a125
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a126
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_a127
+/REV2_JPEG_IP_DESIGN_0/jpeg_len_in
+/REV2_JPEG_IP_DESIGN_0/jpeg_in_compute} } 
+ipx::edit_ip_in_project -upgrade true -name REV2_JPEG_IP_DESIGN_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/REV2_JPEG_IP_DESIGN_v1_0_project c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1207.934 ; gain = 0.000
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 12:59:15 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 12:59:15 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'
+upgrade_ip -vlnv xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0 [get_ips  bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (REV2_JPEG_IP_DESIGN_v1.0 1.0) from revision 3 to revision 4
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property location {5 1509 1512} [get_bd_cells REV2_JPEG_IP_DESIGN_0]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/valid] [get_bd_pins ARM_FPGA_Control_Bus_0/compute_valid]
+connect_bd_net [get_bd_pins ARM_FPGA_Control_Bus_0/compute_wakeup] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_compute]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /REV2_JPEG_IP_DESIGN_0/jpeg_in_compute(undef)
+ipx::edit_ip_in_project -upgrade true -name controller_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/controller_v1_0_project c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new/controller.v'.
+CRITICAL WARNING: [IP_Flow 19-377] There are no source files from the current project to package.
+CRITICAL WARNING: [HDL 9-806] Syntax error near "input". [c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new\controller.v:216]
+ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.
+ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'controller.v'.
+ERROR: [Common 17-39] 'ipx::merge_project_changes' failed due to earlier errors.
+ipx::merge_project_changes files [ipx::current_core]
+set_msg_config -suppress -id {IP_Flow 19-259} -string {{ERROR: [IP_Flow 19-259] [HDL Parser] Failed analyze operation while parsing HDL.} } 
+set_msg_config -suppress -id {IP_Flow 19-258} -string {{ERROR: [IP_Flow 19-258] [HDL Parser] Error parsing HDL file 'controller.v'.} } 
+set_msg_config -suppress -id {IP_Flow 19-3833} -string {{WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new/controller.v'.} } 
+set_msg_config -suppress -id {IP_Flow 19-377} -string {{CRITICAL WARNING: [IP_Flow 19-377] There are no source files from the current project to package.} } 
+set_msg_config -suppress -id {HDL 9-806} -string {{CRITICAL WARNING: [HDL 9-806] Syntax error near "input". [c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new\controller.v:216]} } 
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project/controller_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project/controller_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 13:57:47 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 13:57:47 2017...
+close_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1273.480 ; gain = 0.000
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/BRAM_FPGA_Controller
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:controller:1.0 [get_ips  bram_design_system_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_controller_0_1 (controller_v1_0 1.0) from revision 3 to revision 4
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_100'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_101'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_102'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_103'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_104'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_105'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_106'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_107'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_108'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_109'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_110'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_111'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_112'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_113'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_114'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_115'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_116'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_117'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_118'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_119'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_120'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_121'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_122'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_123'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_124'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_125'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_126'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_127'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_64'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_65'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_66'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_67'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_68'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_69'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_70'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_71'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_72'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_73'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_74'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_75'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_76'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_77'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_78'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_79'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_80'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_81'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_82'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_83'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_84'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_85'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_86'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_87'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_88'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_89'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_90'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_91'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_92'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_93'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_94'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_95'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_96'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_97'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_98'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_in_compute_99'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_100'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_101'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_102'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_103'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_104'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_105'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_106'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_107'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_108'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_109'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_110'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_111'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_112'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_113'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_114'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_115'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_116'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_117'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_118'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_119'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_120'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_121'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_122'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_123'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_124'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_125'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_126'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_127'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_64'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_65'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_66'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_67'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_68'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_69'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_70'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'data_out_compute_71'
+INFO: [Common 17-14] Message 'IP_Flow 19-4698' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_controller_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_controller_0_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_controller_0_1] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+set_property location {3 225 2162} [get_bd_cells controller_0]
+set_property location {3 152 1506} [get_bd_cells controller_0]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_00] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a00]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_01] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a01]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_02] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a02]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_03] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a03]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_04] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a04]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_05] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a05]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_06] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a06]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_07] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a07]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_08] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a08]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_09] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a09]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_10] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a10]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_11] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a11]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_12] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a12]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_13] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a13]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_14] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a14]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_15] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a15]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_16] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a16]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_17] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a17]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_18] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a18]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_19] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a19]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_20] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a20]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_21] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a21]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_22] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a22]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_23] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a23]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_24] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a24]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_25] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a25]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_26] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a26]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_27] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a27]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_28] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a28]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_29] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a29]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_30] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a30]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_31] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a31]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_32] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a32]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_33] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a33]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_34] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a34]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_35] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a35]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_36] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a36]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_37] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a37]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_38] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a38]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_39] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a39]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_40] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a40]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_41] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a41]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_42] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a42]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_43] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a43]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_44] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a44]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_45] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a45]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_46] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a46]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_47] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a47]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_48] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a48]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_49] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a49]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_50] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a50]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_51] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a51]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_52] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a52]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_53] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a53]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_54] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a54]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_55] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a55]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_56] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a56]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_57] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a57]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_58] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a58]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_59] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a59]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_60] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a60]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_61] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a61]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_62] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a62]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_63] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a63]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_64] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a64]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_65] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a65]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_66] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a66]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_67] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a67]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_68] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a68]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_69] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a69]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_70] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a70]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_71] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a71]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_72] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a72]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_73] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a73]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_74] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a74]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_75] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a75]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_76] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a76]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_77] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a77]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_78] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a78]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_79] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a79]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_80] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a80]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_81] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a81]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_82] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a82]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_83] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a83]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_84] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a84]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_85] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a85]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_86] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a86]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_87] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a87]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_88] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a88]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_89] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a89]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_90] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a90]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_91] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a91]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_92] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a92]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_93] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a93]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_94] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a94]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_95] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a95]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_96] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a96]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_97] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a97]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_98] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a98]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_99] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a99]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_100] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a100]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_101] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a101]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_102] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a102]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_103] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a103]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_104] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a104]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_105] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a105]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_106] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a106]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_107] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a107]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_108] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a108]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_109] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a109]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_110] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a110]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_111] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a111]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_112] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a112]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_113] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a113]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_114] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a114]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_115] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a115]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_116] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a116]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_117] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a117]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_118] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a118]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_119] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a119]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_120] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a120]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_121] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a121]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_122] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a122]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_123] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a123]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_124] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a124]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_125] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a125]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_126] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a126]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_126] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a126]
+WARNING: [BD 41-395] Exec TCL: all ports/pins are already connected to '/controller_0_data_out_compute_126'
+ERROR: [BD 5-4] Error: running connect_bd_net.
+ERROR: [Common 17-39] 'connect_bd_net' failed due to earlier errors.
+connect_bd_net [get_bd_pins controller_0/data_out_compute_127] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_in_a127]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a00] [get_bd_pins controller_0/data_in_compute_00]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_01] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a01]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_02] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a02]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_03] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a03]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_04] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a04]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_05] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a05]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_06] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a06]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_07] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a07]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_08] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a08]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_09] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a09]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_10] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a10]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_11] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a11]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_12] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a12]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_13] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a13]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_14] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a14]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_15] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a15]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_16] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a16]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_17] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a17]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_18] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a18]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_19] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a19]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_20] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a20]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_21] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a21]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_22] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a22]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_23] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a23]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_24] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a24]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_25] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a25]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_26] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a26]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_27] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a27]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_28] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a28]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_29] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a29]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_30] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a30]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_31] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a31]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_32] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a32]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_33] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a33]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_34] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a34]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_35] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a35]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_36] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a36]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_37] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a37]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_38] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a38]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_39] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a39]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_40] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a40]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_41] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a41]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_42] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a42]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_43] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a43]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_44] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a44]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_45] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a45]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_46] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a46]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_47] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a47]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_48] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a48]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_49] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a49]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_50] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a50]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_51] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a51]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_52] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a52]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_53] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a53]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_54] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a54]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_55] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a55]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_56] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a56]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_57] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a57]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_58] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a58]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_59] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a59]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_60] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a60]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_61] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a61]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_62] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a62]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_63] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a63]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_64] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a64]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_65] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a65]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_66] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a66]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_67] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a67]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_68] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a68]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_69] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a69]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_70] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a70]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_71] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a71]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_72] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a72]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_73] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a73]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_74] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a74]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_75] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a75]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_76] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a76]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_77] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a77]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_78] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a78]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_79] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a79]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_80] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a80]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_81] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a81]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_82] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a82]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_83] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a83]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_84] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a84]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_85] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a85]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_86] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a86]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_87] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a87]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_88] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a88]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_89] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a89]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_90] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a90]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_91] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a91]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_92] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a92]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_93] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a93]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_94] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a94]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_95] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a95]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_96] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a96]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_97] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a97]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_98] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a98]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_99] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a99]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_100] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a100]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_101] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a101]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_102] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a102]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_103] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a103]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_104] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a104]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_105] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a105]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_106] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a106]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_107] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a107]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_108] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a108]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_109] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a109]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_110] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a110]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_111] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a111]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_112] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a112]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_113] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a113]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_114] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a114]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_115] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a115]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_116] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a116]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_117] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a117]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_118] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a118]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_119] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a119]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_120] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a120]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_121] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a121]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_122] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a122]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_123] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a123]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_124] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a124]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_125] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a125]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_126] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a126]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_126] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a126]
+WARNING: [BD 41-395] Exec TCL: all ports/pins are already connected to '/REV2_JPEG_IP_DESIGN_0_jpeg_out_a126'
+ERROR: [BD 5-4] Error: running connect_bd_net.
+ERROR: [Common 17-39] 'connect_bd_net' failed due to earlier errors.
+connect_bd_net [get_bd_pins controller_0/data_in_compute_127] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_out_a127]
+set_property location {2 -570 -1235} [get_bd_cells processing_system7_0]
+set_property location {1.5 62 -796} [get_bd_cells ARM_FPGA_Control_Bus_0]
+set_property location {4 2492 -1018} [get_bd_cells rst_ps7_0_100M]
+set_property location {4.5 3962 -959} [get_bd_cells DARC_BRAM2_0]
+set_property location {5.5 5464 -948} [get_bd_cells ps7_0_axi_periph]
+set_property location {6.5 6787 -913} [get_bd_cells DARC_Mux_0]
+set_property location {7.5 7779 -910} [get_bd_cells bram_0]
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+ipx::edit_ip_in_project -upgrade true -name ARM_FPGA_Control_Bus_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/ARM_FPGA_Control_Bus_v1_0_project c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 7 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 14:15:26 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 14:15:26 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:ARM_FPGA_Control_Bus:1.0 [get_ips  bram_design_system_ARM_FPGA_Control_Bus_0_5] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_ARM_FPGA_Control_Bus_0_5 (ARM_FPGA_Control_Bus_v1.0 1.0) from revision 6 to revision 7
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_len_in'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_len_out'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /REV2_JPEG_IP_DESIGN_0/jpeg_in_compute(undef) and /ARM_FPGA_Control_Bus_0_upgraded_ipi/compute_wakeup(rst)
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_ARM_FPGA_Control_Bus_0_5' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_ARM_FPGA_Control_Bus_0_5] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_len_out] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_len_in]
+delete_bd_objs [get_bd_nets ARM_FPGA_Control_Bus_0_jpeg_compute_len_out]
+connect_bd_net [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_len_out] [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_len_in]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_len_out] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_len_in]
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+validate_bd_design
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+generate_target all [get_files  C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd]
+INFO: [BD 41-1662] The design 'bram_design_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a00'(64) to net 'controller_0_data_out_compute_00'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a01'(64) to net 'controller_0_data_out_compute_01'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a02'(64) to net 'controller_0_data_out_compute_02'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a03'(64) to net 'controller_0_data_out_compute_03'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a04'(64) to net 'controller_0_data_out_compute_04'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a05'(64) to net 'controller_0_data_out_compute_05'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a06'(64) to net 'controller_0_data_out_compute_06'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a07'(64) to net 'controller_0_data_out_compute_07'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a08'(64) to net 'controller_0_data_out_compute_08'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a09'(64) to net 'controller_0_data_out_compute_09'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a10'(64) to net 'controller_0_data_out_compute_10'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a11'(64) to net 'controller_0_data_out_compute_11'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a12'(64) to net 'controller_0_data_out_compute_12'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a13'(64) to net 'controller_0_data_out_compute_13'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a14'(64) to net 'controller_0_data_out_compute_14'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a15'(64) to net 'controller_0_data_out_compute_15'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a16'(64) to net 'controller_0_data_out_compute_16'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a17'(64) to net 'controller_0_data_out_compute_17'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a18'(64) to net 'controller_0_data_out_compute_18'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a19'(64) to net 'controller_0_data_out_compute_19'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a20'(64) to net 'controller_0_data_out_compute_20'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a21'(64) to net 'controller_0_data_out_compute_21'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a22'(64) to net 'controller_0_data_out_compute_22'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a23'(64) to net 'controller_0_data_out_compute_23'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a24'(64) to net 'controller_0_data_out_compute_24'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a25'(64) to net 'controller_0_data_out_compute_25'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a26'(64) to net 'controller_0_data_out_compute_26'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a27'(64) to net 'controller_0_data_out_compute_27'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a28'(64) to net 'controller_0_data_out_compute_28'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a29'(64) to net 'controller_0_data_out_compute_29'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a30'(64) to net 'controller_0_data_out_compute_30'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a31'(64) to net 'controller_0_data_out_compute_31'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a32'(64) to net 'controller_0_data_out_compute_32'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a33'(64) to net 'controller_0_data_out_compute_33'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a34'(64) to net 'controller_0_data_out_compute_34'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a35'(64) to net 'controller_0_data_out_compute_35'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a36'(64) to net 'controller_0_data_out_compute_36'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a37'(64) to net 'controller_0_data_out_compute_37'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a38'(64) to net 'controller_0_data_out_compute_38'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a39'(64) to net 'controller_0_data_out_compute_39'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a40'(64) to net 'controller_0_data_out_compute_40'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a41'(64) to net 'controller_0_data_out_compute_41'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a42'(64) to net 'controller_0_data_out_compute_42'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a43'(64) to net 'controller_0_data_out_compute_43'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a44'(64) to net 'controller_0_data_out_compute_44'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a45'(64) to net 'controller_0_data_out_compute_45'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a46'(64) to net 'controller_0_data_out_compute_46'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a47'(64) to net 'controller_0_data_out_compute_47'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a48'(64) to net 'controller_0_data_out_compute_48'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a49'(64) to net 'controller_0_data_out_compute_49'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a50'(64) to net 'controller_0_data_out_compute_50'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a51'(64) to net 'controller_0_data_out_compute_51'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a52'(64) to net 'controller_0_data_out_compute_52'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a53'(64) to net 'controller_0_data_out_compute_53'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a54'(64) to net 'controller_0_data_out_compute_54'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a55'(64) to net 'controller_0_data_out_compute_55'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a56'(64) to net 'controller_0_data_out_compute_56'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a57'(64) to net 'controller_0_data_out_compute_57'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a58'(64) to net 'controller_0_data_out_compute_58'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a59'(64) to net 'controller_0_data_out_compute_59'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a60'(64) to net 'controller_0_data_out_compute_60'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a61'(64) to net 'controller_0_data_out_compute_61'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a62'(64) to net 'controller_0_data_out_compute_62'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a63'(64) to net 'controller_0_data_out_compute_63'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a64'(64) to net 'controller_0_data_out_compute_64'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a65'(64) to net 'controller_0_data_out_compute_65'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a66'(64) to net 'controller_0_data_out_compute_66'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a67'(64) to net 'controller_0_data_out_compute_67'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a68'(64) to net 'controller_0_data_out_compute_68'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a69'(64) to net 'controller_0_data_out_compute_69'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a70'(64) to net 'controller_0_data_out_compute_70'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a71'(64) to net 'controller_0_data_out_compute_71'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a72'(64) to net 'controller_0_data_out_compute_72'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a73'(64) to net 'controller_0_data_out_compute_73'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a74'(64) to net 'controller_0_data_out_compute_74'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a75'(64) to net 'controller_0_data_out_compute_75'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a76'(64) to net 'controller_0_data_out_compute_76'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a77'(64) to net 'controller_0_data_out_compute_77'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a78'(64) to net 'controller_0_data_out_compute_78'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a79'(64) to net 'controller_0_data_out_compute_79'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a80'(64) to net 'controller_0_data_out_compute_80'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a81'(64) to net 'controller_0_data_out_compute_81'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a82'(64) to net 'controller_0_data_out_compute_82'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a83'(64) to net 'controller_0_data_out_compute_83'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a84'(64) to net 'controller_0_data_out_compute_84'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a85'(64) to net 'controller_0_data_out_compute_85'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a86'(64) to net 'controller_0_data_out_compute_86'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a87'(64) to net 'controller_0_data_out_compute_87'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a88'(64) to net 'controller_0_data_out_compute_88'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a89'(64) to net 'controller_0_data_out_compute_89'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a90'(64) to net 'controller_0_data_out_compute_90'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a91'(64) to net 'controller_0_data_out_compute_91'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a92'(64) to net 'controller_0_data_out_compute_92'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a93'(64) to net 'controller_0_data_out_compute_93'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a94'(64) to net 'controller_0_data_out_compute_94'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a95'(64) to net 'controller_0_data_out_compute_95'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a96'(64) to net 'controller_0_data_out_compute_96'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a97'(64) to net 'controller_0_data_out_compute_97'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a98'(64) to net 'controller_0_data_out_compute_98'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a99'(64) to net 'controller_0_data_out_compute_99'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+INFO: [Common 17-14] Message 'BD 41-1228' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block REV2_JPEG_IP_DESIGN_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1340.125 ; gain = 60.227
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Sun Nov 26 14:19:34 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.runs/synth_1/runme.log
+write_hwdef -force  -file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+launch_sdk -workspace C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk -hwspec C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk -hwspec C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1355.031 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+open_hw_target: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1398.145 ; gain = 43.113
+set_property PROGRAM.FILE {C:\JPEG_Thesis_2\PRLab\Bitstreams\blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+ipx::edit_ip_in_project -upgrade true -name ARM_FPGA_Control_Bus_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/ARM_FPGA_Control_Bus_v1_0_project c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1445.004 ; gain = 0.000
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 19:31:50 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 19:31:50 2017...
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 23:57:58 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 06:56:35 2017
+# Process ID: 5276
+# Current directory: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1
+# Command line: vivado.exe -log rle_system_sdk_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source rle_system_sdk_wrapper.tcl -notrace
+# Log file: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.vdi
+# Journal file: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source rle_system_sdk_wrapper.tcl -notrace

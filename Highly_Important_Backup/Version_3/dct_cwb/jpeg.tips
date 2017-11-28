@@ -1,0 +1,10 @@
+H_BT9008: The bitwidth of value assigned to variable Fx_o_out_64 (bitwidth 17) is 16 or below.
+ [Tips] Reduce the bitwidth for the variable.
+	[Source Lines]
+	54(./dct.cpp):               a+= (sc_fixed<17,15,SC_RND,SC_SAT>)line_buffer[x][y]*dct_co[x][u]*dct_co[y][v];
+	[Source Lines]
+	54(./dct.cpp):               a+= (sc_fixed<17,15,SC_RND,SC_SAT>)line_buffer[x][y]*dct_co[x][u]*dct_co[y][v];
+H_BT9012: The cycle has been increased the number of decoders of the register array for array dct_output is limited.
+ [Tips] Increasing decoders can improve circuit performance.
+        example)
+        reg(0:8) ary[3]/* Cyber rw_port = RW2 */ "2" means decoder number.

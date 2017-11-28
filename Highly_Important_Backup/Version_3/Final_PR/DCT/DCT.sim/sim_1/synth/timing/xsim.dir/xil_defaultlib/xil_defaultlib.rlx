@@ -1,0 +1,6 @@
+0.6
+2016.3
+Oct 10 2016
+19:46:48
+C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v,1511259193,verilog,,,,glbl;jpeg;jpeg_MEMB14W64;jpeg_MEMB14W64_sub;jpeg_add20s_18;jpeg_add20s_18_0;jpeg_add20s_18_18;jpeg_add20s_18_18_1;jpeg_add24s;jpeg_add24s_1;jpeg_add24s_21;jpeg_add64s_61;jpeg_add64s_61_2;jpeg_add71_71s;jpeg_dat;jpeg_fsm;jpeg_mul12s;jpeg_mul12s_3;jpeg_mul12u;jpeg_mul8u;jpeg_mul8u_4,,,,,,,,
+C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sim_1/new/dct_tb.v,1511256488,verilog,,,,dct_tb,,,,,,,,

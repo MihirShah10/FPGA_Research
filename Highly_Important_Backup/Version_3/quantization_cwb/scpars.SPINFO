@@ -1,0 +1,7 @@
+<hierarchy>
+[SC_MODULE:jpeg]
+  module_kind	single_process	module
+  process	SC_CTHREAD	sequential	jpeg_quantization	jpeg.IFF
+
+<hash>
+  5c159bb3f6641e830c5818de35245a15	jpeg.IFF

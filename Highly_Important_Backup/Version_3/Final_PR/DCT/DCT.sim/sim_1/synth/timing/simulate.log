@@ -1,0 +1,10 @@
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 1532.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 87892.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 123632.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 209992.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.

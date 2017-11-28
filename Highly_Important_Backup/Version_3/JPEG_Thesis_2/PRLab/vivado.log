@@ -1,0 +1,2536 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Nov 10 01:26:36 2017
+# Process ID: 12764
+# Current directory: /home/mihir/jpeg/jpeg_PR/PRLab
+# Command line: vivado
+# Log file: /home/mihir/jpeg/jpeg_PR/PRLab/vivado.log
+# Journal file: /home/mihir/jpeg/jpeg_PR/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+pwd
+/home/mihir/jpeg/jpeg_PR/PRLab
+source ps7_create.tcl
+# start_gui
+# create_project JPEG {/home/mihir/jpeg/jpeg_PR/PRLab/JPEG} -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 5932.840 ; gain = 98.609 ; free physical = 258 ; free virtual = 2781
+# set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+# set_property simulator_language Verilog [current_project]
+# set_property  ip_repo_paths  {{/home/mihir/jpeg/jpeg_PR/PRLab/Sources/ip_repo}} [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mihir/jpeg/jpeg_PR/PRLab/Sources/ip_repo'.
+# create_bd_design "jpeg_design"
+Wrote  : </home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd> 
+create_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 5985.590 ; gain = 50.516 ; free physical = 189 ; free virtual = 2737
+# startgroup
+# create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+# endgroup
+# apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+# startgroup
+# create_bd_cell -type ip -vlnv xilinx.com:user:JPEG_PR:1.0 JPEG_PR_0
+# endgroup
+# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins JPEG_PR_0/S00_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</JPEG_PR_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+# startgroup
+# create_bd_cell -type ip -vlnv xilinx.com:user:DARC_RLE:1.0 DARC_RLE_0
+# endgroup
+# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins DARC_RLE_0/S00_AXI]
+</DARC_RLE_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C10000 [ 64K ]>
+# startgroup
+# create_bd_cell -type ip -vlnv xilinx.com:user:DARC_HUFFMAN:1.0 DARC_HUFFMAN_0
+# endgroup
+# apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins DARC_HUFFMAN_0/S00_AXI]
+</DARC_HUFFMAN_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+# regenerate_bd_layout
+# validate_bd_design
+# save_bd_design
+Wrote  : </home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_timer_0/S_AXI]
+</axi_timer_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x42800000 [ 64K ]>
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {50}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+endgroup
+validate_bd_design
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6171.621 ; gain = 6.000 ; free physical = 268 ; free virtual = 2537
+set_property synth_checkpoint_mode None [get_files  /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd]
+generate_target all [get_files  /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd]
+INFO: [BD 41-1662] The design 'jpeg_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design.v
+Verilog Output written to : /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design_wrapper.v
+Wrote  : </home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] jpeg_design_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block JPEG_PR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_RLE_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_HUFFMAN_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hw_handoff/jpeg_design.hwh
+Generated Block Design Tcl file /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hw_handoff/jpeg_design_bd.tcl
+Generated Hardware Definition File /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 6246.961 ; gain = 75.336 ; free physical = 259 ; free virtual = 2448
+export_ip_user_files -of_objects [get_files /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd] -directory /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.ip_user_files/sim_scripts -ip_user_files_dir /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.ip_user_files -ipstatic_source_dir /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.cache/compile_simlib/modelsim} {questa=/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.cache/compile_simlib/questa} {ies=/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.cache/compile_simlib/ies} {vcs=/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.cache/compile_simlib/vcs} {riviera=/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/jpeg_design.bd] -top
+add_files -norecurse /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design_wrapper.v" into library work [/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/hdl/jpeg_design_wrapper.v:1]
+[Fri Nov 10 01:31:51 2017] Launched synth_1...
+Run output will be captured here: /home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.runs/synth_1/runme.log
+close_project
+pwd
+/home/mihir/jpeg/jpeg_PR/PRLab
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Bitstreams
+Checkpoint
+generate_bitstreams.tcl
+Implement
+JPEG
+ps7_create.tcl
+Sources
+Synth
+synth_reconfig_modules.tcl
+vivado.jou
+vivado.log
+vivado_pid12764.str
+source synth_reconfig_modules.tcl
+# read_verilog Sources/reconfig_modules/jpeg_dct/dct.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+# synth_design -mode out_of_context -flatten_hierarchy rebuilt -top jpeg -part xc7z020clg484-1
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top jpeg -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22764 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:02:38 ; elapsed = 00:15:47 . Memory (MB): peak = 6302.125 ; gain = 5301.195 ; free physical = 263 ; free virtual = 2231
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'jpeg' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:13]
+INFO: [Synth 8-638] synthesizing module 'jpeg_fsm' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:349]
+	Parameter ST1_01 bound to: 7'b0000000 
+	Parameter ST1_02 bound to: 7'b0000001 
+	Parameter ST1_03 bound to: 7'b0000010 
+	Parameter ST1_04 bound to: 7'b0000011 
+	Parameter ST1_05 bound to: 7'b0000100 
+	Parameter ST1_06 bound to: 7'b0000101 
+	Parameter ST1_07 bound to: 7'b0000110 
+	Parameter ST1_08 bound to: 7'b0000111 
+	Parameter ST1_09 bound to: 7'b0001000 
+	Parameter ST1_10 bound to: 7'b0001001 
+	Parameter ST1_11 bound to: 7'b0001010 
+	Parameter ST1_12 bound to: 7'b0001011 
+	Parameter ST1_13 bound to: 7'b0001100 
+	Parameter ST1_14 bound to: 7'b0001101 
+	Parameter ST1_15 bound to: 7'b0001110 
+	Parameter ST1_16 bound to: 7'b0001111 
+	Parameter ST1_17 bound to: 7'b0010000 
+	Parameter ST1_18 bound to: 7'b0010001 
+	Parameter ST1_19 bound to: 7'b0010010 
+	Parameter ST1_20 bound to: 7'b0010011 
+	Parameter ST1_21 bound to: 7'b0010100 
+	Parameter ST1_22 bound to: 7'b0010101 
+	Parameter ST1_23 bound to: 7'b0010110 
+	Parameter ST1_24 bound to: 7'b0010111 
+	Parameter ST1_25 bound to: 7'b0011000 
+	Parameter ST1_26 bound to: 7'b0011001 
+	Parameter ST1_27 bound to: 7'b0011010 
+	Parameter ST1_28 bound to: 7'b0011011 
+	Parameter ST1_29 bound to: 7'b0011100 
+	Parameter ST1_30 bound to: 7'b0011101 
+	Parameter ST1_31 bound to: 7'b0011110 
+	Parameter ST1_32 bound to: 7'b0011111 
+	Parameter ST1_33 bound to: 7'b0100000 
+	Parameter ST1_34 bound to: 7'b0100001 
+	Parameter ST1_35 bound to: 7'b0100010 
+	Parameter ST1_36 bound to: 7'b0100011 
+	Parameter ST1_37 bound to: 7'b0100100 
+	Parameter ST1_38 bound to: 7'b0100101 
+	Parameter ST1_39 bound to: 7'b0100110 
+	Parameter ST1_40 bound to: 7'b0100111 
+	Parameter ST1_41 bound to: 7'b0101000 
+	Parameter ST1_42 bound to: 7'b0101001 
+	Parameter ST1_43 bound to: 7'b0101010 
+	Parameter ST1_44 bound to: 7'b0101011 
+	Parameter ST1_45 bound to: 7'b0101100 
+	Parameter ST1_46 bound to: 7'b0101101 
+	Parameter ST1_47 bound to: 7'b0101110 
+	Parameter ST1_48 bound to: 7'b0101111 
+	Parameter ST1_49 bound to: 7'b0110000 
+	Parameter ST1_50 bound to: 7'b0110001 
+	Parameter ST1_51 bound to: 7'b0110010 
+	Parameter ST1_52 bound to: 7'b0110011 
+	Parameter ST1_53 bound to: 7'b0110100 
+	Parameter ST1_54 bound to: 7'b0110101 
+	Parameter ST1_55 bound to: 7'b0110110 
+	Parameter ST1_56 bound to: 7'b0110111 
+	Parameter ST1_57 bound to: 7'b0111000 
+	Parameter ST1_58 bound to: 7'b0111001 
+	Parameter ST1_59 bound to: 7'b0111010 
+	Parameter ST1_60 bound to: 7'b0111011 
+	Parameter ST1_61 bound to: 7'b0111100 
+	Parameter ST1_62 bound to: 7'b0111101 
+	Parameter ST1_63 bound to: 7'b0111110 
+	Parameter ST1_64 bound to: 7'b0111111 
+	Parameter ST1_65 bound to: 7'b1000000 
+	Parameter ST1_66 bound to: 7'b1000001 
+	Parameter ST1_67 bound to: 7'b1000010 
+	Parameter ST1_68 bound to: 7'b1000011 
+	Parameter ST1_69 bound to: 7'b1000100 
+	Parameter ST1_70 bound to: 7'b1000101 
+	Parameter ST1_71 bound to: 7'b1000110 
+	Parameter ST1_72 bound to: 7'b1000111 
+	Parameter ST1_73 bound to: 7'b1001000 
+	Parameter ST1_74 bound to: 7'b1001001 
+	Parameter ST1_75 bound to: 7'b1001010 
+	Parameter ST1_76 bound to: 7'b1001011 
+	Parameter ST1_77 bound to: 7'b1001100 
+	Parameter ST1_78 bound to: 7'b1001101 
+	Parameter ST1_79 bound to: 7'b1001110 
+	Parameter ST1_80 bound to: 7'b1001111 
+	Parameter ST1_81 bound to: 7'b1010000 
+	Parameter ST1_82 bound to: 7'b1010001 
+	Parameter ST1_83 bound to: 7'b1010010 
+	Parameter ST1_84 bound to: 7'b1010011 
+	Parameter ST1_85 bound to: 7'b1010100 
+	Parameter ST1_86 bound to: 7'b1010101 
+	Parameter ST1_87 bound to: 7'b1010110 
+	Parameter ST1_88 bound to: 7'b1010111 
+	Parameter ST1_89 bound to: 7'b1011000 
+	Parameter ST1_90 bound to: 7'b1011001 
+	Parameter ST1_91 bound to: 7'b1011010 
+	Parameter ST1_92 bound to: 7'b1011011 
+	Parameter ST1_93 bound to: 7'b1011100 
+	Parameter ST1_94 bound to: 7'b1011101 
+	Parameter ST1_95 bound to: 7'b1011110 
+	Parameter ST1_96 bound to: 7'b1011111 
+	Parameter ST1_97 bound to: 7'b1100000 
+	Parameter ST1_98 bound to: 7'b1100001 
+	Parameter ST1_99 bound to: 7'b1100010 
+	Parameter ST1_100 bound to: 7'b1100011 
+	Parameter ST1_101 bound to: 7'b1100100 
+INFO: [Synth 8-256] done synthesizing module 'jpeg_fsm' (1#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:349]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dat' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:894]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub24s_24' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3258]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub24s_24' (2#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3258]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub20s_20' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3267]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub20s_20' (3#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3267]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add24s_22_21' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3276]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add24s_22_21' (4#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3276]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add20s_18_18' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3285]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add20s_18_18' (5#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3285]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add69_69s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3294]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add69_69s' (6#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3294]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1676]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1697]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1718]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1740]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1761]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1782]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1803]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1824]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1845]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1866]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:1887]
+INFO: [Synth 8-638] synthesizing module 'jpeg_incr3u' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3303]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_incr3u' (7#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3303]
+INFO: [Synth 8-638] synthesizing module 'jpeg_mul12s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3311]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_mul12s' (8#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3311]
+INFO: [Synth 8-638] synthesizing module 'jpeg_mul12u' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3322]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_mul12u' (9#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3322]
+INFO: [Synth 8-638] synthesizing module 'jpeg_mul8u' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3333]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_mul8u' (10#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3333]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub60s_59' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3344]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub60s_59' (11#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3344]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub36s_35' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3353]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub36s_35' (12#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3353]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub32s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3362]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub32s' (13#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3362]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub24s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3371]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub24s' (14#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3371]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub20s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3380]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub20s' (15#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3380]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add60s_59' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3389]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add60s_59' (16#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3389]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add24s_22' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3398]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add24s_22' (17#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3398]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add20s_18' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3407]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add20s_18' (18#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3407]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add12u_10' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3416]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add12u_10' (19#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3416]
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:2004]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_dct_output' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3425]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_dct_output_subD' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3440]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3448]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_dct_output_subD' (20#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3440]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_dct_output' (21#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:3425]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dat' (22#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:894]
+INFO: [Synth 8-256] done synthesizing module 'jpeg' (23#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_dct/dct.v:13]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a00[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a00[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a00[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a00[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a01[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a01[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a01[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a01[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a02[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a02[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a02[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a02[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a03[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a03[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a03[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a03[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a04[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a04[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a04[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a04[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a05[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a05[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a05[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a05[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a06[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a06[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a06[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a06[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a07[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a07[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a07[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a07[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a08[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a08[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a08[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a08[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a09[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a09[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a09[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a09[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a10[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a10[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a10[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a10[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a11[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a11[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a11[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a11[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a12[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a12[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a12[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a12[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a13[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a13[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a13[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a13[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a14[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a14[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a14[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a14[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a15[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a15[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a15[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a15[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a16[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a16[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a16[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a16[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a17[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a17[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a17[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a17[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a18[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a18[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a18[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a18[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a19[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a19[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a19[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a19[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a20[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a20[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a20[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a20[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a21[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a21[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a21[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a21[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a22[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a22[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a22[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a22[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a23[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a23[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a23[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a23[8]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a24[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a24[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a24[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_in_a24[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:02:40 ; elapsed = 00:15:50 . Memory (MB): peak = 6341.566 ; gain = 5340.637 ; free physical = 200 ; free virtual = 2178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:41 ; elapsed = 00:15:50 . Memory (MB): peak = 6341.566 ; gain = 5340.637 ; free physical = 197 ; free virtual = 2178
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:41 ; elapsed = 00:15:50 . Memory (MB): peak = 6349.566 ; gain = 5348.637 ; free physical = 194 ; free virtual = 2177
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'B01_streg_reg' in module 'jpeg_fsm'
+INFO: [Synth 8-5546] ROM "ST1_01d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_02d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_03d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_04d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_05d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_06d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_07d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_08d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_09d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_10d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_11d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_12d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_13d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_14d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_15d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_16d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_17d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_18d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_19d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_20d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_21d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_22d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_23d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_24d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_25d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_26d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_27d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_28d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_29d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_30d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_31d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_32d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_33d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_34d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_35d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_36d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_37d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_38d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_39d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_40d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_41d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_42d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_43d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_44d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_45d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_46d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_47d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_48d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_49d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_50d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_51d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_52d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_53d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_54d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_55d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_56d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_57d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_58d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_59d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_60d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_61d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_62d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_63d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_64d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_65d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_66d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_67d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_69d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_70d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_71d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_72d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_73d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_74d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_75d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_76d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_77d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_78d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_79d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_80d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_81d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_82d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_83d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_84d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_85d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_86d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_87d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_88d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_89d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_90d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_91d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_92d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_93d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_94d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_95d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_96d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_97d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_98d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_99d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_100d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_101d" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  ST1_01 |                          0000000 |                          0000000
+                  ST1_02 |                          0000001 |                          0000001
+                  ST1_03 |                          0000010 |                          0000010
+                  ST1_04 |                          0000011 |                          0000011
+                  ST1_05 |                          0000100 |                          0000100
+                  ST1_06 |                          0000101 |                          0000101
+                  ST1_07 |                          0000110 |                          0000110
+                  ST1_08 |                          0000111 |                          0000111
+                  ST1_09 |                          0001000 |                          0001000
+                  ST1_10 |                          0001001 |                          0001001
+                  ST1_11 |                          0001010 |                          0001010
+                  ST1_12 |                          0001011 |                          0001011
+                  ST1_13 |                          0001100 |                          0001100
+                  ST1_14 |                          0001101 |                          0001101
+                  ST1_15 |                          0001110 |                          0001110
+                  ST1_16 |                          0001111 |                          0001111
+                  ST1_17 |                          0010000 |                          0010000
+                  ST1_18 |                          0010001 |                          0010001
+                  ST1_19 |                          0010010 |                          0010010
+                  ST1_20 |                          0010011 |                          0010011
+                  ST1_21 |                          0010100 |                          0010100
+                  ST1_22 |                          0010101 |                          0010101
+                  ST1_23 |                          0010110 |                          0010110
+                  ST1_24 |                          0010111 |                          0010111
+                  ST1_25 |                          0011000 |                          0011000
+                  ST1_26 |                          0011001 |                          0011001
+                  ST1_27 |                          0011010 |                          0011010
+                  ST1_28 |                          0011011 |                          0011011
+                  ST1_29 |                          0011100 |                          0011100
+                  ST1_30 |                          0011101 |                          0011101
+                  ST1_31 |                          0011110 |                          0011110
+                  ST1_32 |                          0011111 |                          0011111
+                  ST1_33 |                          0100000 |                          0100000
+                  ST1_34 |                          0100001 |                          0100001
+                  ST1_35 |                          0100010 |                          0100010
+                  ST1_36 |                          0100011 |                          0100011
+                  ST1_37 |                          0100100 |                          0100100
+                  ST1_38 |                          0100101 |                          0100101
+                  ST1_39 |                          0100110 |                          0100110
+                  ST1_40 |                          0100111 |                          0100111
+                  ST1_41 |                          0101000 |                          0101000
+                  ST1_42 |                          0101001 |                          0101001
+                  ST1_43 |                          0101010 |                          0101010
+                  ST1_44 |                          0101011 |                          0101011
+                  ST1_45 |                          0101100 |                          0101100
+                  ST1_46 |                          0101101 |                          0101101
+                  ST1_47 |                          0101110 |                          0101110
+                  ST1_48 |                          0101111 |                          0101111
+                  ST1_49 |                          0110000 |                          0110000
+                  ST1_50 |                          0110001 |                          0110001
+                  ST1_51 |                          0110010 |                          0110010
+                  ST1_52 |                          0110011 |                          0110011
+                  ST1_53 |                          0110100 |                          0110100
+                  ST1_54 |                          0110101 |                          0110101
+                  ST1_55 |                          0110110 |                          0110110
+                  ST1_56 |                          0110111 |                          0110111
+                  ST1_57 |                          0111000 |                          0111000
+                  ST1_58 |                          0111001 |                          0111001
+                  ST1_59 |                          0111010 |                          0111010
+                  ST1_60 |                          0111011 |                          0111011
+                  ST1_61 |                          0111100 |                          0111100
+                  ST1_62 |                          0111101 |                          0111101
+                  ST1_63 |                          0111110 |                          0111110
+                  ST1_64 |                          0111111 |                          0111111
+                  ST1_65 |                          1000000 |                          1000000
+                  ST1_66 |                          1000001 |                          1000001
+                  ST1_67 |                          1000010 |                          1000010
+                  ST1_68 |                          1000011 |                          1000011
+                  ST1_69 |                          1000100 |                          1000100
+                  ST1_70 |                          1000101 |                          1000101
+                  ST1_71 |                          1000110 |                          1000110
+                  ST1_72 |                          1000111 |                          1000111
+                  ST1_73 |                          1001000 |                          1001000
+                  ST1_74 |                          1001001 |                          1001001
+                  ST1_75 |                          1001010 |                          1001010
+                  ST1_76 |                          1001011 |                          1001011
+                  ST1_77 |                          1001100 |                          1001100
+                  ST1_78 |                          1001101 |                          1001101
+                  ST1_79 |                          1001110 |                          1001110
+                  ST1_80 |                          1001111 |                          1001111
+                  ST1_81 |                          1010000 |                          1010000
+                  ST1_82 |                          1010001 |                          1010001
+                  ST1_83 |                          1010010 |                          1010010
+                  ST1_84 |                          1010011 |                          1010011
+                  ST1_85 |                          1010100 |                          1010100
+                  ST1_86 |                          1010101 |                          1010101
+                  ST1_87 |                          1010110 |                          1010110
+                  ST1_88 |                          1010111 |                          1010111
+                  ST1_89 |                          1011000 |                          1011000
+                  ST1_90 |                          1011001 |                          1011001
+                  ST1_91 |                          1011010 |                          1011010
+                  ST1_92 |                          1011011 |                          1011011
+                  ST1_93 |                          1011100 |                          1011100
+                  ST1_94 |                          1011101 |                          1011101
+                  ST1_95 |                          1011110 |                          1011110
+                  ST1_96 |                          1011111 |                          1011111
+                  ST1_97 |                          1100000 |                          1100000
+                  ST1_98 |                          1100001 |                          1100001
+                  ST1_99 |                          1100010 |                          1100010
+                 ST1_100 |                          1100011 |                          1100011
+                 ST1_101 |                          1100100 |                          1100100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'B01_streg_reg' using encoding 'sequential' in module 'jpeg_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:45 ; elapsed = 00:15:53 . Memory (MB): peak = 6399.000 ; gain = 5398.070 ; free physical = 120 ; free virtual = 2137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     69 Bit       Adders := 1     
+	   3 Input     59 Bit       Adders := 1     
+	   2 Input     59 Bit       Adders := 1     
+	   3 Input     35 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     25 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   3 Input     20 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               59 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 65    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	 105 Input      7 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 100   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jpeg_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	 105 Input      7 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 100   
+Module jpeg_sub24s_24 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+Module jpeg_sub20s_20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     20 Bit       Adders := 1     
+Module jpeg_add24s_22_21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
+Module jpeg_add20s_18_18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+Module jpeg_add69_69s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     69 Bit       Adders := 1     
+Module jpeg_incr3u 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+Module jpeg_sub60s_59 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     59 Bit       Adders := 1     
+Module jpeg_sub36s_35 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
+Module jpeg_sub32s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+Module jpeg_sub24s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     25 Bit       Adders := 1     
+Module jpeg_sub20s 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     21 Bit       Adders := 1     
+Module jpeg_add60s_59 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     59 Bit       Adders := 1     
+Module jpeg_add24s_22 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+Module jpeg_add20s_18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+Module jpeg_add12u_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module jpeg_dat 
+Detailed RTL Component Info : 
++---Registers : 
+	               59 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 2     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 65    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 64    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (INST_dat/\RG_76_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (INST_dat/FF_valid_w_reg)
+WARNING: [Synth 8-3332] Sequential element (FF_valid_w_reg) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[2]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[1]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_Fx_o_out_reg[0]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_76_reg[1]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_76_reg[0]) is unused and will be removed from module jpeg_dat.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:58 ; elapsed = 00:16:06 . Memory (MB): peak = 6502.578 ; gain = 5501.648 ; free physical = 220 ; free virtual = 2069
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                             | Inference      | Size (Depth x Width) | Primitives      | 
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+|jpeg_dat    | dct_output/INST_MEM_dct_output_subD_1/dct_output_r_reg | User Attribute | 64 x 12              | RAM64X1D x 12   | 
++------------+--------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:58 ; elapsed = 00:16:06 . Memory (MB): peak = 6502.578 ; gain = 5501.648 ; free physical = 220 ; free virtual = 2069
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:59 ; elapsed = 00:16:07 . Memory (MB): peak = 6502.578 ; gain = 5501.648 ; free physical = 210 ; free virtual = 2061
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:59 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 156 ; free virtual = 2008
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:59 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 155 ; free virtual = 2006
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 148 ; free virtual = 2000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 147 ; free virtual = 1998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 144 ; free virtual = 1996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 143 ; free virtual = 1995
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   133|
+|2     |LUT1     |    48|
+|3     |LUT2     |   331|
+|4     |LUT3     |   125|
+|5     |LUT4     |   203|
+|6     |LUT5     |   285|
+|7     |LUT6     |   466|
+|8     |RAM64X1D |    12|
+|9     |FDRE     |  1547|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------------------+-------------------------+------+
+|      |Instance                         |Module                   |Cells |
++------+---------------------------------+-------------------------+------+
+|1     |top                              |                         |  3150|
+|2     |  INST_dat                       |jpeg_dat                 |  2449|
+|3     |    INST_add20s_18_1             |jpeg_add20s_18           |    15|
+|4     |    INST_add20s_18_18_1          |jpeg_add20s_18_18        |    29|
+|5     |    INST_add24s_22_1             |jpeg_add24s_22           |    78|
+|6     |    INST_add24s_22_21_1          |jpeg_add24s_22_21        |    66|
+|7     |    INST_add60s_59_1             |jpeg_add60s_59           |   117|
+|8     |    INST_add69_69s_1             |jpeg_add69_69s           |    39|
+|9     |    INST_mul12s_1                |jpeg_mul12s              |    97|
+|10    |    INST_mul12s_2                |jpeg_mul12s_0            |    29|
+|11    |    INST_mul12u_1                |jpeg_mul12u              |     3|
+|12    |    INST_mul8u_1                 |jpeg_mul8u               |     3|
+|13    |    INST_mul8u_2                 |jpeg_mul8u_1             |     3|
+|14    |    dct_output                   |jpeg_MEM_dct_output      |   124|
+|15    |      INST_MEM_dct_output_subD_1 |jpeg_MEM_dct_output_subD |   124|
+|16    |  INST_fsm                       |jpeg_fsm                 |   701|
++------+---------------------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.582 ; gain = 5501.652 ; free physical = 143 ; free virtual = 1995
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 518 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 6502.582 ; gain = 200.457 ; free physical = 120 ; free virtual = 1983
+Synthesis Optimization Complete : Time (s): cpu = 00:03:00 ; elapsed = 00:16:08 . Memory (MB): peak = 6502.586 ; gain = 5501.656 ; free physical = 111 ; free virtual = 1982
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+177 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 6655.562 ; gain = 353.438 ; free physical = 219 ; free virtual = 1912
+# write_checkpoint Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Synth/reconfig_modules/jpeg_dct/dct_synth.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 7019.719 ; gain = 364.156 ; free physical = 69 ; free virtual = 1577
+# close_design
+# close_project
+# read_verilog Sources/reconfig_modules/jpeg_quantization/quantization.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+# synth_design -mode out_of_context -flatten_hierarchy rebuilt -top jpeg -part xc7z020clg484-1
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top jpeg -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23469 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:03:39 ; elapsed = 00:16:55 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 206 ; free virtual = 1698
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'jpeg' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:13]
+INFO: [Synth 8-638] synthesizing module 'jpeg_fsm' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:198]
+	Parameter ST1_01 bound to: 1'b0 
+	Parameter ST1_02 bound to: 1'b1 
+INFO: [Synth 8-226] default block is never used [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:214]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_fsm' (1#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:198]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dat' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:225]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add12s_10' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:1229]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add12s_10' (2#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:1229]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add8s' [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:1238]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add8s' (3#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:1238]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dat' (4#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:225]
+INFO: [Synth 8-256] done synthesizing module 'jpeg' (5#1) [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/reconfig_modules/jpeg_quantization/quantization.v:13]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:03:40 ; elapsed = 00:16:57 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 101 ; free virtual = 1621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:03:40 ; elapsed = 00:16:57 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 99 ; free virtual = 1619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:40 ; elapsed = 00:16:57 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 73 ; free virtual = 1619
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:41 ; elapsed = 00:16:57 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 65 ; free virtual = 1598
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 63    
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 63    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jpeg_fsm 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module jpeg_add12s_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+Module jpeg_add8s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module jpeg_dat 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 63    
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:42 ; elapsed = 00:16:58 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 63 ; free virtual = 1511
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:42 ; elapsed = 00:16:58 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 74 ; free virtual = 1510
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:42 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 262 ; free virtual = 1686
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 235 ; free virtual = 1663
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 234 ; free virtual = 1662
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 222 ; free virtual = 1661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 222 ; free virtual = 1661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 222 ; free virtual = 1661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 222 ; free virtual = 1661
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |   128|
+|2     |LUT3 |   192|
+|3     |LUT4 |    64|
+|4     |LUT5 |   127|
+|5     |LUT6 |   255|
+|6     |FDRE |   640|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         |  1406|
+|2     |  INST_dat |jpeg_dat |  1405|
+|3     |  INST_fsm |jpeg_fsm |     1|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 222 ; free virtual = 1661
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 7022.312 ; gain = 0.000 ; free physical = 215 ; free virtual = 1661
+Synthesis Optimization Complete : Time (s): cpu = 00:03:43 ; elapsed = 00:16:59 . Memory (MB): peak = 7022.312 ; gain = 6021.383 ; free physical = 200 ; free virtual = 1661
+INFO: [Project 1-571] Translating synthesized netlist
+WARNING: [Netlist 29-101] Netlist 'jpeg' is not ideal for floorplanning, since the cellview 'jpeg_dat' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 7022.312 ; gain = 0.000 ; free physical = 69 ; free virtual = 1598
+# write_checkpoint Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp' has been generated.
+# close_design
+# close_project
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Bitstreams
+Checkpoint
+first_rm_load.tcl
+fsm_encoding.os
+generate_bitstreams.tcl
+Implement
+JPEG
+ps7_create.tcl
+Sources
+Synth
+synth_reconfig_modules.tcl
+vivado.jou
+vivado.log
+vivado_pid12764.str
+source first_rm_load.tcl
+# open_checkpoint Synth/Static/jpeg_design_wrapper.dcp
+Command: open_checkpoint Synth/Static/jpeg_design_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.46 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 77 ; free virtual = 1400
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg' instantiated as 'jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0' [/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/ipshared/9b73/hdl/JPEG_PR_v1_0_S00_AXI.v:1901]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 24 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 73 ; free virtual = 1494
+# read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+Command: read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+# set_property HD.RECONFIGURABLE 1 [get_cells jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0]
+# write_checkpoint Checkpoint/top_link_add.dcp
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/top_link_add.dcp' has been generated.
+# read_xdc Sources/xdc/fplan.xdc
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/xdc/fplan.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/Sources/xdc/fplan.xdc]
+/home/mihir/jpeg/jpeg_PR/PRLab/Sources/xdc/fplan.xdc
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+INFO: [DRC 23-27] Running DRC with 2 threads
+delete_drc_ruledeck ruledeck_1
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license: PartialReconfiguration
+INFO: [Common 17-1223] The version limit for your license is '2017.10' and will expire in -10 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Feature available: PartialReconfiguration
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 72 ; free virtual = 1473
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 12c595b72
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 160fff54c
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 71 ; free virtual = 1450
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 59 cells.
+Phase 2 Constant propagation | Checksum: b25daf0a
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 200 ; free virtual = 1464
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 933 unconnected nets.
+INFO: [Opt 31-11] Eliminated 197 unconnected cells.
+Phase 3 Sweep | Checksum: 181cce59d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 70 ; free virtual = 1374
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 256 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 95a51fb7
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 222 ; free virtual = 1466
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 220 ; free virtual = 1465
+Ending Logic Optimization Task | Checksum: 164a7da0c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 7090.918 ; gain = 0.000 ; free physical = 176 ; free virtual = 1453
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 12441f7bf
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.21 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 70 ; free virtual = 1311
+Ending Power Optimization Task | Checksum: 12441f7bf
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 7266.078 ; gain = 175.160 ; free physical = 63 ; free virtual = 1296
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 7266.078 ; gain = 175.160 ; free physical = 70 ; free virtual = 1284
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 65 ; free virtual = 1321
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.05 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 134 ; free virtual = 1390
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 6635981f
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 137 ; free virtual = 1384
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 19d1bedb2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 79 ; free virtual = 1390
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 19d1bedb2
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 76 ; free virtual = 1389
+Phase 1 Placer Initialization | Checksum: 19d1bedb2
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 80 ; free virtual = 1387
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1d4310561
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 204 ; free virtual = 1378
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d4310561
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 195 ; free virtual = 1378
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 250f8bdb8
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 151 ; free virtual = 1376
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1b2699e6a
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 146 ; free virtual = 1376
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1b2699e6a
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 144 ; free virtual = 1374
+
+Phase 3.5 Small Shape Detail Placement
+
+Phase 3.5.1 Place Remaining
+Phase 3.5.1 Place Remaining | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 139 ; free virtual = 1355
+Phase 3.5 Small Shape Detail Placement | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 139 ; free virtual = 1355
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 127 ; free virtual = 1355
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 127 ; free virtual = 1355
+Phase 3 Detail Placement | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 127 ; free virtual = 1355
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 126 ; free virtual = 1355
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 110 ; free virtual = 1355
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1b3908502
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 106 ; free virtual = 1355
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 169e36acd
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 104 ; free virtual = 1355
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 169e36acd
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 101 ; free virtual = 1355
+Ending Placer Task | Checksum: 1077ac057
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 111 ; free virtual = 1382
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 69 ; free virtual = 1365
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 6f6e3dd3 ConstDB: 0 ShapeSum: 980c8284 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 23bd70dad
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 77 ; free virtual = 1266
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 23bd70dad
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:32 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 76 ; free virtual = 1265
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 23bd70dad
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 7266.078 ; gain = 0.000 ; free physical = 66 ; free virtual = 1256
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 24666cc8c
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:33 . Memory (MB): peak = 7293.227 ; gain = 27.148 ; free physical = 63 ; free virtual = 1149
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1497ca8b8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:39 . Memory (MB): peak = 7293.230 ; gain = 27.152 ; free physical = 78 ; free virtual = 1254
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2422
+ Number of Nodes with overlaps = 67
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 209 ; free virtual = 1239
+Phase 4 Rip-up And Reroute | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 200 ; free virtual = 1239
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 187 ; free virtual = 1235
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 186 ; free virtual = 1234
+Phase 6 Post Hold Fix | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 182 ; free virtual = 1234
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 5.35555 %
+  Global Horizontal Routing Utilization  = 7.17867 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 60.3604%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 87.5%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X62Y80 -> INT_L_X62Y80
+West Dir 1x1 Area, Max Cong = 87.5%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X63Y78 -> INT_R_X63Y78
+   INT_L_X60Y77 -> INT_L_X60Y77
+Phase 7 Route finalize | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 164 ; free virtual = 1232
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: a17bd4f4
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:01:00 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 161 ; free virtual = 1231
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1578bd9fd
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:03 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 78 ; free virtual = 1211
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:01:12 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 139 ; free virtual = 1228
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:20 . Memory (MB): peak = 7300.383 ; gain = 34.305 ; free physical = 97 ; free virtual = 1221
+write_checkpoint -force Implement/Config_dct/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7322.207 ; gain = 5.000 ; free physical = 68 ; free virtual = 1221
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_dct/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 7322.215 ; gain = 5.008 ; free physical = 94 ; free virtual = 1124
+/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_dct/top_route_design.dcp
+write_checkpoint -force -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_dct_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 99 ; free virtual = 1137
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/jpeg0_dct_route_design.dcp' has been generated.
+/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/jpeg0_dct_route_design.dcp
+update_design -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 -black_box
+INFO: [Designutils 20-2277] Running 'update_design -black_box' on cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0. The cell has HD.RECONFIGURABLE property set to true and it will be turned into a black-box cell after this command.
+update_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 69 ; free virtual = 1126
+lock_design -level routing
+Locking Netlist...
+Locking Placement...
+Locking Routing...
+lock_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 169 ; free virtual = 1245
+write_checkpoint -force Checkpoint/static_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 89 ; free virtual = 1279
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/static_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 105 ; free virtual = 1162
+/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/static_route_design.dcp
+read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+Command: read_checkpoint -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+read_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 66 ; free virtual = 1083
+checkpoint_jpeg_design_wrapper
+opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 73 ; free virtual = 1167
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 20bed5daa
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 197 ; free virtual = 1237
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant propagation | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 159 ; free virtual = 1235
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 3 Sweep | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 74 ; free virtual = 1130
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-12] Eliminated 0 unconnected nets.
+INFO: [Opt 31-11] Eliminated 0 unconnected cells.
+Phase 4 BUFG optimization | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 193 ; free virtual = 1225
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.10 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 176 ; free virtual = 1212
+Ending Logic Optimization Task | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 7322.215 ; gain = 0.000 ; free physical = 75 ; free virtual = 1034
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+Ending Power Optimization Task | Checksum: 20bed5daa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 7348.211 ; gain = 25.996 ; free physical = 153 ; free virtual = 1305
+INFO: [Common 17-83] Releasing license: Implementation
+17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 7348.211 ; gain = 25.996 ; free physical = 136 ; free virtual = 1301
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7348.211 ; gain = 0.000 ; free physical = 56 ; free virtual = 1188
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7348.211 ; gain = 0.000 ; free physical = 67 ; free virtual = 1181
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 15068cdb7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 7351.207 ; gain = 2.996 ; free physical = 131 ; free virtual = 1232
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 116794eab
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 7360.297 ; gain = 12.086 ; free physical = 247 ; free virtual = 1298
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 116794eab
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 7360.297 ; gain = 12.086 ; free physical = 247 ; free virtual = 1299
+Phase 1 Placer Initialization | Checksum: 116794eab
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 7360.297 ; gain = 12.086 ; free physical = 220 ; free virtual = 1285
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 10ccf2f3c
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 7368.422 ; gain = 20.211 ; free physical = 68 ; free virtual = 1146
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 10ccf2f3c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 7368.422 ; gain = 20.211 ; free physical = 251 ; free virtual = 1305
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 114c97ae0
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7368.422 ; gain = 20.211 ; free physical = 242 ; free virtual = 1296
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 18b394439
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7368.422 ; gain = 20.211 ; free physical = 233 ; free virtual = 1293
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 18b394439
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7368.422 ; gain = 20.211 ; free physical = 221 ; free virtual = 1281
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 70 ; free virtual = 1147
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 256 ; free virtual = 1301
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 241 ; free virtual = 1287
+Phase 3 Detail Placement | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 242 ; free virtual = 1287
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 239 ; free virtual = 1285
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1dffaac04
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 248 ; free virtual = 1304
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 258b87646
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 195 ; free virtual = 1257
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 1f143c962
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 145 ; free virtual = 1207
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1f143c962
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 106 ; free virtual = 1168
+Ending Placer Task | Checksum: 11aeae127
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 7371.539 ; gain = 23.328 ; free physical = 266 ; free virtual = 1306
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 7371.543 ; gain = 23.332 ; free physical = 202 ; free virtual = 1297
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 9af099fd ConstDB: 0 ShapeSum: 73c7ce8 RouteDB: 78bdca42
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 19e49bd26
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 250 ; free virtual = 1298
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 18abf48f2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 159 ; free virtual = 1225
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 18abf48f2
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 154 ; free virtual = 1220
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 17d078470
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 126 ; free virtual = 1197
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1d1f36a12
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 73 ; free virtual = 1134
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 249 ; free virtual = 1306
+Phase 4 Rip-up And Reroute | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 259 ; free virtual = 1316
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 255 ; free virtual = 1312
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 255 ; free virtual = 1313
+Phase 6 Post Hold Fix | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 252 ; free virtual = 1309
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.668324 %
+  Global Horizontal Routing Utilization  = 0.492055 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 70.5263%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 70.5263%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 82.5%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 81.25%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 217 ; free virtual = 1275
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 7513d818
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 211 ; free virtual = 1269
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 81ca1025
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 260 ; free virtual = 1313
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 225 ; free virtual = 1281
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 219 ; free virtual = 1280
+write_checkpoint -force Implement/Config_quantization/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 7371.543 ; gain = 0.000 ; free physical = 172 ; free virtual = 1316
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_quantization/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 7371.547 ; gain = 0.004 ; free physical = 98 ; free virtual = 1129
+/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_quantization/top_route_design.dcp
+write_checkpoint -force -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_quantization_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 7371.547 ; gain = 0.000 ; free physical = 72 ; free virtual = 1141
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/jpeg0_quantization_route_design.dcp' has been generated.
+/home/mihir/jpeg/jpeg_PR/PRLab/Checkpoint/jpeg0_quantization_route_design.dcp
+close_project
+open_checkpoint Checkpoint/static_route_design.dcp
+Command: open_checkpoint Checkpoint/static_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 160 ; free virtual = 1212
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 87 ; free virtual = 1253
+Restored from archive | CPU: 2.160000 secs | Memory: 24.665947 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 87 ; free virtual = 1253
+INFO: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg_bb' instantiated as 'jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0' [/home/mihir/jpeg/jpeg_PR/PRLab/JPEG/JPEG.srcs/sources_1/bd/jpeg_design/ipshared/9b73/hdl/JPEG_PR_v1_0_S00_AXI.v:1901]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 24 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 73 ; free virtual = 1126
+checkpoint_static_route_design
+update_design -buffer_ports -cell jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0
+place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 97 ; free virtual = 1210
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 210 ; free virtual = 1307
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: a0b777ac
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 197 ; free virtual = 1290
+
+Phase 1.2 Build Placer Netlist Model
+Phase 1.2 Build Placer Netlist Model | Checksum: 16d86ec2a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 69 ; free virtual = 1148
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 16d86ec2a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 193 ; free virtual = 1237
+Phase 1 Placer Initialization | Checksum: 16d86ec2a
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 249 ; free virtual = 1311
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 1f5322098
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 234 ; free virtual = 1315
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1f5322098
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 193 ; free virtual = 1277
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b31a8dd9
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 147 ; free virtual = 1242
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1c7e1c8e8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 129 ; free virtual = 1224
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c7e1c8e8
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 122 ; free virtual = 1218
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 244 ; free virtual = 1306
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 231 ; free virtual = 1295
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 241 ; free virtual = 1305
+Phase 3 Detail Placement | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 236 ; free virtual = 1303
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+Phase 4.1 Post Commit Optimization | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 247 ; free virtual = 1320
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1f1154351
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 219 ; free virtual = 1301
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 25c4b24dc
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 148 ; free virtual = 1233
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: 205c7bc64
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 116 ; free virtual = 1202
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 205c7bc64
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 76 ; free virtual = 1140
+Ending Placer Task | Checksum: 134f99225
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 240 ; free virtual = 1295
+INFO: [Common 17-83] Releasing license: Implementation
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 96 ; free virtual = 1192
+route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: c340b6ef ConstDB: 0 ShapeSum: 682f9ab RouteDB: 6b35e18b
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1727272f3
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 236 ; free virtual = 1293
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 17b4edfeb
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 208 ; free virtual = 1288
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 17b4edfeb
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 208 ; free virtual = 1288
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: 1f7b55058
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:30 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 199 ; free virtual = 1288
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1630bbc6a
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:30 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 196 ; free virtual = 1287
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 220 ; free virtual = 1314
+Phase 4 Rip-up And Reroute | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 225 ; free virtual = 1319
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 224 ; free virtual = 1318
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+Phase 6.1 Hold Fix Iter | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 222 ; free virtual = 1317
+Phase 6 Post Hold Fix | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 220 ; free virtual = 1314
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0782852 %
+  Global Horizontal Routing Utilization  = 0.132268 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 60.3604%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 76.4706%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 191 ; free virtual = 1287
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1eb813585
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:31 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 182 ; free virtual = 1278
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1bc527491
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:35 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 242 ; free virtual = 1302
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:43 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 98 ; free virtual = 1158
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:49 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 72 ; free virtual = 1156
+write_checkpoint -force Implement/Config_blank/top_route_design.dcp
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 214 ; free virtual = 1298
+INFO: [Common 17-1381] The checkpoint '/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_blank/top_route_design.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 206 ; free virtual = 1275
+/home/mihir/jpeg/jpeg_PR/PRLab/Implement/Config_blank/top_route_design.dcp
+close_project
+pr_verify -initial Implement/Config_dct/top_route_design.dcp -additional {Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+Command: pr_verify -initial Implement/Config_dct/top_route_design.dcp -additional {Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 223 ; free virtual = 1295
+Restored from archive | CPU: 2.600000 secs | Memory: 22.890457 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 219 ; free virtual = 1295
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Vivado 12-3501] pr_verify Implement/Config_dct/top_route_design.dcp Implement/Config_quantization/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 222 ; free virtual = 1295
+Restored from archive | CPU: 2.260000 secs | Memory: 26.566139 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 222 ; free virtual = 1295
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_dct/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 1539
+  Number of static tiles compared           = 1890
+  Number of static sites compared           = 4976
+  Number of static cells compared           = 25148
+  Number of static routed nodes compared    = 316148
+  Number of static routed pips compared     = 294534
+
+DCP2: Implement/Config_quantization/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 1539
+  Number of static tiles compared           = 1890
+  Number of static sites compared           = 4976
+  Number of static cells compared           = 25148
+  Number of static routed nodes compared    = 316148
+  Number of static routed pips compared     = 294534
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_dct/top_route_design.dcp and Implement/Config_quantization/top_route_design.dcp are compatible
+INFO: [Vivado 12-3501] pr_verify Implement/Config_dct/top_route_design.dcp Implement/Config_blank/top_route_design.dcp
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp_2/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 248 ; free virtual = 1284
+Restored from archive | CPU: 2.420000 secs | Memory: 27.757042 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7388.363 ; gain = 0.000 ; free physical = 248 ; free virtual = 1284
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+INFO: [Constraints 18-1020] PR Verify Summary:
+DCP1: Implement/Config_dct/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 1539
+  Number of static tiles compared           = 1890
+  Number of static sites compared           = 4976
+  Number of static cells compared           = 25148
+  Number of static routed nodes compared    = 316148
+  Number of static routed pips compared     = 294534
+
+DCP2: Implement/Config_blank/top_route_design.dcp
+  Number of reconfigurable modules compared = 1
+  Number of partition pins compared         = 1539
+  Number of static tiles compared           = 1890
+  Number of static sites compared           = 4976
+  Number of static cells compared           = 25148
+  Number of static routed nodes compared    = 316148
+  Number of static routed pips compared     = 294534
+INFO: [Vivado 12-3253] PR_VERIFY: check points Implement/Config_dct/top_route_design.dcp and Implement/Config_blank/top_route_design.dcp are compatible
+pr_verify: Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 7425.352 ; gain = 36.988 ; free physical = 77 ; free virtual = 1092
+close_project
+open_checkpoint Implement/Config_dct/top_route_design.dcp
+Command: open_checkpoint Implement/Config_dct/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7425.352 ; gain = 0.000 ; free physical = 216 ; free virtual = 1223
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 399 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 7425.355 ; gain = 0.000 ; free physical = 214 ; free virtual = 1212
+Restored from archive | CPU: 2.620000 secs | Memory: 26.593491 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7425.355 ; gain = 0.000 ; free physical = 214 ; free virtual = 1212
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 104 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 36 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 7425.355 ; gain = 0.004 ; free physical = 126 ; free virtual = 1218
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/Config_dct.bit
+Command: write_bitstream -file Bitstreams/Config_dct.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X90Y90:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-62) SLICEM_5lutO5_B5 - Dangling output pin O5 on site SLICE_X94Y95:B5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X90Y90:A5LUT. For this programming the O5 output pin should have a signal.
+WARNING: [DRC 23-20] Rule violation (PDRC-63) SLICEM_5lutO5_A5 - Dangling output pin O5 on site SLICE_X94Y95:A5LUT. For this programming the O5 output pin should have a signal.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 4 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_dct.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/Config_dct_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:12 ; elapsed = 00:01:09 . Memory (MB): peak = 7512.516 ; gain = 70.340 ; free physical = 82 ; free virtual = 1154
+Bitstreams/Config_dct.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit" Bitstreams/dct.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit} Bitstreams/dct.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_dct_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_dct_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/dct.bin
+Writing log file Bitstreams/dct.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Nov 10 02:16:48 2017    Bitstreams/Config_dct_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
+open_checkpoint Implement/Config_quantization/top_route_design.dcp
+Command: open_checkpoint Implement/Config_quantization/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7512.516 ; gain = 0.000 ; free physical = 71 ; free virtual = 1150
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7512.520 ; gain = 0.000 ; free physical = 72 ; free virtual = 1164
+Restored from archive | CPU: 2.250000 secs | Memory: 25.967293 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7512.520 ; gain = 0.000 ; free physical = 71 ; free virtual = 1164
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 24 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 7512.520 ; gain = 0.004 ; free physical = 69 ; free virtual = 1165
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/Config_quantization.bit
+Command: write_bitstream -file Bitstreams/Config_quantization.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_quantization.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/Config_quantization_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:09 ; elapsed = 00:01:04 . Memory (MB): peak = 7527.527 ; gain = 15.008 ; free physical = 63 ; free virtual = 1165
+Bitstreams/Config_quantization.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit" Bitstreams/quantization.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit} Bitstreams/quantization.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_quantization_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_quantization_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/quantization.bin
+Writing log file Bitstreams/quantization.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Nov 10 02:19:51 2017    Bitstreams/Config_quantization_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
+open_checkpoint Implement/Config_blank/top_route_design.dcp
+Command: open_checkpoint Implement/Config_blank/top_route_design.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7527.527 ; gain = 0.000 ; free physical = 73 ; free virtual = 1170
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 254 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Finished Parsing XDC File [/home/mihir/jpeg/jpeg_PR/PRLab/.Xil/Vivado-12764-legolas1.utdallas.edu/dcp/jpeg_design_wrapper.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7527.527 ; gain = 0.000 ; free physical = 72 ; free virtual = 1176
+Restored from archive | CPU: 2.280000 secs | Memory: 26.035538 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7527.527 ; gain = 0.000 ; free physical = 72 ; free virtual = 1176
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 92 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 24 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 7527.527 ; gain = 0.000 ; free physical = 64 ; free virtual = 1178
+checkpoint_top_route_design
+write_bitstream -file Bitstreams/Config_blank.bit
+Command: write_bitstream -file Bitstreams/Config_blank.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Partition "pblock_jpeg0" Reconfigurable Module "jpeg_design_i/JPEG_PR_0/inst/JPEG_PR_v1_0_S00_AXI_inst/jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream Bitstreams/Config_blank.bit...
+Process Partition "pblock_jpeg0"
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Partial bitstream contains 5193408 bits.
+Writing bitstream Bitstreams/Config_blank_pblock_jpeg0_partial.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:09 ; elapsed = 00:01:04 . Memory (MB): peak = 7527.527 ; gain = 0.000 ; free physical = 62 ; free virtual = 1180
+Bitstreams/Config_blank.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_blank_pblock_jpeg0_partial.bit" Bitstreams/blank.bin
+Command: write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit {up 0 Bitstreams/Config_blank_pblock_jpeg0_partial.bit} Bitstreams/blank.bin
+Creating config memory files...
+INFO: [Writecfgmem 68-23] Start address provided has been multiplied by a factor of 4 due to the use of interface SMAPX32.
+Creating bitstream load up from address 0x00000000
+Loading bitfile Bitstreams/Config_blank_pblock_jpeg0_partial.bit
+WARNING: [Writecfgmem 68-32] Bitfile Bitstreams/Config_blank_pblock_jpeg0_partial.bit is a partial reconfiguration bitfile. It is not possible to validate that this bitfile is compatible with the SMAPX32 interface.
+Memory size is calculated to be 1 MB
+Writing file Bitstreams/blank.bin
+Writing log file Bitstreams/blank.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               1M
+Start Address      0x00000000
+End Address        0x000FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0009E7D7    Nov 10 02:23:36 2017    Bitstreams/Config_blank_pblock_jpeg0_partial.bit
+1 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_cfgmem completed successfully
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 02:24:41 2017...

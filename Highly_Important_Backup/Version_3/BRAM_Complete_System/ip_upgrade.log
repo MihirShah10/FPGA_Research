@@ -1,0 +1,1503 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Mon Nov 27 00:57:23 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_controller_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_controller_0_1 (xilinx.com:user:controller:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_controller_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'bram_addr_offset'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Mon Nov 27 00:36:32 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'jpeg_compute_00_lsb'
+
+-Upgrade has added port 'jpeg_compute_00_msb'
+
+-Upgrade has added port 'jpeg_compute_01_lsb'
+
+-Upgrade has added port 'jpeg_compute_01_msb'
+
+-Upgrade has added port 'jpeg_compute_02_lsb'
+
+-Upgrade has added port 'jpeg_compute_02_msb'
+
+-Upgrade has added port 'jpeg_compute_03_lsb'
+
+-Upgrade has added port 'jpeg_compute_03_msb'
+
+-Upgrade has added port 'jpeg_compute_04_lsb'
+
+-Upgrade has added port 'jpeg_compute_04_msb'
+
+-Upgrade has added port 'jpeg_compute_05_lsb'
+
+-Upgrade has added port 'jpeg_compute_05_msb'
+
+-Upgrade has added port 'jpeg_compute_06_lsb'
+
+-Upgrade has added port 'jpeg_compute_06_msb'
+
+-Upgrade has added port 'jpeg_compute_07_lsb'
+
+-Upgrade has added port 'jpeg_compute_07_msb'
+
+-Upgrade has added port 'jpeg_compute_08_lsb'
+
+-Upgrade has added port 'jpeg_compute_08_msb'
+
+-Upgrade has added port 'jpeg_compute_09_lsb'
+
+-Upgrade has added port 'jpeg_compute_09_msb'
+
+-Upgrade has added port 'jpeg_compute_10_lsb'
+
+-Upgrade has added port 'jpeg_compute_10_msb'
+
+-Upgrade has added port 'jpeg_compute_11_lsb'
+
+-Upgrade has added port 'jpeg_compute_11_msb'
+
+-Upgrade has added port 'jpeg_compute_12_lsb'
+
+-Upgrade has added port 'jpeg_compute_12_msb'
+
+-Upgrade has added port 'jpeg_compute_13_lsb'
+
+-Upgrade has added port 'jpeg_compute_13_msb'
+
+-Upgrade has added port 'jpeg_compute_14_lsb'
+
+-Upgrade has added port 'jpeg_compute_14_msb'
+
+-Upgrade has added port 'jpeg_compute_15_lsb'
+
+-Upgrade has added port 'jpeg_compute_15_msb'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Mon Nov 27 00:19:53 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_ARM_FPGA_Control_Bus_0_5'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_ARM_FPGA_Control_Bus_0_5 (xilinx.com:user:ARM_FPGA_Control_Bus:1.0) from (Rev. 7) to (Rev. 8)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+
+
+-Upgrade has added port 'bram_addr_offset'
+
+-Upgrade has added port 'jpeg_compute_00_lsb'
+
+-Upgrade has added port 'jpeg_compute_00_msb'
+
+-Upgrade has added port 'jpeg_compute_01_lsb'
+
+-Upgrade has added port 'jpeg_compute_01_msb'
+
+-Upgrade has added port 'jpeg_compute_02_lsb'
+
+-Upgrade has added port 'jpeg_compute_02_msb'
+
+-Upgrade has added port 'jpeg_compute_03_lsb'
+
+-Upgrade has added port 'jpeg_compute_03_msb'
+
+-Upgrade has added port 'jpeg_compute_04_lsb'
+
+-Upgrade has added port 'jpeg_compute_04_msb'
+
+-Upgrade has added port 'jpeg_compute_05_lsb'
+
+-Upgrade has added port 'jpeg_compute_05_msb'
+
+-Upgrade has added port 'jpeg_compute_06_lsb'
+
+-Upgrade has added port 'jpeg_compute_06_msb'
+
+-Upgrade has added port 'jpeg_compute_07_lsb'
+
+-Upgrade has added port 'jpeg_compute_07_msb'
+
+-Upgrade has added port 'jpeg_compute_08_lsb'
+
+-Upgrade has added port 'jpeg_compute_08_msb'
+
+-Upgrade has added port 'jpeg_compute_09_lsb'
+
+-Upgrade has added port 'jpeg_compute_09_msb'
+
+-Upgrade has added port 'jpeg_compute_10_lsb'
+
+-Upgrade has added port 'jpeg_compute_10_msb'
+
+-Upgrade has added port 'jpeg_compute_11_lsb'
+
+-Upgrade has added port 'jpeg_compute_11_msb'
+
+-Upgrade has added port 'jpeg_compute_12_lsb'
+
+-Upgrade has added port 'jpeg_compute_12_msb'
+
+-Upgrade has added port 'jpeg_compute_13_lsb'
+
+-Upgrade has added port 'jpeg_compute_13_msb'
+
+-Upgrade has added port 'jpeg_compute_14_lsb'
+
+-Upgrade has added port 'jpeg_compute_14_msb'
+
+-Upgrade has added port 'jpeg_compute_15_lsb'
+
+-Upgrade has added port 'jpeg_compute_15_msb'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 26 14:15:43 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_ARM_FPGA_Control_Bus_0_5'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_ARM_FPGA_Control_Bus_0_5 (xilinx.com:user:ARM_FPGA_Control_Bus:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+
+
+-Upgrade has added port 'jpeg_compute_len_in'
+
+-Upgrade has added port 'jpeg_compute_len_out'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 26 13:58:12 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_controller_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_controller_0_1 (xilinx.com:user:controller:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_controller_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_in_compute_100'
+
+-Upgrade has added port 'data_in_compute_101'
+
+-Upgrade has added port 'data_in_compute_102'
+
+-Upgrade has added port 'data_in_compute_103'
+
+-Upgrade has added port 'data_in_compute_104'
+
+-Upgrade has added port 'data_in_compute_105'
+
+-Upgrade has added port 'data_in_compute_106'
+
+-Upgrade has added port 'data_in_compute_107'
+
+-Upgrade has added port 'data_in_compute_108'
+
+-Upgrade has added port 'data_in_compute_109'
+
+-Upgrade has added port 'data_in_compute_110'
+
+-Upgrade has added port 'data_in_compute_111'
+
+-Upgrade has added port 'data_in_compute_112'
+
+-Upgrade has added port 'data_in_compute_113'
+
+-Upgrade has added port 'data_in_compute_114'
+
+-Upgrade has added port 'data_in_compute_115'
+
+-Upgrade has added port 'data_in_compute_116'
+
+-Upgrade has added port 'data_in_compute_117'
+
+-Upgrade has added port 'data_in_compute_118'
+
+-Upgrade has added port 'data_in_compute_119'
+
+-Upgrade has added port 'data_in_compute_120'
+
+-Upgrade has added port 'data_in_compute_121'
+
+-Upgrade has added port 'data_in_compute_122'
+
+-Upgrade has added port 'data_in_compute_123'
+
+-Upgrade has added port 'data_in_compute_124'
+
+-Upgrade has added port 'data_in_compute_125'
+
+-Upgrade has added port 'data_in_compute_126'
+
+-Upgrade has added port 'data_in_compute_127'
+
+-Upgrade has added port 'data_in_compute_64'
+
+-Upgrade has added port 'data_in_compute_65'
+
+-Upgrade has added port 'data_in_compute_66'
+
+-Upgrade has added port 'data_in_compute_67'
+
+-Upgrade has added port 'data_in_compute_68'
+
+-Upgrade has added port 'data_in_compute_69'
+
+-Upgrade has added port 'data_in_compute_70'
+
+-Upgrade has added port 'data_in_compute_71'
+
+-Upgrade has added port 'data_in_compute_72'
+
+-Upgrade has added port 'data_in_compute_73'
+
+-Upgrade has added port 'data_in_compute_74'
+
+-Upgrade has added port 'data_in_compute_75'
+
+-Upgrade has added port 'data_in_compute_76'
+
+-Upgrade has added port 'data_in_compute_77'
+
+-Upgrade has added port 'data_in_compute_78'
+
+-Upgrade has added port 'data_in_compute_79'
+
+-Upgrade has added port 'data_in_compute_80'
+
+-Upgrade has added port 'data_in_compute_81'
+
+-Upgrade has added port 'data_in_compute_82'
+
+-Upgrade has added port 'data_in_compute_83'
+
+-Upgrade has added port 'data_in_compute_84'
+
+-Upgrade has added port 'data_in_compute_85'
+
+-Upgrade has added port 'data_in_compute_86'
+
+-Upgrade has added port 'data_in_compute_87'
+
+-Upgrade has added port 'data_in_compute_88'
+
+-Upgrade has added port 'data_in_compute_89'
+
+-Upgrade has added port 'data_in_compute_90'
+
+-Upgrade has added port 'data_in_compute_91'
+
+-Upgrade has added port 'data_in_compute_92'
+
+-Upgrade has added port 'data_in_compute_93'
+
+-Upgrade has added port 'data_in_compute_94'
+
+-Upgrade has added port 'data_in_compute_95'
+
+-Upgrade has added port 'data_in_compute_96'
+
+-Upgrade has added port 'data_in_compute_97'
+
+-Upgrade has added port 'data_in_compute_98'
+
+-Upgrade has added port 'data_in_compute_99'
+
+-Upgrade has added port 'data_out_compute_100'
+
+-Upgrade has added port 'data_out_compute_101'
+
+-Upgrade has added port 'data_out_compute_102'
+
+-Upgrade has added port 'data_out_compute_103'
+
+-Upgrade has added port 'data_out_compute_104'
+
+-Upgrade has added port 'data_out_compute_105'
+
+-Upgrade has added port 'data_out_compute_106'
+
+-Upgrade has added port 'data_out_compute_107'
+
+-Upgrade has added port 'data_out_compute_108'
+
+-Upgrade has added port 'data_out_compute_109'
+
+-Upgrade has added port 'data_out_compute_110'
+
+-Upgrade has added port 'data_out_compute_111'
+
+-Upgrade has added port 'data_out_compute_112'
+
+-Upgrade has added port 'data_out_compute_113'
+
+-Upgrade has added port 'data_out_compute_114'
+
+-Upgrade has added port 'data_out_compute_115'
+
+-Upgrade has added port 'data_out_compute_116'
+
+-Upgrade has added port 'data_out_compute_117'
+
+-Upgrade has added port 'data_out_compute_118'
+
+-Upgrade has added port 'data_out_compute_119'
+
+-Upgrade has added port 'data_out_compute_120'
+
+-Upgrade has added port 'data_out_compute_121'
+
+-Upgrade has added port 'data_out_compute_122'
+
+-Upgrade has added port 'data_out_compute_123'
+
+-Upgrade has added port 'data_out_compute_124'
+
+-Upgrade has added port 'data_out_compute_125'
+
+-Upgrade has added port 'data_out_compute_126'
+
+-Upgrade has added port 'data_out_compute_127'
+
+-Upgrade has added port 'data_out_compute_64'
+
+-Upgrade has added port 'data_out_compute_65'
+
+-Upgrade has added port 'data_out_compute_66'
+
+-Upgrade has added port 'data_out_compute_67'
+
+-Upgrade has added port 'data_out_compute_68'
+
+-Upgrade has added port 'data_out_compute_69'
+
+-Upgrade has added port 'data_out_compute_70'
+
+-Upgrade has added port 'data_out_compute_71'
+
+-Upgrade has added port 'data_out_compute_72'
+
+-Upgrade has added port 'data_out_compute_73'
+
+-Upgrade has added port 'data_out_compute_74'
+
+-Upgrade has added port 'data_out_compute_75'
+
+-Upgrade has added port 'data_out_compute_76'
+
+-Upgrade has added port 'data_out_compute_77'
+
+-Upgrade has added port 'data_out_compute_78'
+
+-Upgrade has added port 'data_out_compute_79'
+
+-Upgrade has added port 'data_out_compute_80'
+
+-Upgrade has added port 'data_out_compute_81'
+
+-Upgrade has added port 'data_out_compute_82'
+
+-Upgrade has added port 'data_out_compute_83'
+
+-Upgrade has added port 'data_out_compute_84'
+
+-Upgrade has added port 'data_out_compute_85'
+
+-Upgrade has added port 'data_out_compute_86'
+
+-Upgrade has added port 'data_out_compute_87'
+
+-Upgrade has added port 'data_out_compute_88'
+
+-Upgrade has added port 'data_out_compute_89'
+
+-Upgrade has added port 'data_out_compute_90'
+
+-Upgrade has added port 'data_out_compute_91'
+
+-Upgrade has added port 'data_out_compute_92'
+
+-Upgrade has added port 'data_out_compute_93'
+
+-Upgrade has added port 'data_out_compute_94'
+
+-Upgrade has added port 'data_out_compute_95'
+
+-Upgrade has added port 'data_out_compute_96'
+
+-Upgrade has added port 'data_out_compute_97'
+
+-Upgrade has added port 'data_out_compute_98'
+
+-Upgrade has added port 'data_out_compute_99'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 26 13:00:50 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 26 12:56:51 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'.
+
+
+-Upgrade has added interface 's00_axi_aclk' (xilinx.com:signal:clock:1.0)
+
+-Upgrade has added interface 's00_axi_aresetn' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_REV2_JPEG_IP_DESIGN_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'jpeg_in_a00'
+
+-Upgrade has added port 'jpeg_in_a01'
+
+-Upgrade has added port 'jpeg_in_a02'
+
+-Upgrade has added port 'jpeg_in_a03'
+
+-Upgrade has added port 'jpeg_in_a04'
+
+-Upgrade has added port 'jpeg_in_a05'
+
+-Upgrade has added port 'jpeg_in_a06'
+
+-Upgrade has added port 'jpeg_in_a07'
+
+-Upgrade has added port 'jpeg_in_a08'
+
+-Upgrade has added port 'jpeg_in_a09'
+
+-Upgrade has added port 'jpeg_in_a10'
+
+-Upgrade has added port 'jpeg_in_a100'
+
+-Upgrade has added port 'jpeg_in_a101'
+
+-Upgrade has added port 'jpeg_in_a102'
+
+-Upgrade has added port 'jpeg_in_a103'
+
+-Upgrade has added port 'jpeg_in_a104'
+
+-Upgrade has added port 'jpeg_in_a105'
+
+-Upgrade has added port 'jpeg_in_a106'
+
+-Upgrade has added port 'jpeg_in_a107'
+
+-Upgrade has added port 'jpeg_in_a108'
+
+-Upgrade has added port 'jpeg_in_a109'
+
+-Upgrade has added port 'jpeg_in_a11'
+
+-Upgrade has added port 'jpeg_in_a110'
+
+-Upgrade has added port 'jpeg_in_a111'
+
+-Upgrade has added port 'jpeg_in_a112'
+
+-Upgrade has added port 'jpeg_in_a113'
+
+-Upgrade has added port 'jpeg_in_a114'
+
+-Upgrade has added port 'jpeg_in_a115'
+
+-Upgrade has added port 'jpeg_in_a116'
+
+-Upgrade has added port 'jpeg_in_a117'
+
+-Upgrade has added port 'jpeg_in_a118'
+
+-Upgrade has added port 'jpeg_in_a119'
+
+-Upgrade has added port 'jpeg_in_a12'
+
+-Upgrade has added port 'jpeg_in_a120'
+
+-Upgrade has added port 'jpeg_in_a121'
+
+-Upgrade has added port 'jpeg_in_a122'
+
+-Upgrade has added port 'jpeg_in_a123'
+
+-Upgrade has added port 'jpeg_in_a124'
+
+-Upgrade has added port 'jpeg_in_a125'
+
+-Upgrade has added port 'jpeg_in_a126'
+
+-Upgrade has added port 'jpeg_in_a127'
+
+-Upgrade has added port 'jpeg_in_a13'
+
+-Upgrade has added port 'jpeg_in_a14'
+
+-Upgrade has added port 'jpeg_in_a15'
+
+-Upgrade has added port 'jpeg_in_a16'
+
+-Upgrade has added port 'jpeg_in_a17'
+
+-Upgrade has added port 'jpeg_in_a18'
+
+-Upgrade has added port 'jpeg_in_a19'
+
+-Upgrade has added port 'jpeg_in_a20'
+
+-Upgrade has added port 'jpeg_in_a21'
+
+-Upgrade has added port 'jpeg_in_a22'
+
+-Upgrade has added port 'jpeg_in_a23'
+
+-Upgrade has added port 'jpeg_in_a24'
+
+-Upgrade has added port 'jpeg_in_a25'
+
+-Upgrade has added port 'jpeg_in_a26'
+
+-Upgrade has added port 'jpeg_in_a27'
+
+-Upgrade has added port 'jpeg_in_a28'
+
+-Upgrade has added port 'jpeg_in_a29'
+
+-Upgrade has added port 'jpeg_in_a30'
+
+-Upgrade has added port 'jpeg_in_a31'
+
+-Upgrade has added port 'jpeg_in_a32'
+
+-Upgrade has added port 'jpeg_in_a33'
+
+-Upgrade has added port 'jpeg_in_a34'
+
+-Upgrade has added port 'jpeg_in_a35'
+
+-Upgrade has added port 'jpeg_in_a36'
+
+-Upgrade has added port 'jpeg_in_a37'
+
+-Upgrade has added port 'jpeg_in_a38'
+
+-Upgrade has added port 'jpeg_in_a39'
+
+-Upgrade has added port 'jpeg_in_a40'
+
+-Upgrade has added port 'jpeg_in_a41'
+
+-Upgrade has added port 'jpeg_in_a42'
+
+-Upgrade has added port 'jpeg_in_a43'
+
+-Upgrade has added port 'jpeg_in_a44'
+
+-Upgrade has added port 'jpeg_in_a45'
+
+-Upgrade has added port 'jpeg_in_a46'
+
+-Upgrade has added port 'jpeg_in_a47'
+
+-Upgrade has added port 'jpeg_in_a48'
+
+-Upgrade has added port 'jpeg_in_a49'
+
+-Upgrade has added port 'jpeg_in_a50'
+
+-Upgrade has added port 'jpeg_in_a51'
+
+-Upgrade has added port 'jpeg_in_a52'
+
+-Upgrade has added port 'jpeg_in_a53'
+
+-Upgrade has added port 'jpeg_in_a54'
+
+-Upgrade has added port 'jpeg_in_a55'
+
+-Upgrade has added port 'jpeg_in_a56'
+
+-Upgrade has added port 'jpeg_in_a57'
+
+-Upgrade has added port 'jpeg_in_a58'
+
+-Upgrade has added port 'jpeg_in_a59'
+
+-Upgrade has added port 'jpeg_in_a60'
+
+-Upgrade has added port 'jpeg_in_a61'
+
+-Upgrade has added port 'jpeg_in_a62'
+
+-Upgrade has added port 'jpeg_in_a63'
+
+-Upgrade has added port 'jpeg_in_a64'
+
+-Upgrade has added port 'jpeg_in_a65'
+
+-Upgrade has added port 'jpeg_in_a66'
+
+-Upgrade has added port 'jpeg_in_a67'
+
+-Upgrade has added port 'jpeg_in_a68'
+
+-Upgrade has added port 'jpeg_in_a69'
+
+-Upgrade has added port 'jpeg_in_a70'
+
+-Upgrade has added port 'jpeg_in_a71'
+
+-Upgrade has added port 'jpeg_in_a72'
+
+-Upgrade has added port 'jpeg_in_a73'
+
+-Upgrade has added port 'jpeg_in_a74'
+
+-Upgrade has added port 'jpeg_in_a75'
+
+-Upgrade has added port 'jpeg_in_a76'
+
+-Upgrade has added port 'jpeg_in_a77'
+
+-Upgrade has added port 'jpeg_in_a78'
+
+-Upgrade has added port 'jpeg_in_a79'
+
+-Upgrade has added port 'jpeg_in_a80'
+
+-Upgrade has added port 'jpeg_in_a81'
+
+-Upgrade has added port 'jpeg_in_a82'
+
+-Upgrade has added port 'jpeg_in_a83'
+
+-Upgrade has added port 'jpeg_in_a84'
+
+-Upgrade has added port 'jpeg_in_a85'
+
+-Upgrade has added port 'jpeg_in_a86'
+
+-Upgrade has added port 'jpeg_in_a87'
+
+-Upgrade has added port 'jpeg_in_a88'
+
+-Upgrade has added port 'jpeg_in_a89'
+
+-Upgrade has added port 'jpeg_in_a90'
+
+-Upgrade has added port 'jpeg_in_a91'
+
+-Upgrade has added port 'jpeg_in_a92'
+
+-Upgrade has added port 'jpeg_in_a93'
+
+-Upgrade has added port 'jpeg_in_a94'
+
+-Upgrade has added port 'jpeg_in_a95'
+
+-Upgrade has added port 'jpeg_in_a96'
+
+-Upgrade has added port 'jpeg_in_a97'
+
+-Upgrade has added port 'jpeg_in_a98'
+
+-Upgrade has added port 'jpeg_in_a99'
+
+-Upgrade has added port 'jpeg_in_compute'
+
+-Upgrade has added port 'jpeg_len_in'
+
+-Upgrade has added port 'jpeg_len_out'
+
+-Upgrade has added port 'jpeg_out_a00'
+
+-Upgrade has added port 'jpeg_out_a01'
+
+-Upgrade has added port 'jpeg_out_a02'
+
+-Upgrade has added port 'jpeg_out_a03'
+
+-Upgrade has added port 'jpeg_out_a04'
+
+-Upgrade has added port 'jpeg_out_a05'
+
+-Upgrade has added port 'jpeg_out_a06'
+
+-Upgrade has added port 'jpeg_out_a07'
+
+-Upgrade has added port 'jpeg_out_a08'
+
+-Upgrade has added port 'jpeg_out_a09'
+
+-Upgrade has added port 'jpeg_out_a10'
+
+-Upgrade has added port 'jpeg_out_a100'
+
+-Upgrade has added port 'jpeg_out_a101'
+
+-Upgrade has added port 'jpeg_out_a102'
+
+-Upgrade has added port 'jpeg_out_a103'
+
+-Upgrade has added port 'jpeg_out_a104'
+
+-Upgrade has added port 'jpeg_out_a105'
+
+-Upgrade has added port 'jpeg_out_a106'
+
+-Upgrade has added port 'jpeg_out_a107'
+
+-Upgrade has added port 'jpeg_out_a108'
+
+-Upgrade has added port 'jpeg_out_a109'
+
+-Upgrade has added port 'jpeg_out_a11'
+
+-Upgrade has added port 'jpeg_out_a110'
+
+-Upgrade has added port 'jpeg_out_a111'
+
+-Upgrade has added port 'jpeg_out_a112'
+
+-Upgrade has added port 'jpeg_out_a113'
+
+-Upgrade has added port 'jpeg_out_a114'
+
+-Upgrade has added port 'jpeg_out_a115'
+
+-Upgrade has added port 'jpeg_out_a116'
+
+-Upgrade has added port 'jpeg_out_a117'
+
+-Upgrade has added port 'jpeg_out_a118'
+
+-Upgrade has added port 'jpeg_out_a119'
+
+-Upgrade has added port 'jpeg_out_a12'
+
+-Upgrade has added port 'jpeg_out_a120'
+
+-Upgrade has added port 'jpeg_out_a121'
+
+-Upgrade has added port 'jpeg_out_a122'
+
+-Upgrade has added port 'jpeg_out_a123'
+
+-Upgrade has added port 'jpeg_out_a124'
+
+-Upgrade has added port 'jpeg_out_a125'
+
+-Upgrade has added port 'jpeg_out_a126'
+
+-Upgrade has added port 'jpeg_out_a127'
+
+-Upgrade has added port 'jpeg_out_a13'
+
+-Upgrade has added port 'jpeg_out_a14'
+
+-Upgrade has added port 'jpeg_out_a15'
+
+-Upgrade has added port 'jpeg_out_a16'
+
+-Upgrade has added port 'jpeg_out_a17'
+
+-Upgrade has added port 'jpeg_out_a18'
+
+-Upgrade has added port 'jpeg_out_a19'
+
+-Upgrade has added port 'jpeg_out_a20'
+
+-Upgrade has added port 'jpeg_out_a21'
+
+-Upgrade has added port 'jpeg_out_a22'
+
+-Upgrade has added port 'jpeg_out_a23'
+
+-Upgrade has added port 'jpeg_out_a24'
+
+-Upgrade has added port 'jpeg_out_a25'
+
+-Upgrade has added port 'jpeg_out_a26'
+
+-Upgrade has added port 'jpeg_out_a27'
+
+-Upgrade has added port 'jpeg_out_a28'
+
+-Upgrade has added port 'jpeg_out_a29'
+
+-Upgrade has added port 'jpeg_out_a30'
+
+-Upgrade has added port 'jpeg_out_a31'
+
+-Upgrade has added port 'jpeg_out_a32'
+
+-Upgrade has added port 'jpeg_out_a33'
+
+-Upgrade has added port 'jpeg_out_a34'
+
+-Upgrade has added port 'jpeg_out_a35'
+
+-Upgrade has added port 'jpeg_out_a36'
+
+-Upgrade has added port 'jpeg_out_a37'
+
+-Upgrade has added port 'jpeg_out_a38'
+
+-Upgrade has added port 'jpeg_out_a39'
+
+-Upgrade has added port 'jpeg_out_a40'
+
+-Upgrade has added port 'jpeg_out_a41'
+
+-Upgrade has added port 'jpeg_out_a42'
+
+-Upgrade has added port 'jpeg_out_a43'
+
+-Upgrade has added port 'jpeg_out_a44'
+
+-Upgrade has added port 'jpeg_out_a45'
+
+-Upgrade has added port 'jpeg_out_a46'
+
+-Upgrade has added port 'jpeg_out_a47'
+
+-Upgrade has added port 'jpeg_out_a48'
+
+-Upgrade has added port 'jpeg_out_a49'
+
+-Upgrade has added port 'jpeg_out_a50'
+
+-Upgrade has added port 'jpeg_out_a51'
+
+-Upgrade has added port 'jpeg_out_a52'
+
+-Upgrade has added port 'jpeg_out_a53'
+
+-Upgrade has added port 'jpeg_out_a54'
+
+-Upgrade has added port 'jpeg_out_a55'
+
+-Upgrade has added port 'jpeg_out_a56'
+
+-Upgrade has added port 'jpeg_out_a57'
+
+-Upgrade has added port 'jpeg_out_a58'
+
+-Upgrade has added port 'jpeg_out_a59'
+
+-Upgrade has added port 'jpeg_out_a60'
+
+-Upgrade has added port 'jpeg_out_a61'
+
+-Upgrade has added port 'jpeg_out_a62'
+
+-Upgrade has added port 'jpeg_out_a63'
+
+-Upgrade has added port 'jpeg_out_a64'
+
+-Upgrade has added port 'jpeg_out_a65'
+
+-Upgrade has added port 'jpeg_out_a66'
+
+-Upgrade has added port 'jpeg_out_a67'
+
+-Upgrade has added port 'jpeg_out_a68'
+
+-Upgrade has added port 'jpeg_out_a69'
+
+-Upgrade has added port 'jpeg_out_a70'
+
+-Upgrade has added port 'jpeg_out_a71'
+
+-Upgrade has added port 'jpeg_out_a72'
+
+-Upgrade has added port 'jpeg_out_a73'
+
+-Upgrade has added port 'jpeg_out_a74'
+
+-Upgrade has added port 'jpeg_out_a75'
+
+-Upgrade has added port 'jpeg_out_a76'
+
+-Upgrade has added port 'jpeg_out_a77'
+
+-Upgrade has added port 'jpeg_out_a78'
+
+-Upgrade has added port 'jpeg_out_a79'
+
+-Upgrade has added port 'jpeg_out_a80'
+
+-Upgrade has added port 'jpeg_out_a81'
+
+-Upgrade has added port 'jpeg_out_a82'
+
+-Upgrade has added port 'jpeg_out_a83'
+
+-Upgrade has added port 'jpeg_out_a84'
+
+-Upgrade has added port 'jpeg_out_a85'
+
+-Upgrade has added port 'jpeg_out_a86'
+
+-Upgrade has added port 'jpeg_out_a87'
+
+-Upgrade has added port 'jpeg_out_a88'
+
+-Upgrade has added port 'jpeg_out_a89'
+
+-Upgrade has added port 'jpeg_out_a90'
+
+-Upgrade has added port 'jpeg_out_a91'
+
+-Upgrade has added port 'jpeg_out_a92'
+
+-Upgrade has added port 'jpeg_out_a93'
+
+-Upgrade has added port 'jpeg_out_a94'
+
+-Upgrade has added port 'jpeg_out_a95'
+
+-Upgrade has added port 'jpeg_out_a96'
+
+-Upgrade has added port 'jpeg_out_a97'
+
+-Upgrade has added port 'jpeg_out_a98'
+
+-Upgrade has added port 'jpeg_out_a99'
+
+-Upgrade has added port 'valid'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 19 18:08:29 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_JPEG_PR_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the update of bram_design_system_JPEG_PR_0_1 (xilinx.com:user:JPEG_PR:1.0 (Rev. 3)) to current project options.
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 19 03:21:49 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_ARM_FPGA_Control_Bus_0_5'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_ARM_FPGA_Control_Bus_0_5 (xilinx.com:user:ARM_FPGA_Control_Bus:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+
+
+-Upgrade has removed port 'compute_rst'
+
+-Upgrade has added port 'compute_wakeup'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 19 03:03:00 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_ARM_FPGA_Control_Bus_0_5'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_ARM_FPGA_Control_Bus_0_5 (xilinx.com:user:ARM_FPGA_Control_Bus:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'bram_design_system_ARM_FPGA_Control_Bus_0_5'.
+
+
+-Upgrade has added interface 'compute_rst' (xilinx.com:signal:reset:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+
+
+-Upgrade has added port 'compute_rst'
+
+-Upgrade has added port 'compute_valid'
+
+
+
+
+
+
+
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Nov 19 02:39:29 2017
+| Host         : LAPTOP-QUI0SV4S running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'bram_design_system_controller_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of bram_design_system_controller_0_0 (xilinx.com:user:controller:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'bram_design_system_controller_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'data_in_compute_00'
+
+-Upgrade has added port 'data_in_compute_01'
+
+-Upgrade has added port 'data_in_compute_02'
+
+-Upgrade has added port 'data_in_compute_03'
+
+-Upgrade has added port 'data_in_compute_04'
+
+-Upgrade has added port 'data_in_compute_05'
+
+-Upgrade has added port 'data_in_compute_06'
+
+-Upgrade has added port 'data_in_compute_07'
+
+-Upgrade has added port 'data_in_compute_08'
+
+-Upgrade has added port 'data_in_compute_09'
+
+-Upgrade has added port 'data_in_compute_10'
+
+-Upgrade has added port 'data_in_compute_11'
+
+-Upgrade has added port 'data_in_compute_12'
+
+-Upgrade has added port 'data_in_compute_13'
+
+-Upgrade has added port 'data_in_compute_14'
+
+-Upgrade has added port 'data_in_compute_15'
+
+-Upgrade has added port 'data_in_compute_16'
+
+-Upgrade has added port 'data_in_compute_17'
+
+-Upgrade has added port 'data_in_compute_18'
+
+-Upgrade has added port 'data_in_compute_19'
+
+-Upgrade has added port 'data_in_compute_20'
+
+-Upgrade has added port 'data_in_compute_21'
+
+-Upgrade has added port 'data_in_compute_22'
+
+-Upgrade has added port 'data_in_compute_23'
+
+-Upgrade has added port 'data_in_compute_24'
+
+-Upgrade has added port 'data_in_compute_25'
+
+-Upgrade has added port 'data_in_compute_26'
+
+-Upgrade has added port 'data_in_compute_27'
+
+-Upgrade has added port 'data_in_compute_28'
+
+-Upgrade has added port 'data_in_compute_29'
+
+-Upgrade has added port 'data_in_compute_30'
+
+-Upgrade has added port 'data_in_compute_31'
+
+-Upgrade has added port 'data_in_compute_32'
+
+-Upgrade has added port 'data_in_compute_33'
+
+-Upgrade has added port 'data_in_compute_34'
+
+-Upgrade has added port 'data_in_compute_35'
+
+-Upgrade has added port 'data_in_compute_36'
+
+-Upgrade has added port 'data_in_compute_37'
+
+-Upgrade has added port 'data_in_compute_38'
+
+-Upgrade has added port 'data_in_compute_39'
+
+-Upgrade has added port 'data_in_compute_40'
+
+-Upgrade has added port 'data_in_compute_41'
+
+-Upgrade has added port 'data_in_compute_42'
+
+-Upgrade has added port 'data_in_compute_43'
+
+-Upgrade has added port 'data_in_compute_44'
+
+-Upgrade has added port 'data_in_compute_45'
+
+-Upgrade has added port 'data_in_compute_46'
+
+-Upgrade has added port 'data_in_compute_47'
+
+-Upgrade has added port 'data_in_compute_48'
+
+-Upgrade has added port 'data_in_compute_49'
+
+-Upgrade has added port 'data_in_compute_50'
+
+-Upgrade has added port 'data_in_compute_51'
+
+-Upgrade has added port 'data_in_compute_52'
+
+-Upgrade has added port 'data_in_compute_53'
+
+-Upgrade has added port 'data_in_compute_54'
+
+-Upgrade has added port 'data_in_compute_55'
+
+-Upgrade has added port 'data_in_compute_56'
+
+-Upgrade has added port 'data_in_compute_57'
+
+-Upgrade has added port 'data_in_compute_58'
+
+-Upgrade has added port 'data_in_compute_59'
+
+-Upgrade has added port 'data_in_compute_60'
+
+-Upgrade has added port 'data_in_compute_61'
+
+-Upgrade has added port 'data_in_compute_62'
+
+-Upgrade has added port 'data_in_compute_63'
+
+-Upgrade has added port 'data_out_compute_00'
+
+-Upgrade has added port 'data_out_compute_01'
+
+-Upgrade has added port 'data_out_compute_02'
+
+-Upgrade has added port 'data_out_compute_03'
+
+-Upgrade has added port 'data_out_compute_04'
+
+-Upgrade has added port 'data_out_compute_05'
+
+-Upgrade has added port 'data_out_compute_06'
+
+-Upgrade has added port 'data_out_compute_07'
+
+-Upgrade has added port 'data_out_compute_08'
+
+-Upgrade has added port 'data_out_compute_09'
+
+-Upgrade has added port 'data_out_compute_10'
+
+-Upgrade has added port 'data_out_compute_11'
+
+-Upgrade has added port 'data_out_compute_12'
+
+-Upgrade has added port 'data_out_compute_13'
+
+-Upgrade has added port 'data_out_compute_14'
+
+-Upgrade has added port 'data_out_compute_15'
+
+-Upgrade has added port 'data_out_compute_16'
+
+-Upgrade has added port 'data_out_compute_17'
+
+-Upgrade has added port 'data_out_compute_18'
+
+-Upgrade has added port 'data_out_compute_19'
+
+-Upgrade has added port 'data_out_compute_20'
+
+-Upgrade has added port 'data_out_compute_21'
+
+-Upgrade has added port 'data_out_compute_22'
+
+-Upgrade has added port 'data_out_compute_23'
+
+-Upgrade has added port 'data_out_compute_24'
+
+-Upgrade has added port 'data_out_compute_25'
+
+-Upgrade has added port 'data_out_compute_26'
+
+-Upgrade has added port 'data_out_compute_27'
+
+-Upgrade has added port 'data_out_compute_28'
+
+-Upgrade has added port 'data_out_compute_29'
+
+-Upgrade has added port 'data_out_compute_30'
+
+-Upgrade has added port 'data_out_compute_31'
+
+-Upgrade has added port 'data_out_compute_32'
+
+-Upgrade has added port 'data_out_compute_33'
+
+-Upgrade has added port 'data_out_compute_34'
+
+-Upgrade has added port 'data_out_compute_35'
+
+-Upgrade has added port 'data_out_compute_36'
+
+-Upgrade has added port 'data_out_compute_37'
+
+-Upgrade has added port 'data_out_compute_38'
+
+-Upgrade has added port 'data_out_compute_39'
+
+-Upgrade has added port 'data_out_compute_40'
+
+-Upgrade has added port 'data_out_compute_41'
+
+-Upgrade has added port 'data_out_compute_42'
+
+-Upgrade has added port 'data_out_compute_43'
+
+-Upgrade has added port 'data_out_compute_44'
+
+-Upgrade has added port 'data_out_compute_45'
+
+-Upgrade has added port 'data_out_compute_46'
+
+-Upgrade has added port 'data_out_compute_47'
+
+-Upgrade has added port 'data_out_compute_48'
+
+-Upgrade has added port 'data_out_compute_49'
+
+-Upgrade has added port 'data_out_compute_50'
+
+-Upgrade has added port 'data_out_compute_51'
+
+-Upgrade has added port 'data_out_compute_52'
+
+-Upgrade has added port 'data_out_compute_53'
+
+-Upgrade has added port 'data_out_compute_54'
+
+-Upgrade has added port 'data_out_compute_55'
+
+-Upgrade has added port 'data_out_compute_56'
+
+-Upgrade has added port 'data_out_compute_57'
+
+-Upgrade has added port 'data_out_compute_58'
+
+-Upgrade has added port 'data_out_compute_59'
+
+-Upgrade has added port 'data_out_compute_60'
+
+-Upgrade has added port 'data_out_compute_61'
+
+-Upgrade has added port 'data_out_compute_62'
+
+-Upgrade has added port 'data_out_compute_63'
+
+

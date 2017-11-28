@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 15:35:26 2017
+# Process ID: 13767
+# Current directory: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR/PRLab
+# Command line: vivado
+# Log file: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR/PRLab/vivado.log
+# Journal file: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+pwd
+open_checkpoint Synth/Static/bram_design_system_wrapper.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD.RECONFIGURABLE 1 [get_cells bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X4Y22:RAMB18_X5Y57 RAMB36_X4Y11:RAMB36_X5Y28} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X4Y22:RAMB18_X5Y39 RAMB36_X4Y11:RAMB36_X5Y19} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y149 DSP48_X3Y22:DSP48_X4Y59 RAMB18_X4Y22:RAMB18_X5Y59 RAMB36_X4Y11:RAMB36_X5Y29} -remove {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X4Y22:RAMB18_X5Y57 RAMB36_X4Y11:RAMB36_X5Y28} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_2 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+opt_design
+place_design
+close_project
+open_checkpoint Synth/Static/bram_design_system_wrapper.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD.RECONFIGURABLE 1 [get_cells bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y0:SLICE_X113Y99 DSP48_X3Y0:DSP48_X4Y39 RAMB18_X4Y0:RAMB18_X5Y39 RAMB36_X4Y0:RAMB36_X5Y19} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X4Y22:RAMB18_X5Y39 RAMB36_X4Y11:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y0:SLICE_X113Y48 DSP48_X3Y0:DSP48_X4Y17 RAMB18_X4Y0:RAMB18_X5Y17 RAMB36_X4Y0:RAMB36_X5Y8} -remove {SLICE_X90Y0:SLICE_X113Y99 DSP48_X3Y0:DSP48_X4Y39 RAMB18_X4Y0:RAMB18_X5Y39 RAMB36_X4Y0:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X0Y0:SLICE_X113Y48 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -remove {SLICE_X90Y0:SLICE_X113Y48 DSP48_X3Y0:DSP48_X4Y17 RAMB18_X4Y0:RAMB18_X5Y17 RAMB36_X4Y0:RAMB36_X5Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X0Y0:SLICE_X113Y44 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -remove {SLICE_X0Y0:SLICE_X113Y48 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+set_property SNAPPING_MODE ON [get_pblocks pblock_jpeg0]
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y0:SLICE_X113Y44 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -remove {SLICE_X0Y0:SLICE_X113Y44 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y0:SLICE_X113Y46 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -remove {SLICE_X2Y0:SLICE_X113Y44 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y0:SLICE_X111Y46 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -remove {SLICE_X2Y0:SLICE_X113Y46 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y1:SLICE_X111Y46 DSP48_X0Y2:DSP48_X4Y17 RAMB18_X0Y2:RAMB18_X5Y17 RAMB36_X0Y1:RAMB36_X5Y8} -remove {SLICE_X2Y0:SLICE_X111Y46 DSP48_X0Y0:DSP48_X4Y17 RAMB18_X0Y0:RAMB18_X5Y17 RAMB36_X0Y0:RAMB36_X5Y8} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_2 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+opt_design
+place_design
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y1:SLICE_X85Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -remove {SLICE_X2Y1:SLICE_X111Y46 DSP48_X0Y2:DSP48_X4Y17 RAMB18_X0Y2:RAMB18_X5Y17 RAMB36_X0Y1:RAMB36_X5Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y1:SLICE_X87Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -remove {SLICE_X2Y1:SLICE_X85Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y1:SLICE_X89Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -remove {SLICE_X2Y1:SLICE_X87Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_3 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+resize_pblock pblock_jpeg0 -add {SLICE_X2Y1:SLICE_X113Y46 DSP48_X0Y2:DSP48_X4Y17 RAMB18_X0Y2:RAMB18_X5Y17 RAMB36_X0Y1:RAMB36_X5Y8} -remove {SLICE_X2Y1:SLICE_X89Y46 DSP48_X0Y2:DSP48_X2Y17 RAMB18_X0Y2:RAMB18_X3Y17 RAMB36_X0Y1:RAMB36_X3Y8} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_4 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+close_project
+open_checkpoint Synth/Static/bram_design_system_wrapper.dcp
+read_checkpoint bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD>RECONFIGURABLE 1 [get_cells bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+set_property HD.RECONFIGURABLE 1 [get_cells bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+set_property SNAPPING_MODE ON [get_pblocks pblock_jpeg0]
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X5Y22:RAMB18_X5Y39 RAMB36_X5Y11:RAMB36_X5Y19} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X4Y22:RAMB18_X5Y39 RAMB36_X4Y11:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X5Y22:RAMB18_X5Y57 RAMB36_X5Y11:RAMB36_X5Y28} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X5Y22:RAMB18_X5Y39 RAMB36_X5Y11:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X5Y22:RAMB18_X5Y57 RAMB36_X5Y11:RAMB36_X5Y28} -remove {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X5Y22:RAMB18_X5Y57 RAMB36_X5Y11:RAMB36_X5Y28} -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X54Y122:SLICE_X89Y149 -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y137 DSP48_X3Y22:DSP48_X4Y53 RAMB18_X5Y22:RAMB18_X5Y53 RAMB36_X5Y11:RAMB36_X5Y26} -remove {SLICE_X90Y51:SLICE_X113Y148 DSP48_X3Y22:DSP48_X4Y57 RAMB18_X5Y22:RAMB18_X5Y57 RAMB36_X5Y11:RAMB36_X5Y28} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y137 DSP48_X3Y22:DSP48_X4Y53 RAMB18_X5Y22:RAMB18_X5Y53 RAMB36_X5Y11:RAMB36_X5Y26} -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X54Y0:SLICE_X89Y149 -remove SLICE_X54Y122:SLICE_X89Y149 -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y94 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X5Y22:RAMB18_X5Y39 RAMB36_X5Y11:RAMB36_X5Y19} -remove {SLICE_X90Y51:SLICE_X113Y94 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X5Y22:RAMB18_X5Y39 RAMB36_X5Y11:RAMB36_X5Y19} -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_dct/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_dct_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_quantization/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_quantization_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_rle/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_rle_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_huffman/huffman_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_huffman/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_huffman_route_design.dcp
+close_project
+open_checkpoint Checkpoint/static_route_design.dcp
+update_design -buffer_ports -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0
+place_design
+route_design
+write_checkpoint -force Implement/Config_blank/top_route_design.dcp
+close_project
+pr_verify -initial Implement/Config_dct/top_route_design.dcp -additional {Implement/Config_quantization/top_route_design.dcp Implement/Config_rle/top_route_design.dcp Implement/Config_huffman/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+close_project
+source generate_bitstreams.tcl

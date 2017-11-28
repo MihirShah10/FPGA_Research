@@ -1,0 +1,66 @@
+Copyright (C) 1988-2017 NEC Corporation. All rights reserved.
+bdltran version : 5.61.02 (Linux 64-bit) Fri Apr 21 13:55:30 JST 2017
+         (BIF version : 3.40i)
+         (LICflex version : 1.52 cylmd)
+         make at Fri Apr 21 14:09:45 JST 2017
+ Option  -EE -c1000 -s -Zresource_fcnt=GENERATE -Zresource_mcnt=GENERATE -Zdup_reset=YES -tcio -EE -lb /eda/cwb/cyber_561/LINUX/packages/zynq-1.BLIB -lfl /eda/cwb/cyber_561/LINUX/packages/zynq-1.FLIB jpeg.IFF -tcio 
+
+scpars  -EE -info_base_name scpars ./quantization.cpp
+
+############## CyberII started (automatic scheduling mode) ##############
+[Clock period]    100,000 (1/10ps) [define]
+[Datapath delay]   80,000 (1/10ps)
+[Clock uncertainty] 20,000 (1/10ps)
+
+******* Initial # of operations in the input behavior description *******
+ === Operators ===
+  <  :  6  (32bit:6)
+  ++ :  6  (32bit:6)
+  *  :  2  (32bit:2)
+  +  :  2  (37bit:2)
+  /  :  1  (12bit:1)
+  Data transfer : 54
+
+ === array / memory ===
+  read  :  4
+  write :  3
+
+********* After optimizing & expanding the behavior description *********
+ === Operators ===
+  +  :128  (7bit:2, 9bit:126)
+  |> :128  (3bit:126, 5bit:2)
+  &  :128  (1bit:128)
+  Data transfer : 1290
+
+#########################  Synthesized Circuit  #########################
+[Performance index max/min/ave] 2 / 2 / 2.00
+
+  Module Name         : jpeg
+  Basic Library Name  : CWBSTDBLIB
+
+  FPGA Family         : zynq
+  FPGA Device         : -
+  FPGA Package        : -
+  FPGA Speed          : -
+
+  Resource Utilization
+    Slice LUTs        :        706
+    Registers         :        771
+    Block Memory Bits :          0
+    DSPs              :          0
+
+  Latency Index       :          2
+  Total States        :          2
+
+  Clock Period        :       10ns
+  Critical Path Delay :    4.259ns
+
+  Net                 :      1,615
+  Pin Pair            :      2,708
+
+  Port                :      1,539
+    In                :        770
+    Out               :        769
+
+##### CyberII Normal finish (automatic scheduling mode) [jpeg] #####
+

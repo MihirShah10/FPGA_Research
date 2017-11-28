@@ -1,0 +1,72 @@
+I_BT1173: LOG file is generated. (jpeg.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in FPGA (zynq) mode.
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	37(./quantization.cpp):         for(j=0;j<8;j++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	36(./quantization.cpp):       for(i=0;i<8;i++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	42(./quantization.cpp):         for(j=0;j<8;j++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	41(./quantization.cpp):       for(i=0;i<8;i++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	47(./quantization.cpp):         for(j=0;j<8;j++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	46(./quantization.cpp):       for(i=0;i<8;i++)
+I_BT4442: Array signal quantization_output is expanded at dimension #2 from right.
+	[Source Lines]
+	27(./quantization.cpp):   sc_int<12> quantization_output[8][8];
+I_BT4442: Array signal dct_block is expanded at dimension #2 from right.
+	[Source Lines]
+	26(./quantization.cpp):   sc_int<12> dct_block[8][8];
+I_BT4442: Array signal Q is expanded at dimension #2 from right.
+	[Source Lines]
+	23(./quantization.cpp):   sc_int<8> Q[8][8] =  {
+I_BT4679: Array jpeg_in was expanded.
+I_BT4679: Array jpeg_out was expanded.
+I_BT4679: Array quantization_output_0_a was expanded.
+I_BT4679: Array quantization_output_1_a was expanded.
+I_BT4679: Array quantization_output_2_a was expanded.
+I_BT4679: Array quantization_output_3_a was expanded.
+I_BT4679: Array quantization_output_4_a was expanded.
+I_BT4679: Array quantization_output_5_a was expanded.
+I_BT4679: Array quantization_output_6_a was expanded.
+I_BT4679: Array quantization_output_7_a was expanded.
+I_BT4679: Array dct_block_0_a was expanded.
+I_BT4679: Array dct_block_1_a was expanded.
+I_BT4679: Array dct_block_2_a was expanded.
+I_BT4679: Array dct_block_3_a was expanded.
+I_BT4679: Array dct_block_4_a was expanded.
+I_BT4679: Array dct_block_5_a was expanded.
+I_BT4679: Array dct_block_6_a was expanded.
+I_BT4679: Array dct_block_7_a was expanded.
+I_BT4393: No memory required. Empty memory library file (jpeg-auto.MLIB) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4394: No memory required. Empty memory constraint file (jpeg-auto.MCNT) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4383: Generate memory library file / memory constraint file.
+	jpeg-auto.MLIB
+	jpeg-auto.MCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT4398: The empty FLIB file generated since additional functional units are not required.
+I_BT4319: Empty FLIB file (jpeg-amacro-auto.FLIB) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4318: Empty FCNT file (jpeg-amacro-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4382: Generate functional unit library files / functional unit constraint files.
+	jpeg-auto.FLIB
+	jpeg-auto.FCNT
+	jpeg-amacro-auto.FLIB
+	jpeg-amacro-auto.FCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	39 information  exist
+	---> SEE jpeg.err FILE for DETAILS

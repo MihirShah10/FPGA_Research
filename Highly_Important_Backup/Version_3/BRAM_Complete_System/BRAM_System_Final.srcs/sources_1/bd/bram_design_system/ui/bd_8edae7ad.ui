@@ -1,0 +1,344 @@
+{
+   guistr: "# # String gsaved with Nlview 6.6.5b  2016-09-06 bk=1.3687 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -150 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -130 -defaultsOSRD
+preplace inst REV2_JPEG_IP_DESIGN_0 -pg 1 -lvl 9 -y 1510 -defaultsOSRD
+preplace inst bram_0 -pg 1 -lvl 8 -y -910 -defaultsOSRD
+preplace inst ARM_FPGA_Control_Bus_0 -pg 1 -lvl 1 -y -480 -defaultsOSRD
+preplace inst DARC_BRAM2_0 -pg 1 -lvl 4 -y -960 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 6 -y -870 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -y -950 -defaultsOSRD
+preplace inst controller_0 -pg 1 -lvl 2 -y 1510 -defaultsOSRD
+preplace inst DARC_Mux_0 -pg 1 -lvl 7 -y -910 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 3 -y -1020 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -1240 -defaultsOSRD
+preplace netloc controller_0_data_out_compute_89 1 2 7 NJ 2080 N 2080 N 2080 N 2080 N 2080 N 2080 9420
+preplace netloc controller_0_data_out_compute_126 1 2 7 NJ 2820 N 2820 N 2820 N 2820 N 2820 N 2820 9770
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a00 1 1 9 340J -1150 NJ -1150 NJ -1150 N -1150 N -1150 N -1150 N -1150 7960 -1120 10930
+preplace netloc controller_0_data_out_compute_127 1 2 7 NJ 2840 N 2840 N 2840 N 2840 N 2840 N 2840 9780
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a01 1 1 9 370J -1130 NJ -1130 NJ -1130 N -1130 N -1130 N -1130 N -1130 7920 -1110 10920
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 3 2720 -770 N -770 5590J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a02 1 1 9 320J -1140 NJ -1140 NJ -1140 N -1140 N -1140 N -1140 N -1140 7950 -1100 10910
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a03 1 1 9 350J -850 1520J -1160 NJ -1160 N -1160 N -1160 N -1160 N -1160 8850 -1090 10900
+preplace netloc ARM_FPGA_Control_Bus_0_sel_mux_channel 1 1 6 N -530 N -530 NJ -530 NJ -530 NJ -530 6140J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a04 1 1 9 420J -660 NJ -660 NJ -660 N -660 N -660 N -660 N -660 7990 -1080 10890
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_03_msb 1 0 10 -1400 -950 NJ -950 1450J -1310 NJ -1310 NJ -1310 NJ -1310 NJ -1310 NJ -1310 7940J -1270 11850
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a05 1 1 9 180J -1170 NJ -1170 NJ -1170 N -1170 N -1170 N -1170 N -1170 8830 -1050 10870
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a06 1 1 9 160J -1190 NJ -1190 NJ -1190 N -1190 N -1190 N -1190 N -1190 N -1190 11000
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 2 N -1160 1500
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a07 1 1 9 130J -1200 NJ -1200 NJ -1200 N -1200 N -1200 N -1200 N -1200 8820 -1010 10840
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a08 1 1 9 80J -1230 1490J -1220 NJ -1220 N -1220 N -1220 N -1220 N -1220 7940 -1030 10880
+preplace netloc controller_0_data_out_compute_90 1 2 7 NJ 2100 N 2100 N 2100 N 2100 N 2100 N 2100 9430
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a09 1 1 9 50J -1240 1500J -1230 NJ -1230 N -1230 N -1230 N -1230 N -1230 8010 -1040 10950
+preplace netloc controller_0_data_out_compute_91 1 2 7 NJ 2120 N 2120 N 2120 N 2120 N 2120 N 2120 9440
+preplace netloc controller_0_data_out_compute_92 1 2 7 NJ 2140 N 2140 N 2140 N 2140 N 2140 N 2140 9450
+preplace netloc controller_0_data_out_compute_93 1 2 7 NJ 2160 N 2160 N 2160 N 2160 N 2160 N 2160 9460
+preplace netloc controller_0_data_out_compute_94 1 2 7 NJ 2180 N 2180 N 2180 N 2180 N 2180 N 2180 9470
+preplace netloc REV2_JPEG_IP_DESIGN_0_valid 1 0 10 -1210 -930 -180J -640 NJ -640 NJ -640 N -640 N -640 N -640 N -640 N -640 11490
+preplace netloc controller_0_data_out_compute_95 1 2 7 NJ 2200 N 2200 N 2200 N 2200 N 2200 N 2200 9480
+preplace netloc controller_0_data_out_compute_96 1 2 7 NJ 2220 N 2220 N 2220 N 2220 N 2220 N 2220 9490
+preplace netloc DARC_Mux_0_fpga_bram_data_out 1 1 7 580J -630 NJ -630 NJ -630 NJ -630 NJ -630 NJ -630 6970J
+preplace netloc controller_0_data_out_compute_97 1 2 7 NJ 2240 N 2240 N 2240 N 2240 N 2240 N 2240 9500
+preplace netloc DARC_Mux_0_bram_data_in 1 7 1 7010
+preplace netloc controller_0_data_out_compute_98 1 2 7 NJ 2260 N 2260 N 2260 N 2260 N 2260 N 2260 9510
+preplace netloc controller_0_data_out_compute_99 1 2 7 NJ 2280 N 2280 N 2280 N 2280 N 2280 N 2280 9520
+preplace netloc controller_0_data_out_compute_20 1 2 7 NJ 700 N 700 N 700 N 700 N 700 N 700 8560
+preplace netloc controller_0_data_out_compute_21 1 2 7 NJ 720 N 720 N 720 N 720 N 720 N 720 8570
+preplace netloc controller_0_data_out_compute_22 1 2 7 NJ 740 N 740 N 740 N 740 N 740 N 740 8580
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a30 1 1 9 220J -360 NJ -360 NJ -360 N -360 N -360 N -360 N -360 N -360 10670
+preplace netloc controller_0_data_out_compute_23 1 2 7 NJ 760 N 760 N 760 N 760 N 760 N 760 8590
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a31 1 1 9 280J -340 NJ -340 NJ -340 N -340 N -340 N -340 N -340 N -340 10620
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_11_lsb 1 0 10 -1290 -970 -190J -510 NJ -510 NJ -510 NJ -510 NJ -510 NJ -510 NJ -510 NJ -510 11480
+preplace netloc controller_0_data_out_compute_24 1 2 7 NJ 780 N 780 N 780 N 780 N 780 N 780 8600
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a32 1 1 9 530J -200 NJ -200 NJ -200 N -200 N -200 N -200 N -200 8220 -300 10580
+preplace netloc controller_0_data_out_compute_25 1 2 7 NJ 800 N 800 N 800 N 800 N 800 N 800 8610
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a33 1 1 9 310J -310 NJ -310 NJ -310 N -310 N -310 N -310 N -310 N -310 10610
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 3 2 2720J -1040 4180J
+preplace netloc controller_0_data_out_compute_26 1 2 7 NJ 820 N 820 N 820 N 820 N 820 N 820 8620
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a34 1 1 9 470J -190 1430J 580 NJ 580 N 580 N 580 N 580 N 580 8420 -160 10510
+preplace netloc controller_0_data_out_compute_27 1 2 7 NJ 840 N 840 N 840 N 840 N 840 N 840 8640
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a35 1 1 9 480J -180 NJ -180 NJ -180 N -180 N -180 N -180 N -180 8210 -320 10690
+preplace netloc bram_0_dout 1 6 3 6200 -540 N -540 7920J
+preplace netloc controller_0_data_out_compute_28 1 2 7 NJ 860 N 860 N 860 N 860 N 860 N 860 8650
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a36 1 1 9 540J -160 NJ -160 NJ -160 N -160 N -160 N -160 N -160 8240 -330 10710
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_15_lsb 1 0 10 -1290 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 NJ 130 8410J -460 11310
+preplace netloc controller_0_data_out_compute_29 1 2 7 NJ 880 N 880 N 880 N 880 N 880 N 880 8670
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a37 1 1 9 630J -70 NJ -70 NJ -70 N -70 N -70 N -70 N -70 8350 -270 10600
+preplace netloc processing_system7_0_FIXED_IO 1 1 9 -270 -750 NJ -750 NJ -750 NJ -750 NJ -750 NJ -750 NJ -750 7970J -1150 11920J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a38 1 1 9 450J -170 NJ -170 NJ -170 N -170 N -170 N -170 N -170 8290 -180 10520
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a120 1 1 9 440J 3670 NJ 3670 NJ 3670 N 3670 N 3670 N 3670 N 3670 N 3670 11080
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a39 1 1 9 460J -150 NJ -150 NJ -150 N -150 N -150 N -150 N -150 8320 -190 10540
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a121 1 1 9 450J 3680 NJ 3680 NJ 3680 N 3680 N 3680 N 3680 N 3680 N 3680 11070
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a122 1 1 9 460J 3690 NJ 3690 NJ 3690 N 3690 N 3690 N 3690 N 3690 N 3690 11060
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a123 1 1 9 470J 3700 NJ 3700 NJ 3700 N 3700 N 3700 N 3700 N 3700 N 3700 11050
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_00_msb 1 0 10 -1480 -1070 -250J -1320 NJ -1320 NJ -1320 NJ -1320 NJ -1320 NJ -1320 NJ -1320 NJ -1320 11900
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a124 1 1 9 480J 3710 NJ 3710 NJ 3710 N 3710 N 3710 N 3710 N 3710 N 3710 11040
+preplace netloc DARC_BRAM2_0_arm_control_bram_we 1 4 3 4200 -760 N -760 6130
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_04_msb 1 0 10 -1410 2900 NJ 2900 NJ 2900 NJ 2900 NJ 2900 NJ 2900 NJ 2900 NJ 2900 8750J -1250 11840
+preplace netloc ARM_FPGA_Control_Bus_0_jpeg_compute_len_out 1 1 8 -200J -1350 NJ -1350 NJ -1350 NJ -1350 NJ -1350 NJ -1350 NJ -1350 8870
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a125 1 1 9 490J 3720 NJ 3720 NJ 3720 N 3720 N 3720 N 3720 N 3720 N 3720 11030
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a126 1 1 9 640J 3400 NJ 3400 NJ 3400 N 3400 N 3400 N 3400 N 3400 N 3400 10490
+preplace netloc controller_0_data_out_compute_30 1 2 7 NJ 900 N 900 N 900 N 900 N 900 N 900 8680
+preplace netloc controller_0_data_out_compute_100 1 2 7 NJ 2300 N 2300 N 2300 N 2300 N 2300 N 2300 9530
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a20 1 1 9 330J -430 NJ -430 NJ -430 N -430 N -430 N -430 N -430 N -430 10590
+preplace netloc ARM_FPGA_Control_Bus_0_fpga_start_write 1 1 1 -260
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a127 1 1 9 650J 3410 NJ 3410 NJ 3410 N 3410 N 3410 N 3410 N 3410 N 3410 10480
+preplace netloc controller_0_data_out_compute_31 1 2 7 NJ 920 N 920 N 920 N 920 N 920 N 920 8690
+preplace netloc controller_0_data_out_compute_101 1 2 7 NJ 2320 N 2320 N 2320 N 2320 N 2320 N 2320 9540
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a21 1 1 9 390J -400 NJ -400 NJ -400 N -400 N -400 N -400 N -400 N -400 10550
+preplace netloc controller_0_data_out_compute_32 1 2 7 NJ 940 N 940 N 940 N 940 N 940 N 940 8700
+preplace netloc controller_0_data_out_compute_102 1 2 7 NJ 2340 N 2340 N 2340 N 2340 N 2340 N 2340 9550
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a22 1 1 9 610J -250 NJ -250 NJ -250 N -250 N -250 N -250 N -250 N -250 10500
+preplace netloc controller_0_data_out_compute_33 1 2 7 NJ 960 N 960 N 960 N 960 N 960 N 960 8710
+preplace netloc controller_0_data_out_compute_103 1 2 7 NJ 2360 N 2360 N 2360 N 2360 N 2360 N 2360 9560
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a23 1 1 9 620J -240 NJ -240 NJ -240 N -240 N -240 N -240 N -240 N -240 10490
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_10_msb 1 0 10 -1360 3020 NJ 3020 NJ 3020 NJ 3020 NJ 3020 NJ 3020 NJ 3020 NJ 3020 9180J -170 11020
+preplace netloc controller_0_data_out_compute_34 1 2 7 NJ 980 N 980 N 980 N 980 N 980 N 980 8720
+preplace netloc controller_0_data_out_compute_104 1 2 7 NJ 2380 N 2380 N 2380 N 2380 N 2380 N 2380 9570
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a24 1 1 9 640J -210 NJ -210 NJ -210 N -210 N -210 N -210 N -210 N -210 10480
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 0 9 -1440 -990 -150 -1210 N -1210 2710 -1210 4220 -1210 5620 -1210 N -1210 N -1210 8790
+preplace netloc controller_0_data_out_compute_35 1 2 7 NJ 1000 N 1000 N 1000 N 1000 N 1000 N 1000 8740
+preplace netloc controller_0_data_out_compute_105 1 2 7 NJ 2400 N 2400 N 2400 N 2400 N 2400 N 2400 9580
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a25 1 1 9 210J -410 NJ -410 NJ -410 N -410 N -410 N -410 N -410 N -410 10680
+preplace netloc controller_0_bram_control_fpga_addr 1 2 5 N 200 NJ 200 NJ 200 NJ 200 6180J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_05_msb 1 0 10 -1400 2920 NJ 2920 NJ 2920 NJ 2920 NJ 2920 NJ 2920 NJ 2920 NJ 2920 8770J -1230 11830
+preplace netloc controller_0_data_out_compute_36 1 2 7 NJ 1020 N 1020 N 1020 N 1020 N 1020 N 1020 8760
+preplace netloc controller_0_data_out_compute_106 1 2 7 NJ 2420 N 2420 N 2420 N 2420 N 2420 N 2420 9590
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a26 1 1 9 250J -390 NJ -390 NJ -390 N -390 N -390 N -390 N -390 N -390 10650
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_12_msb 1 0 10 -1340 3060 NJ 3060 NJ 3060 NJ 3060 NJ 3060 NJ 3060 NJ 3060 NJ 3060 9080J -500 11680
+preplace netloc controller_0_data_out_compute_37 1 2 7 NJ 1040 N 1040 N 1040 N 1040 N 1040 N 1040 8780
+preplace netloc controller_0_data_out_compute_107 1 2 7 NJ 2440 N 2440 N 2440 N 2440 N 2440 N 2440 9600
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a27 1 1 9 260J -380 NJ -380 NJ -380 N -380 N -380 N -380 N -380 N -380 10640
+preplace netloc controller_0_data_out_compute_38 1 2 7 NJ 1060 N 1060 N 1060 N 1060 N 1060 N 1060 8800
+preplace netloc controller_0_data_out_compute_108 1 2 7 NJ 2460 N 2460 N 2460 N 2460 N 2460 N 2460 9610
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a28 1 1 9 270J -370 NJ -370 NJ -370 N -370 N -370 N -370 N -370 N -370 10630
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_13_msb 1 0 10 -1330 3080 NJ 3080 NJ 3080 NJ 3080 NJ 3080 NJ 3080 NJ 3080 NJ 3080 9110J -470 11670
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a110 1 1 9 380J 3610 NJ 3610 NJ 3610 N 3610 N 3610 N 3610 N 3610 N 3610 11140
+preplace netloc controller_0_data_out_compute_39 1 2 7 NJ 1080 N 1080 N 1080 N 1080 N 1080 N 1080 8830
+preplace netloc controller_0_data_out_compute_109 1 2 7 NJ 2480 N 2480 N 2480 N 2480 N 2480 N 2480 9620
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a29 1 1 9 110J -440 NJ -440 NJ -440 N -440 N -440 N -440 N -440 N -440 10720
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_06_msb 1 0 10 -1390 2940 NJ 2940 NJ 2940 NJ 2940 NJ 2940 NJ 2940 NJ 2940 NJ 2940 8810J -1210 11820
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a111 1 1 9 390J 3620 NJ 3620 NJ 3620 N 3620 N 3620 N 3620 N 3620 N 3620 11130
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a112 1 1 9 400J 3630 NJ 3630 NJ 3630 N 3630 N 3630 N 3630 N 3630 N 3630 11120
+preplace netloc DARC_Mux_0_bram_addr 1 7 1 7020
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a113 1 1 9 410J 3640 NJ 3640 NJ 3640 N 3640 N 3640 N 3640 N 3640 N 3640 11110
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a90 1 1 9 190J 3510 NJ 3510 NJ 3510 N 3510 N 3510 N 3510 N 3510 N 3510 11380
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_07_msb 1 0 10 -1380 2960 NJ 2960 NJ 2960 NJ 2960 NJ 2960 NJ 2960 NJ 2960 NJ 2960 8840J -1200 11810
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a114 1 1 9 420J 3650 NJ 3650 NJ 3650 N 3650 N 3650 N 3650 N 3650 N 3650 11100
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a91 1 1 9 200J 3520 NJ 3520 NJ 3520 N 3520 N 3520 N 3520 N 3520 N 3520 11370
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a115 1 1 9 540J 3360 NJ 3360 NJ 3360 N 3360 N 3360 N 3360 N 3360 N 3360 10590
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a92 1 1 9 210J 3530 NJ 3530 NJ 3530 N 3530 N 3530 N 3530 N 3530 N 3530 11360
+preplace netloc controller_0_bram_control_fpga_we 1 2 5 N 180 N 180 N 180 N 180 6170
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a116 1 1 9 550J 3370 NJ 3370 NJ 3370 N 3370 N 3370 N 3370 N 3370 N 3370 10580
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a93 1 1 9 220J 3540 NJ 3540 NJ 3540 N 3540 N 3540 N 3540 N 3540 N 3540 11350
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a117 1 1 9 560J 3380 NJ 3380 NJ 3380 N 3380 N 3380 N 3380 N 3380 N 3380 10570
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a94 1 1 9 230J 3550 NJ 3550 NJ 3550 N 3550 N 3550 N 3550 N 3550 N 3550 11340
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a118 1 1 9 570J 3390 NJ 3390 NJ 3390 N 3390 N 3390 N 3390 N 3390 N 3390 10560
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a95 1 1 9 240J 3560 NJ 3560 NJ 3560 N 3560 N 3560 N 3560 N 3560 N 3560 11330
+preplace netloc controller_0_data_out_compute_40 1 2 7 NJ 1100 N 1100 N 1100 N 1100 N 1100 N 1100 8850
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_04_lsb 1 0 10 -1250 -960 NJ -960 1440J 2580 NJ 2580 NJ 2580 NJ 2580 NJ 2580 NJ 2580 8660J -1260 11750
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a119 1 1 9 430J 3660 NJ 3660 NJ 3660 N 3660 N 3660 N 3660 N 3660 N 3660 11090
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a96 1 1 9 250J 3570 NJ 3570 NJ 3570 N 3570 N 3570 N 3570 N 3570 N 3570 11320
+preplace netloc controller_0_data_out_compute_41 1 2 7 NJ 1120 N 1120 N 1120 N 1120 N 1120 N 1120 8860
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a97 1 1 9 500J 3320 NJ 3320 NJ 3320 N 3320 N 3320 N 3320 N 3320 N 3320 10630
+preplace netloc controller_0_data_out_compute_42 1 2 7 NJ 1140 N 1140 N 1140 N 1140 N 1140 N 1140 8880
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a50 1 1 9 570J 40 NJ 40 NJ 40 N 40 N 40 N 40 N 40 8390 -290 10750
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a98 1 1 9 510J 3330 NJ 3330 NJ 3330 N 3330 N 3330 N 3330 N 3330 N 3330 10620
+preplace netloc controller_0_data_out_compute_43 1 2 7 NJ 1160 N 1160 N 1160 N 1160 N 1160 N 1160 8890
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a51 1 1 9 560J 30 1510J -280 NJ -280 N -280 N -280 N -280 N -280 N -280 10740
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_08_msb 1 0 10 -1210 30 -90J -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 NJ -550 11700
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a99 1 1 9 580J 3170 NJ 3170 NJ 3170 N 3170 N 3170 N 3170 N 3170 N 3170 10550
+preplace netloc controller_0_data_out_compute_44 1 2 7 NJ 1180 N 1180 N 1180 N 1180 N 1180 N 1180 8910
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a52 1 1 9 -40J -450 NJ -450 NJ -450 N -450 N -450 N -450 N -450 N -450 10830
+preplace netloc controller_0_fpga_done_write 1 0 3 -1420 90 -80J -500 1420J
+preplace netloc controller_0_data_out_compute_45 1 2 7 NJ 1200 N 1200 N 1200 N 1200 N 1200 N 1200 8930
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a53 1 1 9 430J 10 NJ 10 NJ 10 N 10 N 10 N 10 N 10 8260 -630 11010
+preplace netloc controller_0_data_out_compute_46 1 2 7 NJ 1220 N 1220 N 1220 N 1220 N 1220 N 1220 8940
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a54 1 1 9 440J 20 NJ 20 NJ 20 N 20 N 20 N 20 N 20 8250 -650 11240
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a100 1 1 9 590J 3180 NJ 3180 NJ 3180 N 3180 N 3180 N 3180 N 3180 N 3180 10540
+preplace netloc controller_0_data_out_compute_47 1 2 7 NJ 1240 N 1240 N 1240 N 1240 N 1240 N 1240 8950
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a55 1 1 9 500J 70 NJ 70 NJ 70 N 70 N 70 N 70 N 70 8310 -660 11250
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a101 1 1 9 600J 3190 NJ 3190 NJ 3190 N 3190 N 3190 N 3190 N 3190 N 3190 10530
+preplace netloc controller_0_data_out_compute_48 1 2 7 NJ 1260 N 1260 N 1260 N 1260 N 1260 N 1260 8960
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a56 1 1 9 510J 80 NJ 80 NJ 80 N 80 N 80 N 80 N 80 8300 -670 11260
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a102 1 1 9 610J 3200 NJ 3200 NJ 3200 N 3200 N 3200 N 3200 N 3200 N 3200 10520
+preplace netloc controller_0_data_out_compute_49 1 2 7 NJ 1280 N 1280 N 1280 N 1280 N 1280 N 1280 8970
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a57 1 1 9 520J 90 NJ 90 NJ 90 N 90 N 90 N 90 N 90 8280 -720 11280
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a103 1 1 9 620J 3210 NJ 3210 NJ 3210 N 3210 N 3210 N 3210 N 3210 N 3210 10510
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a80 1 1 9 -30J -290 NJ -290 NJ -290 N -290 N -290 N -290 N -290 8120 -760 11570
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a58 1 1 9 200J -60 1450J 30 NJ 30 N 30 N 30 N 30 N 30 8230 -730 11300
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a104 1 1 9 630J 3220 NJ 3220 NJ 3220 N 3220 N 3220 N 3220 N 3220 N 3220 10500
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a81 1 1 9 -50J -320 NJ -320 NJ -320 N -320 N -320 N -320 N -320 8030 -1070 11710
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a59 1 1 9 120J -110 NJ -110 NJ -110 N -110 N -110 N -110 N -110 8070 -1000 11660
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_06_lsb 1 0 10 -1240 -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 NJ -20 8060J -1220 11730
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a105 1 1 9 520J 3340 NJ 3340 NJ 3340 N 3340 N 3340 N 3340 N 3340 N 3340 10610
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a82 1 1 9 -60J -330 NJ -330 NJ -330 N -330 N -330 N -330 N -330 8100 -750 11620
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a106 1 1 9 530J 3350 NJ 3350 NJ 3350 N 3350 N 3350 N 3350 N 3350 N 3350 10600
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a83 1 1 9 -70J -740 NJ -740 NJ -740 N -740 N -740 N -740 N -740 N -740 11610
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a107 1 1 9 350J 3580 NJ 3580 NJ 3580 N 3580 N 3580 N 3580 N 3580 N 3580 11170
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a84 1 1 9 130J 3450 NJ 3450 NJ 3450 N 3450 N 3450 N 3450 N 3450 N 3450 11440
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a108 1 1 9 360J 3590 NJ 3590 NJ 3590 N 3590 N 3590 N 3590 N 3590 N 3590 11160
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a85 1 1 9 140J 3460 NJ 3460 NJ 3460 N 3460 N 3460 N 3460 N 3460 N 3460 11430
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a109 1 1 9 370J 3600 NJ 3600 NJ 3600 N 3600 N 3600 N 3600 N 3600 N 3600 11150
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a86 1 1 9 150J 3470 NJ 3470 NJ 3470 N 3470 N 3470 N 3470 N 3470 N 3470 11420
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a87 1 1 9 160J 3480 NJ 3480 NJ 3480 N 3480 N 3480 N 3480 N 3480 N 3480 11410
+preplace netloc controller_0_data_out_compute_50 1 2 7 NJ 1300 N 1300 N 1300 N 1300 N 1300 N 1300 8980
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a40 1 1 9 70J -350 NJ -350 NJ -350 N -350 N -350 N -350 N -350 N -350 10730
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_13_lsb 1 0 10 -1260 -940 -170J -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 NJ -590 11630
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a88 1 1 9 170J 3490 NJ 3490 NJ 3490 N 3490 N 3490 N 3490 N 3490 N 3490 11400
+preplace netloc controller_0_data_out_compute_51 1 2 7 NJ 1320 N 1320 N 1320 N 1320 N 1320 N 1320 8990
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a41 1 1 9 30J -610 NJ -610 NJ -610 N -610 N -610 N -610 N -610 N -610 10960
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a89 1 1 9 180J 3500 NJ 3500 NJ 3500 N 3500 N 3500 N 3500 N 3500 N 3500 11390
+preplace netloc controller_0_data_out_compute_52 1 2 7 NJ 1340 N 1340 N 1340 N 1340 N 1340 N 1340 9000
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a42 1 1 9 550J -80 NJ -80 NJ -80 N -80 N -80 N -80 N -80 8360 -200 10570
+preplace netloc DARC_BRAM2_0_arm_control_bram_addr 1 4 3 4190 -730 N -730 6150
+preplace netloc controller_0_data_out_compute_53 1 2 7 NJ 1360 N 1360 N 1360 N 1360 N 1360 N 1360 9010
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a43 1 1 9 410J -120 NJ -120 NJ -120 N -120 N -120 N -120 N -120 8370 -150 10530
+preplace netloc controller_0_data_out_compute_54 1 2 7 NJ 1380 N 1380 N 1380 N 1380 N 1380 N 1380 9020
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a44 1 1 9 190J -220 NJ -220 NJ -220 N -220 N -220 N -220 N -220 N -220 10660
+preplace netloc controller_0_data_out_compute_55 1 2 7 NJ 1400 N 1400 N 1400 N 1400 N 1400 N 1400 9030
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a45 1 1 9 590J 0 NJ 0 NJ 0 N 0 N 0 N 0 N 0 8380 -230 10700
+preplace netloc controller_0_data_out_compute_56 1 2 7 NJ 1420 N 1420 N 1420 N 1420 N 1420 N 1420 9040
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a46 1 1 9 -20J -620 NJ -620 NJ -620 N -620 N -620 N -620 N -620 N -620 10990
+preplace netloc controller_0_data_out_compute_57 1 2 7 NJ 1440 N 1440 N 1440 N 1440 N 1440 N 1440 9060
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a47 1 1 9 490J -40 NJ -40 NJ -40 N -40 N -40 N -40 N -40 8270 -490 10810
+preplace netloc DARC_Mux_0_arm_bram_data_out 1 3 5 2730 -190 N -190 NJ -190 NJ -190 6980J
+preplace netloc controller_0_data_out_compute_58 1 2 7 NJ 1460 N 1460 N 1460 N 1460 N 1460 N 1460 9070
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a48 1 1 9 650J 120 NJ 120 NJ 120 N 120 N 120 N 120 N 120 8400 -480 10800
+preplace netloc controller_0_data_out_compute_59 1 2 7 NJ 1480 N 1480 N 1480 N 1480 N 1480 N 1480 9090
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a49 1 1 9 600J 50 NJ 50 NJ 50 N 50 N 50 N 50 N 50 8340 -540 10970
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_05_lsb 1 0 10 -1230 -920 NJ -920 1510J -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 NJ -1240 11740
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_03_lsb 1 0 10 -1300 -1000 -220J -1360 NJ -1360 NJ -1360 NJ -1360 NJ -1360 NJ -1360 NJ -1360 NJ -1360 11800
+preplace netloc controller_0_data_mat_in 1 0 3 -1220 -980 NJ -980 1410J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a70 1 1 9 300J 3270 NJ 3270 NJ 3270 N 3270 N 3270 N 3270 N 3270 N 3270 11220
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a71 1 1 9 310J 3280 NJ 3280 NJ 3280 N 3280 N 3280 N 3280 N 3280 N 3280 11210
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_02_msb 1 0 10 -1460 -1030 -190J -1280 NJ -1280 NJ -1280 NJ -1280 NJ -1280 NJ -1280 NJ -1280 NJ -1280 11860
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a72 1 1 9 320J 3290 NJ 3290 NJ 3290 N 3290 N 3290 N 3290 N 3290 N 3290 11200
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_07_lsb 1 0 10 -1230 0 -130J -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 NJ -600 11530
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a73 1 1 9 330J 3300 NJ 3300 NJ 3300 N 3300 N 3300 N 3300 N 3300 N 3300 11190
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a74 1 1 9 340J 3310 NJ 3310 NJ 3310 N 3310 N 3310 N 3310 N 3310 N 3310 11180
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a75 1 1 9 100J 3420 NJ 3420 NJ 3420 N 3420 N 3420 N 3420 N 3420 N 3420 11470
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_08_lsb 1 0 10 -1220 20 -110J -560 NJ -560 NJ -560 NJ -560 NJ -560 NJ -560 NJ -560 NJ -560 11510
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a76 1 1 9 110J 3430 NJ 3430 NJ 3430 N 3430 N 3430 N 3430 N 3430 N 3430 11460
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a77 1 1 9 120J 3440 NJ 3440 NJ 3440 N 3440 N 3440 N 3440 N 3440 N 3440 11450
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a78 1 1 9 -10J -300 NJ -300 NJ -300 N -300 N -300 N -300 N -300 8080 -780 11590
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a79 1 1 9 20J -230 NJ -230 NJ -230 N -230 N -230 N -230 N -230 8130 -770 11580
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_11_msb 1 0 10 -1350 3040 NJ 3040 NJ 3040 NJ 3040 NJ 3040 NJ 3040 NJ 3040 NJ 3040 9150J -260 11270
+preplace netloc ARM_FPGA_Control_Bus_0_fpga_start_read 1 1 1 -240
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_len_out 1 0 10 -1450 140 -120 -1220 1480J 140 NJ 140 NJ 140 NJ 140 NJ 140 NJ 140 8190J -1130 11720
+preplace netloc controller_0_bram_control_fpga_data_in 1 2 5 N 220 NJ 220 NJ 220 NJ 220 6190J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a60 1 1 9 230J -30 NJ -30 NJ -30 N -30 N -30 N -30 N -30 8140 -990 11650
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a61 1 1 9 90J -100 NJ -100 NJ -100 N -100 N -100 N -100 N -100 8150 -810 11550
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_00_lsb 1 0 10 -1310 -1050 -240J -1330 NJ -1330 NJ -1330 NJ -1330 NJ -1330 NJ -1330 NJ -1330 NJ -1330 11790
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a62 1 1 9 100J -90 NJ -90 NJ -90 N -90 N -90 N -90 N -90 8200 -680 11290
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_14_msb 1 0 10 -1320 3100 NJ 3100 NJ 3100 NJ 3100 NJ 3100 NJ 3100 NJ 3100 NJ 3100 8900J -1170 11880
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a63 1 1 9 150J -50 NJ -50 NJ -50 N -50 N -50 N -50 N -50 8180 -800 11560
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a64 1 1 9 0J -280 1470J -60 NJ -60 N -60 N -60 N -60 N -60 8160 -850 11640
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_09_msb 1 0 10 -1370 3000 NJ 3000 NJ 3000 NJ 3000 NJ 3000 NJ 3000 NJ 3000 NJ 3000 9050J -530 11690
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a65 1 1 9 10J -270 NJ -270 NJ -270 N -270 N -270 N -270 N -270 8090 -790 11600
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a66 1 1 9 260J 3230 NJ 3230 NJ 3230 N 3230 N 3230 N 3230 N 3230 N 3230 11260
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a67 1 1 9 270J 3240 NJ 3240 NJ 3240 N 3240 N 3240 N 3240 N 3240 N 3240 11250
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a68 1 1 9 280J 3250 NJ 3250 NJ 3250 N 3250 N 3250 N 3250 N 3250 N 3250 11240
+preplace netloc ps7_0_axi_periph_M02_AXI 1 5 4 5600J 190 N 190 N 190 N
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a69 1 1 9 290J 3260 NJ 3260 NJ 3260 N 3260 N 3260 N 3260 N 3260 N 3260 11230
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_09_lsb 1 0 10 -1280 40 -100J -570 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 NJ -570 11520
+preplace netloc ps7_0_axi_periph_M01_AXI 1 0 6 -1240 -1010 -180J -1270 NJ -1270 NJ -1270 NJ -1270 5600J
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_02_lsb 1 0 10 -1320 -1040 -210J -1290 NJ -1290 NJ -1290 NJ -1290 NJ -1290 NJ -1290 NJ -1290 NJ -1290 11760
+preplace netloc DARC_BRAM2_0_arm_control_bram_data_in 1 4 3 4180 -720 N -720 6160
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_15_msb 1 0 10 -1310 3120 NJ 3120 NJ 3120 NJ 3120 NJ 3120 NJ 3120 NJ 3120 NJ 3120 8920J -1160 11870
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_01_lsb 1 0 10 -1410 -1080 NJ -1080 1460J 2520 NJ 2520 NJ 2520 NJ 2520 NJ 2520 NJ 2520 8630J -1310 11780
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 -1500 150 -140 -1180 1530 -1180 2700 -1180 4210 -1180 5610 -1180 6130 -1180 7000 -1180 7930
+preplace netloc controller_0_data_out_compute_60 1 2 7 NJ 1500 N 1500 N 1500 N 1500 N 1500 N 1500 9100
+preplace netloc controller_0_data_out_compute_61 1 2 7 NJ 1520 N 1520 N 1520 N 1520 N 1520 N 1520 9120
+preplace netloc controller_0_data_out_compute_62 1 2 7 NJ 1540 N 1540 N 1540 N 1540 N 1540 N 1540 9130
+preplace netloc controller_0_data_out_compute_63 1 2 7 NJ 1560 N 1560 N 1560 N 1560 N 1560 N 1560 9140
+preplace netloc controller_0_data_out_compute_64 1 2 7 NJ 1580 N 1580 N 1580 N 1580 N 1580 N 1580 9160
+preplace netloc controller_0_data_out_compute_65 1 2 7 NJ 1600 N 1600 N 1600 N 1600 N 1600 N 1600 9170
+preplace netloc controller_0_data_out_compute_66 1 2 7 NJ 1620 N 1620 N 1620 N 1620 N 1620 N 1620 9190
+preplace netloc controller_0_data_out_compute_67 1 2 7 NJ 1640 N 1640 N 1640 N 1640 N 1640 N 1640 9200
+preplace netloc controller_0_data_out_compute_68 1 2 7 NJ 1660 N 1660 N 1660 N 1660 N 1660 N 1660 9210
+preplace netloc controller_0_data_out_compute_10 1 2 7 NJ 500 N 500 N 500 N 500 N 500 N 500 8470
+preplace netloc controller_0_data_out_compute_69 1 2 7 NJ 1680 N 1680 N 1680 N 1680 N 1680 N 1680 9220
+preplace netloc controller_0_data_out_compute_11 1 2 7 NJ 520 N 520 N 520 N 520 N 520 N 520 8480
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 4 N -1260 NJ -1260 NJ -1260 4230J
+preplace netloc controller_0_data_out_compute_12 1 2 7 NJ 540 N 540 N 540 N 540 N 540 N 540 8490
+preplace netloc controller_0_data_out_compute_13 1 2 7 NJ 560 N 560 N 560 N 560 N 560 N 560 8500
+preplace netloc controller_0_data_out_compute_14 1 2 7 1400J 490 N 490 N 490 N 490 N 490 N 490 N
+preplace netloc controller_0_data_out_compute_15 1 2 7 NJ 600 N 600 N 600 N 600 N 600 N 600 8510
+preplace netloc ps7_0_axi_periph_M03_AXI 1 5 1 N
+preplace netloc processing_system7_0_DDR 1 1 9 -260 -680 NJ -680 NJ -680 NJ -680 NJ -680 NJ -680 NJ -680 7980J -1140 11910J
+preplace netloc controller_0_data_out_compute_16 1 2 7 NJ 620 N 620 N 620 N 620 N 620 N 620 8520
+preplace netloc controller_0_data_out_compute_17 1 2 7 NJ 640 N 640 N 640 N 640 N 640 N 640 8530
+preplace netloc controller_0_data_out_compute_70 1 2 7 NJ 1700 N 1700 N 1700 N 1700 N 1700 N 1700 9230
+preplace netloc controller_0_data_out_compute_18 1 2 7 NJ 660 N 660 N 660 N 660 N 660 N 660 8540
+preplace netloc controller_0_data_out_compute_71 1 2 7 NJ 1720 N 1720 N 1720 N 1720 N 1720 N 1720 9240
+preplace netloc controller_0_data_out_compute_19 1 2 7 NJ 680 N 680 N 680 N 680 N 680 N 680 8550
+preplace netloc ARM_FPGA_Control_Bus_0_bram_addr_offset 1 1 1 -270
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_14_lsb 1 0 10 -1300 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 NJ 110 8170J -1180 11770
+preplace netloc controller_0_data_out_compute_72 1 2 7 NJ 1740 N 1740 N 1740 N 1740 N 1740 N 1740 9250
+preplace netloc controller_0_data_out_compute_73 1 2 7 NJ 1760 N 1760 N 1760 N 1760 N 1760 N 1760 9260
+preplace netloc controller_0_data_out_compute_110 1 2 7 NJ 2500 N 2500 N 2500 N 2500 N 2500 N 2500 9630
+preplace netloc DARC_Mux_0_bram_we 1 7 1 6990
+preplace netloc controller_0_data_out_compute_74 1 2 7 NJ 1780 N 1780 N 1780 N 1780 N 1780 N 1780 9270
+preplace netloc controller_0_data_out_compute_111 1 2 7 1400J 2430 N 2430 N 2430 N 2430 N 2430 N 2430 N
+preplace netloc controller_0_data_out_compute_75 1 2 7 NJ 1800 N 1800 N 1800 N 1800 N 1800 N 1800 9280
+preplace netloc controller_0_data_out_compute_112 1 2 7 NJ 2540 N 2540 N 2540 N 2540 N 2540 N 2540 9640
+preplace netloc controller_0_data_out_compute_76 1 2 7 NJ 1820 N 1820 N 1820 N 1820 N 1820 N 1820 9290
+preplace netloc controller_0_data_out_compute_113 1 2 7 NJ 2560 N 2560 N 2560 N 2560 N 2560 N 2560 9650
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_10_lsb 1 0 10 -1270 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 8330J -580 11540
+preplace netloc controller_0_fpga_done_read 1 0 3 -1430 100 NJ 100 1400J
+preplace netloc controller_0_data_out_compute_77 1 2 7 NJ 1840 N 1840 N 1840 N 1840 N 1840 N 1840 9300
+preplace netloc controller_0_data_out_compute_114 1 2 7 1410J 2490 N 2490 N 2490 N 2490 N 2490 N 2490 N
+preplace netloc controller_0_data_out_compute_00 1 2 7 NJ 300 N 300 N 300 N 300 N 300 N 300 7960
+preplace netloc controller_0_data_out_compute_78 1 2 7 NJ 1860 N 1860 N 1860 N 1860 N 1860 N 1860 9310
+preplace netloc controller_0_data_out_compute_115 1 2 7 NJ 2600 N 2600 N 2600 N 2600 N 2600 N 2600 9660
+preplace netloc controller_0_data_out_compute_01 1 2 7 NJ 320 N 320 N 320 N 320 N 320 N 320 7990
+preplace netloc controller_0_data_out_compute_79 1 2 7 NJ 1880 N 1880 N 1880 N 1880 N 1880 N 1880 9320
+preplace netloc controller_0_data_out_compute_116 1 2 7 NJ 2620 N 2620 N 2620 N 2620 N 2620 N 2620 9670
+preplace netloc controller_0_data_out_compute_02 1 2 7 NJ 340 N 340 N 340 N 340 N 340 N 340 8040
+preplace netloc controller_0_data_out_compute_117 1 2 7 NJ 2640 N 2640 N 2640 N 2640 N 2640 N 2640 9680
+preplace netloc controller_0_data_out_compute_03 1 2 7 NJ 360 N 360 N 360 N 360 N 360 N 360 8110
+preplace netloc controller_0_data_out_compute_118 1 2 7 NJ 2660 N 2660 N 2660 N 2660 N 2660 N 2660 9690
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a10 1 1 9 40J -1250 NJ -1250 NJ -1250 N -1250 N -1250 N -1250 N -1250 8000 -1060 10980
+preplace netloc controller_0_data_out_compute_04 1 2 7 NJ 380 N 380 N 380 N 380 N 380 N 380 8200
+preplace netloc controller_0_data_out_compute_119 1 2 7 NJ 2680 N 2680 N 2680 N 2680 N 2680 N 2680 9700
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a11 1 1 9 240J -670 NJ -670 NJ -670 N -670 N -670 N -670 N -670 8000 -870 10820
+preplace netloc controller_0_data_out_compute_05 1 2 7 NJ 400 N 400 N 400 N 400 N 400 N 400 8280
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a12 1 1 9 290J -650 NJ -650 NJ -650 N -650 N -650 N -650 N -650 8010 -890 10860
+preplace netloc controller_0_data_out_compute_06 1 2 7 NJ 420 N 420 N 420 N 420 N 420 N 420 8430
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a13 1 1 9 170J -700 NJ -700 NJ -700 N -700 N -700 N -700 N -700 8020 -820 10790
+preplace netloc controller_0_data_out_compute_07 1 2 7 NJ 440 N 440 N 440 N 440 N 440 N 440 8440
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a14 1 1 9 400J -460 NJ -460 NJ -460 N -460 N -460 N -460 N -460 8040 -910 10940
+preplace netloc controller_0_data_out_compute_08 1 2 7 NJ 460 N 460 N 460 N 460 N 460 N 460 8450
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a15 1 1 9 360J -480 NJ -480 NJ -480 N -480 N -480 N -480 N -480 8050 -840 10850
+preplace netloc controller_0_data_out_compute_09 1 2 7 NJ 480 N 480 N 480 N 480 N 480 N 480 8460
+preplace netloc controller_0_data_out_compute_80 1 2 7 NJ 1900 N 1900 N 1900 N 1900 N 1900 N 1900 9330
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a16 1 1 9 300J -490 NJ -490 NJ -490 N -490 N -490 N -490 N -490 8110 -700 10770
+preplace netloc controller_0_data_out_compute_81 1 2 7 NJ 1920 N 1920 N 1920 N 1920 N 1920 N 1920 9340
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a17 1 1 9 140J -690 NJ -690 NJ -690 N -690 N -690 N -690 N -690 N -690 10760
+preplace netloc controller_0_data_out_compute_82 1 2 7 NJ 1940 N 1940 N 1940 N 1940 N 1940 N 1940 9350
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a18 1 1 9 60J -710 NJ -710 NJ -710 N -710 N -710 N -710 N -710 N -710 10780
+preplace netloc controller_0_data_out_compute_83 1 2 7 NJ 1960 N 1960 N 1960 N 1960 N 1960 N 1960 9360
+preplace netloc controller_0_data_out_compute_120 1 2 7 NJ 2700 N 2700 N 2700 N 2700 N 2700 N 2700 9710
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_out_a19 1 1 9 380J -420 NJ -420 NJ -420 N -420 N -420 N -420 N -420 N -420 10560
+preplace netloc controller_0_data_out_compute_84 1 2 7 NJ 1980 N 1980 N 1980 N 1980 N 1980 N 1980 9370
+preplace netloc controller_0_data_out_compute_121 1 2 7 NJ 2720 N 2720 N 2720 N 2720 N 2720 N 2720 9720
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_12_lsb 1 0 10 -1490 -1100 -160J -520 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 NJ -520 11500
+preplace netloc controller_0_data_out_compute_85 1 2 7 NJ 2000 N 2000 N 2000 N 2000 N 2000 N 2000 9380
+preplace netloc controller_0_data_out_compute_122 1 2 7 NJ 2740 N 2740 N 2740 N 2740 N 2740 N 2740 9730
+preplace netloc ARM_FPGA_Control_Bus_0_compute_wakeup 1 1 8 NJ -470 NJ -470 N -470 N -470 N -470 N -470 N -470 8730
+preplace netloc controller_0_data_out_compute_86 1 2 7 NJ 2020 N 2020 N 2020 N 2020 N 2020 N 2020 9390
+preplace netloc controller_0_data_out_compute_123 1 2 7 NJ 2760 N 2760 N 2760 N 2760 N 2760 N 2760 9740
+preplace netloc controller_0_data_out_compute_87 1 2 7 NJ 2040 N 2040 N 2040 N 2040 N 2040 N 2040 9400
+preplace netloc controller_0_data_out_compute_124 1 2 7 NJ 2780 N 2780 N 2780 N 2780 N 2780 N 2780 9750
+preplace netloc REV2_JPEG_IP_DESIGN_0_jpeg_compute_01_msb 1 0 10 -1470 -1060 -230J -1300 NJ -1300 NJ -1300 NJ -1300 NJ -1300 NJ -1300 NJ -1300 NJ -1300 11890
+preplace netloc controller_0_data_out_compute_88 1 2 7 NJ 2060 N 2060 N 2060 N 2060 N 2060 N 2060 9410
+preplace netloc controller_0_data_out_compute_125 1 2 7 NJ 2800 N 2800 N 2800 N 2800 N 2800 N 2800 9760
+levelinfo -pg 1 -1520 -470 1180 2540 3960 5460 6020 6790 7820 10310 11950 -top -1370 -bot 4530
+",
+}
+{
+   da_axi4_cnt: "6",
+   da_ps7_cnt: "1",
+}

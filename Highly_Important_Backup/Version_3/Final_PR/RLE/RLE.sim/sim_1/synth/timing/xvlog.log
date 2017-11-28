@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_0
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub_1
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_decr32s
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rle_tb

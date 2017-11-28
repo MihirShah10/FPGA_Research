@@ -1,0 +1,593 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 03:04:13 2017
+# Process ID: 9244
+# Current directory: C:/JPEG_Thesis_2/Final_PR/DCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14552 C:\JPEG_Thesis_2\Final_PR\DCT\DCT.xpr
+# Log file: C:/JPEG_Thesis_2/Final_PR/DCT/vivado.log
+# Journal file: C:/JPEG_Thesis_2/Final_PR/DCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/Final_PR/DCT/DCT.xpr
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Output Repository Path: Could not find the directory 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis/ip_repo/DARC_DCT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 854.094 ; gain = 177.500
+file mkdir C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new
+close [ open C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v w ]
+add_files C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v
+update_compile_order -fileset sources_1
+remove_files  C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v" into library work [C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v:1]
+[Tue Nov 21 03:14:23 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/DCT/DCT.runs/synth_1/runme.log
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 659 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 12 instances
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1215.719 ; gain = 348.180
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1330.441 ; gain = 110.828
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1683.570 ; gain = 353.129
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'dct_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj dct_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM64X1D_UNIQ_BASE_
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD1
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD10
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD11
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD2
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD3
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD4
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD5
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD6
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD7
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD8
+INFO: [VRFC 10-311] analyzing module RAM64X1D_HD9
+INFO: [VRFC 10-311] analyzing module dct
+INFO: [VRFC 10-311] analyzing module jpeg_MEM_dct_output
+INFO: [VRFC 10-311] analyzing module jpeg_MEM_dct_output_subD
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_22
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_22_21
+INFO: [VRFC 10-311] analyzing module jpeg_add60s_59
+INFO: [VRFC 10-311] analyzing module jpeg_add69_69s
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s_0
+INFO: [VRFC 10-311] analyzing module jpeg_mul12u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u_1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 4ded64565f4647c6b75854913202ab7a --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dct_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dct_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/dct0".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/dct0".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT4
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.jpeg_add20s_18
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module xil_defaultlib.jpeg_add20s_18_18
+Compiling module xil_defaultlib.jpeg_add24s_22
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.jpeg_add24s_22_21
+Compiling module xil_defaultlib.jpeg_add60s_59
+Compiling module xil_defaultlib.jpeg_add69_69s
+Compiling module xil_defaultlib.jpeg_mul12s
+Compiling module xil_defaultlib.jpeg_mul12s_0
+Compiling module xil_defaultlib.jpeg_mul12u
+Compiling module xil_defaultlib.jpeg_mul8u
+Compiling module xil_defaultlib.jpeg_mul8u_1
+Compiling module simprims_ver.RAMD64E(RAM_ADDRESS_MASK=2'b11,R...
+Compiling module xil_defaultlib.RAM64X1D_UNIQ_BASE_
+Compiling module xil_defaultlib.RAM64X1D_HD1
+Compiling module xil_defaultlib.RAM64X1D_HD2
+Compiling module xil_defaultlib.RAM64X1D_HD3
+Compiling module xil_defaultlib.RAM64X1D_HD4
+Compiling module xil_defaultlib.RAM64X1D_HD5
+Compiling module xil_defaultlib.RAM64X1D_HD6
+Compiling module xil_defaultlib.RAM64X1D_HD7
+Compiling module xil_defaultlib.RAM64X1D_HD8
+Compiling module xil_defaultlib.RAM64X1D_HD9
+Compiling module xil_defaultlib.RAM64X1D_HD10
+Compiling module xil_defaultlib.RAM64X1D_HD11
+Compiling module xil_defaultlib.jpeg_MEM_dct_output_subD
+Compiling module xil_defaultlib.jpeg_MEM_dct_output
+Compiling module xil_defaultlib.jpeg_dat
+Compiling module xil_defaultlib.jpeg_fsm
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUFT
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.dct
+Compiling module xil_defaultlib.dct_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dct_tb_time_synth
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 21 03:17:37 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 03:17:37 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:51 . Memory (MB): peak = 1683.570 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '52' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dct_tb_time_synth -key {Post-Synthesis:sim_1:Timing:dct_tb} -tclbatch {dct_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source dct_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dct_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:23 ; elapsed = 00:01:46 . Memory (MB): peak = 2003.852 ; gain = 1136.313
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:34 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:37 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:41 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:04 ; elapsed = 00:00:55 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/JPEG_Thesis_2/Final_PR/DCT/DCT.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v" into library work [C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v:1]
+[Tue Nov 21 03:32:11 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/DCT/DCT.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 714 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'dct_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj dct_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_0
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_21
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61_2
+INFO: [VRFC 10-311] analyzing module jpeg_add71_71s
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s_3
+INFO: [VRFC 10-311] analyzing module jpeg_mul12u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u_4
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 4ded64565f4647c6b75854913202ab7a --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dct_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dct_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/jpeg0".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/jpeg0".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.CARRY4
+Compiling module xil_defaultlib.jpeg_add20s_18
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT5
+Compiling module xil_defaultlib.jpeg_add20s_18_18
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.jpeg_add20s_18_18_1
+Compiling module xil_defaultlib.jpeg_add20s_18_0
+Compiling module xil_defaultlib.jpeg_add24s
+Compiling module xil_defaultlib.jpeg_add24s_1
+Compiling module xil_defaultlib.jpeg_add24s_21
+Compiling module xil_defaultlib.jpeg_add64s_61
+Compiling module xil_defaultlib.jpeg_add64s_61_2
+Compiling module xil_defaultlib.jpeg_add71_71s
+Compiling module xil_defaultlib.jpeg_mul12s
+Compiling module xil_defaultlib.jpeg_mul12s_3
+Compiling module xil_defaultlib.jpeg_mul12u
+Compiling module xil_defaultlib.jpeg_mul8u
+Compiling module xil_defaultlib.jpeg_mul8u_4
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.jpeg_MEMB14W64_sub
+Compiling module xil_defaultlib.jpeg_MEMB14W64
+Compiling module xil_defaultlib.jpeg_dat
+Compiling module xil_defaultlib.jpeg_fsm
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.jpeg
+Compiling module xil_defaultlib.dct_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dct_tb_time_synth
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 21 03:38:30 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 03:38:30 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:02:06 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '126' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dct_tb_time_synth -key {Post-Synthesis:sim_1:Timing:dct_tb} -tclbatch {dct_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source dct_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2124.707 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dct_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:53 ; elapsed = 00:02:53 . Memory (MB): peak = 2124.707 ; gain = 0.000
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 1532.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:26 ; elapsed = 00:01:43 . Memory (MB): peak = 2279.555 ; gain = 154.848
+INFO: [Common 17-344] 'run' was cancelled
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 88152.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:01:04 ; elapsed = 00:07:15 . Memory (MB): peak = 2291.449 ; gain = 11.895
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2295.996 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:58 . Memory (MB): peak = 2295.996 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 174772.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:36 . Memory (MB): peak = 2295.996 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 2295.996 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2295.996 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/jpeg_in_a00} -radix unsigned {170 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2298.398 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/rst} -radix bin {1 0ns}
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 221072.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:40 . Memory (MB): peak = 2298.398 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:38 . Memory (MB): peak = 2298.398 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:02:59 . Memory (MB): peak = 2298.398 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/JPEG_Thesis_2/Final_PR/DCT/DCT.runs/synth_1
+
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v" into library work [C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v:1]
+[Tue Nov 21 04:11:57 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/DCT/DCT.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_design
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 714 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 2300.844 ; gain = 0.000
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'dct_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj dct_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/dct_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB14W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_0
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18
+INFO: [VRFC 10-311] analyzing module jpeg_add20s_18_18_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_1
+INFO: [VRFC 10-311] analyzing module jpeg_add24s_21
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61
+INFO: [VRFC 10-311] analyzing module jpeg_add64s_61_2
+INFO: [VRFC 10-311] analyzing module jpeg_add71_71s
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s
+INFO: [VRFC 10-311] analyzing module jpeg_mul12s_3
+INFO: [VRFC 10-311] analyzing module jpeg_mul12u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u
+INFO: [VRFC 10-311] analyzing module jpeg_mul8u_4
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sim_1/new/dct_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dct_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 4ded64565f4647c6b75854913202ab7a --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot dct_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.dct_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/jpeg0".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "dct_tb_time_synth.sdf", for root module "dct_tb/jpeg0".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.sffsrce_fdre
+Compiling module simprims_ver.FDRE
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.LUT6
+Compiling module simprims_ver.CARRY4
+Compiling module simprims_ver.LUT5
+Compiling module simprims_ver.x_lut3_mux4
+Compiling module simprims_ver.x_lut3_mux4_reduced_0
+Compiling module simprims_ver.LUT3
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1
+Compiling module simprims_ver.LUT4
+Compiling module xil_defaultlib.jpeg_add20s_18
+Compiling module xil_defaultlib.jpeg_add20s_18_18
+Compiling module xil_defaultlib.jpeg_add20s_18_18_1
+Compiling module xil_defaultlib.jpeg_add20s_18_0
+Compiling module xil_defaultlib.jpeg_add24s
+Compiling module xil_defaultlib.jpeg_add24s_1
+Compiling module xil_defaultlib.jpeg_add24s_21
+Compiling module xil_defaultlib.jpeg_add64s_61
+Compiling module xil_defaultlib.jpeg_add64s_61_2
+Compiling module xil_defaultlib.jpeg_add71_71s
+Compiling module xil_defaultlib.jpeg_mul12s
+Compiling module xil_defaultlib.jpeg_mul12s_3
+Compiling module xil_defaultlib.jpeg_mul12u
+Compiling module xil_defaultlib.jpeg_mul8u
+Compiling module xil_defaultlib.jpeg_mul8u_4
+Compiling module simprims_ver.RB18_INTERNAL_VLOG(DOA_REG=0,DOB...
+Compiling module simprims_ver.RAMB18E1(READ_WIDTH_A=18,READ_WI...
+Compiling module xil_defaultlib.jpeg_MEMB14W64_sub
+Compiling module xil_defaultlib.jpeg_MEMB14W64
+Compiling module xil_defaultlib.jpeg_dat
+Compiling module xil_defaultlib.jpeg_fsm
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module xil_defaultlib.jpeg
+Compiling module xil_defaultlib.dct_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot dct_tb_time_synth
+
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing/xsim.dir/dct_tb_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov 21 04:14:33 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 04:14:33 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2300.844 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '76' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/JPEG_Thesis_2/Final_PR/DCT/DCT.sim/sim_1/synth/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "dct_tb_time_synth -key {Post-Synthesis:sim_1:Timing:dct_tb} -tclbatch {dct_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.3
+Time resolution is 1 ps
+source dct_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'dct_tb_time_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2307.793 ; gain = 6.949
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 1532.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 87892.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:49 ; elapsed = 00:04:26 . Memory (MB): peak = 2307.793 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 2307.793 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2307.793 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/jpeg_in_a00} -radix unsigned {175 0ns}
+add_force {/dct_tb/jpeg_in_a01} -radix unsigned {145 0ns}
+add_force {/dct_tb/rst} -radix bin {1 0ns}
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 123632.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:06:23 . Memory (MB): peak = 2317.727 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+run all
+Memory Collision Error on RAMB18E1 : dct_tb.jpeg0.INST_dat.dct_output1.INST_MEMB14W64_sub_1.MEMB14W64_r_reg.genblk1.INT_RAMB_TDP.chk_for_col_msg at simulation time 209992.405 ns.
+A read was performed on address 3c0f (hex) of port B while a write was requested to the same address on port A.  The write will be successful however the read value on port B is unknown until the next CLKB cycle.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:04:07 . Memory (MB): peak = 2317.727 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:30 . Memory (MB): peak = 2317.727 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 04:35:35 2017...

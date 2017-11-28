@@ -1,0 +1,117 @@
+#@VERSION{3.00}
+#@CNT{jpeg}
+#@KIND{BASIC_OPERATOR}
+#@CLK 100000
+#@UNIT 1/10ps
+@FCNT{
+	NAME	sub20s
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	sub24s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	sub32s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	sub36s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	sub60s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	mul8u
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	mul12s
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	mul12u
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	add12u
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	add20s
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	add24s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	add60s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	add69_69s
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	incr3u
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_0_a
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_1_a
+	LIMIT	2
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_2_a
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_3_a
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_4_a
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_5_a
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_6_a
+	LIMIT	1
+#	COMMENT
+}
+@FCNT{
+	NAME	dct_co_7_a
+	LIMIT	1
+#	COMMENT
+}
+#@HASH{b6f098a0d7a14c482dfcf6e67b5a5fc7}
+#@END{jpeg}

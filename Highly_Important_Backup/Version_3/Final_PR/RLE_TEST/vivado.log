@@ -1,0 +1,376 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 05:27:31 2017
+# Process ID: 2444
+# Current directory: C:/JPEG_Thesis_2/Final_PR/RLE_TEST
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6864 C:\JPEG_Thesis_2\Final_PR\RLE_TEST\RLE_TEST.xpr
+# Log file: C:/JPEG_Thesis_2/Final_PR/RLE_TEST/vivado.log
+# Journal file: C:/JPEG_Thesis_2/Final_PR/RLE_TEST\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.xpr
+INFO: [Project 1-313] Project file moved from 'C:/JPEG_Thesis/RLE/RLE_TEST' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/JPEG_Thesis_2/Final_PR/ip_repo/DARC_RLE_1.0'; using path 'C:/JPEG_Thesis/RLE/ip_repo/DARC_RLE_1.0' instead.
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.cache/ip', nor could it be found using path 'C:/JPEG_Thesis/RLE/RLE_TEST/RLE_TEST.cache/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis/RLE/ip_repo/DARC_RLE_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.srcs/sources_1/imports/RLE/rle_E.v" into library work [C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.srcs/sources_1/imports/RLE/rle_E.v:1]
+[Tue Nov 21 05:38:44 2017] Launched synth_2...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.runs/synth_2/runme.log
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 4138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:45 ; elapsed = 00:00:28 . Memory (MB): peak = 1244.855 ; gain = 379.516
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_2'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v"
+write_verilog: Time (s): cpu = 00:00:29 ; elapsed = 00:00:15 . Memory (MB): peak = 1424.219 ; gain = 179.363
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1706.090 ; gain = 281.871
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'rle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj rle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_0
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub_1
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_decr32s
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.srcs/sim_1/new/rle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rle_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto f02fb7ba1e924a75b9721bd571658879 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot rle_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.rle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:12 ; elapsed = 00:10:04 . Memory (MB): peak = 1725.215 ; gain = 19.125
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-4704] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:01:49 ; elapsed = 00:11:06 . Memory (MB): peak = 1725.215 ; gain = 859.875
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_2'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1725.215 ; gain = 0.000
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'rle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj rle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing/rle_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_0
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub_1
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_decr32s
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.srcs/sim_1/new/rle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rle_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto f02fb7ba1e924a75b9721bd571658879 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot rle_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.rle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:09:14 . Memory (MB): peak = 1725.215 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-4704] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:09:28 . Memory (MB): peak = 1725.215 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/Final_PR/RLE_TEST/RLE_TEST.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Nov 21 06:05:14 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 06:05:14 2017...
+create_project RLE C:/JPEG_Thesis_2/Final_PR/RLE -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+set_property target_language VHDL [current_project]
+file mkdir C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new
+close [ open C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new/jpeg.v w ]
+add_files C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new/jpeg.v
+set_property target_language Verilog [current_project]
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new/jpeg.v" into library work [C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new/jpeg.v:1]
+[Tue Nov 21 06:07:30 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/RLE/RLE.runs/synth_1/runme.log
+file mkdir C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v w ]
+add_files -fileset sim_1 C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property used_in_synthesis false [get_files  C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v]
+set_property used_in_implementation false [get_files  C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v]
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 4138 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1753.867 ; gain = 27.387
+launch_simulation -mode post-synthesis -type timing
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.v"
+INFO: [SIM-utils-27] Writing SDF file...
+INFO: [SIM-utils-28] write_sdf -mode timesim -process_corner slow -force -file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.sdf"
+write_sdf: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1760.188 ; gain = 0.000
+INFO: [SIM-utils-36] Netlist generated:C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.v
+INFO: [SIM-utils-37] SDF generated:C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'rle_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing'
+"xvlog -m64 --relax -prj rle_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing/rle_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module jpeg
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W128_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_0
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub
+INFO: [VRFC 10-311] analyzing module jpeg_MEMB64W64_sub_1
+INFO: [VRFC 10-311] analyzing module jpeg_dat
+INFO: [VRFC 10-311] analyzing module jpeg_decr32s
+INFO: [VRFC 10-311] analyzing module jpeg_fsm
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sim_1/new/rle_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rle_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/JPEG_Thesis_2/Final_PR/RLE/RLE.sim/sim_1/synth/timing'
+Vivado Simulator 2016.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.3/bin/unwrapped/win64.o/xelab.exe -wto 797295fed14c4487bb9c0ba021bb6287 --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot rle_tb_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.rle_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:10 ; elapsed = 00:16:18 . Memory (MB): peak = 1760.188 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-4704] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:16:31 . Memory (MB): peak = 1760.188 ; gain = 4.207
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+create_peripheral xilinx.com user RLE_REV2_IP 1.0 -dir C:/JPEG_Thesis_2/Final_PR/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:RLE_REV2_IP:1.0]
+set_property VALUE 265 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:RLE_REV2_IP:1.0]]]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design -force [ipx::find_open_core xilinx.com:user:RLE_REV2_IP:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:RLE_REV2_IP:1.0]
+set_property  ip_repo_paths  C:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0 [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0'.
+ipx::edit_ip_in_project -upgrade true -name edit_RLE_REV2_IP_v1_0 -directory C:/JPEG_Thesis_2/Final_PR/ip_repo c:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1792.047 ; gain = 5.848
+add_files -norecurse -copy_to C:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0/src C:/JPEG_Thesis_2/Final_PR/RLE/RLE.srcs/sources_1/new/jpeg.v
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/final_pr/ip_repo/edit_RLE_REV2_IP_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/final_pr/ip_repo/edit_RLE_REV2_IP_v1_0.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Nov 21 06:42:19 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 06:42:19 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/Final_PR/ip_repo/RLE_REV2_IP_1.0'
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/Final_PR/RLE/RLE.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/Final_PR/RLE/RLE.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Tue Nov 21 06:42:50 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov 21 06:42:50 2017...
+create_project RLE_SYSTEM_SDK C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+set_property target_language VHDL [current_project]
+create_bd_design "rle_system_sdk"
+Wrote  : <C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd> 
+create_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1937.699 ; gain = 0.000
+set_property  ip_repo_paths  C:/JPEG_Thesis_2/Final_PR/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/Final_PR/ip_repo'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:RLE_REV2_IP:1.0 RLE_REV2_IP_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins RLE_REV2_IP_0/S00_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</RLE_REV2_IP_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+validate_bd_design
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd> 
+set_property synth_checkpoint_mode None [get_files  C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd]
+generate_target all [get_files  C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd]
+INFO: [BD 41-1662] The design 'rle_system_sdk.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk.vhd
+VHDL Output written to : C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RLE_REV2_IP_0 .
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] rle_system_sdk_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hw_handoff/rle_system_sdk.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hw_handoff/rle_system_sdk_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk.hwdef
+generate_target: Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1970.410 ; gain = 32.711
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd] -directory C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/rle_system_sdk.bd] -top
+add_files -norecurse C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk_wrapper.vhd" into library xil_defaultlib [C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.srcs/sources_1/bd/rle_system_sdk/hdl/rle_system_sdk_wrapper.vhd:1]
+[Tue Nov 21 06:46:20 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Tue Nov 21 06:50:20 2017] Launched impl_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Nov 21 06:56:24 2017] Launched impl_1...
+Run output will be captured here: C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/runme.log
+file mkdir C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk
+file copy -force C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.sysdef C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk/rle_system_sdk_wrapper.hdf
+
+launch_sdk -workspace C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk -hwspec C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk/rle_system_sdk_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk -hwspec C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.sdk/rle_system_sdk_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/Final_PR/RLE_SYSTEM_SDK/RLE_SYSTEM_SDK.runs/impl_1/rle_system_sdk_wrapper.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 07:45:40 2017...

@@ -1,0 +1,1129 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 27 00:04:53 2017
+# Process ID: 2284
+# Current directory: C:/JPEG_Thesis_2/BRAM_Complete_System
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5324 C:\JPEG_Thesis_2\BRAM_Complete_System\BRAM_System_Final.xpr
+# Log file: C:/JPEG_Thesis_2/BRAM_Complete_System/vivado.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_Complete_System\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 776.297 ; gain = 179.176
+open_bd_design {C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:DARC_BRAM2:1.0 - DARC_BRAM2_0
+Adding cell -- xilinx.com:user:DARC_Mux:1.0 - DARC_Mux_0
+Adding cell -- xilinx.com:user:bram:1.0 - bram_0
+Adding cell -- xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0 - REV2_JPEG_IP_DESIGN_0
+Adding cell -- xilinx.com:user:controller:1.0 - controller_0
+Adding cell -- xilinx.com:user:ARM_FPGA_Control_Bus:1.0 - ARM_FPGA_Control_Bus_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /REV2_JPEG_IP_DESIGN_0/jpeg_in_compute(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <bram_design_system> from BD file <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 833.422 ; gain = 44.465
+ipx::edit_ip_in_project -upgrade true -name ARM_FPGA_Control_Bus_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/ARM_FPGA_Control_Bus_v1_0_project c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 849.383 ; gain = 15.242
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::merge_project_changes: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 904.117 ; gain = 0.000
+set_property core_revision 8 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/arm_fpga_control_bus_v1_0_project/ARM_FPGA_Control_Bus_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Mon Nov 27 00:19:38 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 27 00:19:38 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:ARM_FPGA_Control_Bus:1.0 [get_ips  bram_design_system_ARM_FPGA_Control_Bus_0_5] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_ARM_FPGA_Control_Bus_0_5 (ARM_FPGA_Control_Bus_v1.0 1.0) from revision 7 to revision 8
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'bram_addr_offset'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_00_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_00_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_01_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_01_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_02_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_02_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_03_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_03_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_04_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_04_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_05_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_05_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_06_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_06_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_07_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_07_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_08_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_08_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_09_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_09_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_10_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_10_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_11_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_11_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_12_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_12_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_13_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_13_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_14_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_14_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_15_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_15_msb'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_ARM_FPGA_Control_Bus_0_5'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /REV2_JPEG_IP_DESIGN_0/jpeg_in_compute(undef) and /ARM_FPGA_Control_Bus_0_upgraded_ipi/compute_wakeup(rst)
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_ARM_FPGA_Control_Bus_0_5' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_ARM_FPGA_Control_Bus_0_5] -no_script -sync -force -quiet
+set_property location {1 -452 -479} [get_bd_cells ARM_FPGA_Control_Bus_0]
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+ipx::edit_ip_in_project -upgrade true -name REV2_JPEG_IP_DESIGN_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/REV2_JPEG_IP_DESIGN_v1_0_project c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 927.992 ; gain = 1.527
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/rev2_jpeg_ip_design_v1_0_project/REV2_JPEG_IP_DESIGN_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Mon Nov 27 00:36:16 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 27 00:36:16 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0 [get_ips  bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_REV2_JPEG_IP_DESIGN_0_0 (REV2_JPEG_IP_DESIGN_v1.0 1.0) from revision 4 to revision 5
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_00_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_00_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_01_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_01_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_02_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_02_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_03_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_03_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_04_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_04_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_05_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_05_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_06_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_06_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_07_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_07_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_08_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_08_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_09_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_09_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_10_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_10_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_11_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_11_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_12_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_12_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_13_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_13_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_14_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_14_msb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_15_lsb'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'jpeg_compute_15_msb'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_REV2_JPEG_IP_DESIGN_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /REV2_JPEG_IP_DESIGN_0_upgraded_ipi/jpeg_in_compute(undef)
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_REV2_JPEG_IP_DESIGN_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_REV2_JPEG_IP_DESIGN_0_0] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_00_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_00_lsb]
+report_ip_status -name ip_status 
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_01_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_01_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_02_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_02_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_03_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_03_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_04_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_04_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_05_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_05_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_06_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_06_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_07_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_07_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_08_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_08_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_09_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_09_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_10_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_10_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_11_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_11_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_12_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_12_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_13_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_13_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_14_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_14_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_15_lsb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_15_lsb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_00_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_00_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_01_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_01_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_02_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_02_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_03_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_03_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_04_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_04_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_05_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_05_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_06_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_06_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_07_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_07_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_08_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_08_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_09_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_09_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_10_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_10_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_11_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_11_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_12_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_12_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_13_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_13_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_14_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_14_msb]
+connect_bd_net [get_bd_pins REV2_JPEG_IP_DESIGN_0/jpeg_compute_15_msb] [get_bd_pins ARM_FPGA_Control_Bus_0/jpeg_compute_15_msb]
+ipx::edit_ip_in_project -upgrade true -name controller_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.tmp/controller_v1_0_project c:/JPEG_Thesis_2/BRAM_FPGA_Controller/BRAM_FPGA_Controller.srcs/sources_1/imports/new/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/REV2_JPEG_IP_DESIGN_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 5 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project/controller_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_complete_system/bram_system_final.tmp/controller_v1_0_project/controller_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Mon Nov 27 00:57:06 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 27 00:57:06 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/BRAM_FPGA_Controller
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1064.051 ; gain = 0.000
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:controller:1.0 [get_ips  bram_design_system_controller_0_1] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-3422] Upgraded bram_design_system_controller_0_1 (controller_v1_0 1.0) from revision 4 to revision 5
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'bram_addr_offset'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'IP bram_design_system_controller_0_1'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'IP bram_design_system_controller_0_1' has identified issues that may require user intervention. Please review the upgrade log 'c:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_Complete_System/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_controller_0_1] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins ARM_FPGA_Control_Bus_0/bram_addr_offset] [get_bd_pins controller_0/bram_addr_offset]
+report_ip_status -name ip_status 
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+validate_bd_design
+generate_target all [get_files  C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd]
+INFO: [BD 41-1662] The design 'bram_design_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a00'(64) to net 'controller_0_data_out_compute_00'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a01'(64) to net 'controller_0_data_out_compute_01'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a02'(64) to net 'controller_0_data_out_compute_02'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a03'(64) to net 'controller_0_data_out_compute_03'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a04'(64) to net 'controller_0_data_out_compute_04'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a05'(64) to net 'controller_0_data_out_compute_05'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a06'(64) to net 'controller_0_data_out_compute_06'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a07'(64) to net 'controller_0_data_out_compute_07'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a08'(64) to net 'controller_0_data_out_compute_08'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a09'(64) to net 'controller_0_data_out_compute_09'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a10'(64) to net 'controller_0_data_out_compute_10'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a11'(64) to net 'controller_0_data_out_compute_11'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a12'(64) to net 'controller_0_data_out_compute_12'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a13'(64) to net 'controller_0_data_out_compute_13'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a14'(64) to net 'controller_0_data_out_compute_14'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a15'(64) to net 'controller_0_data_out_compute_15'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a16'(64) to net 'controller_0_data_out_compute_16'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a17'(64) to net 'controller_0_data_out_compute_17'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a18'(64) to net 'controller_0_data_out_compute_18'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a19'(64) to net 'controller_0_data_out_compute_19'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a20'(64) to net 'controller_0_data_out_compute_20'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a21'(64) to net 'controller_0_data_out_compute_21'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a22'(64) to net 'controller_0_data_out_compute_22'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a23'(64) to net 'controller_0_data_out_compute_23'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a24'(64) to net 'controller_0_data_out_compute_24'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a25'(64) to net 'controller_0_data_out_compute_25'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a26'(64) to net 'controller_0_data_out_compute_26'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a27'(64) to net 'controller_0_data_out_compute_27'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a28'(64) to net 'controller_0_data_out_compute_28'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a29'(64) to net 'controller_0_data_out_compute_29'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a30'(64) to net 'controller_0_data_out_compute_30'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a31'(64) to net 'controller_0_data_out_compute_31'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a32'(64) to net 'controller_0_data_out_compute_32'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a33'(64) to net 'controller_0_data_out_compute_33'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a34'(64) to net 'controller_0_data_out_compute_34'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a35'(64) to net 'controller_0_data_out_compute_35'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a36'(64) to net 'controller_0_data_out_compute_36'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a37'(64) to net 'controller_0_data_out_compute_37'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a38'(64) to net 'controller_0_data_out_compute_38'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a39'(64) to net 'controller_0_data_out_compute_39'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a40'(64) to net 'controller_0_data_out_compute_40'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a41'(64) to net 'controller_0_data_out_compute_41'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a42'(64) to net 'controller_0_data_out_compute_42'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a43'(64) to net 'controller_0_data_out_compute_43'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a44'(64) to net 'controller_0_data_out_compute_44'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a45'(64) to net 'controller_0_data_out_compute_45'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a46'(64) to net 'controller_0_data_out_compute_46'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a47'(64) to net 'controller_0_data_out_compute_47'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a48'(64) to net 'controller_0_data_out_compute_48'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a49'(64) to net 'controller_0_data_out_compute_49'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a50'(64) to net 'controller_0_data_out_compute_50'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a51'(64) to net 'controller_0_data_out_compute_51'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a52'(64) to net 'controller_0_data_out_compute_52'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a53'(64) to net 'controller_0_data_out_compute_53'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a54'(64) to net 'controller_0_data_out_compute_54'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a55'(64) to net 'controller_0_data_out_compute_55'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a56'(64) to net 'controller_0_data_out_compute_56'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a57'(64) to net 'controller_0_data_out_compute_57'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a58'(64) to net 'controller_0_data_out_compute_58'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a59'(64) to net 'controller_0_data_out_compute_59'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a60'(64) to net 'controller_0_data_out_compute_60'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a61'(64) to net 'controller_0_data_out_compute_61'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a62'(64) to net 'controller_0_data_out_compute_62'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a63'(64) to net 'controller_0_data_out_compute_63'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a64'(64) to net 'controller_0_data_out_compute_64'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a65'(64) to net 'controller_0_data_out_compute_65'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a66'(64) to net 'controller_0_data_out_compute_66'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a67'(64) to net 'controller_0_data_out_compute_67'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a68'(64) to net 'controller_0_data_out_compute_68'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a69'(64) to net 'controller_0_data_out_compute_69'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a70'(64) to net 'controller_0_data_out_compute_70'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a71'(64) to net 'controller_0_data_out_compute_71'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a72'(64) to net 'controller_0_data_out_compute_72'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a73'(64) to net 'controller_0_data_out_compute_73'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a74'(64) to net 'controller_0_data_out_compute_74'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a75'(64) to net 'controller_0_data_out_compute_75'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a76'(64) to net 'controller_0_data_out_compute_76'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a77'(64) to net 'controller_0_data_out_compute_77'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a78'(64) to net 'controller_0_data_out_compute_78'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a79'(64) to net 'controller_0_data_out_compute_79'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a80'(64) to net 'controller_0_data_out_compute_80'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a81'(64) to net 'controller_0_data_out_compute_81'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a82'(64) to net 'controller_0_data_out_compute_82'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a83'(64) to net 'controller_0_data_out_compute_83'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a84'(64) to net 'controller_0_data_out_compute_84'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a85'(64) to net 'controller_0_data_out_compute_85'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a86'(64) to net 'controller_0_data_out_compute_86'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a87'(64) to net 'controller_0_data_out_compute_87'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a88'(64) to net 'controller_0_data_out_compute_88'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a89'(64) to net 'controller_0_data_out_compute_89'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a90'(64) to net 'controller_0_data_out_compute_90'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a91'(64) to net 'controller_0_data_out_compute_91'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a92'(64) to net 'controller_0_data_out_compute_92'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a93'(64) to net 'controller_0_data_out_compute_93'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a94'(64) to net 'controller_0_data_out_compute_94'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a95'(64) to net 'controller_0_data_out_compute_95'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a96'(64) to net 'controller_0_data_out_compute_96'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a97'(64) to net 'controller_0_data_out_compute_97'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a98'(64) to net 'controller_0_data_out_compute_98'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a99'(64) to net 'controller_0_data_out_compute_99'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+INFO: [Common 17-14] Message 'BD 41-1228' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block REV2_JPEG_IP_DESIGN_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+generate_target: Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1203.180 ; gain = 139.129
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Mon Nov 27 00:59:17 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.runs/synth_1/runme.log
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+reset_run synth_1
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins axi_timer_0/S_AXI]
+</axi_timer_0/S_AXI/Reg> is being mapped into </processing_system7_0/Data> at <0x42800000 [ 64K ]>
+set_property location {6.5 6021 -965} [get_bd_cells axi_timer_0]
+set_property location {6 5979 -906} [get_bd_cells axi_timer_0]
+set_property location {6 6011 -872} [get_bd_cells axi_timer_0]
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+validate_bd_design
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+generate_target all [get_files  C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd]
+INFO: [BD 41-1662] The design 'bram_design_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a00'(64) to net 'controller_0_data_out_compute_00'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a01'(64) to net 'controller_0_data_out_compute_01'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a02'(64) to net 'controller_0_data_out_compute_02'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a03'(64) to net 'controller_0_data_out_compute_03'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a04'(64) to net 'controller_0_data_out_compute_04'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a05'(64) to net 'controller_0_data_out_compute_05'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a06'(64) to net 'controller_0_data_out_compute_06'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a07'(64) to net 'controller_0_data_out_compute_07'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a08'(64) to net 'controller_0_data_out_compute_08'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a09'(64) to net 'controller_0_data_out_compute_09'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a10'(64) to net 'controller_0_data_out_compute_10'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a11'(64) to net 'controller_0_data_out_compute_11'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a12'(64) to net 'controller_0_data_out_compute_12'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a13'(64) to net 'controller_0_data_out_compute_13'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a14'(64) to net 'controller_0_data_out_compute_14'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a15'(64) to net 'controller_0_data_out_compute_15'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a16'(64) to net 'controller_0_data_out_compute_16'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a17'(64) to net 'controller_0_data_out_compute_17'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a18'(64) to net 'controller_0_data_out_compute_18'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a19'(64) to net 'controller_0_data_out_compute_19'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a20'(64) to net 'controller_0_data_out_compute_20'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a21'(64) to net 'controller_0_data_out_compute_21'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a22'(64) to net 'controller_0_data_out_compute_22'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a23'(64) to net 'controller_0_data_out_compute_23'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a24'(64) to net 'controller_0_data_out_compute_24'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a25'(64) to net 'controller_0_data_out_compute_25'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a26'(64) to net 'controller_0_data_out_compute_26'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a27'(64) to net 'controller_0_data_out_compute_27'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a28'(64) to net 'controller_0_data_out_compute_28'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a29'(64) to net 'controller_0_data_out_compute_29'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a30'(64) to net 'controller_0_data_out_compute_30'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a31'(64) to net 'controller_0_data_out_compute_31'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a32'(64) to net 'controller_0_data_out_compute_32'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a33'(64) to net 'controller_0_data_out_compute_33'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a34'(64) to net 'controller_0_data_out_compute_34'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a35'(64) to net 'controller_0_data_out_compute_35'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a36'(64) to net 'controller_0_data_out_compute_36'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a37'(64) to net 'controller_0_data_out_compute_37'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a38'(64) to net 'controller_0_data_out_compute_38'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a39'(64) to net 'controller_0_data_out_compute_39'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a40'(64) to net 'controller_0_data_out_compute_40'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a41'(64) to net 'controller_0_data_out_compute_41'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a42'(64) to net 'controller_0_data_out_compute_42'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a43'(64) to net 'controller_0_data_out_compute_43'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a44'(64) to net 'controller_0_data_out_compute_44'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a45'(64) to net 'controller_0_data_out_compute_45'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a46'(64) to net 'controller_0_data_out_compute_46'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a47'(64) to net 'controller_0_data_out_compute_47'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a48'(64) to net 'controller_0_data_out_compute_48'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a49'(64) to net 'controller_0_data_out_compute_49'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a50'(64) to net 'controller_0_data_out_compute_50'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a51'(64) to net 'controller_0_data_out_compute_51'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a52'(64) to net 'controller_0_data_out_compute_52'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a53'(64) to net 'controller_0_data_out_compute_53'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a54'(64) to net 'controller_0_data_out_compute_54'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a55'(64) to net 'controller_0_data_out_compute_55'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a56'(64) to net 'controller_0_data_out_compute_56'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a57'(64) to net 'controller_0_data_out_compute_57'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a58'(64) to net 'controller_0_data_out_compute_58'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a59'(64) to net 'controller_0_data_out_compute_59'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a60'(64) to net 'controller_0_data_out_compute_60'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a61'(64) to net 'controller_0_data_out_compute_61'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a62'(64) to net 'controller_0_data_out_compute_62'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a63'(64) to net 'controller_0_data_out_compute_63'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a64'(64) to net 'controller_0_data_out_compute_64'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a65'(64) to net 'controller_0_data_out_compute_65'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a66'(64) to net 'controller_0_data_out_compute_66'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a67'(64) to net 'controller_0_data_out_compute_67'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a68'(64) to net 'controller_0_data_out_compute_68'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a69'(64) to net 'controller_0_data_out_compute_69'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a70'(64) to net 'controller_0_data_out_compute_70'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a71'(64) to net 'controller_0_data_out_compute_71'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a72'(64) to net 'controller_0_data_out_compute_72'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a73'(64) to net 'controller_0_data_out_compute_73'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a74'(64) to net 'controller_0_data_out_compute_74'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a75'(64) to net 'controller_0_data_out_compute_75'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a76'(64) to net 'controller_0_data_out_compute_76'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a77'(64) to net 'controller_0_data_out_compute_77'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a78'(64) to net 'controller_0_data_out_compute_78'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a79'(64) to net 'controller_0_data_out_compute_79'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a80'(64) to net 'controller_0_data_out_compute_80'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a81'(64) to net 'controller_0_data_out_compute_81'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a82'(64) to net 'controller_0_data_out_compute_82'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a83'(64) to net 'controller_0_data_out_compute_83'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a84'(64) to net 'controller_0_data_out_compute_84'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a85'(64) to net 'controller_0_data_out_compute_85'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a86'(64) to net 'controller_0_data_out_compute_86'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a87'(64) to net 'controller_0_data_out_compute_87'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a88'(64) to net 'controller_0_data_out_compute_88'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a89'(64) to net 'controller_0_data_out_compute_89'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a90'(64) to net 'controller_0_data_out_compute_90'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a91'(64) to net 'controller_0_data_out_compute_91'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a92'(64) to net 'controller_0_data_out_compute_92'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a93'(64) to net 'controller_0_data_out_compute_93'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a94'(64) to net 'controller_0_data_out_compute_94'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a95'(64) to net 'controller_0_data_out_compute_95'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a96'(64) to net 'controller_0_data_out_compute_96'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a97'(64) to net 'controller_0_data_out_compute_97'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a98'(64) to net 'controller_0_data_out_compute_98'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/REV2_JPEG_IP_DESIGN_0/jpeg_in_a99'(64) to net 'controller_0_data_out_compute_99'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+INFO: [Common 17-14] Message 'BD 41-1228' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block REV2_JPEG_IP_DESIGN_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_timer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.617 ; gain = 62.438
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -directory C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Mon Nov 27 01:01:58 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.runs/synth_1/runme.log
+write_hwdef -force  -file C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+launch_sdk -workspace C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk -hwspec C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk -hwspec C:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.sdk/bram_design_system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.3
+  **** Build date : Oct 10 2016-19:47:06
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+set_property PROGRAM.FILE {C:\JPEG_Thesis_2\BRAM_Complete_System_PR_Post_Configuring\PRLab\Bitstreams\blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248782397
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {C:/JPEG_Thesis_2/BRAM_Complete_System_PR_Post_Configuring_Ver2/PRLab/Bitstreams/blank.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210248782397.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210248782397

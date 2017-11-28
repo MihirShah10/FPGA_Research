@@ -1,0 +1,8 @@
+14:56:07 **** Incremental Build of configuration Debug for project PR_REV2_ALL_RECONFIG ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+
+14:56:07 Build Finished (took 212ms)
+

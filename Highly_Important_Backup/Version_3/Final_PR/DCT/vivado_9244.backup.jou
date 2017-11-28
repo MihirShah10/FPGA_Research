@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 03:04:13 2017
+# Process ID: 9244
+# Current directory: C:/JPEG_Thesis_2/Final_PR/DCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14552 C:\JPEG_Thesis_2\Final_PR\DCT\DCT.xpr
+# Log file: C:/JPEG_Thesis_2/Final_PR/DCT/vivado.log
+# Journal file: C:/JPEG_Thesis_2/Final_PR/DCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/Final_PR/DCT/DCT.xpr
+file mkdir C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new
+close [ open C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v w ]
+add_files C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/new/dct.v
+update_compile_order -fileset sources_1
+remove_files  C:/JPEG_Thesis_2/Final_PR/DCT/DCT.srcs/sources_1/imports/JPEG_Thesis/dct_E.v
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+source dct_tb.tcl
+run all
+run all
+run all
+run all
+run all
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type timing
+source dct_tb.tcl
+run all
+run all
+run all
+run all
+run all
+run all
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+add_force {/dct_tb/jpeg_in_a00} -radix unsigned {170 0ns}
+run all
+add_force {/dct_tb/rst} -radix bin {1 0ns}
+run all
+run all
+run all
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type timing
+source dct_tb.tcl
+run all
+run all
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+add_force {/dct_tb/jpeg_in_a00} -radix unsigned {175 0ns}
+add_force {/dct_tb/jpeg_in_a01} -radix unsigned {145 0ns}
+add_force {/dct_tb/rst} -radix bin {1 0ns}
+run all
+run all
+add_force {/dct_tb/rst} -radix bin {0 0ns}
+run all
+close_sim

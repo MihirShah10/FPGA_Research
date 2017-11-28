@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 26 01:03:07 2017
+# Process ID: 1648
+# Current directory: C:/JPEG_Thesis_2/BRAM_System_Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4760 C:\JPEG_Thesis_2\BRAM_System_Final\BRAM_System_Final.xpr
+# Log file: C:/JPEG_Thesis_2/BRAM_System_Final/vivado.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_System_Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 899.516 ; gain = 231.191
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 01:04:36 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 01:04:36 2017...
+pwd
+C:/JPEG_Thesis_2/BRAM_System_Final
+cd PRLab
+couldn't change working directory to "PRLab": no such file or directory
+ls
+ambiguous command name "ls": lsearch lset lsort
+cd PRLab
+couldn't change working directory to "PRLab": no such file or directory
+cd PRLab
+couldn't change working directory to "PRLab": no such file or directory
+cd /PRLab
+pwd
+C:/PRLab
+cd ..
+cd C:/JPEG_Thesis_2/PRLab
+cd Sources
+cd ..
+cd Synth/Static/
+open_checkpoint C:/JPEG_Thesis_2/PRLab/Synth/Static/bram_design_system_wrapper.dcp
+Command: open_checkpoint C:/JPEG_Thesis_2/PRLab/Synth/Static/bram_design_system_wrapper.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 899.516 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/dcp/bram_design_system_wrapper.xdc]
+Finished Parsing XDC File [C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/dcp/bram_design_system_wrapper.xdc]
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 12 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2016.3 (64-bit) build 1682563
+open_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 1217.020 ; gain = 317.504
+checkpoint_bram_design_system_wrapper
+report_utilization -name utilization_1
+report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1608.359 ; gain = 0.000
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/JPEG_Thesis_2/BRAM_System_Final/.Xil/Vivado-1648-LAPTOP-QUI0SV4S/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 26 11:10:19 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 26 11:10:19 2017...
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 11:10:38 2017...

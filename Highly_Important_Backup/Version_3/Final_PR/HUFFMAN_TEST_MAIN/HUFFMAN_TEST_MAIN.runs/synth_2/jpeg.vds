@@ -1,0 +1,1024 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Nov 21 08:06:01 2017
+# Process ID: 15016
+# Current directory: C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.runs/synth_2
+# Command line: vivado.exe -log jpeg.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source jpeg.tcl
+# Log file: C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.runs/synth_2/jpeg.vds
+# Journal file: C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source jpeg.tcl -notrace
+Command: synth_design -top jpeg -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16036 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 323.555 ; gain = 114.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'jpeg' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:12]
+INFO: [Synth 8-638] synthesizing module 'jpeg_fsm' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:589]
+	Parameter ST1_01 bound to: 8'b00000000 
+	Parameter ST1_02 bound to: 8'b00000001 
+	Parameter ST1_03 bound to: 8'b00000010 
+	Parameter ST1_04 bound to: 8'b00000011 
+	Parameter ST1_05 bound to: 8'b00000100 
+	Parameter ST1_06 bound to: 8'b00000101 
+	Parameter ST1_07 bound to: 8'b00000110 
+	Parameter ST1_08 bound to: 8'b00000111 
+	Parameter ST1_09 bound to: 8'b00001000 
+	Parameter ST1_10 bound to: 8'b00001001 
+	Parameter ST1_11 bound to: 8'b00001010 
+	Parameter ST1_12 bound to: 8'b00001011 
+	Parameter ST1_13 bound to: 8'b00001100 
+	Parameter ST1_14 bound to: 8'b00001101 
+	Parameter ST1_15 bound to: 8'b00001110 
+	Parameter ST1_16 bound to: 8'b00001111 
+	Parameter ST1_17 bound to: 8'b00010000 
+	Parameter ST1_18 bound to: 8'b00010001 
+	Parameter ST1_19 bound to: 8'b00010010 
+	Parameter ST1_20 bound to: 8'b00010011 
+	Parameter ST1_21 bound to: 8'b00010100 
+	Parameter ST1_22 bound to: 8'b00010101 
+	Parameter ST1_23 bound to: 8'b00010110 
+	Parameter ST1_24 bound to: 8'b00010111 
+	Parameter ST1_25 bound to: 8'b00011000 
+	Parameter ST1_26 bound to: 8'b00011001 
+	Parameter ST1_27 bound to: 8'b00011010 
+	Parameter ST1_28 bound to: 8'b00011011 
+	Parameter ST1_29 bound to: 8'b00011100 
+	Parameter ST1_30 bound to: 8'b00011101 
+	Parameter ST1_31 bound to: 8'b00011110 
+	Parameter ST1_32 bound to: 8'b00011111 
+	Parameter ST1_33 bound to: 8'b00100000 
+	Parameter ST1_34 bound to: 8'b00100001 
+	Parameter ST1_35 bound to: 8'b00100010 
+	Parameter ST1_36 bound to: 8'b00100011 
+	Parameter ST1_37 bound to: 8'b00100100 
+	Parameter ST1_38 bound to: 8'b00100101 
+	Parameter ST1_39 bound to: 8'b00100110 
+	Parameter ST1_40 bound to: 8'b00100111 
+	Parameter ST1_41 bound to: 8'b00101000 
+	Parameter ST1_42 bound to: 8'b00101001 
+	Parameter ST1_43 bound to: 8'b00101010 
+	Parameter ST1_44 bound to: 8'b00101011 
+	Parameter ST1_45 bound to: 8'b00101100 
+	Parameter ST1_46 bound to: 8'b00101101 
+	Parameter ST1_47 bound to: 8'b00101110 
+	Parameter ST1_48 bound to: 8'b00101111 
+	Parameter ST1_49 bound to: 8'b00110000 
+	Parameter ST1_50 bound to: 8'b00110001 
+	Parameter ST1_51 bound to: 8'b00110010 
+	Parameter ST1_52 bound to: 8'b00110011 
+	Parameter ST1_53 bound to: 8'b00110100 
+	Parameter ST1_54 bound to: 8'b00110101 
+	Parameter ST1_55 bound to: 8'b00110110 
+	Parameter ST1_56 bound to: 8'b00110111 
+	Parameter ST1_57 bound to: 8'b00111000 
+	Parameter ST1_58 bound to: 8'b00111001 
+	Parameter ST1_59 bound to: 8'b00111010 
+	Parameter ST1_60 bound to: 8'b00111011 
+	Parameter ST1_61 bound to: 8'b00111100 
+	Parameter ST1_62 bound to: 8'b00111101 
+	Parameter ST1_63 bound to: 8'b00111110 
+	Parameter ST1_64 bound to: 8'b00111111 
+	Parameter ST1_65 bound to: 8'b01000000 
+	Parameter ST1_66 bound to: 8'b01000001 
+	Parameter ST1_67 bound to: 8'b01000010 
+	Parameter ST1_68 bound to: 8'b01000011 
+	Parameter ST1_69 bound to: 8'b01000100 
+	Parameter ST1_70 bound to: 8'b01000101 
+	Parameter ST1_71 bound to: 8'b01000110 
+	Parameter ST1_72 bound to: 8'b01000111 
+	Parameter ST1_73 bound to: 8'b01001000 
+	Parameter ST1_74 bound to: 8'b01001001 
+	Parameter ST1_75 bound to: 8'b01001010 
+	Parameter ST1_76 bound to: 8'b01001011 
+	Parameter ST1_77 bound to: 8'b01001100 
+	Parameter ST1_78 bound to: 8'b01001101 
+	Parameter ST1_79 bound to: 8'b01001110 
+	Parameter ST1_80 bound to: 8'b01001111 
+	Parameter ST1_81 bound to: 8'b01010000 
+	Parameter ST1_82 bound to: 8'b01010001 
+	Parameter ST1_83 bound to: 8'b01010010 
+	Parameter ST1_84 bound to: 8'b01010011 
+	Parameter ST1_85 bound to: 8'b01010100 
+	Parameter ST1_86 bound to: 8'b01010101 
+	Parameter ST1_87 bound to: 8'b01010110 
+	Parameter ST1_88 bound to: 8'b01010111 
+	Parameter ST1_89 bound to: 8'b01011000 
+	Parameter ST1_90 bound to: 8'b01011001 
+	Parameter ST1_91 bound to: 8'b01011010 
+	Parameter ST1_92 bound to: 8'b01011011 
+	Parameter ST1_93 bound to: 8'b01011100 
+	Parameter ST1_94 bound to: 8'b01011101 
+	Parameter ST1_95 bound to: 8'b01011110 
+	Parameter ST1_96 bound to: 8'b01011111 
+	Parameter ST1_97 bound to: 8'b01100000 
+	Parameter ST1_98 bound to: 8'b01100001 
+	Parameter ST1_99 bound to: 8'b01100010 
+	Parameter ST1_100 bound to: 8'b01100011 
+	Parameter ST1_101 bound to: 8'b01100100 
+	Parameter ST1_102 bound to: 8'b01100101 
+	Parameter ST1_103 bound to: 8'b01100110 
+	Parameter ST1_104 bound to: 8'b01100111 
+	Parameter ST1_105 bound to: 8'b01101000 
+	Parameter ST1_106 bound to: 8'b01101001 
+	Parameter ST1_107 bound to: 8'b01101010 
+	Parameter ST1_108 bound to: 8'b01101011 
+	Parameter ST1_109 bound to: 8'b01101100 
+	Parameter ST1_110 bound to: 8'b01101101 
+	Parameter ST1_111 bound to: 8'b01101110 
+	Parameter ST1_112 bound to: 8'b01101111 
+	Parameter ST1_113 bound to: 8'b01110000 
+	Parameter ST1_114 bound to: 8'b01110001 
+	Parameter ST1_115 bound to: 8'b01110010 
+	Parameter ST1_116 bound to: 8'b01110011 
+	Parameter ST1_117 bound to: 8'b01110100 
+	Parameter ST1_118 bound to: 8'b01110101 
+	Parameter ST1_119 bound to: 8'b01110110 
+	Parameter ST1_120 bound to: 8'b01110111 
+	Parameter ST1_121 bound to: 8'b01111000 
+	Parameter ST1_122 bound to: 8'b01111001 
+	Parameter ST1_123 bound to: 8'b01111010 
+	Parameter ST1_124 bound to: 8'b01111011 
+	Parameter ST1_125 bound to: 8'b01111100 
+	Parameter ST1_126 bound to: 8'b01111101 
+	Parameter ST1_127 bound to: 8'b01111110 
+	Parameter ST1_128 bound to: 8'b01111111 
+	Parameter ST1_129 bound to: 8'b10000000 
+	Parameter ST1_130 bound to: 8'b10000001 
+	Parameter ST1_131 bound to: 8'b10000010 
+	Parameter ST1_132 bound to: 8'b10000011 
+	Parameter ST1_133 bound to: 8'b10000100 
+	Parameter ST1_134 bound to: 8'b10000101 
+	Parameter ST1_135 bound to: 8'b10000110 
+	Parameter ST1_136 bound to: 8'b10000111 
+	Parameter ST1_137 bound to: 8'b10001000 
+	Parameter ST1_138 bound to: 8'b10001001 
+	Parameter ST1_139 bound to: 8'b10001010 
+	Parameter ST1_140 bound to: 8'b10001011 
+	Parameter ST1_141 bound to: 8'b10001100 
+	Parameter ST1_142 bound to: 8'b10001101 
+	Parameter ST1_143 bound to: 8'b10001110 
+INFO: [Synth 8-256] done synthesizing module 'jpeg_fsm' (1#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:589]
+INFO: [Synth 8-638] synthesizing module 'jpeg_dat' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:1371]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_7' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10683]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_7' (2#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10683]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_6' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10694]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_6' (3#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10694]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_5' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10705]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_5' (4#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10705]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_4' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10716]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_4' (5#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10716]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_3' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10727]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_3' (6#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10727]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_2' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10738]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_2' (7#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10738]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10749]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1_1' (8#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10749]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10760]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1_1' (9#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10760]
+INFO: [Synth 8-638] synthesizing module 'jpeg_lop36u_1_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10771]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_lop36u_1_1' (10#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10771]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub8s_7_6' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10782]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub8s_7_6' (11#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10782]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add32s_32_2' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10791]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add32s_32_2' (12#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10791]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add32s_32_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10800]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add32s_32_1' (13#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10800]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add32s_32' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10809]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add32s_32' (14#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10809]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2783]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2822]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2859]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2896]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2933]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:2970]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3007]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3044]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3081]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3118]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3157]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3194]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3231]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3268]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3305]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3342]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3379]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3416]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3453]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3490]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3529]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3566]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3603]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3640]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3677]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3714]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3751]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3788]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3825]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3862]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3901]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3938]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:3975]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4012]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4049]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4086]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4123]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4160]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4197]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4234]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4273]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4310]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4347]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4384]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4421]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4458]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4495]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4532]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4569]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4606]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4645]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4682]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4719]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4756]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4793]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4830]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4867]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4904]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4941]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:4978]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5017]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5054]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5091]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5128]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5165]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5202]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5239]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5276]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5313]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5350]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5389]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5426]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5463]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5500]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5537]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5574]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5611]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5648]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5685]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5722]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5761]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5798]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5835]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5872]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5909]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5946]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:5983]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6020]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6057]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6094]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6133]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6170]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6207]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6244]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6281]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6318]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6355]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6392]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6429]
+INFO: [Synth 8-226] default block is never used [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:6466]
+INFO: [Common 17-14] Message 'Synth 8-226' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-638] synthesizing module 'jpeg_decr32s' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10818]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_decr32s' (15#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10818]
+INFO: [Synth 8-638] synthesizing module 'jpeg_decr12u_11' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10826]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_decr12u_11' (16#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10826]
+INFO: [Synth 8-638] synthesizing module 'jpeg_decr8s_6' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10834]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_decr8s_6' (17#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10834]
+INFO: [Synth 8-638] synthesizing module 'jpeg_decr8u_6' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10842]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_decr8u_6' (18#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10842]
+INFO: [Synth 8-638] synthesizing module 'jpeg_incr32s' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10850]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_incr32s' (19#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10850]
+INFO: [Synth 8-638] synthesizing module 'jpeg_incr8s_7' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10858]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_incr8s_7' (20#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10858]
+INFO: [Synth 8-638] synthesizing module 'jpeg_incr8u_5' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10866]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_incr8u_5' (21#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10866]
+INFO: [Synth 8-638] synthesizing module 'jpeg_geop64s_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10874]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_geop64s_1' (22#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10874]
+INFO: [Synth 8-638] synthesizing module 'jpeg_gop8s_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10885]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_gop8s_1' (23#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10885]
+INFO: [Synth 8-638] synthesizing module 'jpeg_lop36u_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10896]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_lop36u_1' (24#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10896]
+INFO: [Synth 8-638] synthesizing module 'jpeg_lop8s_1' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10907]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_lop8s_1' (25#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10907]
+INFO: [Synth 8-638] synthesizing module 'jpeg_rsft64u' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10918]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_rsft64u' (26#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10918]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub8s_7' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10927]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub8s_7' (27#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10927]
+INFO: [Synth 8-638] synthesizing module 'jpeg_sub8u_6' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10936]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_sub8u_6' (28#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10936]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add32s' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10945]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add32s' (29#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10945]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add12u_9' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10954]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add12u_9' (30#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10954]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add8s' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10963]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add8s' (31#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10963]
+INFO: [Synth 8-638] synthesizing module 'jpeg_add3s' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10972]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_add3s' (32#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10972]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_encode_output' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11053]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_encode_output_subD' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11068]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11076]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_encode_output_subD' (33#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11068]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_encode_output' (34#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11053]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEMB64W128' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11089]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEMB64W128_sub' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11104]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11114]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEMB64W128_sub' (35#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11104]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEMB64W128' (36#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11089]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_ac_code' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10981]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_ac_code_subD' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10996]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11004]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_ac_code_subD' (37#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10996]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_ac_code' (38#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:10981]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_dc_code' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11017]
+INFO: [Synth 8-638] synthesizing module 'jpeg_MEM_dc_code_subD' [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11032]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11040]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_dc_code_subD' (39#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11032]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_MEM_dc_code' (40#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:11017]
+INFO: [Synth 8-256] done synthesizing module 'jpeg_dat' (41#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:1371]
+INFO: [Synth 8-256] done synthesizing module 'jpeg' (42#1) [C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.srcs/sources_1/imports/huffman_try/huffman_E.v:12]
+WARNING: [Synth 8-3331] design jpeg_decr12u_11 has unconnected port i1[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 395.633 ; gain = 186.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 395.633 ; gain = 186.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 395.633 ; gain = 186.219
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-802] inferred FSM for state register 'B01_streg_reg' in module 'jpeg_fsm'
+INFO: [Synth 8-5546] ROM "ST1_01d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_02d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_03d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_04d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_05d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_06d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_07d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_08d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_09d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_10d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_11d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_12d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_13d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_14d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_15d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_16d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_17d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_18d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_19d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_20d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_21d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_22d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_23d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_24d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_25d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_26d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_27d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_28d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_29d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_30d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_31d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_32d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_33d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_34d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_35d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_36d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_37d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_38d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_39d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_40d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_41d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_42d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_43d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_44d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_45d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_46d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_47d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_48d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_49d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_50d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_51d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_52d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_53d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_54d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_55d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_56d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_57d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_58d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_59d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_60d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_61d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_62d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_63d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_64d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_65d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_66d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_67d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_68d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_69d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_70d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_71d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_72d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_73d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_74d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_75d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_76d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_77d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_78d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_79d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_80d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_81d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_82d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_83d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_84d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_85d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_86d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_87d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_88d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_89d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_90d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_91d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_92d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_93d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_94d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_95d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_96d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_97d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_98d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_99d" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ST1_100d" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "B01_streg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  ST1_01 |                         00000000 |                         00000000
+                  ST1_02 |                         00000001 |                         00000001
+                  ST1_03 |                         00000010 |                         00000010
+                  ST1_04 |                         00000011 |                         00000011
+                  ST1_05 |                         00000100 |                         00000100
+                  ST1_06 |                         00000101 |                         00000101
+                  ST1_07 |                         00000110 |                         00000110
+                  ST1_08 |                         00000111 |                         00000111
+                  ST1_09 |                         00001000 |                         00001000
+                  ST1_10 |                         00001001 |                         00001001
+                  ST1_11 |                         00001010 |                         00001010
+                  ST1_12 |                         00001011 |                         00001011
+                  ST1_13 |                         00001100 |                         00001100
+                  ST1_14 |                         00001101 |                         00001101
+                  ST1_15 |                         00001110 |                         00001110
+                  ST1_16 |                         00001111 |                         00001111
+                  ST1_17 |                         00010000 |                         00010000
+                  ST1_18 |                         00010001 |                         00010001
+                  ST1_19 |                         00010010 |                         00010010
+                  ST1_20 |                         00010011 |                         00010011
+                  ST1_21 |                         00010100 |                         00010100
+                  ST1_22 |                         00010101 |                         00010101
+                  ST1_23 |                         00010110 |                         00010110
+                  ST1_24 |                         00010111 |                         00010111
+                  ST1_25 |                         00011000 |                         00011000
+                  ST1_26 |                         00011001 |                         00011001
+                  ST1_27 |                         00011010 |                         00011010
+                  ST1_28 |                         00011011 |                         00011011
+                  ST1_29 |                         00011100 |                         00011100
+                  ST1_30 |                         00011101 |                         00011101
+                  ST1_31 |                         00011110 |                         00011110
+                  ST1_32 |                         00011111 |                         00011111
+                  ST1_33 |                         00100000 |                         00100000
+                  ST1_34 |                         00100001 |                         00100001
+                  ST1_35 |                         00100010 |                         00100010
+                  ST1_36 |                         00100011 |                         00100011
+                  ST1_37 |                         00100100 |                         00100100
+                  ST1_38 |                         00100101 |                         00100101
+                  ST1_39 |                         00100110 |                         00100110
+                  ST1_40 |                         00100111 |                         00100111
+                  ST1_41 |                         00101000 |                         00101000
+                  ST1_42 |                         00101001 |                         00101001
+                  ST1_43 |                         00101010 |                         00101010
+                  ST1_44 |                         00101011 |                         00101011
+                  ST1_45 |                         00101100 |                         00101100
+                  ST1_46 |                         00101101 |                         00101101
+                  ST1_47 |                         00101110 |                         00101110
+                  ST1_48 |                         00101111 |                         00101111
+                  ST1_49 |                         00110000 |                         00110000
+                  ST1_50 |                         00110001 |                         00110001
+                  ST1_51 |                         00110010 |                         00110010
+                  ST1_52 |                         00110011 |                         00110011
+                  ST1_53 |                         00110100 |                         00110100
+                  ST1_54 |                         00110101 |                         00110101
+                  ST1_55 |                         00110110 |                         00110110
+                  ST1_56 |                         00110111 |                         00110111
+                  ST1_57 |                         00111000 |                         00111000
+                  ST1_58 |                         00111001 |                         00111001
+                  ST1_59 |                         00111010 |                         00111010
+                  ST1_60 |                         00111011 |                         00111011
+                  ST1_61 |                         00111100 |                         00111100
+                  ST1_62 |                         00111101 |                         00111101
+                  ST1_63 |                         00111110 |                         00111110
+                  ST1_64 |                         00111111 |                         00111111
+                  ST1_65 |                         01000000 |                         01000000
+                  ST1_66 |                         01000001 |                         01000001
+                  ST1_67 |                         01000010 |                         01000010
+                  ST1_68 |                         01000011 |                         01000011
+                  ST1_69 |                         01000100 |                         01000100
+                  ST1_70 |                         01000101 |                         01000101
+                  ST1_71 |                         01000110 |                         01000110
+                  ST1_72 |                         01000111 |                         01000111
+                  ST1_73 |                         01001000 |                         01001000
+                  ST1_74 |                         01001001 |                         01001001
+                  ST1_75 |                         01001010 |                         01001010
+                  ST1_76 |                         01001011 |                         01001011
+                  ST1_77 |                         01001100 |                         01001100
+                  ST1_78 |                         01001101 |                         01001101
+                  ST1_79 |                         01001110 |                         01001110
+                  ST1_80 |                         01001111 |                         01001111
+                  ST1_81 |                         01010000 |                         01010000
+                  ST1_82 |                         01010001 |                         01010001
+                  ST1_83 |                         01010010 |                         01010010
+                  ST1_84 |                         01010011 |                         01010011
+                  ST1_85 |                         01010100 |                         01010100
+                  ST1_86 |                         01010101 |                         01010101
+                  ST1_87 |                         01010110 |                         01010110
+                  ST1_88 |                         01010111 |                         01010111
+                  ST1_89 |                         01011000 |                         01011000
+                  ST1_90 |                         01011001 |                         01011001
+                  ST1_91 |                         01011010 |                         01011010
+                  ST1_92 |                         01011011 |                         01011011
+                  ST1_93 |                         01011100 |                         01011100
+                  ST1_94 |                         01011101 |                         01011101
+                  ST1_95 |                         01011110 |                         01011110
+                  ST1_96 |                         01011111 |                         01011111
+                  ST1_97 |                         01100000 |                         01100000
+                  ST1_98 |                         01100001 |                         01100001
+                  ST1_99 |                         01100010 |                         01100010
+                 ST1_100 |                         01100011 |                         01100011
+                 ST1_101 |                         01100100 |                         01100100
+                 ST1_102 |                         01100101 |                         01100101
+                 ST1_103 |                         01100110 |                         01100110
+                 ST1_104 |                         01100111 |                         01100111
+                 ST1_105 |                         01101000 |                         01101000
+                 ST1_106 |                         01101001 |                         01101001
+                 ST1_107 |                         01101010 |                         01101010
+                 ST1_108 |                         01101011 |                         01101011
+                 ST1_109 |                         01101100 |                         01101100
+                 ST1_110 |                         01101101 |                         01101101
+                 ST1_111 |                         01101110 |                         01101110
+                 ST1_112 |                         01101111 |                         01101111
+                 ST1_113 |                         01110000 |                         01110000
+                 ST1_114 |                         01110001 |                         01110001
+                 ST1_115 |                         01110010 |                         01110010
+                 ST1_116 |                         01110011 |                         01110011
+                 ST1_117 |                         01110100 |                         01110100
+                 ST1_118 |                         01110101 |                         01110101
+                 ST1_119 |                         01110110 |                         01110110
+                 ST1_120 |                         01110111 |                         01110111
+                 ST1_121 |                         01111000 |                         01111000
+                 ST1_122 |                         01111001 |                         01111001
+                 ST1_123 |                         01111010 |                         01111010
+                 ST1_124 |                         01111011 |                         01111011
+                 ST1_125 |                         01111100 |                         01111100
+                 ST1_126 |                         01111101 |                         01111101
+                 ST1_127 |                         01111110 |                         01111110
+                 ST1_128 |                         01111111 |                         01111111
+                 ST1_129 |                         10000000 |                         10000000
+                 ST1_130 |                         10000001 |                         10000001
+                 ST1_131 |                         10000010 |                         10000010
+                 ST1_134 |                         10000011 |                         10000101
+                 ST1_136 |                         10000100 |                         10000111
+                 ST1_137 |                         10000101 |                         10001000
+                 ST1_138 |                         10000110 |                         10001001
+                 ST1_139 |                         10000111 |                         10001010
+                 ST1_132 |                         10001000 |                         10000011
+                 ST1_133 |                         10001001 |                         10000100
+                 ST1_135 |                         10001010 |                         10000110
+                 ST1_140 |                         10001011 |                         10001011
+                 ST1_141 |                         10001100 |                         10001100
+                 ST1_142 |                         10001101 |                         10001101
+                 ST1_143 |                         10001110 |                         10001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'B01_streg_reg' using encoding 'sequential' in module 'jpeg_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 553.945 ; gain = 344.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 136   
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	 153 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 143   
+	  10 Input      1 Bit        Muxes := 11    
+	  16 Input      1 Bit        Muxes := 161   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module jpeg_fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	 153 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 143   
+Module jpeg_sub8s_7_6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      6 Bit       Adders := 1     
+Module jpeg_add32s_32_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module jpeg_add32s_32_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module jpeg_add32s_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module jpeg_decr32s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module jpeg_decr12u_11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+Module jpeg_decr8s_6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+Module jpeg_decr8u_6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+Module jpeg_incr32s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module jpeg_incr8s_7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+Module jpeg_incr8u_5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+Module jpeg_sub8s_7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      7 Bit       Adders := 1     
+Module jpeg_sub8u_6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      6 Bit       Adders := 1     
+Module jpeg_add32s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+Module jpeg_add12u_9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+Module jpeg_add8s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module jpeg_add3s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
+Module jpeg_MEMB64W128_sub 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---RAMs : 
+	               8K Bit         RAMs := 1     
+Module jpeg_dat 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 135   
+	               32 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	  10 Input      1 Bit        Muxes := 11    
+	  16 Input      1 Bit        Muxes := 161   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design jpeg_decr12u_11 has unconnected port i1[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[11]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[10]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[9]
+WARNING: [Synth 8-3331] design jpeg_dat has unconnected port jpeg_len_in[8]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (INST_dat/\RG_134_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (INST_dat/\RG_130_reg[1] )
+INFO: [Synth 8-3886] merging instance 'INST_dat/jpeg_len_out_r_reg[9]' (FDRE) to 'INST_dat/jpeg_len_out_r_reg[10]'
+INFO: [Synth 8-3886] merging instance 'INST_dat/jpeg_len_out_r_reg[10]' (FDRE) to 'INST_dat/jpeg_len_out_r_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (INST_dat/\jpeg_len_out_r_reg[11] )
+WARNING: [Synth 8-3332] Sequential element (jpeg_len_out_r_reg[11]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_134_reg[1]) is unused and will be removed from module jpeg_dat.
+WARNING: [Synth 8-3332] Sequential element (RG_130_reg[1]) is unused and will be removed from module jpeg_dat.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 673.262 ; gain = 463.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|jpeg_MEMB64W128_sub | MEMB64W128_r_reg | 128 x 64               | W |   | 128 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++--------------------+------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------------------------------------------+----------------+----------------------+-----------------+
+|Module Name | RTL Object                                                      | Inference      | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------------------+----------------+----------------------+-----------------+
+|jpeg_dat    | encode_output/INST_MEM_encode_output_subD_1/encode_output_r_reg | User Attribute | 8 x 64               | RAM16X1D x 64   | 
+|jpeg_dat    | ac_code/INST_MEM_ac_code_subD_1/ac_code_r_reg                   | User Attribute | 32 x 1               | RAM16X1D x 2    | 
+|jpeg_dat    | dc_code/INST_MEM_dc_code_subD_1/dc_code_r_reg                   | User Attribute | 32 x 1               | RAM16X1D x 2    | 
++------------+-----------------------------------------------------------------+----------------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 673.262 ; gain = 463.848
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance INST_dat/rl/INST_MEMB64W128_sub_1/MEMB64W128_r_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:54 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |   138|
+|3     |LUT1     |    85|
+|4     |LUT2     |   494|
+|5     |LUT3     |    72|
+|6     |LUT4     |  2594|
+|7     |LUT5     |  1361|
+|8     |LUT6     |  1598|
+|9     |MUXF7    |     4|
+|10    |RAM16X1D |    68|
+|11    |RAMB36E1 |     1|
+|12    |FDRE     |  8810|
+|13    |IBUF     |  8202|
+|14    |OBUF     |  8205|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------------------------+----------------------------+------+
+|      |Instance                            |Module                      |Cells |
++------+------------------------------------+----------------------------+------+
+|1     |top                                 |                            | 31633|
+|2     |  INST_dat                          |jpeg_dat                    | 14591|
+|3     |    INST_add12u_9_1                 |jpeg_add12u_9               |     5|
+|4     |    INST_add32s_1                   |jpeg_add32s                 |    36|
+|5     |    INST_add32s_32_1                |jpeg_add32s_32              |    19|
+|6     |    INST_add32s_32_1_1              |jpeg_add32s_32_1            |    29|
+|7     |    INST_add32s_32_2_1              |jpeg_add32s_32_2            |     9|
+|8     |    INST_add8s_1                    |jpeg_add8s                  |    19|
+|9     |    INST_decr12u_11_1               |jpeg_decr12u_11             |     3|
+|10    |    INST_decr32s_1                  |jpeg_decr32s                |    48|
+|11    |    INST_geop64s_1_1                |jpeg_geop64s_1              |     9|
+|12    |    INST_geop64s_1_1_1              |jpeg_geop64s_1_1            |     8|
+|13    |    INST_geop64s_1_1_1_1            |jpeg_geop64s_1_1_1          |     8|
+|14    |    INST_geop64s_1_1_2_1            |jpeg_geop64s_1_1_2          |     8|
+|15    |    INST_geop64s_1_1_3_1            |jpeg_geop64s_1_1_3          |     8|
+|16    |    INST_geop64s_1_1_4_1            |jpeg_geop64s_1_1_4          |     8|
+|17    |    INST_geop64s_1_1_5_1            |jpeg_geop64s_1_1_5          |     8|
+|18    |    INST_geop64s_1_1_6_1            |jpeg_geop64s_1_1_6          |     8|
+|19    |    INST_geop64s_1_1_7_1            |jpeg_geop64s_1_1_7          |    17|
+|20    |    INST_gop8s_1_1                  |jpeg_gop8s_1                |     3|
+|21    |    INST_lop36u_1_1                 |jpeg_lop36u_1               |    44|
+|22    |    INST_lop36u_1_1_1               |jpeg_lop36u_1_1             |    53|
+|23    |    INST_lop8s_1_1                  |jpeg_lop8s_1                |     3|
+|24    |    INST_sub8s_7_1                  |jpeg_sub8s_7                |     2|
+|25    |    ac_code                         |jpeg_MEM_ac_code            |   127|
+|26    |      INST_MEM_ac_code_subD_1       |jpeg_MEM_ac_code_subD       |   127|
+|27    |    dc_code                         |jpeg_MEM_dc_code            |    23|
+|28    |      INST_MEM_dc_code_subD_1       |jpeg_MEM_dc_code_subD       |    23|
+|29    |    encode_output                   |jpeg_MEM_encode_output      |   252|
+|30    |      INST_MEM_encode_output_subD_1 |jpeg_MEM_encode_output_subD |   252|
+|31    |    rl                              |jpeg_MEMB64W128             |  4335|
+|32    |      INST_MEMB64W128_sub_1         |jpeg_MEMB64W128_sub         |  4335|
+|33    |  INST_fsm                          |jpeg_fsm                    |   634|
++------+------------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 817.270 ; gain = 607.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:49 . Memory (MB): peak = 817.270 ; gain = 571.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 817.270 ; gain = 607.855
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8409 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 68 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 68 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+317 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:00 . Memory (MB): peak = 817.270 ; gain = 580.355
+INFO: [Common 17-1381] The checkpoint 'C:/JPEG_Thesis_2/Final_PR/HUFFMAN_TEST_MAIN/HUFFMAN_TEST_MAIN.runs/synth_2/jpeg.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 817.270 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 817.270 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 817.270 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 08:07:30 2017...

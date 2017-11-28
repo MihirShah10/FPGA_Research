@@ -1,0 +1,76 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 19732
+
+Current time: 	11/2/17 8:19:09 PM CDT
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	Mihir Shah
+User home directory: C:/Users/Mihir Shah
+User working directory: C:/JPEG_Thesis/RLE/RLE_TEST
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/Mihir Shah/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 414 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56090kb) [00:00:14]
+// [Engine Memory]: 386 MB (+253422kb) [00:00:14]
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\JPEG_Thesis\RLE\RLE_TEST\RLE_TEST.xpr. Version: Vivado v2016.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/JPEG_Thesis/RLE/RLE_TEST/RLE_TEST.xpr 
+// [Engine Memory]: 410 MB (+4599kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 421 MB. GUI used memory: 26 MB. Current time: 11/2/17 8:19:11 PM CDT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/JPEG_Thesis/RLE/RLE_TEST/RLE_TEST.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis/RLE/ip_repo/DARC_RLE_1.0'. 
+// [Engine Memory]: 435 MB (+4740kb) [00:00:20]
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 536 MB (+83201kb) [00:00:31]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 548 MB. GUI used memory: 32 MB. Current time: 11/2/17 8:19:32 PM CDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 827.605 ; gain = 161.316 
+// Project name: RLE_TEST; location: C:/JPEG_Thesis/RLE/RLE_TEST; part: xc7z020clg484-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+closeMainWindow("RLE_TEST - [C:/JPEG_Thesis/RLE/RLE_TEST/RLE_TEST.xpr] - Vivado 2016.3"); // cd:JFrame
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit vivado.<br>If you choose to abort background task and exit immediately, you will lose all unsaved<br>changes to project. (Background Task)'
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

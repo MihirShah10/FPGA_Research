@@ -1,0 +1,143 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 27 15:03:32 2017
+# Process ID: 32299
+# Current directory: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR_Ver2/PRLab
+# Command line: vivado
+# Log file: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR_Ver2/PRLab/vivado.log
+# Journal file: /home/mihir/JPEG_Thesis_2/BRAM_Complete_System_PR_Ver2/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint Synth/Static/bram_design_system_wrapper.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+set_property HD.RECONFIGURABLE 1 [get_cells bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]
+write_checkpoint Checkpoint/top_link_add.dcp
+read_xdc Sources/xdc/fplan.xdc
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+set_property SNAPPING_MODE ON [get_pblocks pblock_jpeg0]
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X4Y22:RAMB18_X5Y37 RAMB36_X4Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y99 DSP48_X3Y22:DSP48_X4Y39 RAMB18_X4Y22:RAMB18_X5Y39 RAMB36_X4Y11:RAMB36_X5Y19} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X4Y22:RAMB18_X5Y37 RAMB36_X4Y11:RAMB36_X5Y18} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -remove {SLICE_X90Y51:SLICE_X113Y98 DSP48_X3Y22:DSP48_X4Y37 RAMB18_X5Y22:RAMB18_X5Y37 RAMB36_X5Y11:RAMB36_X5Y18} -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X54Y68:SLICE_X89Y92 -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X54Y68:SLICE_X89Y149 -remove SLICE_X54Y68:SLICE_X89Y92 -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X54Y0:SLICE_X89Y149 -remove SLICE_X54Y68:SLICE_X89Y149 -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_2 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+set_property RESET_AFTER_RECONFIG=TRUE
+set_property -help
+set_property RESET_AFTER_RECONFIG=TRUE [get_pblocks pblock_jpeg0]
+set_msg_config -suppress -id {Common 17-163} -string {{ERROR: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info.} } 
+set_msg_config -suppress -id {Common 17-163} -string {{ERROR: [Common 17-163] Missing value for option 'value', please type 'set_property -help' for usage info.} } 
+set_msg_config -suppress -id {Project 1-486} -string {{CRITICAL WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'jpeg' instantiated as 'bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0' [c:/JPEG_Thesis_2/BRAM_Complete_System/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ipshared/e7d9/hdl/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI.v:3952]} } 
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_1 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+resize_pblock pblock_jpeg0 -add SLICE_X54Y0:SLICE_X87Y149 -remove SLICE_X54Y0:SLICE_X89Y149 -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_2 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+delete_pblock [get_pblocks  pblock_jpeg0]
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+startgroup
+create_pblock pblock_jpeg0
+resize_pblock pblock_jpeg0 -add SLICE_X54Y111:SLICE_X87Y147
+add_cells_to_pblock pblock_jpeg0 [get_cells [list bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0]] -clear_locs
+endgroup
+resize_pblock pblock_jpeg0 -add SLICE_X54Y0:SLICE_X87Y147 -remove SLICE_X54Y111:SLICE_X87Y147 -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_3 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+set_property SNAPPING_MODE ON [get_pblocks pblock_jpeg0]
+resize_pblock pblock_jpeg0 -add SLICE_X56Y0:SLICE_X87Y147 -remove SLICE_X54Y0:SLICE_X87Y147 -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X56Y2:SLICE_X87Y147 -remove SLICE_X56Y0:SLICE_X87Y147 -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X56Y2:SLICE_X89Y147 -remove SLICE_X56Y2:SLICE_X87Y147 -locs keep_all
+resize_pblock pblock_jpeg0 -add SLICE_X56Y2:SLICE_X89Y149 -remove SLICE_X56Y2:SLICE_X89Y147 -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_4 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y101:SLICE_X113Y148 DSP48_X3Y42:DSP48_X4Y57 RAMB18_X4Y42:RAMB18_X5Y57 RAMB36_X4Y21:RAMB36_X5Y28} -locs keep_all
+resize_pblock pblock_jpeg0 -add {SLICE_X90Y101:SLICE_X113Y148 DSP48_X3Y42:DSP48_X4Y57 RAMB18_X5Y42:RAMB18_X5Y57 RAMB36_X5Y21:RAMB36_X5Y28} -remove {SLICE_X90Y101:SLICE_X113Y148 DSP48_X3Y42:DSP48_X4Y57 RAMB18_X4Y42:RAMB18_X5Y57 RAMB36_X4Y21:RAMB36_X5Y28} -locs keep_all
+resize_pblock pblock_jpeg0 -from SLICE_X90Y101:SLICE_X113Y148 -to SLICE_X90Y102:SLICE_X113Y149 -from DSP48_X3Y42:DSP48_X4Y57 -to DSP48_X3Y42:DSP48_X4Y59 -from RAMB18_X5Y42:RAMB18_X5Y57 -to RAMB18_X5Y42:RAMB18_X5Y59 -from RAMB36_X5Y21:RAMB36_X5Y28 -to RAMB36_X5Y21:RAMB36_X5Y29 -locs keep_all
+create_drc_ruledeck ruledeck_1
+add_drc_checks -ruledeck ruledeck_1 [get_drc_checks {HDPRA-62 HDPRA-60 HDPRA-58 HDPRA-57 HDPRA-56 HDPRA-55 HDPRA-54 HDPRA-53 HDPRA-52 HDPRA-51 HDPRA-21 HDPR-43 HDPR-24 HDPR-21 HDPR-20 HDPR-41 HDPR-40 HDPR-30 HDPR-74 HDPR-73 HDPR-72 HDPR-71 HDPR-70 HDPR-69 HDPR-68 HDPR-67 HDPR-66 HDPR-65 HDPR-64 HDPR-63 HDPR-62 HDPR-61 HDPR-60 HDPR-59 HDPR-58 HDPR-57 HDPR-55 HDPR-54 HDPR-53 HDPR-51 HDPR-50 HDPR-49 HDPR-48 HDPR-47 HDPR-46 HDPR-45 HDPR-44 HDPR-42 HDPR-38 HDPR-37 HDPR-36 HDPR-35 HDPR-34 HDPR-33 HDPR-32 HDPR-29 HDPR-28 HDPR-27 HDPR-26 HDPR-25 HDPR-23 HDPR-22 HDPR-19 HDPR-18 HDPR-17 HDPR-16 HDPR-15 HDPR-14 HDPR-13 HDPR-12 HDPR-11 HDPR-10 HDPR-9 HDPR-8 HDPR-7 HDPR-6 HDPR-5 HDPR-4 HDPR-3 HDPR-2 HDPR-1}]
+report_drc -name drc_5 -ruledecks {ruledeck_1}
+delete_drc_ruledeck ruledeck_1
+read_checkpoint bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_rle/rle_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_rle/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_rle_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_huffman/huffman_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_huffman/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_huffman_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_dct/dct_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_dct/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_dct_route_design.dcp
+update_design -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 -black_box
+lock_design -level routing
+write_checkpoint -force Checkpoint/static_route_design.dcp
+read_checkpoint -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Synth/reconfig_modules/jpeg_quantization/quantization_synth.dcp
+set_property top jpeg [get_filesets {structural netlist}]
+opt_design
+place_design
+route_design
+write_checkpoint -force Implement/Config_quantization/top_route_design.dcp
+write_checkpoint -force -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0 Checkpoint/jpeg0_quantization_route_design.dcp
+close_project
+open_checkpoint Checkpoint/static_route_design.dcp
+update_design -buffer_ports -cell bram_design_system_i/REV2_JPEG_IP_DESIGN_0/inst/REV2_JPEG_IP_DESIGN_v1_0_S00_AXI_inst/jpeg0
+place_design
+route_design
+write_checkpoint -force Implement/Config_blank/top_route_design.dcp
+close_project
+pr_verify -initial Implement/Config_rle/top_route_design.dcp -additional {Implement/Config_huffman/top_route_design.dcp Implement/Config_dct/top_route_design.dcp Implement/Config_quantization/top_route_design.dcp Implement/Config_blank/top_route_design.dcp}
+close_project
+open_checkpoint Implement/Config_rle/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_rle.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_rle_pblock_jpeg0_partial.bit" Bitstreams/rle.bin
+close_project
+open_checkpoint Implement/Config_huffman/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_huffman.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_huffman_pblock_jpeg0_partial.bit" Bitstreams/huffman.bin
+close_project
+open_checkpoint Implement/Config_dct/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_dct.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_dct_pblock_jpeg0_partial.bit" Bitstreams/dct.bin
+close_project
+open_checkpoint Implement/Config_quantization/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_quantization.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_quantization_pblock_jpeg0_partial.bit" Bitstreams/quantization.bin
+close_project
+open_checkpoint Implement/Config_blank/top_route_design.dcp
+write_bitstream -file Bitstreams/blank.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/blank_pblock_jpeg0_partial.bit" Bitstreams/blank.bin
+close_project

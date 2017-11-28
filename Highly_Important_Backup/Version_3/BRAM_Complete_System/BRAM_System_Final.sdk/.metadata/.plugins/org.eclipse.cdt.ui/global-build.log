@@ -1,0 +1,18 @@
+'Finished building target: BRAM_MakeitWork.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size BRAM_MakeitWork.elf  |tee "BRAM_MakeitWork.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 828816	 265052	3727808	4821676	 4992ac	BRAM_MakeitWork.elf
+'Finished building: BRAM_MakeitWork.elf.size'
+' '
+02:41:57 **** Incremental Build of configuration Debug for project BRAM_MakeitWork ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+02:42:18 **** Incremental Build of configuration Debug for project BRAM_MakeitWork ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

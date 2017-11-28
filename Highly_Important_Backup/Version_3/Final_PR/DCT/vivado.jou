@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Nov 22 14:32:20 2017
+# Process ID: 3392
+# Current directory: C:/JPEG_Thesis_2/Final_PR/DCT
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5568 C:\JPEG_Thesis_2\Final_PR\DCT\DCT.xpr
+# Log file: C:/JPEG_Thesis_2/Final_PR/DCT/vivado.log
+# Journal file: C:/JPEG_Thesis_2/Final_PR/DCT\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/Final_PR/DCT/DCT.xpr
+create_peripheral xilinx.com user REV2_JPEG_IP_DESIGN 1.0 -dir C:/JPEG_Thesis_2/Final_PR/ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0]
+set_property VALUE 300 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0]]]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:REV2_JPEG_IP_DESIGN:1.0]
+set_property  ip_repo_paths  {C:/JPEG_Thesis_2/Final_PR/ip_repo/REV2_JPEG_IP_DESIGN_1.0 C:/JPEG_Thesis_2/Final_PR/ip_repo/JPEG_PR_REV2_1.0 C:/JPEG_Thesis/ip_repo/DARC_DCT_1.0} [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_REV2_JPEG_IP_DESIGN_v1_0 -directory C:/JPEG_Thesis_2/Final_PR/ip_repo c:/JPEG_Thesis_2/Final_PR/ip_repo/REV2_JPEG_IP_DESIGN_1.0/component.xml
+add_files -norecurse -copy_to C:/JPEG_Thesis_2/Final_PR/ip_repo/REV2_JPEG_IP_DESIGN_1.0/src C:/JPEG_Thesis_2/Final_PR/jpeg.v
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/Final_PR/ip_repo/REV2_JPEG_IP_DESIGN_1.0
+close_project
+pwd
+cd ..
+cd PRLab
+pwd
+ls
+source synth_reconfig_modules.tcl

@@ -1,0 +1,164 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Oct 18 21:11:16 2017
+# Process ID: 16083
+# Current directory: /home/mihir/PRLab
+# Command line: vivado
+# Log file: /home/mihir/PRLab/vivado.log
+# Journal file: /home/mihir/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+cd /home/mihir/PRLab
+create_project Matrix /home/mihir/PRLab/Matrix -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 5944.719 ; gain = 29.223 ; free physical = 62 ; free virtual = 1642
+set_property board_part em.avnet.com:zed:part0:1.3 [current_project]
+create_bd_design "matrix_design"
+Wrote  : </home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd> 
+create_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6001.684 ; gain = 54.969 ; free physical = 64 ; free virtual = 1590
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/mihir/PRLab/Sources/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/mihir/PRLab/Sources/ip_repo'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:matrix:1.0 matrix_0
+endgroup
+set_property location {1.5 531 39} [get_bd_cells matrix_0]
+set_property location {1 59 -53} [get_bd_cells processing_system7_0]
+set_property location {672 -129} [get_bd_intf_ports DDR]
+set_property location {674 -111} [get_bd_intf_ports FIXED_IO]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.0 axi_bram_ctrl_0
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] matrix_design_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] matrix_design_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 6189.906 ; gain = 107.672 ; free physical = 73 ; free virtual = 1397
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.3 blk_mem_gen_0
+endgroup
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+startgroup
+set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Use_RSTB_Pin {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_bd_cells blk_mem_gen_0]
+endgroup
+set_property location {2 484 180} [get_bd_cells blk_mem_gen_0]
+set_property location {2.5 670 242} [get_bd_cells matrix_0]
+set_property location {3 590 66} [get_bd_cells blk_mem_gen_0]
+set_property location {1.5 513 -93} [get_bd_cells axi_bram_ctrl_0]
+set_property location {0.5 -214 84} [get_bd_cells processing_system7_0]
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells axi_bram_ctrl_0]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA] [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA]
+delete_bd_objs [get_bd_intf_nets axi_bram_ctrl_0_BRAM_PORTA] [get_bd_cells axi_bram_ctrl_0]
+delete_bd_objs [get_bd_cells blk_mem_gen_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins matrix_0/S00_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+</matrix_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C00000 [ 64K ]>
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+save_bd_design
+Wrote  : </home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd> 
+validate_bd_design
+set_property synth_checkpoint_mode None [get_files  /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd]
+generate_target all [get_files  /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd]
+INFO: [BD 41-1662] The design 'matrix_design.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design.v
+Verilog Output written to : /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design_wrapper.v
+Wrote  : </home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd> 
+WARNING: [xilinx.com:ip:processing_system7:5.5-1] matrix_design_processing_system7_0_0: The Zynq BFM requires an AXI BFM license to run. Please ensure that you have purchased and setup the AXI BFM license prior to running simulation with this block. Please contact your Xilinx sales office for more information on purchasing this license
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block matrix_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hw_handoff/matrix_design.hwh
+Generated Block Design Tcl file /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hw_handoff/matrix_design_bd.tcl
+Generated Hardware Definition File /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design.hwdef
+generate_target: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 6298.574 ; gain = 42.586 ; free physical = 71 ; free virtual = 1270
+export_ip_user_files -of_objects [get_files /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd] -directory /home/mihir/PRLab/Matrix/Matrix.ip_user_files/sim_scripts -ip_user_files_dir /home/mihir/PRLab/Matrix/Matrix.ip_user_files -ipstatic_source_dir /home/mihir/PRLab/Matrix/Matrix.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mihir/PRLab/Matrix/Matrix.cache/compile_simlib/modelsim} {questa=/home/mihir/PRLab/Matrix/Matrix.cache/compile_simlib/questa} {ies=/home/mihir/PRLab/Matrix/Matrix.cache/compile_simlib/ies} {vcs=/home/mihir/PRLab/Matrix/Matrix.cache/compile_simlib/vcs} {riviera=/home/mihir/PRLab/Matrix/Matrix.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/matrix_design.bd] -top
+add_files -norecurse /home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design_wrapper.v" into library work [/home/mihir/PRLab/Matrix/Matrix.srcs/sources_1/bd/matrix_design/hdl/matrix_design_wrapper.v:1]
+[Wed Oct 18 21:19:00 2017] Launched synth_1...
+Run output will be captured here: /home/mihir/PRLab/Matrix/Matrix.runs/synth_1/runme.log
+close+project
+invalid command name "close+project"
+close_project
+pwd
+/home/mihir/PRLab
+ls
+WARNING: [Common 17-259] Unknown Tcl command 'ls' sending command to the OS shell for execution. It is recommended to use 'exec' to send the command to the OS shell.
+Bitstreams
+Checkpoint
+generate_bitstreams.tcl
+Implement
+Matrix
+ps7_create.tcl
+Sources
+Synth
+synth_reconfig_modules.tcl
+vivado.jou
+vivado.log
+vivado_pid16083.str
+source synth_reconfig_modules.tcl
+# read_verilog Sources/reconfig_modules/matrix_addition/matrix_addition.v
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/eda/xilinx/Vivado/2016.3/data/ip'.
+# synth_design -mode out_of_context -flatten_hierarchy rebuilt -top filter -part xc7z020clg484-1
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top filter -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16740 
+WARNING: [Synth 8-2611] redeclaration of ansi port Res is not allowed [/home/mihir/PRLab/Sources/reconfig_modules/matrix_addition/matrix_addition.v:9]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:03:21 ; elapsed = 00:13:40 . Memory (MB): peak = 6359.281 ; gain = 5358.355 ; free physical = 151 ; free virtual = 1146
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'filter' not found
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:03:23 ; elapsed = 00:13:41 . Memory (MB): peak = 6398.383 ; gain = 5397.457 ; free physical = 105 ; free virtual = 1106
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+source synth_reconfig_modules.tcl
+# read_verilog Sources/reconfig_modules/matrix_addition/matrix_addition.v
+WARNING: [filemgmt 56-12] File '/home/mihir/PRLab/Sources/reconfig_modules/matrix_addition/matrix_addition.v' cannot be added to the project because it already exists in the project, skipping this file
+# synth_design -mode out_of_context -flatten_hierarchy rebuilt -top matrix -part xc7z020clg484-1
+Command: synth_design -mode out_of_context -flatten_hierarchy rebuilt -top matrix -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+WARNING: [Synth 8-2611] redeclaration of ansi port Res is not allowed [/home/mihir/PRLab/Sources/reconfig_modules/matrix_addition/matrix_addition.v:9]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:03:31 ; elapsed = 00:15:33 . Memory (MB): peak = 6400.387 ; gain = 5399.461 ; free physical = 103 ; free virtual = 1108
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'matrix' not found
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:03:32 ; elapsed = 00:15:34 . Memory (MB): peak = 6401.512 ; gain = 5400.586 ; free physical = 102 ; free virtual = 1107
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+2 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 18 21:27:15 2017...

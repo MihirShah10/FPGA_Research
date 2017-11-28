@@ -1,0 +1,611 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sun Nov 19 17:07:06 2017
+# Process ID: 22904
+# Current directory: C:/JPEG_Thesis_2/BRAM_System_Final
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22628 C:\JPEG_Thesis_2\BRAM_System_Final\BRAM_System_Final.xpr
+# Log file: C:/JPEG_Thesis_2/BRAM_System_Final/vivado.log
+# Journal file: C:/JPEG_Thesis_2/BRAM_System_Final\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 814.137 ; gain = 189.613
+open_bd_design {C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:user:DARC_BRAM2:1.0 - DARC_BRAM2_0
+Adding cell -- xilinx.com:user:DARC_Mux:1.0 - DARC_Mux_0
+Adding cell -- xilinx.com:user:bram:1.0 - bram_0
+Adding cell -- xilinx.com:user:controller:1.0 - controller_0
+Adding cell -- xilinx.com:user:jpeg:1.0 - jpeg_0
+Adding cell -- xilinx.com:user:ARM_FPGA_Control_Bus:1.0 - ARM_FPGA_Control_Bus_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <bram_design_system> from BD file <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 829.125 ; gain = 12.629
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:JPEG_PR:1.0 JPEG_PR_0
+endgroup
+ipx::edit_ip_in_project -upgrade true -name JPEG_PR_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.tmp/JPEG_PR_v1_0_project c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+ipx::unload_core c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0/component.xml
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_system_final/bram_system_final.tmp/jpeg_pr_v1_0_project/JPEG_PR_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_system_final/bram_system_final.tmp/jpeg_pr_v1_0_project/JPEG_PR_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 19 17:09:35 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 17:09:35 2017...
+close_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 915.426 ; gain = 0.000
+ipx::edit_ip_in_project -upgrade true -name JPEG_PR_v1_0_project -directory C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.tmp/JPEG_PR_v1_0_project c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [IP_Flow 19-793] Syncing display name meta-data
+INFO: [IP_Flow 19-798] Syncing taxonomy meta-data
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+INFO: [IP_Flow 19-4753] Inferred signal 'reset' from port 's00_axi_aresetn' as interface 's00_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 's00_axi_aclk' as interface 's00_axi_aclk'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+ipx::merge_project_changes: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 961.117 ; gain = 0.000
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source c:/jpeg_thesis_2/bram_system_final/bram_system_final.tmp/jpeg_pr_v1_0_project/JPEG_PR_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'c:/jpeg_thesis_2/bram_system_final/bram_system_final.tmp/jpeg_pr_v1_0_project/JPEG_PR_v1_0_project.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Sun Nov 19 17:21:02 2017. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 17:21:02 2017...
+update_ip_catalog -rebuild -repo_path c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'
+delete_bd_objs [get_bd_cells JPEG_PR_0]
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:JPEG_PR:1.0 JPEG_PR_0
+endgroup
+set_property location {4 -190 1435} [get_bd_cells JPEG_PR_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/processing_system7_0/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins JPEG_PR_0/S00_AXI]
+</JPEG_PR_0/S00_AXI/S00_AXI_reg> is being mapped into </processing_system7_0/Data> at <0x43C20000 [ 64K ]>
+set_property location {6 2653 1462} [get_bd_cells JPEG_PR_0]
+delete_bd_objs [get_bd_nets jpeg_0_jpeg_out_a19] [get_bd_nets jpeg_0_jpeg_out_a35] [get_bd_nets controller_0_data_out_compute_47] [get_bd_nets controller_0_data_out_compute_63] [get_bd_nets jpeg_0_jpeg_out_a08] [get_bd_nets jpeg_0_jpeg_out_a57] [get_bd_nets controller_0_data_out_compute_20] [get_bd_nets jpeg_0_jpeg_out_a20] [get_bd_nets jpeg_0_jpeg_out_a36] [get_bd_nets controller_0_data_out_compute_30] [get_bd_nets controller_0_data_out_compute_44] [get_bd_nets controller_0_data_out_compute_60] [get_bd_nets jpeg_0_jpeg_out_a07] [get_bd_nets jpeg_0_jpeg_out_a58] [get_bd_nets controller_0_data_out_compute_23] [get_bd_nets jpeg_0_jpeg_out_a33] [get_bd_nets jpeg_0_jpeg_out_a49] [get_bd_nets jpeg_0_jpeg_out_a50] [get_bd_nets controller_0_data_out_compute_41] [get_bd_nets controller_0_data_out_compute_57] [get_bd_nets jpeg_0_jpeg_out_a06] [get_bd_nets jpeg_0_jpeg_out_a59] [get_bd_nets controller_0_data_out_compute_02] [get_bd_nets controller_0_data_out_compute_00] [get_bd_nets controller_0_data_out_compute_04] [get_bd_nets controller_0_data_out_compute_06] [get_bd_nets controller_0_data_out_compute_08] [get_bd_nets controller_0_data_out_compute_10] [get_bd_nets controller_0_data_out_compute_25] [get_bd_nets jpeg_0_jpeg_out_a18] [get_bd_nets jpeg_0_jpeg_out_a34] [get_bd_nets controller_0_data_out_compute_38] [get_bd_nets controller_0_data_out_compute_54] [get_bd_nets jpeg_0_jpeg_out_a05] [get_bd_nets jpeg_0_jpeg_out_a60] [get_bd_nets controller_0_data_out_compute_13] [get_bd_nets jpeg_0_jpeg_out_a23] [get_bd_nets jpeg_0_jpeg_out_a39] [get_bd_nets controller_0_data_out_compute_29] [get_bd_nets controller_0_data_out_compute_43] [get_bd_nets controller_0_data_out_compute_59] [get_bd_nets jpeg_0_jpeg_out_a12] [get_bd_nets controller_0_data_out_compute_27] [get_bd_nets jpeg_0_jpeg_out_a24] [get_bd_nets jpeg_0_jpeg_out_a40] [get_bd_nets jpeg_0_jpeg_out_a56] [get_bd_nets controller_0_data_out_compute_40] [get_bd_nets controller_0_data_out_compute_56] [get_bd_nets jpeg_0_jpeg_out_a11] [get_bd_nets controller_0_data_out_compute_11] [get_bd_nets controller_0_data_out_compute_24] [get_bd_nets jpeg_0_jpeg_out_a21] [get_bd_nets jpeg_0_jpeg_out_a37] [get_bd_nets controller_0_data_out_compute_37] [get_bd_nets controller_0_data_out_compute_53] [get_bd_nets jpeg_0_jpeg_out_a10] [get_bd_nets controller_0_data_out_compute_14] [get_bd_nets jpeg_0_jpeg_out_a22] [get_bd_nets jpeg_0_jpeg_out_a38] [get_bd_nets controller_0_data_out_compute_34] [get_bd_nets controller_0_data_out_compute_50] [get_bd_nets jpeg_0_jpeg_out_a09] [get_bd_nets jpeg_0_valid] [get_bd_nets controller_0_data_out_compute_17] [get_bd_nets jpeg_0_jpeg_out_a27] [get_bd_nets jpeg_0_jpeg_out_a43] [get_bd_nets jpeg_0_jpeg_out_a53] [get_bd_nets controller_0_data_out_compute_39] [get_bd_nets controller_0_data_out_compute_55] [get_bd_nets jpeg_0_jpeg_out_a00] [get_bd_nets jpeg_0_jpeg_out_a16] [get_bd_nets controller_0_data_out_compute_12] [get_bd_nets jpeg_0_jpeg_out_a28] [get_bd_nets jpeg_0_jpeg_out_a44] [get_bd_nets controller_0_data_out_compute_36] [get_bd_nets controller_0_data_out_compute_52] [get_bd_nets jpeg_0_jpeg_out_a15] [get_bd_nets controller_0_data_out_compute_15] [get_bd_nets ARM_FPGA_Control_Bus_0_compute_wakeup] [get_bd_nets jpeg_0_jpeg_out_a25] [get_bd_nets jpeg_0_jpeg_out_a41] [get_bd_nets jpeg_0_jpeg_out_a55] [get_bd_nets controller_0_data_out_compute_33] [get_bd_nets controller_0_data_out_compute_49] [get_bd_nets jpeg_0_jpeg_out_a14] [get_bd_nets controller_0_data_out_compute_03] [get_bd_nets controller_0_data_out_compute_01] [get_bd_nets controller_0_data_out_compute_05] [get_bd_nets controller_0_data_out_compute_07] [get_bd_nets controller_0_data_out_compute_09] [get_bd_nets controller_0_data_out_compute_18] [get_bd_nets jpeg_0_jpeg_out_a26] [get_bd_nets jpeg_0_jpeg_out_a42] [get_bd_nets jpeg_0_jpeg_out_a54] [get_bd_nets controller_0_data_out_compute_46] [get_bd_nets controller_0_data_out_compute_62] [get_bd_nets jpeg_0_jpeg_out_a13] [get_bd_nets controller_0_data_out_compute_21] [get_bd_nets jpeg_0_jpeg_out_a31] [get_bd_nets jpeg_0_jpeg_out_a47] [get_bd_nets jpeg_0_jpeg_out_a52] [get_bd_nets controller_0_data_out_compute_35] [get_bd_nets controller_0_data_out_compute_51] [get_bd_nets jpeg_0_jpeg_out_a04] [get_bd_nets jpeg_0_jpeg_out_a61] [get_bd_nets controller_0_data_out_compute_16] [get_bd_nets jpeg_0_jpeg_out_a32] [get_bd_nets jpeg_0_jpeg_out_a48] [get_bd_nets jpeg_0_jpeg_out_a51] [get_bd_nets controller_0_data_out_compute_32] [get_bd_nets controller_0_data_out_compute_48] [get_bd_nets jpeg_0_jpeg_out_a03] [get_bd_nets jpeg_0_jpeg_out_a62] [get_bd_nets controller_0_data_out_compute_19] [get_bd_nets jpeg_0_jpeg_out_a29] [get_bd_nets jpeg_0_jpeg_out_a45] [get_bd_nets controller_0_data_out_compute_31] [get_bd_nets controller_0_data_out_compute_45] [get_bd_nets controller_0_data_out_compute_61] [get_bd_nets jpeg_0_jpeg_out_a02] [get_bd_nets jpeg_0_jpeg_out_a63] [get_bd_nets controller_0_data_out_compute_22] [get_bd_nets jpeg_0_jpeg_out_a30] [get_bd_nets jpeg_0_jpeg_out_a46] [get_bd_nets controller_0_data_out_compute_28] [get_bd_nets controller_0_data_out_compute_42] [get_bd_nets controller_0_data_out_compute_58] [get_bd_nets jpeg_0_jpeg_out_a01] [get_bd_nets jpeg_0_jpeg_out_a17] [get_bd_nets controller_0_data_out_compute_26] [get_bd_cells jpeg_0]
+set_property location {4.5 1601 1347} [get_bd_cells JPEG_PR_0]
+set_property location {5 1565 1479} [get_bd_cells JPEG_PR_0]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_00] [get_bd_pins JPEG_PR_0/jpeg_in_a00]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_01] [get_bd_pins JPEG_PR_0/jpeg_in_a01]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_02] [get_bd_pins JPEG_PR_0/jpeg_in_a02]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_03] [get_bd_pins JPEG_PR_0/jpeg_in_a03]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_04] [get_bd_pins JPEG_PR_0/jpeg_in_a04]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_05] [get_bd_pins JPEG_PR_0/jpeg_in_a05]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_06] [get_bd_pins JPEG_PR_0/jpeg_in_a06]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_07] [get_bd_pins JPEG_PR_0/jpeg_in_a07]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_08] [get_bd_pins JPEG_PR_0/jpeg_in_a08]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_09] [get_bd_pins JPEG_PR_0/jpeg_in_a09]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_10] [get_bd_pins JPEG_PR_0/jpeg_in_a10]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_11] [get_bd_pins JPEG_PR_0/jpeg_in_a11]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_12] [get_bd_pins JPEG_PR_0/jpeg_in_a12]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_13] [get_bd_pins JPEG_PR_0/jpeg_in_a13]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_14] [get_bd_pins JPEG_PR_0/jpeg_in_a14]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_15] [get_bd_pins JPEG_PR_0/jpeg_in_a15]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_16] [get_bd_pins JPEG_PR_0/jpeg_in_a16]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_17] [get_bd_pins JPEG_PR_0/jpeg_in_a17]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_18] [get_bd_pins JPEG_PR_0/jpeg_in_a18]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_19] [get_bd_pins JPEG_PR_0/jpeg_in_a19]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_20] [get_bd_pins JPEG_PR_0/jpeg_in_a20]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_21] [get_bd_pins JPEG_PR_0/jpeg_in_a21]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_22] [get_bd_pins JPEG_PR_0/jpeg_in_a22]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_23] [get_bd_pins JPEG_PR_0/jpeg_in_a23]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_24] [get_bd_pins JPEG_PR_0/jpeg_in_a24]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_63] [get_bd_pins JPEG_PR_0/jpeg_in_a63]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_62] [get_bd_pins JPEG_PR_0/jpeg_in_a62]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_61] [get_bd_pins JPEG_PR_0/jpeg_in_a61]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a60] [get_bd_pins controller_0/data_out_compute_60]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_59] [get_bd_pins JPEG_PR_0/jpeg_in_a59]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_25] [get_bd_pins JPEG_PR_0/jpeg_in_a25]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_26] [get_bd_pins JPEG_PR_0/jpeg_in_a26]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_27] [get_bd_pins JPEG_PR_0/jpeg_in_a27]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_28] [get_bd_pins JPEG_PR_0/jpeg_in_a28]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_29] [get_bd_pins JPEG_PR_0/jpeg_in_a29]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_30] [get_bd_pins JPEG_PR_0/jpeg_in_a30]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a31] [get_bd_pins controller_0/data_out_compute_31]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_32] [get_bd_pins JPEG_PR_0/jpeg_in_a32]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a33] [get_bd_pins controller_0/data_out_compute_33]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_34] [get_bd_pins JPEG_PR_0/jpeg_in_a34]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_35] [get_bd_pins JPEG_PR_0/jpeg_in_a35]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a36] [get_bd_pins controller_0/data_out_compute_36]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_37] [get_bd_pins JPEG_PR_0/jpeg_in_a37]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a38] [get_bd_pins controller_0/data_out_compute_38]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_39] [get_bd_pins JPEG_PR_0/jpeg_in_a39]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a40] [get_bd_pins controller_0/data_out_compute_40]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_41] [get_bd_pins JPEG_PR_0/jpeg_in_a41]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a42] [get_bd_pins controller_0/data_out_compute_42]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_43] [get_bd_pins JPEG_PR_0/jpeg_in_a43]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a44] [get_bd_pins controller_0/data_out_compute_44]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_45] [get_bd_pins JPEG_PR_0/jpeg_in_a45]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a46] [get_bd_pins controller_0/data_out_compute_46]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_47] [get_bd_pins JPEG_PR_0/jpeg_in_a47]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a48] [get_bd_pins controller_0/data_out_compute_48]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_49] [get_bd_pins JPEG_PR_0/jpeg_in_a49]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_50] [get_bd_pins JPEG_PR_0/jpeg_in_a50]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a51] [get_bd_pins controller_0/data_out_compute_51]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_58] [get_bd_pins JPEG_PR_0/jpeg_in_a58]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a57] [get_bd_pins controller_0/data_out_compute_57]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_56] [get_bd_pins JPEG_PR_0/jpeg_in_a56]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_in_a55] [get_bd_pins controller_0/data_out_compute_55]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_54] [get_bd_pins JPEG_PR_0/jpeg_in_a54]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_52] [get_bd_pins JPEG_PR_0/jpeg_in_a52]
+connect_bd_net [get_bd_pins controller_0/data_out_compute_53] [get_bd_pins JPEG_PR_0/jpeg_in_a53]
+set_property location {3.5 314 991} [get_bd_cells controller_0]
+set_property location {3 -18 1290} [get_bd_cells controller_0]
+set_property location {4 871 1254} [get_bd_cells JPEG_PR_0]
+set_property location {2 -711 510} [get_bd_cells ARM_FPGA_Control_Bus_0]
+set_property location {3 -205 302} [get_bd_cells rst_ps7_0_100M]
+set_property location {3.5 650 305} [get_bd_cells DARC_BRAM2_0]
+set_property location {5.5 1867 60} [get_bd_cells ps7_0_axi_periph]
+set_property location {6.5 2436 423} [get_bd_cells DARC_Mux_0]
+set_property location {7.5 2867 409} [get_bd_cells bram_0]
+set_property location {4 595 1282} [get_bd_cells JPEG_PR_0]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_63] [get_bd_pins JPEG_PR_0/jpeg_out_a63]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a62] [get_bd_pins controller_0/data_in_compute_62]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_61] [get_bd_pins JPEG_PR_0/jpeg_out_a61]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a60] [get_bd_pins controller_0/data_in_compute_60]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_00] [get_bd_pins JPEG_PR_0/jpeg_out_a00]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a01] [get_bd_pins controller_0/data_in_compute_01]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_02] [get_bd_pins JPEG_PR_0/jpeg_out_a02]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a03] [get_bd_pins controller_0/data_in_compute_03]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_04] [get_bd_pins JPEG_PR_0/jpeg_out_a04]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_05] [get_bd_pins JPEG_PR_0/jpeg_out_a05]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_06] [get_bd_pins JPEG_PR_0/jpeg_out_a06]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_07] [get_bd_pins JPEG_PR_0/jpeg_out_a07]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_08] [get_bd_pins JPEG_PR_0/jpeg_out_a08]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_09] [get_bd_pins JPEG_PR_0/jpeg_out_a09]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_10] [get_bd_pins JPEG_PR_0/jpeg_out_a10]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_59] [get_bd_pins JPEG_PR_0/jpeg_out_a59]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a58] [get_bd_pins controller_0/data_in_compute_58]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_57] [get_bd_pins JPEG_PR_0/jpeg_out_a57]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a56] [get_bd_pins controller_0/data_in_compute_56]
+connect_bd_net [get_bd_pins controller_0/data_in_compute_55] [get_bd_pins JPEG_PR_0/jpeg_out_a55]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a11] [get_bd_pins controller_0/data_in_compute_11]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a12] [get_bd_pins controller_0/data_in_compute_12]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a13] [get_bd_pins controller_0/data_in_compute_13]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a14] [get_bd_pins controller_0/data_in_compute_14]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a15] [get_bd_pins controller_0/data_in_compute_15]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a16] [get_bd_pins controller_0/data_in_compute_16]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a17] [get_bd_pins controller_0/data_in_compute_17]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a18] [get_bd_pins controller_0/data_in_compute_18]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a19] [get_bd_pins controller_0/data_in_compute_19]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a20] [get_bd_pins controller_0/data_in_compute_20]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a21] [get_bd_pins controller_0/data_in_compute_21]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a22] [get_bd_pins controller_0/data_in_compute_22]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a23] [get_bd_pins controller_0/data_in_compute_23]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a24] [get_bd_pins controller_0/data_in_compute_24]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a25] [get_bd_pins controller_0/data_in_compute_25]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a26] [get_bd_pins controller_0/data_in_compute_26]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a27] [get_bd_pins controller_0/data_in_compute_27]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a28] [get_bd_pins controller_0/data_in_compute_28]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a29] [get_bd_pins controller_0/data_in_compute_29]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a30] [get_bd_pins controller_0/data_in_compute_30]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a31] [get_bd_pins controller_0/data_in_compute_31]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a32] [get_bd_pins controller_0/data_in_compute_32]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a33] [get_bd_pins controller_0/data_in_compute_33]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a34] [get_bd_pins controller_0/data_in_compute_34]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a35] [get_bd_pins controller_0/data_in_compute_35]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a36] [get_bd_pins controller_0/data_in_compute_36]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a37] [get_bd_pins controller_0/data_in_compute_37]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a38] [get_bd_pins controller_0/data_in_compute_38]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a39] [get_bd_pins controller_0/data_in_compute_39]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a40] [get_bd_pins controller_0/data_in_compute_40]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a41] [get_bd_pins controller_0/data_in_compute_41]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a42] [get_bd_pins controller_0/data_in_compute_42]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a43] [get_bd_pins controller_0/data_in_compute_43]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a44] [get_bd_pins controller_0/data_in_compute_44]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a45] [get_bd_pins controller_0/data_in_compute_45]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a46] [get_bd_pins controller_0/data_in_compute_46]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a47] [get_bd_pins controller_0/data_in_compute_47]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a48] [get_bd_pins controller_0/data_in_compute_48]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a49] [get_bd_pins controller_0/data_in_compute_49]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a50] [get_bd_pins controller_0/data_in_compute_50]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a51] [get_bd_pins controller_0/data_in_compute_51]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a52] [get_bd_pins controller_0/data_in_compute_52]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a53] [get_bd_pins controller_0/data_in_compute_53]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_a54] [get_bd_pins controller_0/data_in_compute_54]
+set_property location {1.5 -1137 -833} [get_bd_cells processing_system7_0]
+set_property location {2 -751 -253} [get_bd_cells ARM_FPGA_Control_Bus_0]
+set_property location {3 -1 -394} [get_bd_cells rst_ps7_0_100M]
+set_property location {4 1093 -410} [get_bd_cells DARC_BRAM2_0]
+set_property location {4 1263 -135} [get_bd_cells DARC_BRAM2_0]
+set_property location {3.5 388 -108} [get_bd_cells rst_ps7_0_100M]
+set_property location {2.5 -471 -49} [get_bd_cells ARM_FPGA_Control_Bus_0]
+set_property location {3 51 -246} [get_bd_cells processing_system7_0]
+set_property location {0.5 -948 -395} [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins JPEG_PR_0/jpeg_out_valid] [get_bd_pins ARM_FPGA_Control_Bus_0/compute_valid]
+connect_bd_net [get_bd_pins ARM_FPGA_Control_Bus_0/compute_wakeup] [get_bd_pins JPEG_PR_0/jpeg_in_compute]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /JPEG_PR_0/jpeg_in_compute(undef)
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/ui/bd_8edae7ad.ui> 
+validate_bd_design
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'bram_design_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a00'(12) to net 'controller_0_data_out_compute_00'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a01'(12) to net 'controller_0_data_out_compute_01'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a02'(12) to net 'controller_0_data_out_compute_02'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a03'(12) to net 'controller_0_data_out_compute_03'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a04'(12) to net 'controller_0_data_out_compute_04'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a05'(12) to net 'controller_0_data_out_compute_05'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a06'(12) to net 'controller_0_data_out_compute_06'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a07'(12) to net 'controller_0_data_out_compute_07'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a08'(12) to net 'controller_0_data_out_compute_08'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a09'(12) to net 'controller_0_data_out_compute_09'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a10'(12) to net 'controller_0_data_out_compute_10'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a11'(12) to net 'controller_0_data_out_compute_11'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a12'(12) to net 'controller_0_data_out_compute_12'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a13'(12) to net 'controller_0_data_out_compute_13'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a14'(12) to net 'controller_0_data_out_compute_14'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a15'(12) to net 'controller_0_data_out_compute_15'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a16'(12) to net 'controller_0_data_out_compute_16'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a17'(12) to net 'controller_0_data_out_compute_17'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a18'(12) to net 'controller_0_data_out_compute_18'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a19'(12) to net 'controller_0_data_out_compute_19'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a20'(12) to net 'controller_0_data_out_compute_20'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a21'(12) to net 'controller_0_data_out_compute_21'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a22'(12) to net 'controller_0_data_out_compute_22'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a23'(12) to net 'controller_0_data_out_compute_23'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a24'(12) to net 'controller_0_data_out_compute_24'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a63'(12) to net 'controller_0_data_out_compute_63'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a62'(12) to net 'controller_0_data_out_compute_62'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a61'(12) to net 'controller_0_data_out_compute_61'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a60'(12) to net 'controller_0_data_out_compute_60'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a59'(12) to net 'controller_0_data_out_compute_59'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a25'(12) to net 'controller_0_data_out_compute_25'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a26'(12) to net 'controller_0_data_out_compute_26'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a27'(12) to net 'controller_0_data_out_compute_27'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a28'(12) to net 'controller_0_data_out_compute_28'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a29'(12) to net 'controller_0_data_out_compute_29'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a30'(12) to net 'controller_0_data_out_compute_30'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a31'(12) to net 'controller_0_data_out_compute_31'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a32'(12) to net 'controller_0_data_out_compute_32'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a33'(12) to net 'controller_0_data_out_compute_33'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a34'(12) to net 'controller_0_data_out_compute_34'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a35'(12) to net 'controller_0_data_out_compute_35'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a36'(12) to net 'controller_0_data_out_compute_36'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a37'(12) to net 'controller_0_data_out_compute_37'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a38'(12) to net 'controller_0_data_out_compute_38'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a39'(12) to net 'controller_0_data_out_compute_39'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a40'(12) to net 'controller_0_data_out_compute_40'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a41'(12) to net 'controller_0_data_out_compute_41'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a42'(12) to net 'controller_0_data_out_compute_42'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a43'(12) to net 'controller_0_data_out_compute_43'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a44'(12) to net 'controller_0_data_out_compute_44'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a45'(12) to net 'controller_0_data_out_compute_45'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a46'(12) to net 'controller_0_data_out_compute_46'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a47'(12) to net 'controller_0_data_out_compute_47'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a48'(12) to net 'controller_0_data_out_compute_48'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a49'(12) to net 'controller_0_data_out_compute_49'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a50'(12) to net 'controller_0_data_out_compute_50'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a51'(12) to net 'controller_0_data_out_compute_51'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a58'(12) to net 'controller_0_data_out_compute_58'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a57'(12) to net 'controller_0_data_out_compute_57'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a56'(12) to net 'controller_0_data_out_compute_56'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a55'(12) to net 'controller_0_data_out_compute_55'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a54'(12) to net 'controller_0_data_out_compute_54'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a52'(12) to net 'controller_0_data_out_compute_52'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a53'(12) to net 'controller_0_data_out_compute_53'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_63'(16) to net 'JPEG_PR_0_jpeg_out_a63'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_62'(16) to net 'JPEG_PR_0_jpeg_out_a62'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_61'(16) to net 'JPEG_PR_0_jpeg_out_a61'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_60'(16) to net 'JPEG_PR_0_jpeg_out_a60'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_00'(16) to net 'JPEG_PR_0_jpeg_out_a00'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_01'(16) to net 'JPEG_PR_0_jpeg_out_a01'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_02'(16) to net 'JPEG_PR_0_jpeg_out_a02'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_03'(16) to net 'JPEG_PR_0_jpeg_out_a03'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_04'(16) to net 'JPEG_PR_0_jpeg_out_a04'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_05'(16) to net 'JPEG_PR_0_jpeg_out_a05'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_06'(16) to net 'JPEG_PR_0_jpeg_out_a06'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_07'(16) to net 'JPEG_PR_0_jpeg_out_a07'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_08'(16) to net 'JPEG_PR_0_jpeg_out_a08'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_09'(16) to net 'JPEG_PR_0_jpeg_out_a09'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_10'(16) to net 'JPEG_PR_0_jpeg_out_a10'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_59'(16) to net 'JPEG_PR_0_jpeg_out_a59'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_58'(16) to net 'JPEG_PR_0_jpeg_out_a58'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_57'(16) to net 'JPEG_PR_0_jpeg_out_a57'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_56'(16) to net 'JPEG_PR_0_jpeg_out_a56'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_55'(16) to net 'JPEG_PR_0_jpeg_out_a55'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_11'(16) to net 'JPEG_PR_0_jpeg_out_a11'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_12'(16) to net 'JPEG_PR_0_jpeg_out_a12'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_13'(16) to net 'JPEG_PR_0_jpeg_out_a13'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_14'(16) to net 'JPEG_PR_0_jpeg_out_a14'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_15'(16) to net 'JPEG_PR_0_jpeg_out_a15'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_16'(16) to net 'JPEG_PR_0_jpeg_out_a16'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_17'(16) to net 'JPEG_PR_0_jpeg_out_a17'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_18'(16) to net 'JPEG_PR_0_jpeg_out_a18'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_19'(16) to net 'JPEG_PR_0_jpeg_out_a19'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_20'(16) to net 'JPEG_PR_0_jpeg_out_a20'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_21'(16) to net 'JPEG_PR_0_jpeg_out_a21'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_22'(16) to net 'JPEG_PR_0_jpeg_out_a22'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_23'(16) to net 'JPEG_PR_0_jpeg_out_a23'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_24'(16) to net 'JPEG_PR_0_jpeg_out_a24'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_25'(16) to net 'JPEG_PR_0_jpeg_out_a25'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_26'(16) to net 'JPEG_PR_0_jpeg_out_a26'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+INFO: [Common 17-14] Message 'BD 41-1228' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block JPEG_PR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Sun Nov 19 17:47:31 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1169.066 ; gain = 136.297
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a00'(12) to net 'controller_0_data_out_compute_00'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a01'(12) to net 'controller_0_data_out_compute_01'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a02'(12) to net 'controller_0_data_out_compute_02'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a03'(12) to net 'controller_0_data_out_compute_03'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a04'(12) to net 'controller_0_data_out_compute_04'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a05'(12) to net 'controller_0_data_out_compute_05'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a06'(12) to net 'controller_0_data_out_compute_06'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a07'(12) to net 'controller_0_data_out_compute_07'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a08'(12) to net 'controller_0_data_out_compute_08'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a09'(12) to net 'controller_0_data_out_compute_09'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a10'(12) to net 'controller_0_data_out_compute_10'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a11'(12) to net 'controller_0_data_out_compute_11'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a12'(12) to net 'controller_0_data_out_compute_12'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a13'(12) to net 'controller_0_data_out_compute_13'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a14'(12) to net 'controller_0_data_out_compute_14'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a15'(12) to net 'controller_0_data_out_compute_15'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a16'(12) to net 'controller_0_data_out_compute_16'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a17'(12) to net 'controller_0_data_out_compute_17'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a18'(12) to net 'controller_0_data_out_compute_18'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a19'(12) to net 'controller_0_data_out_compute_19'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a20'(12) to net 'controller_0_data_out_compute_20'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a21'(12) to net 'controller_0_data_out_compute_21'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a22'(12) to net 'controller_0_data_out_compute_22'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a23'(12) to net 'controller_0_data_out_compute_23'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a24'(12) to net 'controller_0_data_out_compute_24'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a63'(12) to net 'controller_0_data_out_compute_63'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a62'(12) to net 'controller_0_data_out_compute_62'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a61'(12) to net 'controller_0_data_out_compute_61'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a60'(12) to net 'controller_0_data_out_compute_60'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a59'(12) to net 'controller_0_data_out_compute_59'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a25'(12) to net 'controller_0_data_out_compute_25'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a26'(12) to net 'controller_0_data_out_compute_26'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a27'(12) to net 'controller_0_data_out_compute_27'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a28'(12) to net 'controller_0_data_out_compute_28'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a29'(12) to net 'controller_0_data_out_compute_29'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a30'(12) to net 'controller_0_data_out_compute_30'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a31'(12) to net 'controller_0_data_out_compute_31'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a32'(12) to net 'controller_0_data_out_compute_32'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a33'(12) to net 'controller_0_data_out_compute_33'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a34'(12) to net 'controller_0_data_out_compute_34'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a35'(12) to net 'controller_0_data_out_compute_35'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a36'(12) to net 'controller_0_data_out_compute_36'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a37'(12) to net 'controller_0_data_out_compute_37'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a38'(12) to net 'controller_0_data_out_compute_38'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a39'(12) to net 'controller_0_data_out_compute_39'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a40'(12) to net 'controller_0_data_out_compute_40'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a41'(12) to net 'controller_0_data_out_compute_41'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a42'(12) to net 'controller_0_data_out_compute_42'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a43'(12) to net 'controller_0_data_out_compute_43'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a44'(12) to net 'controller_0_data_out_compute_44'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a45'(12) to net 'controller_0_data_out_compute_45'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a46'(12) to net 'controller_0_data_out_compute_46'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a47'(12) to net 'controller_0_data_out_compute_47'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a48'(12) to net 'controller_0_data_out_compute_48'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a49'(12) to net 'controller_0_data_out_compute_49'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a50'(12) to net 'controller_0_data_out_compute_50'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a51'(12) to net 'controller_0_data_out_compute_51'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a58'(12) to net 'controller_0_data_out_compute_58'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a57'(12) to net 'controller_0_data_out_compute_57'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a56'(12) to net 'controller_0_data_out_compute_56'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a55'(12) to net 'controller_0_data_out_compute_55'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a54'(12) to net 'controller_0_data_out_compute_54'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a52'(12) to net 'controller_0_data_out_compute_52'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/JPEG_PR_0/jpeg_in_a53'(12) to net 'controller_0_data_out_compute_53'(16) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_63'(16) to net 'JPEG_PR_0_jpeg_out_a63'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_62'(16) to net 'JPEG_PR_0_jpeg_out_a62'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_61'(16) to net 'JPEG_PR_0_jpeg_out_a61'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_60'(16) to net 'JPEG_PR_0_jpeg_out_a60'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_00'(16) to net 'JPEG_PR_0_jpeg_out_a00'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_01'(16) to net 'JPEG_PR_0_jpeg_out_a01'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_02'(16) to net 'JPEG_PR_0_jpeg_out_a02'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_03'(16) to net 'JPEG_PR_0_jpeg_out_a03'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_04'(16) to net 'JPEG_PR_0_jpeg_out_a04'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_05'(16) to net 'JPEG_PR_0_jpeg_out_a05'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_06'(16) to net 'JPEG_PR_0_jpeg_out_a06'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_07'(16) to net 'JPEG_PR_0_jpeg_out_a07'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_08'(16) to net 'JPEG_PR_0_jpeg_out_a08'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_09'(16) to net 'JPEG_PR_0_jpeg_out_a09'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_10'(16) to net 'JPEG_PR_0_jpeg_out_a10'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_59'(16) to net 'JPEG_PR_0_jpeg_out_a59'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_58'(16) to net 'JPEG_PR_0_jpeg_out_a58'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_57'(16) to net 'JPEG_PR_0_jpeg_out_a57'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_56'(16) to net 'JPEG_PR_0_jpeg_out_a56'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_55'(16) to net 'JPEG_PR_0_jpeg_out_a55'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_11'(16) to net 'JPEG_PR_0_jpeg_out_a11'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_12'(16) to net 'JPEG_PR_0_jpeg_out_a12'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_13'(16) to net 'JPEG_PR_0_jpeg_out_a13'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_14'(16) to net 'JPEG_PR_0_jpeg_out_a14'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_15'(16) to net 'JPEG_PR_0_jpeg_out_a15'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_16'(16) to net 'JPEG_PR_0_jpeg_out_a16'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_17'(16) to net 'JPEG_PR_0_jpeg_out_a17'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_18'(16) to net 'JPEG_PR_0_jpeg_out_a18'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_19'(16) to net 'JPEG_PR_0_jpeg_out_a19'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_20'(16) to net 'JPEG_PR_0_jpeg_out_a20'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_21'(16) to net 'JPEG_PR_0_jpeg_out_a21'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_22'(16) to net 'JPEG_PR_0_jpeg_out_a22'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_23'(16) to net 'JPEG_PR_0_jpeg_out_a23'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_24'(16) to net 'JPEG_PR_0_jpeg_out_a24'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_25'(16) to net 'JPEG_PR_0_jpeg_out_a25'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1228} -string {{CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/controller_0/data_in_compute_26'(16) to net 'JPEG_PR_0_jpeg_out_a26'(12) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.} } 
+set_msg_config -suppress -id {BD 41-1731} -string {{WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /JPEG_PR_0/jpeg_in_compute(undef)} } 
+set_msg_config -suppress -id {Synth 8-689} -string {{WARNING: [Synth 8-689] width (12) of port connection 'data_in_compute_00' does not match port width (16) of module 'bram_design_system_controller_0_1' [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:560]} } 
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+report_ip_status -name ip_status
+set_property  ip_repo_paths  {c:/JPEG_Thesis_2/BRAM_FPGA_Controller c:/JPEG_Thesis_2/DCT_JPEG2 c:/JPEG_Thesis_2/DARC_Mux c:/JPEG_Thesis_2/DARC_BRAM_2 c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0 c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+set_property  ip_repo_paths  {c:/JPEG_Thesis_2/BRAM_FPGA_Controller c:/JPEG_Thesis_2/DCT_JPEG2 c:/JPEG_Thesis_2/DARC_Mux C:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0 c:/JPEG_Thesis_2/DARC_BRAM_2 c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0 c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/BRAM_FPGA_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DCT_JPEG2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_Mux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/PRLab/Sources/ip_repo/JPEG_PR_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/DARC_BRAM_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/DARC_BRAM2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/JPEG_Thesis_2/ip_repo/ARM_FPGA_Control_Bus_1.0'.
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Sun Nov 19 18:03:29 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.runs/synth_1/runme.log
+upgrade_ip -vlnv xilinx.com:user:JPEG_PR:1.0 [get_ips  bram_design_system_JPEG_PR_0_1] -log ip_upgrade.log
+Upgrading 'C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd'
+INFO: [IP_Flow 19-1972] Upgraded bram_design_system_JPEG_PR_0_1 from JPEG_PR_v1.0 1.0 to JPEG_PR_v1.0 1.0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ARM_FPGA_Control_Bus_0/compute_wakeup(rst) and /JPEG_PR_0_upgraded_ipi/jpeg_in_compute(undef)
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/JPEG_Thesis_2/BRAM_System_Final/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips bram_design_system_JPEG_PR_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd]
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block JPEG_PR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1226.691 ; gain = 25.859
+export_ip_user_files -of_objects [get_files C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd] -directory C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.ip_user_files/sim_scripts -ip_user_files_dir C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.ip_user_files -ipstatic_source_dir C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.cache/compile_simlib/modelsim} {questa=C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.cache/compile_simlib/questa} {riviera=C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.cache/compile_simlib/riviera} {activehdl=C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+validate_bd_design -force
+save_bd_design
+Wrote  : <C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/bram_design_system.bd> 
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [BD 41-1662] The design 'bram_design_system.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v
+Verilog Output written to : C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_BRAM2_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DARC_Mux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bram_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ARM_FPGA_Control_Bus_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block controller_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block JPEG_PR_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system.hwh
+Generated Block Design Tcl file C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hw_handoff/bram_design_system_bd.tcl
+Generated Hardware Definition File C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.hwdef
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system_wrapper.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v" into library work [C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.srcs/sources_1/bd/bram_design_system/hdl/bram_design_system.v:1]
+[Sun Nov 19 18:09:40 2017] Launched synth_1...
+Run output will be captured here: C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.runs/synth_1/runme.log
+close_project
+****** Webtalk v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/JPEG_Thesis_2/BRAM_System_Final/BRAM_System_Final.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 19 18:16:15 2017...
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 19 18:16:21 2017...

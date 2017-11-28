@@ -1,0 +1,80 @@
+I_BT1173: LOG file is generated. (jpeg.LOG.gz)
+I_BT1921: License has been successfully obtained by FLEXlm.
+I_BT2619: Synthesize in FPGA (zynq) mode.
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	44(./dct.cpp):       for(x=0;x<64;x++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	53(./dct.cpp):             for(y=0;y<8;y++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	52(./dct.cpp):           for(x=0;x<8;x++)
+I_BT4619: Since the number 1160 of statements after unrolling is large(> 512), loop cannot be unrolled.
+ [Action] In the case of unrolling, specify attribute, or the option (-U# or -UN).
+	[Source Lines]
+	49(./dct.cpp):         for(v=0;v<8;v++)
+	50(./dct.cpp):         {
+I_BT4619: Since the number 1184 of statements after unrolling is large(> 512), loop cannot be unrolled.
+ [Action] In the case of unrolling, specify attribute, or the option (-U# or -UN).
+	[Source Lines]
+	48(./dct.cpp):       for(u=0;u<8;u++)
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	69(./dct.cpp):         for(n=0;n<8;n++) 
+	70(./dct.cpp):         {
+I_BT4607: for loop is unrolled
+	[Source Lines]
+	67(./dct.cpp):       for(m=0;m<8;m++)
+I_BT4442: Array signal dct_co is expanded at dimension #2 from right.
+	[Source Lines]
+	27(./dct.cpp):   sc_fixed<4,2,SC_RND,SC_SAT> dct_co[8][8] = {
+I_BT4442: Array signal line_buffer is expanded at dimension #2 from right.
+	[Source Lines]
+	23(./dct.cpp):   sc_uint<8> line_buffer[8][8];
+I_BT4121: Array dct_co_0_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_1_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_2_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_3_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_4_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_5_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_6_a is synthesized as a combinational circuit.
+I_BT4121: Array dct_co_7_a is synthesized as a combinational circuit.
+I_BT4679: Array jpeg_in was expanded.
+I_BT4679: Array jpeg_out was expanded.
+I_BT4679: Array line_buffer_0_a was expanded.
+I_BT4679: Array line_buffer_1_a was expanded.
+I_BT4679: Array line_buffer_2_a was expanded.
+I_BT4679: Array line_buffer_3_a was expanded.
+I_BT4679: Array line_buffer_4_a was expanded.
+I_BT4679: Array line_buffer_5_a was expanded.
+I_BT4679: Array line_buffer_6_a was expanded.
+I_BT4679: Array line_buffer_7_a was expanded.
+I_BT4393: No memory required. Empty memory library file (jpeg-auto.MLIB) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4394: No memory required. Empty memory constraint file (jpeg-auto.MCNT) generated.
+ [Action] Change type of array to 'mem' if required.
+          <OR> Specify appropriate "-a*" or "-ap*" options.
+I_BT4383: Generate memory library file / memory constraint file.
+	jpeg-auto.MLIB
+	jpeg-auto.MCNT
+I_BT4395: 8 functional units templates are generated.
+I_BT4392: No arithmetic macro functional unit required.
+I_BT4319: Empty FLIB file (jpeg-amacro-auto.FLIB) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4318: Empty FCNT file (jpeg-amacro-auto.FCNT) generated. No functional units required.
+ [Action] If required, confirm the description.
+I_BT4382: Generate functional unit library files / functional unit constraint files.
+	jpeg-auto.FLIB
+	jpeg-auto.FCNT
+	jpeg-amacro-auto.FLIB
+	jpeg-amacro-auto.FCNT
+I_BT4392: No arithmetic macro functional unit required.
+I_BT7452: Usage count of functional unit add24s was increased from numbers of constraints 1 to 2.
+I_BT7452: Usage count of functional unit sub24s was increased from numbers of constraints 1 to 2.
+I_BT7452: Usage count of functional unit dct_co_0_a was increased from numbers of constraints 2 to 3.
+I_BT1190: The following ERROR/WARNING/INFO/TIPS exist.
+	42 information  exist
+	 2 tips         exist
+	---> SEE jpeg.err FILE and jpeg.tips FILE for DETAILS

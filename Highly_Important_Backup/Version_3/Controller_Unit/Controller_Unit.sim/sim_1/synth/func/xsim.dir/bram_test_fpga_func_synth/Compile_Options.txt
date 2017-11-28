@@ -1,0 +1,1 @@
+-wto "87366266b09b437190a09ef1d9c26cb9" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "secureip" --snapshot "bram_test_fpga_func_synth" "xil_defaultlib.bram_test_fpga" "xil_defaultlib.glbl" -log "elaborate.log" 

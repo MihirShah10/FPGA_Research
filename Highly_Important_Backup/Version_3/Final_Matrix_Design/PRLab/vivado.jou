@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Oct 18 23:51:21 2017
+# Process ID: 29864
+# Current directory: /home/mihir/PRLab
+# Command line: vivado
+# Log file: /home/mihir/PRLab/vivado.log
+# Journal file: /home/mihir/PRLab/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint Implement/Config_addition/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_addition.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_addition_pblock_filter0_partial.bit" Bitstreams/addition.bin
+close_project
+open_checkpoint Implement/Config_multiplication/top_route_design.dcp
+write_bitstream -file Bitstreams/Config_multiplication.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/Config_multiplication_pblock_filter0_partial.bit" Bitstreams/multiplication.bin
+close_project
+open_checkpoint Implement/Config_blank/top_route_design.dcp
+write_bitstream -file Bitstreams/blanking.bit
+write_cfgmem -format BIN -interface SMAPx32 -disablebitswap -loadbit "up 0 Bitstreams/blanking_pblock_filter0_partial.bit" Bitstreams/blank.bin
+close_project

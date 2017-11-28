@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Nov 06 20:48:40 2017
+# Process ID: 16404
+# Current directory: C:/JPEG_Thesis/Huffman/HUFFMAN_TEST_MAIN
+# Command line: wbtcv.exe -mode batch -source c:/jpeg_thesis/huffman/ip_repo/edit_DARC_HUFFMAN_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/JPEG_Thesis/Huffman/HUFFMAN_TEST_MAIN/webtalk.log
+# Journal file: C:/JPEG_Thesis/Huffman/HUFFMAN_TEST_MAIN\webtalk.jou
+#-----------------------------------------------------------
+source c:/jpeg_thesis/huffman/ip_repo/edit_DARC_HUFFMAN_v1_0.hw/webtalk/labtool_webtalk.tcl -notrace
